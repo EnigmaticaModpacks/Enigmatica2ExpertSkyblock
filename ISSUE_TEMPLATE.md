@@ -1,9 +1,9 @@
-**#### For feature/mod requests, feel free to delete this template**
+#### For feature/mod requests, feel free to delete this template
 
-**#### Issue Description**
+#### Issue Description
 
-**#### Modpack version (Do not use "latest")**
+#### Modpack version (Do not use "latest")
 
-**#### Crash Report**
+#### Crash Report
 
 [pastebin/gist/etc link here]
