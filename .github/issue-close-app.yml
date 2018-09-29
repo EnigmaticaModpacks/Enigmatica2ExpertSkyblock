@@ -18,7 +18,7 @@ issueConfigs:
 - content:
 # default
   - "Question or Issue"
-  - "Modpack Version (if applicable)"
+  - "Modpack Version"
   - "Additional Context"
 # Optional configuration:
 #
