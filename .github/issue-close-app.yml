@@ -15,6 +15,11 @@ issueConfigs:
 # development
   - "Notes"
   - "Additional context"
+- content:
+# default
+  - "Question / Issue"
+  - "Modpack Version (if applicable)"
+  - "Additional Context"
 # Optional configuration:
 #
 # whether the keywords are case-insensitive
