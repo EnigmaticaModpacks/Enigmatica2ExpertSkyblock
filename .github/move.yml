@@ -26,4 +26,4 @@ aliases:
    e2es: enigmatica2expertskyblock
 
 # Repository to extend settings from
-# _extends: repo
+_extends: .github
