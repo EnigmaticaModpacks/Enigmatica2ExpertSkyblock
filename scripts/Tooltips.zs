@@ -29,6 +29,12 @@ import mods.jei.JEI.addDescription as ad;
 	
 # *======= Adding Tooltips =======*
 
+# Oil Generator
+	ad(<actuallyadditions:block_oil_generator>, 
+	"This item has been disabled.", 
+	"Use the Thermal Expansion Compression Dynamo instead.",
+	"You can craft this item into a Compression Dynamo.");
+	
 # Wireless Heating Coil
 	ad(<extrautils2:ingredients:13>, "Not consumed when used in crafting recipes.");
 	<extrautils2:ingredients:13>.addTooltip(format.aqua("Not consumed when used in crafting recipes"));

@@ -1,6 +1,9 @@
 #modloaded thermalexpansion
 print("--- loading ThermalExpansion.zs ---");
 
+# AA Oil Generator -> Compression Dynamo
+	recipes.addShapeless(<thermalexpansion:dynamo:2>, [<actuallyadditions:block_oil_generator>]);
+	
 # Essence of Knowledge XP Compatibility (credit RedGoblin88)
 	mods.thermalexpansion.Crucible.addRecipe(<liquid:experience> * 200, <mysticalagriculture:xp_droplet>, 4000);
 	mods.thermalexpansion.Crucible.addRecipe(<liquid:experience> * 200, <mysticalagriculture:experience_essence>, 4000);
