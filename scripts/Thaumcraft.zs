@@ -5,6 +5,10 @@ import mods.thaumcraft.SmeltingBonus.addSmeltingBonus;
 #modloaded thaumcraft
 print("--- loading Thaumcraft.zs ---");
 
+# Removing wrong aspects from stuff
+	<chiselsandbits:chiseled_iron>.setAspects(<aspect:desiderium> * 1);
+	<ic2:dust:21>.setAspects(<aspect:metallum> * 1);
+	
 // Crimson Rites
 //mods.thaumcraft.Infusion.registerRecipe(String name, String research, 
 //IItemStack output, int instability, 
