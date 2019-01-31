@@ -2,7 +2,6 @@ import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 import mods.jei.JEI.addDescription as ad;
 
-
 # Custom recipes made by NillerMedDild
 	print("--- loading Tooltips.zs ---");
 	
