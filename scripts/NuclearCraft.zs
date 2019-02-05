@@ -6,9 +6,9 @@ print("--- loading NuclearCraft.zs ---");
 	recipes.remove(<nuclearcraft:lithium_ion_battery_basic>);
 	recipes.addShapedMirrored("nuclearcraft_tile.nuclearcraft.lithium_ion_battery_basic_custom", 
 	<nuclearcraft:lithium_ion_battery_basic>.withTag({maxTransfer: 1600000, capacity: 32000000, energy: 0}), 
-	[[<ore:plateBasic>, <nuclearcraft:lithium_ion_cell:*>.withTag({maxTransfer: 400000, capacity: 8000000, energy: 0}), <ore:plateBasic>], 
-	[<nuclearcraft:lithium_ion_cell:*>.withTag({maxTransfer: 400000, capacity: 8000000, energy: 0}), <ore:solenoidMagnesiumDiboride>, <nuclearcraft:lithium_ion_cell:*>.withTag({maxTransfer: 400000, capacity: 8000000, energy: 0})], 
-	[<ore:plateBasic>, <nuclearcraft:lithium_ion_cell:*>.withTag({maxTransfer: 400000, capacity: 8000000, energy: 0}), <ore:plateBasic>]]);
+	[[<ore:plateBasic>, <nuclearcraft:lithium_ion_cell:*>.withTag({}), <ore:plateBasic>], 
+	[<nuclearcraft:lithium_ion_cell:*>.withTag({}), <ore:solenoidMagnesiumDiboride>, <nuclearcraft:lithium_ion_cell:*>.withTag({})], 
+	[<ore:plateBasic>, <nuclearcraft:lithium_ion_cell:*>.withTag({}), <ore:plateBasic>]]);
 
 # Rhodochrosite
 	mods.actuallyadditions.AtomicReconstructor.addRecipe(<nuclearcraft:gem>, <contenttweaker:ruby>, 15000);
