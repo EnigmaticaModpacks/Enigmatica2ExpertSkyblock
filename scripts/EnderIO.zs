@@ -193,6 +193,7 @@ for silicon in <ore:itemSilicon>.items {
 
 # Removals
 	rh(<enderio:block_simple_stirling_generator>);
-	
+	rh(<enderio:item_material:30>);
+	rh(<enderio:item_material:31>);
 	
 	print("--- EnderIO.zs initialized ---");

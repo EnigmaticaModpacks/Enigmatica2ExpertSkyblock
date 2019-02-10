@@ -2,14 +2,9 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded nuclearcraft
 print("--- loading NuclearCraft.zs ---");
 
-# Basic Lithium Ion Battery
-	recipes.remove(<nuclearcraft:lithium_ion_battery_basic>);
-	recipes.addShapedMirrored("nuclearcraft_tile.nuclearcraft.lithium_ion_battery_basic_custom", 
-	<nuclearcraft:lithium_ion_battery_basic>.withTag({maxTransfer: 1600000, capacity: 32000000, energy: 0}), 
-	[[<ore:plateBasic>, <nuclearcraft:lithium_ion_cell:*>.withTag({}), <ore:plateBasic>], 
-	[<nuclearcraft:lithium_ion_cell:*>.withTag({}), <ore:solenoidMagnesiumDiboride>, <nuclearcraft:lithium_ion_cell:*>.withTag({})], 
-	[<ore:plateBasic>, <nuclearcraft:lithium_ion_cell:*>.withTag({}), <ore:plateBasic>]]);
-
+# Lithium Ingot Mekanism Compat
+	mods.mekanism.smelter.addRecipe(<ic2:dust:11>, <nuclearcraft:ingot:6>);
+	
 # Rhodochrosite
 	mods.actuallyadditions.AtomicReconstructor.addRecipe(<nuclearcraft:gem>, <contenttweaker:ruby>, 15000);
 

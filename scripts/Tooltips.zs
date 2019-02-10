@@ -140,7 +140,6 @@ import mods.jei.JEI.addDescription as ad;
 	<thermalfoundation:ore_fluid:3>,
 	<thermalfoundation:ore_fluid:2>,
 	<libvulpes:ore0>,
-	<libvulpes:ore0:8>,
 	<thermalfoundation:ore:7>,
 	<thermalfoundation:ore:8>,
 	<rftools:dimensional_shard_ore>,
@@ -156,6 +155,8 @@ import mods.jei.JEI.addDescription as ad;
 	for item in spaceOres {
 	ad(item, spaceGen);
 	}
+	
+	ad(<libvulpes:ore0:8>, "Rutile Ore only generates on other planets, but Titanium Ingots are craftable.");
 	
 # Mekanism Factories
 	<mekanism:machineblock:5>.addTooltip(mekanismFactories);
