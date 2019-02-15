@@ -1,9 +1,57 @@
-import mods.industrialforegoing.LaserDrill;
+import crafttweaker.item.IItemStack;
 import mods.industrialforegoing.BioReactor;
+import mods.industrialforegoing.ProteinReactor;
+import mods.industrialforegoing.FluidDictionary;
 #modloaded industrialforegoing teslacorelib
 print("--- loading IndustrialForegoing.zs ---");
 	
+# FluidDictionary Recipes
+	FluidDictionary.add("seed.oil", "seed_oil", 1);
+	FluidDictionary.add("sulfuric_acid", "sulfuricacid", 1);
+	FluidDictionary.add("hydrogen", "ic2hydrogen", 1);
+	FluidDictionary.add("hydrogen", "liquidhydrogen", 1);
+	FluidDictionary.add("liquidhydrogen", "ic2hydrogen", 1);
+
+# Protein Reactor, additional entires
+	for item in <ore:listAllmeatraw>.items {
+		ProteinReactor.add(item);
+	}
+	
 # BioReactor, additional entries
+	val otherCrops = [
+		<harvestcraft:breadfruititem>,
+		<harvestcraft:mustardseedsitem>,
+		<harvestcraft:spiceleafitem>,
+		<harvestcraft:gingeritem>,
+		<harvestcraft:garlicitem>,
+		<harvestcraft:peanutitem>,
+		<harvestcraft:oatsitem>,
+		<harvestcraft:barleyitem>,
+		<harvestcraft:chilipepperitem>,
+		<harvestcraft:pecanitem>,
+		<harvestcraft:pistachioitem>,
+		<harvestcraft:almonditem>,
+		<harvestcraft:kenafitem>,
+		<harvestcraft:milletitem>,
+		<harvestcraft:cashewitem>,
+		<harvestcraft:sisalitem>,
+		<harvestcraft:quinoaitem>,
+		<harvestcraft:juteitem>,
+		<harvestcraft:flaxitem>,
+		<harvestcraft:amaranthitem>,
+		<harvestcraft:kaleitem>,
+		<harvestcraft:chestnutitem>,
+		<harvestcraft:walnutitem>
+	] as IItemStack[];
+
+	for crop in otherCrops {
+		BioReactor.add(crop);
+	}
+	
+	for seed in <ore:listAllseed>.items {
+        BioReactor.add(seed);
+    }
+	
 	for veggie in <ore:listAllveggie>.items {
 		BioReactor.add(veggie);
 	}
@@ -76,48 +124,5 @@ print("--- loading IndustrialForegoing.zs ---");
 	[<ore:plateDenseGold>, <thermalexpansion:frame>, <ore:plateDenseGold>], 
 	[<ore:gearDiamond>, <ore:blockOsmiridium>, <ore:gearDiamond>]]);
 
-/* Deprecated, now handled by configs
-
-//LaserDrill.remove(IItemStack output);
-	LaserDrill.remove(<thermalfoundation:ore:4>);
-	LaserDrill.remove(<draconicevolution:draconium_ore>);
-	LaserDrill.remove(<bigreactors:brore>);
-	LaserDrill.remove(<exnihilocreatio:item_ore_cobalt:1>);
-	LaserDrill.remove(<exnihilocreatio:item_ore_ardite:1>);
-	LaserDrill.remove(<thermalfoundation:ore_fluid:2>);
-	LaserDrill.remove(<thermalfoundation:ore_fluid:3>);
-	LaserDrill.remove(<thermalfoundation:ore_fluid:4>);
-	LaserDrill.remove(<mysticalagriculture:prosperity_ore>);
-	LaserDrill.remove(<rftools:dimensional_shard_ore:1>);
-	LaserDrill.remove(<rftools:dimensional_shard_ore:2>);
-
-	LaserDrill.add(12, <immersiveengineering:ore:1>, 10);
-	LaserDrill.add(11, <tconstruct:ore>, 3);
-	LaserDrill.add(4, <tconstruct:ore:1>, 3);
-*/
-
-# *======= BioReactor =======*
-
-//BioReactor.add(IItemStack input);
-#BioReactor.add(<minecraft:diamond>);
-
-//BioReactor.remove(IItemStack input);
-#BioReactor.remove(<minecraft:diamond>);
-
-# *======= Laser Drill =======*
-
-//LaserDrill.add(int itemLensMetaColor, IItemStack output, int ItemWeight);
-#LaserDrill.add(1, <minecraft:stone>, 10);
-
-//LaserDrill.remove(IItemStack output);
-#LaserDrill.remove(<minecraft:stone>);
-
-# *======= Sludge Refiner =======*
-
-//SludgeRefiner.add(IItemStack output, int ItemWeight);
-#SludgeRefiner.add(<minecraft:wheat_seeds>, 10);
-
-//SludgeRefiner.remove(IItemStack output);
-#SludgeRefiner.remove(<minecraft:wheat_seeds>);
 
 	print("--- IndustrialForegoing.zs initialized ---");

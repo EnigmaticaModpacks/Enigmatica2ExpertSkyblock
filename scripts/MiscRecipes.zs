@@ -4,6 +4,13 @@ import mods.jei.JEI.removeAndHide as rh;
 # Custom recipes made by NillerMedDild, altered by Discomanco
 	print("--- loading MiscRecipes.zs ---");
 
+# Eclipsed Clock
+recipes.addShapedMirrored("Eclipsed Clock", 
+<randomthings:eclipsedclock>, 
+[[<mekanism:otherdust:5>, <minecraft:clock>, <mekanism:otherdust:5>],
+[<minecraft:clock>, <ore:netherStar>, <minecraft:clock>], 
+[<mekanism:otherdust:5>, <minecraft:clock>, <mekanism:otherdust:5>]]);
+
 # Quark Marble Wall Oredicted version
 	recipes.remove(<quark:marble_wall>);
 	recipes.addShaped("Quark Marble Wall", 
