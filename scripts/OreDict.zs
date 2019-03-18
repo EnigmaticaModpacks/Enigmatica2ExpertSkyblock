@@ -5,6 +5,12 @@ import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
 print("--- loading OreDict.zs ---");
 
+# Black Quartz Pillar is cheaper than 1 block, remove from oredict
+	<ore:blockBlackQuartz>.remove(<actuallyadditions:block_misc>);
+	
+# Removing Pam's in-world Apple from cropApple
+	<ore:cropApple>.remove(<harvestcraft:pamapple>);
+	
 # Cobalt Block issues
 	<ore:oreCobalt>.remove(<tconstruct:metal>);
 	<ore:oreArdite>.remove(<tconstruct:metal>);
@@ -32,16 +38,11 @@ print("--- loading OreDict.zs ---");
 	<ore:oreLead>.remove(<immersiveengineering:ore:2>);
 	<ore:oreLead>.remove(<nuclearcraft:ore:2>);
 
+	<ore:oreSilver>.remove(<immersiveengineering:ore:3>);
+
 	<ore:oreUranium>.remove(<ic2:resource:4>);
 	<ore:oreUranium>.remove(<nuclearcraft:ore:4>);
 
-# Removing broken Draconium Ore from it's oredict
-	<ore:oreDraconium>.remove(<draconicevolution:draconium_ore:32767>);
-# Readding the correct ones
-	<ore:oreDraconium>.add(<draconicevolution:draconium_ore>);
-	<ore:oreDraconium>.add(<draconicevolution:draconium_ore:1>);
-	<ore:oreDraconium>.add(<draconicevolution:draconium_ore:2>);
-	
 # Slag
 	<ore:crystalSlag>.add(<ic2:misc_resource:5>);
 	

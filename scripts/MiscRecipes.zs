@@ -158,7 +158,11 @@ recipes.addShapedMirrored("Eclipsed Clock",
 	[[null, <ore:paper>, <ore:cropFlax>],
 	[<ore:paper>, <ore:dyeBlack>, <ore:paper>], 
 	[<ore:paper>, <ore:paper>, null]]);
-	
+
+# Remove extraneous (and OP) Paper recipes
+  recipes.removeByRecipeName("minecraft:paper"); # Removed because EnderCore adds a shapeless one
+  recipes.removeByRecipeName("mekanism:paper"); # Removed because CHEATS
+  
 # Elytra
 	recipes.addShaped("Elytra", 
 	<minecraft:elytra>, 
@@ -294,11 +298,19 @@ recipes.addShapedMirrored("Eclipsed Clock",
 	recipes.addShapeless("Planks5", <minecraft:planks:5> * 2, [<minecraft:log2:1>]);
 	recipes.addShapeless("Planks6", <rustic:planks> * 2,[<rustic:log>]);
 	recipes.addShapeless("Planks7", <rustic:planks:1> * 2,[<rustic:log:1>]);
+	recipes.addShapeless("integrateddynamics_menril_planks", <integrateddynamics:menril_planks> * 2, [<integrateddynamics:menril_log>]);
 
 # Sticks
 	recipes.remove(<minecraft:stick>);
-	recipes.addShapeless("Sticks", <minecraft:stick> * 2, [<ore:plankWood>, <ore:plankWood>]);
-	recipes.addShapeless("Sticks from logs", <minecraft:stick> * 4, [<ore:logWood>, <ore:logWood>]);
+	recipes.addShapedMirrored("Sticks", 
+	<minecraft:stick> * 2, 
+	[[<ore:plankWood>], 
+	[<ore:plankWood>]]);
+	
+	recipes.addShapedMirrored("Sticks from logs", 
+	<minecraft:stick> * 4, 
+	[[<ore:logWood>],
+	[<ore:logWood>]]);
 	
 # Bucket
 	recipes.remove(<minecraft:bucket>);

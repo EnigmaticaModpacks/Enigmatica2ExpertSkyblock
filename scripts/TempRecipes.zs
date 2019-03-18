@@ -25,5 +25,6 @@ var extraCellsItemsToRemoveAndHide as IItemStack[] = [
 	<extracells:ecbaseblock>
 ];
 
-Hydrator.removeShapedRecipe(<minecraft:sponge>);
-Hydrator.addRecipe(<minecraft:sponge>, [<thermalfoundation:rockwool:11>, <minecraft:prismarine_shard>, <minecraft:slime_ball>, <minecraft:soul_sand>], 1000);
+for item in extraCellsItemsToRemoveAndHide {
+	mods.jei.JEI.removeAndHide(item);
+}
