@@ -27,7 +27,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	var ultProvider = <mekanism:basicblock2:4>.withTag({tier: 3});
 	var blackHoleUnit = <industrialforegoing:black_hole_unit>;
 	var blackHoleTank = <industrialforegoing:black_hole_tank>;
-	var creativeGasTankFrame = <chiselsandbits:chiseled_fluid>.withTag({side: 3, RepairCost: 0, BlockEntityTag: {b: 3593, side: 3 as byte, s: 1, nc: 0 as byte, X: [120, -38, 99, 96, 103, -104, -63, -72, 99, 22, 75, -89, -52, -33, -55, 50, 19, -101, 116, 118, 78, -28, 104, 96, -2, -62, 122, 59, 119, 3, -125, 1, 3, 3, 27, 3, -37, 36, -49, 73, -98, 6, 20, -79, 55, -128, -39, -73, 115, 25, -112, -128, -89, -54, 6, 6, 5, -112, 56, -21, -74, -37, -37, 110, 43, -128, -40, -84, -28, -78, 13, 64, 108, -96, 93, -71, -37, 26, 64, 70, 51, 50, 48, -26, 46, 32, -42, 124, 1, 56, 91, -128, -128, -7, 75, 38, 58, 48, -63, -52, 119, 32, -46, -3, 2, 56, -20, -62, 102, -2, -94, 32, 71, 5, -122, 65, 102, 62, 41, -31, 79, 78, -8, -112, 31, -65, -76, 72, -97, 0, 93, 17, -69, -123] as byte[] as byte[], lv: 11}, display: {Name: "Creative Gas Tank Frame"}});
 	var millLava = <extrautils2:passivegenerator:2>;
 	var millWater = <extrautils2:passivegenerator:3>;
 	var millWind = <extrautils2:passivegenerator:4>;
@@ -51,6 +50,12 @@ import mods.jei.JEI.removeAndHide as rh;
 	var creativeTank = <mekanism:machineblock2:11>.withTag({tier: 4});
 	var creativeGasTank = <mekanism:gastank>.withTag({tier: 4});
 	# *======= Recipes =======*
+
+var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
+	TrophyItem:{id:"mekanism:gastank",Count:1 as byte, Damage:0 as short},
+	TrophyName:"Creative Gas Tank Frame",
+	TrophyVariant:"gold"
+});
 
 # Special Gas Tank Item
 	recipes.addShapedMirrored("Creative Gas Tank Frame", creativeGasTankFrame, 
