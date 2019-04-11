@@ -103,7 +103,7 @@ var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 # Creative Builder's Wand
 	mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:itemcreativebuilderswand>, 
 	[[<extrautils2:itembuilderswand>, <cyclicmagic:cyclic_wand_build>.anyDamage(), <extrautils2:itembuilderswand>], 
-	[<betterbuilderswands:wanddiamond>.anyDamage(), <betterbuilderswands:wandunbreakable>.anyDamage(), <betterbuilderswands:wanddiamond>.anyDamage()], 
+	[<betterbuilderswands:wanddiamond>.anyDamage(), <betterbuilderswands:wandunbreakable:12>.anyDamage(), <betterbuilderswands:wanddiamond>.anyDamage()], 
 	[<extrautils2:itembuilderswand>, <cyclicmagic:cyclic_wand_build>.anyDamage(), <extrautils2:itembuilderswand>]]);  
 
 # Creative RFTools Screen
@@ -211,11 +211,11 @@ var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 	mods.extendedcrafting.TableCrafting.addShaped(4, <mekanism:gastank>.withTag({tier: 4, mekData: {}}),	
 	[[ingotUltimate, ingotUltimate, ingotUltimate, blockLudicrite, rocketFuel, blockLudicrite, ingotUltimate, ingotUltimate, ingotUltimate], 
 	[ingotUltimate, blackHoleTank, blockOsgloglas, anglesite, rocketFuel, anglesite, blockOsgloglas, blackHoleTank, ingotUltimate], 
-	[ingotUltimate, blockMirion, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "neutron", Amount: 512000}}), <avaritia:resource:4>, ultCatalyst, <avaritia:resource:4>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 512000}}), blockMirion, ingotUltimate], 
+	[ingotUltimate, blockMirion, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "neutron", Amount: 512000}, Level: 3 as byte}), <avaritia:resource:4>, ultCatalyst, <avaritia:resource:4>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 512000}, Level: 3 as byte}), blockMirion, ingotUltimate], 
 	[blockLudicrite, benitoite, gasPad, awakendedCore, <advancedrocketry:liquidtank>, awakendedCore, gasPad, benitoite, blockLudicrite], 
 	[rocketFuel, rocketFuel, ultCatalyst, <advancedrocketry:liquidtank>, creativeGasTankFrame, <advancedrocketry:liquidtank>, ultCatalyst, rocketFuel, rocketFuel], 
 	[blockLudicrite, benitoite, gasPad, awakendedCore, creativeTank, awakendedCore, gasPad, benitoite, blockLudicrite], 
-	[ingotUltimate, blockMirion, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 512000}}), <avaritia:resource:4>, ultCatalyst, <avaritia:resource:4>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "liquiddna", Amount: 512000}}), blockMirion, ingotUltimate], 
+	[ingotUltimate, blockMirion, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 512000}, Level: 3 as byte}), <avaritia:resource:4>, ultCatalyst, <avaritia:resource:4>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "liquiddna", Amount: 512000}, Level: 3 as byte}), blockMirion, ingotUltimate], 
 	[ingotUltimate, blackHoleTank, blockOsgloglas, anglesite, rocketFuel, anglesite, blockOsgloglas, blackHoleTank, ingotUltimate],
 	[ingotUltimate, ingotUltimate, ingotUltimate, blockLudicrite, rocketFuel, blockLudicrite, ingotUltimate, ingotUltimate, ingotUltimate]]);  
 	recipes.addShapeless("Creative Gas Tank Reset", 
