@@ -1,7 +1,5 @@
 # Enigmatica 2: Expert Skyblock Changelog
 
-## [Unreleased](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/HEAD)
-
 **Implemented enhancements:**
 
 - Swap Mekanica with Mekanism [\#488](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/488) [[Marker: Mod](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Marker:%20Mod)] [[Priority: Medium](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Priority:%20Medium)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Enhancement)]
