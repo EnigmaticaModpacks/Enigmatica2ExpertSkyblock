@@ -6,12 +6,13 @@ print("--- loading Cyclic.zs ---");
 
 # Removing Simple Block Miner
 	rh(<cyclicmagic:block_miner>);
+	
 # User
 	recipes.remove(<cyclicmagic:block_user>);
 	recipes.addShapedMirrored("Cyclic User", 
 	<cyclicmagic:block_user>, 
 	[[<ore:ingotGold>, <ore:ingotRefinedObsidian>, <ore:ingotGold>],
-	[<minecraft:golden_pickaxe>, <computercraft:turtle>, <minecraft:golden_axe>], 
+	[<minecraft:golden_pickaxe>, <computercraft:turtle_expanded>, <minecraft:golden_axe>], 
 	[<ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>, <ore:compressed2xCobblestone>]]);
 	recipes.addShapeless("Cyclic User2", 
 	<cyclicmagic:block_user> * 2, 
