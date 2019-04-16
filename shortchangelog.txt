@@ -1,216 +1,55 @@
-Enigmatica2ExpertSkyblock 1.25 to Enigmatica2ExpertSkyblock 1.26
+Enigmatica2ExpertSkyblock 1.26 to Enigmatica2ExpertSkyblock 1.27
 
 Added:
-	- Fullscreen Windowed (Borderless) for Minecraft
-	- Mekanism
-	- Mekanism Generators
-	- Phosphor
+	- CC: Tweaked
 
 Updated:
-	Advanced Rocketry (went from AdvancedRocketry 1.12.2-1.5.0-136-UNSTABLE build -136 for 1.12.2 to AdvancedRocketry 1.12.2-1.5.0-138-UNSTABLE build -138 for 1.12.2):
-		AdvancedRocketry 1.12.2-1.5.0-138-UNSTABLE build -138 for 1.12.2:
-			https://minecraft.curseforge.com/projects/advanced-rocketry/files/2697692
-		AdvancedRocketry 1.12.2-1.5.0-137-UNSTABLE build -137 for 1.12.2:
-			https://minecraft.curseforge.com/projects/advanced-rocketry/files/2696178
+	Astral Sorcery (went from AstralSorcery-1.12.2-1.10.14.jar to AstralSorcery-1.12.2-1.10.15.jar):
+		AstralSorcery-1.12.2-1.10.15.jar:
+			https://minecraft.curseforge.com/projects/astral-sorcery/files/2699238
 
-	Animus (went from Animus-1.12-2.1.1.jar to Animus-1.12-2.1.2.jar):
-		Animus-1.12-2.1.2.jar:
-			No changelog provided.
+	Compact Machines (went from compactmachines3-1.12.2-3.0.15-b249.jar to compactmachines3-1.12.2-3.0.17-b267.jar):
+		compactmachines3-1.12.2-3.0.17-b267.jar:
+			https://minecraft.curseforge.com/projects/compact-machines/files/2699496
+		compactmachines3-1.12.2-3.0.16-b263.jar:
+			https://minecraft.curseforge.com/projects/compact-machines/files/2698771
 
-	ArmoreableMobs (went from armoreablemobs-1.12-1.1.7-5.jar to armoreablemobs-1.12.2-1.1.8.jar):
-		armoreablemobs-1.12.2-1.1.8.jar:
-			https://minecraft.curseforge.com/projects/armoreablemobs/files/2696448
+	EnderCore (went from EnderCore - 1.12.2-0.5.56 to EnderCore - 1.12.2-0.5.57):
+		EnderCore - 1.12.2-0.5.57:
+			https://minecraft.curseforge.com/projects/endercore/files/2699428
 
-	Astral Sorcery (went from AstralSorcery-1.12.2-1.10.12.jar to AstralSorcery-1.12.2-1.10.14.jar):
-		AstralSorcery-1.12.2-1.10.14.jar:
-			https://minecraft.curseforge.com/projects/astral-sorcery/files/2698022
-		AstralSorcery-1.12.2-1.10.13.jar:
-			https://minecraft.curseforge.com/projects/astral-sorcery/files/2697763
+	Industrial Craft (went from industrialcraft-2-2.8.120-ex112.jar to industrialcraft-2-2.8.122-ex112.jar):
+		industrialcraft-2-2.8.122-ex112.jar:
+			https://minecraft.curseforge.com/projects/industrial-craft/files/2699567
+		industrialcraft-2-2.8.121-ex112.jar:
+			https://minecraft.curseforge.com/projects/industrial-craft/files/2699560
 
-	Botania (went from Botania r1.10-360.jar to Botania r1.10-361.jar):
-		Botania r1.10-361.jar:
-			https://minecraft.curseforge.com/projects/botania/files/2698039
-
-	Common Capabilities (went from CommonCapabilities-1.12.2-2.1.1.jar to CommonCapabilities-1.12.2-2.2.0.jar):
-		CommonCapabilities-1.12.2-2.2.0.jar:
-			https://minecraft.curseforge.com/projects/common-capabilities/files/2693655
-
-	Cooking for Blockheads (went from CookingForBlockheads_1.12.2-6.4.69.jar to CookingForBlockheads_1.12.2-6.4.70.jar):
-		CookingForBlockheads_1.12.2-6.4.70.jar:
-			https://minecraft.curseforge.com/projects/cooking-for-blockheads/files/2696150
-
-	Cosmetic Armor Reworked (went from CosmeticArmorReworked-1.12.2-v4.jar to CosmeticArmorReworked-1.12.2-v4a.jar):
-		CosmeticArmorReworked-1.12.2-v4a.jar:
-			https://minecraft.curseforge.com/projects/cosmetic-armor-reworked/files/2697672
-
-	CraftTweaker (went from CraftTweaker2-1.12-4.1.16 to CraftTweaker2-1.12-4.1.17):
-		CraftTweaker2-1.12-4.1.17:
-			https://minecraft.curseforge.com/projects/crafttweaker/files/2693533
-
-	Cyclic (went from Cyclic-1.12.2-1.18.5.jar to Cyclic-1.12.2-1.19.1.jar):
-		Cyclic-1.12.2-1.19.1.jar:
-			https://minecraft.curseforge.com/projects/cyclic/files/2698500
-		Cyclic-1.12.2-1.19.0.jar:
-			https://minecraft.curseforge.com/projects/cyclic/files/2697203
-		Cyclic-1.12.2-1.18.6.jar:
-			https://minecraft.curseforge.com/projects/cyclic/files/2694176
-
-	Dark Utilities (went from DarkUtils-1.12.2-1.8.224.jar to DarkUtils-1.12.2-1.8.226.jar):
-		DarkUtils-1.12.2-1.8.226.jar:
-			https://minecraft.curseforge.com/projects/dark-utilities/files/2694889
-		DarkUtils-1.12.2-1.8.225.jar:
-			https://minecraft.curseforge.com/projects/dark-utilities/files/2693206
-
-	Draconic Evolution (went from Draconic-Evolution-1.12.2-2.3.20.333-universal to Draconic-Evolution-1.12.2-2.3.21.342-universal):
-		Draconic-Evolution-1.12.2-2.3.21.342-universal:
-			https://minecraft.curseforge.com/projects/draconic-evolution/files/2697295
-
-	EnderCore (went from EnderCore - 1.12.2-0.5.52 to EnderCore - 1.12.2-0.5.56):
-		EnderCore - 1.12.2-0.5.56:
-			https://minecraft.curseforge.com/projects/endercore/files/2697900
-		EnderCore - 1.12.2-0.5.55:
-			https://minecraft.curseforge.com/projects/endercore/files/2697890
-		EnderCore - 1.12.2-0.5.54:
-			https://minecraft.curseforge.com/projects/endercore/files/2697885
-		EnderCore - 1.12.2-0.5.53:
-			https://minecraft.curseforge.com/projects/endercore/files/2696287
-
-	Ex Compressum (went from ExCompressum_1.12.2-3.0.26.jar to ExCompressum_1.12.2-3.0.27.jar):
-		ExCompressum_1.12.2-3.0.27.jar:
-			https://minecraft.curseforge.com/projects/ex-compressum/files/2696152
-
-	Ex Nihilo: Creatio (went from exnihilocreatio-1.12.2-0.4.jar to exnihilocreatio-1.12.2-0.4.1.2.jar):
-		exnihilocreatio-1.12.2-0.4.1.2.jar:
-			https://minecraft.curseforge.com/projects/ex-nihilo-creatio/files/2695246
-		exnihilocreatio-1.12.2-0.4.1.1.jar:
-			https://minecraft.curseforge.com/projects/ex-nihilo-creatio/files/2694885
-		exnihilocreatio-1.12.2-0.4.1.jar:
-			https://minecraft.curseforge.com/projects/ex-nihilo-creatio/files/2693953
-
-	Extended Crafting (went from ExtendedCrafting-1.12.2-1.5.2.jar to ExtendedCrafting-1.12.2-1.5.4.jar):
-		ExtendedCrafting-1.12.2-1.5.4.jar:
-			https://minecraft.curseforge.com/projects/extended-crafting/files/2698394
-		ExtendedCrafting-1.12.2-1.5.3.jar:
-			https://minecraft.curseforge.com/projects/extended-crafting/files/2694984
-
-	FoamFix for Minecraft (went from FoamFix 0.10.3 (1.12.2) to FoamFix 0.10.5 (1.12.2)):
-		FoamFix 0.10.5 (1.12.2):
-			https://minecraft.curseforge.com/projects/foamfix-for-minecraft/files/2695388
-
-	Gas Conduits (went from GasConduits-1.12.2-1.1.0.jar to GasConduits-1.12.2-1.2.1.jar):
-		GasConduits-1.12.2-1.2.1.jar:
-			https://minecraft.curseforge.com/projects/gas-conduits/files/2698379
-		GasConduits-1.12.2-1.2.0.jar:
-			https://minecraft.curseforge.com/projects/gas-conduits/files/2698336
-
-	Industrial Craft (went from industrialcraft-2-2.8.111-ex112.jar to industrialcraft-2-2.8.120-ex112.jar):
-		industrialcraft-2-2.8.120-ex112.jar:
-			https://minecraft.curseforge.com/projects/industrial-craft/files/2698415
-		industrialcraft-2-2.8.119-ex112.jar:
-			https://minecraft.curseforge.com/projects/industrial-craft/files/2698285
-		industrialcraft-2-2.8.118-ex112.jar:
-			https://minecraft.curseforge.com/projects/industrial-craft/files/2698098
-		industrialcraft-2-2.8.117-ex112.jar:
-			https://minecraft.curseforge.com/projects/industrial-craft/files/2697906
-		industrialcraft-2-2.8.116-ex112.jar:
-			https://minecraft.curseforge.com/projects/industrial-craft/files/2697274
-		industrialcraft-2-2.8.115-ex112.jar:
-			https://minecraft.curseforge.com/projects/industrial-craft/files/2697269
-		industrialcraft-2-2.8.112-ex112.jar:
-			https://minecraft.curseforge.com/projects/industrial-craft/files/2697125
-
-	Industrial Foregoing (went from industrialforegoing-1.12.2-1.12.10-234.jar to industrialforegoing-1.12.2-1.12.11-235.jar):
-		industrialforegoing-1.12.2-1.12.11-235.jar:
-			https://minecraft.curseforge.com/projects/industrial-foregoing/files/2693866
-
-	Integrated Dynamics (went from IntegratedDynamics-1.12.2-1.0.10.jar to IntegratedDynamics-1.12.2-1.0.11.jar):
-		IntegratedDynamics-1.12.2-1.0.11.jar:
-			https://minecraft.curseforge.com/projects/integrated-dynamics/files/2693691
-
-	JAOPCA (went from JAOPCA-1.12.2-2.2.8.100.jar to JAOPCA-1.12.2-2.2.8.101.jar):
-		JAOPCA-1.12.2-2.2.8.101.jar:
-			https://minecraft.curseforge.com/projects/jaopca/files/2695109
-
-	Just Enough Items (JEI) (went from jei_1.12.2-4.15.0.271.jar to jei_1.12.2-4.15.0.275.jar):
+	Just Enough Items (JEI) (went from jei_1.12.2-4.15.0.275.jar to jei_1.12.2-4.15.0.277.jar):
 		View changelog at:
-			https://minecraft.curseforge.com/projects/jei/files/2696286
+			https://minecraft.curseforge.com/projects/jei/files/2699252
 
-	Just Enough Resources (JER) (went from JustEnoughResources-1.12.2-0.9.0.52 to JustEnoughResources-1.12.2-0.9.0.53):
-		JustEnoughResources-1.12.2-0.9.0.53:
-			https://minecraft.curseforge.com/projects/just-enough-resources-jer/files/2693889
+	Mekanism (went from Mekanism-1.12.2-9.7.0.369.jar to Mekanism-1.12.2-9.7.1.371.jar):
+		Mekanism-1.12.2-9.7.1.371.jar:
+			https://minecraft.curseforge.com/projects/mekanism/files/2699534
 
-	LibVulpes (went from LibVulpes 1.12.2-0.4.0-53-UNSTABLE build -53 for 1.12.2 to LibVulpes 1.12.2-0.4.0-54-UNSTABLE build -54 for 1.12.2):
-		LibVulpes 1.12.2-0.4.0-54-UNSTABLE build -54 for 1.12.2:
-			https://minecraft.curseforge.com/projects/libvulpes/files/2696000
+	Mekanism Generators (went from MekanismGenerators-1.12.2-9.7.0.369.jar to MekanismGenerators-1.12.2-9.7.1.371.jar):
+		MekanismGenerators-1.12.2-9.7.1.371.jar:
+			https://minecraft.curseforge.com/projects/mekanism-generators/files/2699536
 
-	Mantle (went from Mantle-1.12-1.3.3.42.jar to Mantle-1.12-1.3.3.49.jar):
-		Mantle-1.12-1.3.3.49.jar:
-			https://minecraft.curseforge.com/projects/mantle/files/2693483
+	OpenBlocks (went from OpenBlocks-1.12.2-1.8.jar to OpenBlocks-1.12.2-1.8.1.jar):
+		OpenBlocks-1.12.2-1.8.1.jar:
+			https://minecraft.curseforge.com/projects/openblocks/files/2699056
 
-	ModTweaker (went from modtweaker-4.0.16 to modtweaker-4.0.17):
-		modtweaker-4.0.17:
-			https://minecraft.curseforge.com/projects/modtweaker/files/2693544
+	OpenModsLib (went from OpenModsLib-1.12.2-0.12.1.jar to OpenModsLib-1.12.2-0.12.2.jar):
+		OpenModsLib-1.12.2-0.12.2.jar:
+			https://minecraft.curseforge.com/projects/openmodslib/files/2699055
 
-	NotEnoughIDs (went from NotEnoughIDs-1.5.4.3 to NotEnoughIDs-1.5.4.4):
-		NotEnoughIDs-1.5.4.4:
-			https://minecraft.curseforge.com/projects/notenoughids/files/2695044
+	Phosphor (went from Phosphor 0.2.1 to Phosphor 0.2.2):
+		Phosphor 0.2.2:
+			https://minecraft.curseforge.com/projects/phosphor/files/2698698
 
-	NuclearCraft (went from NuclearCraft-2.14c-1.12.2 to NuclearCraft-2.15-1.12.2):
-		NuclearCraft-2.15-1.12.2:
-			https://minecraft.curseforge.com/projects/nuclearcraft-mod/files/2697472
-
-	Pam's HarvestCraft (went from Pam's HarvestCraft 1.12.2zb.jar to Pam's HarvestCraft 1.12.2zc The 7mm Kidney Stone Update.jar):
-		Pam's HarvestCraft 1.12.2zc The 7mm Kidney Stone Update.jar:
-			https://minecraft.curseforge.com/projects/pams-harvestcraft/files/2696248
-
-	Placebo (went from Placebo-1.12.2-1.5.1.jar to Placebo-1.12.2-1.6.0.jar):
-		Placebo-1.12.2-1.6.0.jar:
-			https://minecraft.curseforge.com/projects/placebo/files/2694382
-
-	Project Intelligence (went from ProjectIntelligence-1.12.2-1.0.2.16-universal to ProjectIntelligence-1.12.2-1.0.4.17-universal.jar):
-		ProjectIntelligence-1.12.2-1.0.4.17-universal.jar:
-			https://minecraft.curseforge.com/projects/project-intelligence/files/2696880
-
-	Psi (went from Psi-r1.1-72.jar to Psi-r1.1-73.jar):
-		Psi-r1.1-73.jar:
-			https://minecraft.curseforge.com/projects/psi/files/2698036
-
-	Random Things (went from RandomThings-MC1.12.2-4.2.7.jar to RandomThings-MC1.12.2-4.2.7.1.jar):
-		RandomThings-MC1.12.2-4.2.7.1.jar:
-			https://minecraft.curseforge.com/projects/random-things/files/2697894
-
-	Reborn Core (went from RebornCore-1.12.2-3.13.9.433-universal.jar to RebornCore-1.12.2-3.13.12.447-universal.jar):
-		RebornCore-1.12.2-3.13.12.447-universal.jar:
-			https://minecraft.curseforge.com/projects/reborncore/files/2697453
-		RebornCore-1.12.2-3.13.11.444-universal.jar:
-			https://minecraft.curseforge.com/projects/reborncore/files/2696841
-		RebornCore-1.12.2-3.13.10.441-universal.jar:
-			https://minecraft.curseforge.com/projects/reborncore/files/2695219
-
-	Spice of Life: Carrot Edition (went from solcarrot-1.12.2-1.6.2.jar to solcarrot-1.12.2-1.6.3.jar):
-		solcarrot-1.12.2-1.6.3.jar:
-			https://minecraft.curseforge.com/projects/spice-of-life-carrot-edition/files/2692785
-
-	Thaumic JEI (went from ThaumicJEI-1.12.2-1.5.5-23.jar to ThaumicJEI-1.12.2-1.5.8-26.jar):
-		ThaumicJEI-1.12.2-1.5.8-26.jar:
-			https://minecraft.curseforge.com/projects/thaumic-jei/files/2696428
-		ThaumicJEI-1.12.2-1.5.7-25.jar:
-			https://minecraft.curseforge.com/projects/thaumic-jei/files/2696415
-		ThaumicJEI-1.12.2-1.5.6-24.jar:
-			https://minecraft.curseforge.com/projects/thaumic-jei/files/2693893
-
-	Tinkers Construct (went from TConstruct-1.12.2-2.12.0.123.jar to TConstruct-1.12.2-2.12.0.135.jar):
-		TConstruct-1.12.2-2.12.0.135.jar:
-			https://minecraft.curseforge.com/projects/tinkers-construct/files/2693496
-
-	Tinkers' Complement (went from Tinkers' Complement 0.3.1 to Tinkers' Complement 0.3.2):
-		Tinkers' Complement 0.3.2:
-			https://minecraft.curseforge.com/projects/tinkers-complement/files/2694525
-		Tinkers' Complement 0.4.0:
-			https://minecraft.curseforge.com/projects/tinkers-complement/files/2693854
-
-Removed:
-	- Mekanica
-	- Mekanica: Generators
+	p455w0rd's Library (went from p455w0rdslib-1.12.2-2.0.36.jar to p455w0rdslib-1.12.2-2.1.44.jar):
+		p455w0rdslib-1.12.2-2.1.44.jar:
+			https://minecraft.curseforge.com/projects/p455w0rds-library/files/2699293
 
 * Generated using https://github.com/TheRandomLabs/ChangelogGenerator (1.12.2)
