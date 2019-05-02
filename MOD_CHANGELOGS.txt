@@ -1,4 +1,4 @@
-Enigmatica2ExpertSkyblock 1.27a to Enigmatica2ExpertSkyblock 1.28
+Enigmatica2ExpertSkyblock 1.27a to Enigmatica2ExpertSkyblock 1.28a
 
 Updated:
 	Advanced Rocketry (went from AdvancedRocketry 1.12.2-1.5.0-138-UNSTABLE build -138 for 1.12.2 to AdvancedRocketry 1.12.2-1.5.0-139-UNSTABLE build -139 for 1.12.2):

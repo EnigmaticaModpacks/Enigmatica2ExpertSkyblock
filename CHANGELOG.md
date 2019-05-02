@@ -1,5 +1,12 @@
 # Enigmatica 2: Expert Skyblock Changelog
 
+## [Unreleased](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/HEAD)
+
+**Fixed bugs:**
+
+- Weird hovering issue after update [\#507](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/507) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Bug)]
+
+## [1.28a](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.28a) (2019-04-30)
 **Implemented enhancements:**
 
 - Subtle Server Advertising [\#505](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/505) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Marker:%20Config)] [[Priority: High](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Priority:%20High)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Enhancement)]
