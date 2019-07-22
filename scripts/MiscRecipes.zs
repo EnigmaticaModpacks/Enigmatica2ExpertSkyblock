@@ -4,6 +4,9 @@ import mods.jei.JEI.removeAndHide as rh;
 # Custom recipes made by NillerMedDild, altered by Discomanco
 	print("--- loading MiscRecipes.zs ---");
 
+# Remove & Hide BoP Amber. I put it here because I'm lazy.
+	rh(<biomesoplenty:gem:7>);
+
 # Eclipsed Clock
 recipes.addShapedMirrored("Eclipsed Clock", 
 <randomthings:eclipsedclock>, 
