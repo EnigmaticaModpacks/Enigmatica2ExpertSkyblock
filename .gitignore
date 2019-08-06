@@ -90,3 +90,5 @@ OpenComputersMod-1.7.4.153-lua52-native.64.dll
 settings.ps1
 ModpackUploader.ps1
 ModpackUploader.bat
+TwitchExportBuilder.exe
+shortchangelog.txt
