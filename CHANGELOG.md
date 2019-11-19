@@ -1,6 +1,9 @@
 # Enigmatica 2: Expert Skyblock Changelog
 
-## [Unreleased](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/HEAD)
+## [1.30](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.30) (2019-11-19)
+
+**Implemented enhancements:**
+- Re-added /Dank/Null
 
 **Fixed bugs:**
 
@@ -10,25 +13,8 @@
 - NuclearCraft fission reactor port doesn't properly import or export fuels [\#516](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/516) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Mod%20Issue)]
 - Bug  [\#515](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/515) [[Marker: Quest](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Marker:%20Quest)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Bug)]
 - Black Hole Storage [\#499](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/499) [[Marker: Quest](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Marker:%20Quest)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Bug)]
-- EnderIO Limited Item Filters broken [\#478](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/478) [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Priority:%20Low)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Mod%20Issue)]
-- Wrong NBT tags - Packets too big and/or unsupported [\#441](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/441) [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Mod%20Issue)]
-- Extra Cells Universal  [\#333](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/333) [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Mod%20Issue)]
-
-**Closed issues:**
-
-- Torch hack for other planets [\#504](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/504)
-- Load DefaultQuests [\#497](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/497) [[Type: Maintenance](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Maintenance)]
-- Buckets being voided [\#473](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/473)
-
-## [1.31](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.31) (2019-11-15)
-**Implemented enhancements:**
-
-- Disabled Mekanism WalkieTalkie Server [\#524](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/524) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Marker:%20Config)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Enhancement)]
-- \[Suggestion\] Overloaded Armor Bar and Armor Toughness Bar [\#513](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/513) [[Marker: Mod](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Marker:%20Mod)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Suggestion)]
-
-**Fixed bugs:**
-
 - CC: Tweaked Peripherals [\#498](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/498) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Mod%20Issue)]
+- EnderIO Limited Item Filters broken [\#478](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/478) [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Priority:%20Low)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Mod%20Issue)]
 
 **Merged pull requests:**
 
