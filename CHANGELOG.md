@@ -1,6 +1,6 @@
 # Enigmatica 2: Expert Skyblock Changelog
 
-## [1.30](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.30) (2019-11-19)
+## [1.31](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.31) (2019-11-19)
 
 **Implemented enhancements:**
 - Re-added /Dank/Null
