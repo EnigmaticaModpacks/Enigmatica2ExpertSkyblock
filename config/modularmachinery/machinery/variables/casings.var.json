@@ -35,11 +35,6 @@
         "modularmachinery:blockoutputbus@5"
     ],
 	
-	"casings_botania": [
-		"modulardiversity:blockmanainputhatch",
-		"modulardiversity:blockmanaoutputhatch"
-	],
-	
 	"casings": [
 		"modularmachinery:blockcasing@0",
 		"thermalfoundation:glass@6"

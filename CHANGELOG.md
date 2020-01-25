@@ -1,8 +1,28 @@
 # Enigmatica 2: Expert Skyblock Changelog
 
-## [1.31](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.31) (2019-11-19)
+## [1.33](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.33) 
+*Using Forge-1.12.2-14.23.5.2847*
+
+**Changes:**
+
+- Updated a bunch of mods.
+
+**Fixed bugs:**
+
+- Fixed Quest party sync issues, by updating Better Questing
+
+## [1.32](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.32) 
+*Using Forge-1.12.2-14.23.5.2847*
+
+**Fixed bugs:**
+
+- Fixed instability caused by outdated RandomPatches version
+- Crash with EU2 and Random Patches [\#532](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/532)
+
+## [1.31](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.31) 
 
 **Implemented enhancements:**
+
 - Re-added /Dank/Null
 
 **Fixed bugs:**
@@ -20,7 +40,7 @@
 
 - Update DefaultQuests.json [\#523](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/pull/523) ([Basedgod199](https://github.com/Basedgod199))
 
-## [1.30](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.30) (2019-07-22)
+## [1.30](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.30) 
 **Implemented enhancements:**
 
 - EnderIO protectAgainstEnergyOverflow Set to Soft [\#510](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/510) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Marker:%20Config)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Enhancement)]
@@ -33,18 +53,18 @@
 - Chunk Load Thrashing [\#511](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/511) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Bug)]
 - JAOPCA needs update to support newest version of Sky Compression [\#509](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/509) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Mod%20Issue)]
 
-## [1.29](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.29) (2019-05-02)
+## [1.29](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.29) 
 **Fixed bugs:**
 
 - Weird hovering issue after update [\#507](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/507) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Status:%20Completed)] [[Type: Bug](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Bug)]
 
-## [1.28a](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.28a) (2019-04-30)
+## [1.28a](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.28a) 
 **Implemented enhancements:**
 
 - Subtle Server Advertising [\#505](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/505) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Marker:%20Config)] [[Priority: High](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Priority:%20High)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Enhancement)]
 - Akashic Tome Additions [\#502](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/502) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Marker:%20Config)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Priority:%20Low)] [[Type: Suggestion](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Suggestion)]
 
-## [1.28](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.28) (2019-04-18)
+## [1.28](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.28) 
 **Fixed bugs:**
 
 - Nether Crash [\#495](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/495) [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Status:%20Completed)] [[Type: Mod Issue](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Mod%20Issue)]
@@ -53,7 +73,7 @@
 
 - Update DefaultQuests.json [\#496](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/pull/496) ([Discomanco](https://github.com/Discomanco))
 
-## [1.27](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.27) (2019-04-14)
+## [1.27](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.27) 
 **Implemented enhancements:**
 
 - Swap ComputerCraft with CC:Tweaked [\#493](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/493) [[Marker: Mod](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Marker:%20Mod)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Enhancement)]
@@ -72,7 +92,7 @@
 - Run /bq\_admin default load for Band of Mana update [\#492](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/492) [[Type: Maintenance](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Maintenance)]
 - Move Black Hole Controller Recipe to new Black Hole Controller [\#490](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/490) [[Marker: Script](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Marker:%20Script)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Priority:%20Low)]
 
-## [1.26](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.26) (2019-04-11)
+## [1.26](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.26) 
 **Implemented enhancements:**
 
 - RFTools spawner not spawning Modded creatures [\#484](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/484) [[Marker: Config](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Marker:%20Config)] [[Priority: Low](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Priority:%20Low)] [[Status: Completed](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Status:%20Completed)] [[Type: Enhancement](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/labels/Type:%20Enhancement)]
