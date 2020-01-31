@@ -1,5 +1,12 @@
 # Enigmatica 2: Expert Skyblock Changelog
 
+## [1.34](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.34) 
+*Using Forge-1.12.2-14.23.5.2847*
+
+**Changes:**
+
+- Set NuclearCraft RF to EU conversion to 4:1, disabling infinite looping (Discomanco) 
+
 ## [1.33](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.33) 
 *Using Forge-1.12.2-14.23.5.2847*
 
