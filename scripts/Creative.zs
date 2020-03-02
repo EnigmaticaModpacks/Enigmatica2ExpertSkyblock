@@ -14,7 +14,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	var blockAwakended = <ore:blockDraconiumAwakened>;
 	var draconicEnergyCore = <draconicevolution:draconic_energy_core>;
 	var rtgFuel = <ic2:nuclear:10>;
-	var dilithium = <ore:crystalDilithium>;
+	var dilithium = <ore:gemDilithium>;
 	var anglesite = <bigreactors:minerals>;
 	var benitoite = <bigreactors:minerals:1>;
 	var ingotMirion = <ore:ingotMirion>;
