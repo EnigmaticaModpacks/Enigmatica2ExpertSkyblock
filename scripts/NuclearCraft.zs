@@ -2,6 +2,9 @@ import mods.jei.JEI.removeAndHide as rh;
 #modloaded nuclearcraft
 print("--- loading NuclearCraft.zs ---");
 
+# Removing an Obsidian dupe
+	mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:obsidian>);
+
 # Rhodochrosite
 	mods.actuallyadditions.AtomicReconstructor.addRecipe(<nuclearcraft:gem>, <contenttweaker:ruby>, 15000);
 
