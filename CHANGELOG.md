@@ -1,17 +1,5 @@
 # Enigmatica 2: Expert Skyblock Changelog
 
-## 1.35
-
-*Using Forge-1.12.2-14.23.5.2847*
-
-**Changes:**
-
-- 
-
-**Bug fixes:**
-
-* 
-
 ## [1.34](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.34) 
 
 *Using Forge-1.12.2-14.23.5.2847*
@@ -19,6 +7,12 @@
 **Changes:**
 
 - Set NuclearCraft RF to EU conversion to 4:1, disabling infinite looping (Discomanco) 
+
+**Bug fixes**
+
+* Dilithium oredict doesn't match Creative Powercell recipe [\#541](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/541)
+* no way to get olives to get bee attracter (Market now sells Olive Saplings) [\#539](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/539)
+* Obsidian Exploit [\#538](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/538)
 
 ## [1.33](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.33) 
 *Using Forge-1.12.2-14.23.5.2847*

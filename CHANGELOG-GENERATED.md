@@ -4,11 +4,23 @@
 
 **Fixed bugs:**
 
+- Dilithium oredict doesn't match Creative Powercell recipe [\#541](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/541)
+
+## [1.34](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.34) (2020-03-02)
+**Implemented enhancements:**
+
+- Update nuclearcraft.cfg [\#536](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/pull/536) ([Discomanco](https://github.com/Discomanco))
+
+**Fixed bugs:**
+
+- no way to get olives to get bee attracter [\#539](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/539)
+- Posible Obsidian Exploit [\#538](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/538)
 - Crash with EU2 and Random Patches [\#532](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/532)
 - A few issues updating pack from 1.30 to 1.31 [\#529](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/529)
 
-## [1.31a](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.31a) (2019-11-22)
 ## [1.31b](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.31b) (2019-11-22)
+## [1.31a](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.31a) (2019-11-22)
+## [1.33](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.33) (2019-11-22)
 ## [1.32](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.32) (2019-11-22)
 **Fixed bugs:**
 
