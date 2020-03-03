@@ -1,11 +1,22 @@
 # Enigmatica 2: Expert Skyblock Changelog
 
+## [1.34a](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.34a) 
+
+*Using Forge-1.12.2-14.23.5.2847*
+
+Use the command `/bq_admin default load` after updating
+
+**Bug fixes**
+
+* Some Mekanism quests being impossible to complete (Credit [Preladon](https://github.com/Preladon))
+
 ## [1.34](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.34) 
 
 *Using Forge-1.12.2-14.23.5.2847*
 
 **Changes:**
 
+- Replaced Super Sound Muffler mod with it's revival edition. It's the same mod re-uploaded, so nothing really changed.
 - Set NuclearCraft RF to EU conversion to 4:1, disabling infinite looping (Discomanco) 
 
 **Bug fixes**

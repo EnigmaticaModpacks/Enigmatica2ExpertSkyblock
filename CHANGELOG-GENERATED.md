@@ -1,10 +1,13 @@
 # Enigmatica 2: Expert Skyblock Changelog
 
-## [Unreleased](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/HEAD)
+## [1.34a](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.34a) (2020-03-03)
+**Implemented enhancements:**
 
-**Fixed bugs:**
+- Fix \#543 which copies the fix done to the non-skyblock version of the pack [\#544](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/pull/544) ([Preladon](https://github.com/Preladon))
 
-- Dilithium oredict doesn't match Creative Powercell recipe [\#541](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/541)
+**Closed issues:**
+
+- Some Mekanism quests are not completable [\#543](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/543)
 
 ## [1.34](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.34) (2020-03-02)
 **Implemented enhancements:**
@@ -13,15 +16,16 @@
 
 **Fixed bugs:**
 
+- Dilithium oredict doesn't match Creative Powercell recipe [\#541](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/541)
 - no way to get olives to get bee attracter [\#539](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/539)
 - Posible Obsidian Exploit [\#538](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/538)
 - Crash with EU2 and Random Patches [\#532](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/532)
 - A few issues updating pack from 1.30 to 1.31 [\#529](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/529)
 
-## [1.31b](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.31b) (2019-11-22)
 ## [1.31a](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.31a) (2019-11-22)
 ## [1.33](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.33) (2019-11-22)
 ## [1.32](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.32) (2019-11-22)
+## [1.31b](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.31b) (2019-11-22)
 **Fixed bugs:**
 
 - Airtight Seal is uncraftable [\#525](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/525)
@@ -77,52 +81,6 @@
 
 - Subtle Server Advertising [\#505](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/505)
 - Akashic Tome Additions [\#502](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/502)
-
-## [1.28](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.28) (2019-04-18)
-**Fixed bugs:**
-
-- Nether Crash [\#495](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/495)
-
-**Merged pull requests:**
-
-- Update DefaultQuests.json [\#496](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/pull/496) ([Discomanco](https://github.com/Discomanco))
-
-## [1.27](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.27) (2019-04-14)
-**Implemented enhancements:**
-
-- Swap ComputerCraft with CC:Tweaked [\#493](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/493)
-- Swap Mekanica with Mekanism [\#488](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/488)
-
-**Fixed bugs:**
-
-- Automated User uncraftable [\#494](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/494)
-- Keybinding For Fullscreen - Disabled Fullscreen Borderless by default, can be changed by the player [\#491](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/491)
-- Band of Mana quest not completing [\#489](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/489)
-- JEI says destabilised redstone available on Europa, but it isn't [\#487](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/487)
-- Tinker I/O bug [\#477](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/477)
-
-**Closed issues:**
-
-- Run /bq\_admin default load for Band of Mana update [\#492](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/492)
-- Move Black Hole Controller Recipe to new Black Hole Controller [\#490](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/490)
-
-## [1.26](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.26) (2019-04-11)
-**Implemented enhancements:**
-
-- RFTools spawner not spawning Modded creatures [\#484](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/484)
-- Feature request Mekanism Chemical Infuser [\#482](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/482)
-- Quark Cave Crystal UU-Matter Values [\#475](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/475)
-- Fullscreen Windowed \(Borderless\) for Minecraft [\#474](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/474)
-- Phosphor [\#472](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/472)
-
-**Fixed bugs:**
-
-- Applied Energestics 2 cable facades cannot be crafted with certain Chisel factory blocks [\#486](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/486)
-- Unable to craft creative builders wand [\#485](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/485)
-- Can't get vanilla Mooshroom for peaceful rftools env controller upgrade [\#483](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/483)
-- NuclearCraft Tinkers' Construct Integration [\#481](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/481)
-- Creative gas tank recipe needs 512000/32000 tanks? [\#480](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/480)
-- Integrated dynamics named cards [\#468](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/468)
 
 
 
