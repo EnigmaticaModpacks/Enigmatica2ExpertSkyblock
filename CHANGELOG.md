@@ -1,5 +1,15 @@
 # Enigmatica 2: Expert Skyblock Changelog
 
+## [1.35](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.35) 
+
+*Using Forge-1.12.2-14.23.5.2847*
+
+**Changes**
+
+* Disabled NuclearCraft Radition Shielding recipes for Armor
+* Actually added Super Sound Muffler: Revived (sorry about that)
+* Re-added Obsidian -> Liquid Obsidian Melter recipes, the output is 144mb down from 288mb 
+
 ## [1.34a](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.34a) 
 
 *Using Forge-1.12.2-14.23.5.2847*
