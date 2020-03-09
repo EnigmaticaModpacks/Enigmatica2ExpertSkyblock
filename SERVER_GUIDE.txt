@@ -24,9 +24,8 @@
 
 ## Getting Started
 
-Use the "/island" command to get started. In most cases you will only need "/island create"
-
-The /island command has many sub-commands.
+Every new player automatically spawns on a newly created island when they join the server.
+To interact with islands, you can use the following commands, that all start with /island
 
     create (optional int/string)[type] - The create command creates a new island in the world.
     invite [player] - The invite command asks another player join your island.
