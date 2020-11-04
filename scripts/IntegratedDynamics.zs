@@ -26,7 +26,7 @@ print("--- loading IntegratedDynamics.zs ---");
 	recipes.addShapedMirrored("IntegratedDynamics Generator", 
 	<integrateddynamics:coal_generator>, 
 	[[<integrateddynamics:crystalized_menril_chunk>, <ic2:te:46>, <integrateddynamics:crystalized_menril_chunk>],
-	[<integrateddynamics:crystalized_menril_block>, <integrateddynamics:energy_battery>.anyDamage(), <integrateddynamics:crystalized_menril_block>], 
+	[<integrateddynamics:crystalized_menril_block>, <integrateddynamics:energy_battery>.withTag({}), <integrateddynamics:crystalized_menril_block>], 
 	[<integrateddynamics:crystalized_menril_chunk>, <ic2:te:46>, <integrateddynamics:crystalized_menril_chunk>]]);
 
 # Mechanical Squeezer
@@ -34,7 +34,7 @@ print("--- loading IntegratedDynamics.zs ---");
 	recipes.addShapedMirrored("IntegratedDynamics Mechanical Squeezer", 
 	<integrateddynamics:mechanical_squeezer>, 
 	[[<ore:dustDiamond>, <integrateddynamics:squeezer>, <ore:dustDiamond>],
-	[<integrateddynamics:energy_battery>.anyDamage(), <integrateddynamics:squeezer>, <integrateddynamics:energy_battery>.anyDamage()], 
+	[<integrateddynamics:energy_battery>.withTag({}), <integrateddynamics:squeezer>, <integrateddynamics:energy_battery>.withTag({})], 
 	[<ore:plateObsidian>, <integrateddynamics:squeezer>, <ore:plateObsidian>]]);
 
 # Mechanical Drying Basin
@@ -42,7 +42,7 @@ print("--- loading IntegratedDynamics.zs ---");
 	recipes.addShapedMirrored("IntegratedDynamics Mechanical Drying Basin", 
 	<integrateddynamics:mechanical_drying_basin>, 
 	[[<ore:plateObsidian>, <integrateddynamics:drying_basin>, <ore:plateObsidian>],
-	[<integrateddynamics:energy_battery>.anyDamage(), <integrateddynamics:drying_basin>, <integrateddynamics:energy_battery>.anyDamage()], 
+	[<integrateddynamics:energy_battery>.withTag({}), <integrateddynamics:drying_basin>, <integrateddynamics:energy_battery>.withTag({})], 
 	[<ore:plateObsidian>, <integrateddynamics:drying_basin>, <ore:plateObsidian>]]);
 
 	
