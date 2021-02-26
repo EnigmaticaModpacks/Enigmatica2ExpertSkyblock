@@ -5419,7 +5419,7 @@
           "ismain:1": 1,
           "repeat_relative:1": 1,
           "name:8": "Advanced Machine Casing",
-          "desc:8": "This is a crafting ingredient needed to craft higher tier Industrialcraft machines, aswell as being the main ingredient in the§4 Industrial Foregoing§0 Machine Case."
+          "desc:8": "This is a crafting ingredient needed to craft higher tier Industrialcraft machines, as well as being the main ingredient in the§4 Industrial Foregoing§0 Machine Case."
         }
       },
       "tasks:9": {
@@ -9178,7 +9178,7 @@
           "ismain:1": 1,
           "repeat_relative:1": 1,
           "name:8": "Empowerer",
-          "desc:8": "The Empowerer is a crafting mechanic. You\u0027ll need to place the Display Stands with 2 blocks between them and the Empowerer, in all 4 cardinal directions.\n\nThe Display Stands require power for the Empowerer to function.\n\nEach Display Stand needs a ingredient, and the Empowerer takes one aswell.\n\nThe crafting process automatically begins if 4 correct ingredients and the corresponding Empowerer item is supplied."
+          "desc:8": "The Empowerer is a crafting mechanic. You\u0027ll need to place the Display Stands with 2 blocks between them and the Empowerer, in all 4 cardinal directions.\n\nThe Display Stands require power for the Empowerer to function.\n\nEach Display Stand needs a ingredient, and the Empowerer takes one as well.\n\nThe crafting process automatically begins if 4 correct ingredients and the corresponding Empowerer item is supplied."
         }
       },
       "tasks:9": {
@@ -12748,7 +12748,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Mekanism",
-          "desc:8": "Welcome to Mekanism!\n\nMekanism is a tier 2 tech mod, with tons of content. It offers some of the fastest machines, near infinite energy storage, insanely powerful generators and a lot more.\n\nThe recipes haven\u0027t been altered much, the energy usage of most machines is far higher than normally though.\n\nThis chapter leads to the Heavy Machinery from Immersive Engineering, aswell as Thermal Expansion."
+          "desc:8": "Welcome to Mekanism!\n\nMekanism is a tier 2 tech mod, with tons of content. It offers some of the fastest machines, near infinite energy storage, insanely powerful generators and a lot more.\n\nThe recipes haven\u0027t been altered much, the energy usage of most machines is far higher than normally though.\n\nThis chapter leads to the Heavy Machinery from Immersive Engineering, as well as Thermal Expansion."
         }
       },
       "tasks:9": {
@@ -16427,7 +16427,7 @@
           "ismain:1": 1,
           "repeat_relative:1": 1,
           "name:8": "Fluid Transposer",
-          "desc:8": "The Fluid Transposer can fill/empty tanks and buckets, aswell as some items. It\u0027s used extensively through that pack - Some custom recipes will require you to upgrade it."
+          "desc:8": "The Fluid Transposer can fill/empty tanks and buckets, as well as some items. It\u0027s used extensively through that pack - Some custom recipes will require you to upgrade it."
         }
       },
       "tasks:9": {
@@ -20003,7 +20003,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Screens",
-          "desc:8": "Screens are able to display a whole bunch of cool things, aswell as manage redstone remotely, call elevators, and more.\n\nSee the RFTools manual for details."
+          "desc:8": "Screens are able to display a whole bunch of cool things, as well as manage redstone remotely, call elevators, and more.\n\nSee the RFTools manual for details."
         }
       },
       "tasks:9": {
@@ -31548,7 +31548,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Electric Arc Furnace",
-          "desc:8": "The Electric Arc Furnace is a big multiblock machine that can heat things a lot using RF.\n\nFollow the blueprint provided by the Holo-Projector to assemble it. There are 11 blocks in total in the structure where Input or Output Hatches can be placed, otherwise you\u0027ll need to put Heatproof Bricks. The requirements on this quest is the minimum of 1 Input and 1 Output Hatch, with the rest being Bricks.\n\nOnce built, right click the Electric Arc Furnace block once to finish it, then another time to open its UI. Turn on the machine using the switch on the top left and you can now use it.\n\nTo use it, put your input in the Input Hatch, check the progress in the Electric Arc Furnace block, then get your outputs from the Output Hatch. Most machines from this mod behave in similar way so be sure to remember it.\n\nThe main use of this Furnace is to make Steel from Iron and Charcoal, Titanium from Rutile Ore and Silicon Ingots from Sand. All of them are used in several crafting recipes later on. All of these items can be obtained through other means aswell."
+          "desc:8": "The Electric Arc Furnace is a big multiblock machine that can heat things a lot using RF.\n\nFollow the blueprint provided by the Holo-Projector to assemble it. There are 11 blocks in total in the structure where Input or Output Hatches can be placed, otherwise you\u0027ll need to put Heatproof Bricks. The requirements on this quest is the minimum of 1 Input and 1 Output Hatch, with the rest being Bricks.\n\nOnce built, right click the Electric Arc Furnace block once to finish it, then another time to open its UI. Turn on the machine using the switch on the top left and you can now use it.\n\nTo use it, put your input in the Input Hatch, check the progress in the Electric Arc Furnace block, then get your outputs from the Output Hatch. Most machines from this mod behave in similar way so be sure to remember it.\n\nThe main use of this Furnace is to make Steel from Iron and Charcoal, Titanium from Rutile Ore and Silicon Ingots from Sand. All of them are used in several crafting recipes later on. All of these items can be obtained through other means as well."
         }
       },
       "tasks:9": {
@@ -32120,7 +32120,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Rolling Machine",
-          "desc:8": "The Rolling Machine is a multiblock machine that uses RF and Water to make Plates much more efficiently than the Small Plate Presser.\n\nIts other uses include the ability to craft Sheets of various materials, aswell as Pressure Tanks that allow to easily transport higher quantities of fluid than Buckets.\n\nIt is recommended to make this machine early to cut down the metal cost of crafting the various components required by other machines."
+          "desc:8": "The Rolling Machine is a multiblock machine that uses RF and Water to make Plates much more efficiently than the Small Plate Presser.\n\nIts other uses include the ability to craft Sheets of various materials, as well as Pressure Tanks that allow to easily transport higher quantities of fluid than Buckets.\n\nIt is recommended to make this machine early to cut down the metal cost of crafting the various components required by other machines."
         }
       },
       "tasks:9": {
@@ -36984,7 +36984,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Alloy Furnace",
-          "desc:8": "The Alloy Furnace is used to make alloys, aswell as being a crafting component in the recipe for a bunch of other machines."
+          "desc:8": "The Alloy Furnace is used to make alloys, as well as being a crafting component in the recipe for a bunch of other machines."
         }
       },
       "tasks:9": {
