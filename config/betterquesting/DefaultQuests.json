@@ -990,7 +990,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Gate: Mystical Agriculture",
-          "desc:8": "There is no chapter for Mystical Agriculture.\n\nYou only have to make one of the Crystals to complete the quest, you choose which.\n\nThe Master Infusion Crystal requires items from Astral Sorcery and Botania, and has unlimited uses.\n\nThe normal Infusion Crystal requires items from The End or Botania, aswell as Thermal Expansion. It only has 25 uses."
+          "desc:8": "There is no chapter for Mystical Agriculture.\n\nYou only have to make one of the Crystals to complete the quest, you choose which.\n\nThe Master Infusion Crystal requires items from Astral Sorcery and Botania, and has unlimited uses.\n\nThe normal Infusion Crystal requires items from The End or Botania, as well as Thermal Expansion. It only has 25 uses."
         }
       },
       "tasks:9": {
@@ -2901,7 +2901,7 @@
           "ismain:1": 1,
           "repeat_relative:1": 1,
           "name:8": "Welcome",
-          "desc:8": "Welcome to Enigmatica 2: Expert! This modpack is designed to challenge the player through various means, especially harder recipes. I advice that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nCheck the checkbox to get your starterkit.§d§d§0 \n\nI suggest you make a Backpack out of the Tanned Leather \u0026 Wooden Frame.\n\nGood luck!§0"
+          "desc:8": "Welcome to Enigmatica 2: Expert! This modpack is designed to challenge the player through various means, especially harder recipes. I advise that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nCheck the checkbox to get your starterkit.§d§d§0 \n\nI suggest you make a Backpack out of the Tanned Leather \u0026 Wooden Frame.\n\nGood luck!§0"
         }
       },
       "tasks:9": {
@@ -3741,7 +3741,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Copper",
-          "desc:8": "Copper is gained through Alchemy and Condensor"
+          "desc:8": "Copper is gained through Alchemy and Condenser"
         }
       },
       "tasks:9": {
@@ -3915,7 +3915,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Iron",
-          "desc:8": "Iron is gained through Alchemy and Condensor"
+          "desc:8": "Iron is gained through Alchemy and Condenser"
         }
       },
       "tasks:9": {
@@ -4056,7 +4056,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Lead",
-          "desc:8": "Lead is gained through Alchemy and Condensor"
+          "desc:8": "Lead is gained through Alchemy and Condenser"
         }
       },
       "tasks:9": {
@@ -4137,7 +4137,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Osmium",
-          "desc:8": "Osmium is gained through Alchemy and Condensor"
+          "desc:8": "Osmium is gained through Alchemy and Condenser"
         }
       },
       "tasks:9": {
@@ -4306,7 +4306,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Cobalt and Ardite",
-          "desc:8": "Cobalt and Ardite is gained through Alchemy and Condensor"
+          "desc:8": "Cobalt and Ardite is gained through Alchemy and Condenser"
         }
       },
       "tasks:9": {
@@ -5005,7 +5005,7 @@
           "ismain:1": 1,
           "repeat_relative:1": 1,
           "name:8": ".. to Skyblock!",
-          "desc:8": "Welcome, once again, to Enigmatica 2: Expert, this time in Skyblock mode!\nThis is more or less a direct port of Enigmatica 2: Expert. Not many recipies has changed, and not much has been altered either.\n\nThis Skyblock does not focus a ton on the element of being a Skyblock. \nThe choice of start is Sky Resources 2. There will be a few quests to help you get started, otherwise §l§6§l§c§b§a§7§0§1§2§lyou can check the Ingame Guide, by using the default keybind of \"G\".§r\n\nAnd just as a tip: Ex Nihilo is still in the pack, and although the sieves are gated, the rest of the mod is not. The quests won\u0027t reflect that.\n\nGood luck, and have fun!"
+          "desc:8": "Welcome, once again, to Enigmatica 2: Expert, this time in Skyblock mode!\nThis is more or less a direct port of Enigmatica 2: Expert. Not many recipes have changed, and not much has been altered either.\n\nThis Skyblock does not focus a ton on the element of being a Skyblock. \nThe choice of start is Sky Resources 2. There will be a few quests to help you get started, otherwise §l§6§l§c§b§a§7§0§1§2§lyou can check the Ingame Guide, by using the default keybind of \"G\".§r\n\nAnd just as a tip: Ex Nihilo is still in the pack, and although the sieves are gated, the rest of the mod is not. The quests won\u0027t reflect that.\n\nGood luck, and have fun!"
         }
       },
       "tasks:9": {
@@ -5419,7 +5419,7 @@
           "ismain:1": 1,
           "repeat_relative:1": 1,
           "name:8": "Advanced Machine Casing",
-          "desc:8": "This is a crafting ingredient needed to craft higher tier Industrialcraft machines, aswell as being the main ingredient in the§4 Industrial Foregoing§0 Machine Case."
+          "desc:8": "This is a crafting ingredient needed to craft higher tier Industrialcraft machines, as well as being the main ingredient in the§4 Industrial Foregoing§0 Machine Case."
         }
       },
       "tasks:9": {
@@ -8299,7 +8299,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "GP Generation I",
-          "desc:8": "You only have to obtain 9 Solar Panels OR 1 Manual Mill to complete this quest.\n\nExtra Utilities uses a form of power called Grid Power, to power upgrades and the Angel Ring. It doesn\u0027t consume any ressources, it\u0027s passive power. The Manual Mill requires you to right-click it to produce GP, and the Solar Panels only requires the sun."
+          "desc:8": "You only have to obtain 9 Solar Panels OR 1 Manual Mill to complete this quest.\n\nExtra Utilities uses a form of power called Grid Power, to power upgrades and the Angel Ring. It doesn\u0027t consume any resources, it\u0027s passive power. The Manual Mill requires you to right-click it to produce GP, and the Solar Panels only requires the sun."
         }
       },
       "tasks:9": {
@@ -9178,7 +9178,7 @@
           "ismain:1": 1,
           "repeat_relative:1": 1,
           "name:8": "Empowerer",
-          "desc:8": "The Empowerer is a crafting mechanic. You\u0027ll need to place the Display Stands with 2 blocks between them and the Empowerer, in all 4 cardinal directions.\n\nThe Display Stands require power for the Empowerer to function.\n\nEach Display Stand needs a ingredient, and the Empowerer takes one aswell.\n\nThe crafting process automatically begins if 4 correct ingredients and the corresponding Empowerer item is supplied."
+          "desc:8": "The Empowerer is a crafting mechanic. You\u0027ll need to place the Display Stands with 2 blocks between them and the Empowerer, in all 4 cardinal directions.\n\nThe Display Stands require power for the Empowerer to function.\n\nEach Display Stand needs a ingredient, and the Empowerer takes one as well.\n\nThe crafting process automatically begins if 4 correct ingredients and the corresponding Empowerer item is supplied."
         }
       },
       "tasks:9": {
@@ -10356,7 +10356,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Upgrades",
-          "desc:8": "A lot of the Industrial Foregoing machines can upgraded. The default range is very low, so most machines will need upgrades."
+          "desc:8": "A lot of the Industrial Foregoing machines can be upgraded. The default range is very low, so most machines will need upgrades."
         }
       },
       "tasks:9": {
@@ -12177,7 +12177,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Telescope",
-          "desc:8": "The Telescope is basicly an upgraded, stationary version of the Looking Glass."
+          "desc:8": "The Telescope is basically an upgraded, stationary version of the Looking Glass."
         }
       },
       "tasks:9": {
@@ -12333,7 +12333,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Celestial Crystals",
-          "desc:8": "Celestial Crystals are basicly upgraded Rock Crystals. They\u0027re made by throwing 1 Stardust and 1 Rock Crystal into a bucket of Starlight. Let the Crystal that appears grow before you destroy it with a pickaxe."
+          "desc:8": "Celestial Crystals are basically upgraded Rock Crystals. They\u0027re made by throwing 1 Stardust and 1 Rock Crystal into a bucket of Starlight. Let the Crystal that appears grow before you destroy it with a pickaxe."
         }
       },
       "tasks:9": {
@@ -12748,7 +12748,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Mekanism",
-          "desc:8": "Welcome to Mekanism!\n\nMekanism is a tier 2 tech mod, with tons of content. It offers some of the fastest machines, near infinite energy storage, insanely powerful generators and a lot more.\n\nThe recipes haven\u0027t been altered much, the energy usage of most machines is far higher than normally though.\n\nThis chapter leads to the Heavy Machinery from Immersive Engineering, aswell as Thermal Expansion."
+          "desc:8": "Welcome to Mekanism!\n\nMekanism is a tier 2 tech mod, with tons of content. It offers some of the fastest machines, near infinite energy storage, insanely powerful generators and a lot more.\n\nThe recipes haven\u0027t been altered much, the energy usage of most machines is far higher than normally though.\n\nThis chapter leads to the Heavy Machinery from Immersive Engineering, as well as Thermal Expansion."
         }
       },
       "tasks:9": {
@@ -15513,7 +15513,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Electrolytic Seperator",
-          "desc:8": "The Electrolytic Seperator seperates fluids into their components via electrolysis. This is how you get gases such as Oxygen and Hydrogen.\n\nIt\u0027s sided in such a way, that you have to get the gas into the left tank from the left side of the machine, right tank from the right side, and output tank from the front."
+          "desc:8": "The Electrolytic Seperator separates fluids into their components via electrolysis. This is how you get gases such as Oxygen and Hydrogen.\n\nIt\u0027s sided in such a way, that you have to get the gas into the left tank from the left side of the machine, right tank from the right side, and output tank from the front."
         }
       },
       "tasks:9": {
@@ -16427,7 +16427,7 @@
           "ismain:1": 1,
           "repeat_relative:1": 1,
           "name:8": "Fluid Transposer",
-          "desc:8": "The Fluid Transposer can fill/empty tanks and buckets, aswell as some items. It\u0027s used extensively through that pack - Some custom recipes will require you to upgrade it."
+          "desc:8": "The Fluid Transposer can fill/empty tanks and buckets, as well as some items. It\u0027s used extensively through that pack - Some custom recipes will require you to upgrade it."
         }
       },
       "tasks:9": {
@@ -20003,7 +20003,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Screens",
-          "desc:8": "Screens are able to display a whole bunch of cool things, aswell as manage redstone remotely, call elevators, and more.\n\nSee the RFTools manual for details."
+          "desc:8": "Screens are able to display a whole bunch of cool things, as well as manage redstone remotely, call elevators, and more.\n\nSee the RFTools manual for details."
         }
       },
       "tasks:9": {
@@ -24506,7 +24506,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Cursed Earth",
-          "desc:8": "Cursed Earth is made by right-clicking Dirt or Grass with a Drop of Evil, which is a rare drop from Wither Skeletons.\n\nCursed Earth will drastically increase the spawn rate of monsters on it, and the monsters that spawn will be extra strong and aggresive. Light completely stops the spawning, and the spread of it."
+          "desc:8": "Cursed Earth is made by right-clicking Dirt or Grass with a Drop of Evil, which is a rare drop from Wither Skeletons.\n\nCursed Earth will drastically increase the spawn rate of monsters on it, and the monsters that spawn will be extra strong and aggressive. Light completely stops the spawning, and the spread of it."
         }
       },
       "tasks:9": {
@@ -24784,7 +24784,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Enchanter",
-          "desc:8": "The Enchanter is used to create various materials.\n\nIt §2§0requires §0§2§0power and enchantment boosting blocks, equal to atleast 15 enchanting levels, nearby§0. \n\n§3§2§1§4§5§8§9§9§215 Bookshelves would do the trick."
+          "desc:8": "The Enchanter is used to create various materials.\n\nIt §2§0requires §0§2§0power and enchantment boosting blocks, equal to at least 15 enchanting levels, nearby§0. \n\n§3§2§1§4§5§8§9§9§215 Bookshelves would do the trick."
         }
       },
       "tasks:9": {
@@ -31548,7 +31548,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Electric Arc Furnace",
-          "desc:8": "The Electric Arc Furnace is a big multiblock machine that can heat things a lot using RF.\n\nFollow the blueprint provided by the Holo-Projector to assemble it. There are 11 blocks in total in the structure where Input or Output Hatches can be placed, otherwise you\u0027ll need to put Heatproof Bricks. The requirements on this quest is the minmum of 1 Input and 1 Output Hatch, with the rest being Bricks.\n\nOnce built, right click the Electric Arc Furnace block once to finish it, then another time to open its UI. Turn on the machine using the switch on the top left and you can now use it.\n\nTo use it, put your input in the Input Hatch, check the progress in the Electric Arc Furnace block, then get your outputs from the Output Hatch. Most machines from this mod behave in similar way so be sure to remember it.\n\nThe main use of this Furnace is to make Steel from Iron and Charcoal, Titanium from Rutile Ore and Silicon Ingots from Sand. All of them are used in several crafting recipes later on. All of these items can be obtained through other means aswell."
+          "desc:8": "The Electric Arc Furnace is a big multiblock machine that can heat things a lot using RF.\n\nFollow the blueprint provided by the Holo-Projector to assemble it. There are 11 blocks in total in the structure where Input or Output Hatches can be placed, otherwise you\u0027ll need to put Heatproof Bricks. The requirements on this quest is the minimum of 1 Input and 1 Output Hatch, with the rest being Bricks.\n\nOnce built, right click the Electric Arc Furnace block once to finish it, then another time to open its UI. Turn on the machine using the switch on the top left and you can now use it.\n\nTo use it, put your input in the Input Hatch, check the progress in the Electric Arc Furnace block, then get your outputs from the Output Hatch. Most machines from this mod behave in similar way so be sure to remember it.\n\nThe main use of this Furnace is to make Steel from Iron and Charcoal, Titanium from Rutile Ore and Silicon Ingots from Sand. All of them are used in several crafting recipes later on. All of these items can be obtained through other means as well."
         }
       },
       "tasks:9": {
@@ -32120,7 +32120,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Rolling Machine",
-          "desc:8": "The Rolling Machine is a multiblock machine that uses RF and Water to make Plates much more efficiently than the Smal Plate Presser.\n\nIts other uses include the ability to craft Sheets of various materials, as well as Pressure Tanks that allow to easily transport higher quantities of fluid than Buckets.\n\nIt is recommended to make this machine early to cut down the metal cost of crafting the various components required by other machines."
+          "desc:8": "The Rolling Machine is a multiblock machine that uses RF and Water to make Plates much more efficiently than the Small Plate Presser.\n\nIts other uses include the ability to craft Sheets of various materials, as well as Pressure Tanks that allow to easily transport higher quantities of fluid than Buckets.\n\nIt is recommended to make this machine early to cut down the metal cost of crafting the various components required by other machines."
         }
       },
       "tasks:9": {
@@ -36984,7 +36984,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Alloy Furnace",
-          "desc:8": "The Alloy Furnace is used to make alloys, aswell as being a crafting component in the recipe for a bunch of other machines."
+          "desc:8": "The Alloy Furnace is used to make alloys, as well as being a crafting component in the recipe for a bunch of other machines."
         }
       },
       "tasks:9": {
