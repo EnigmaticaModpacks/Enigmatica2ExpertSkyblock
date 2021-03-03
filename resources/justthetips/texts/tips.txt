@@ -23,7 +23,7 @@ Astral Sorcery Rituals (and linked Ritual Anchors) act as Chunkloaders.
 There are a lot of ways to get flight-without-flight in the pack. Think outside the box.
 Prepare lots of space for Blood Magic Altars.
 Horologium is an easy to miss dim constellation, be sure to attune yourself and check the sky with the Telescope every night as it only appears every 36 days.
-Cyclic Scaffolding is great for building. Sneak-clicking places it on opposite face of the block you clicked. Comes in three varieties: one decays into nothing quickly, one breaks all connected scaffolds when one is broken, and the third one can be replaced with blocks by right-clicking.
+Cyclic Scaffolding is great for building. Sneak-clicking places it on the opposite face of the block you clicked. Comes in three varieties: one decays into nothing quickly, one breaks all connected scaffolds when one is broken, and the third one can be replaced with blocks by right-clicking.
 The RFTools Storage Scanner can make early game crafting a lot easier.
 You can use IC2 transformers to throttle the EU/t machines receive. This is useful for machines such as the Matter Fabricator which doesn't have an effective limit.
 Mystical Agriculture plants have a 5% chance of dropping 2 seeds when harvested with left click.
