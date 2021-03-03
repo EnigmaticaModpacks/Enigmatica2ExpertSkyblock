@@ -28,7 +28,6 @@ The RFTools Storage Scanner can make early game crafting a lot easier.
 You can use IC2 transformers to throttle the EU/t machines receive. This is useful for machines such as the Matter Fabricator which doesn't have an effective limit.
 Mystical Agriculture plants have a 5% chance of dropping 2 seeds when harvested with left click.
 There are many different valid fuels for the Tinkers' Construct smeltery, all with different attributes.
-Creative-like Flight doesn't work in the Twilight Forest.
 If you're having issues getting Wither Skeleton Skulls, try using The Ender from Ender IO.
 Cyclic has lots of items that are affordable early game, but stay relevant throughout the game, like the Ender Book.
 You can put the Astral Sorcery Linking Wand in your offhand, and it won't stop linking.
@@ -61,5 +60,5 @@ Be sure to check out Dark Utilities' charms! They can speed up certain tasks, li
 Utilize the Quark chest buttons in your inventory! They help a lot with early game storage management.
 Applied Energistics Interfaces can be named in an anvil, but will lose their name if broken with anything but the Network Tool.
 Applied Energistics Interfaces are grouped together by their name in the Interface Terminal.
-The advanced Morphing Tool (Morphing Tool crafted with 4 gears) isa good way to get all wrenches early. It also helps to keep your inventory neat.
+The advanced Morphing Tool (Morphing Tool crafted with 4 gears) is a good way to get all wrenches early. It also helps to keep your inventory neat.
 The command /foodlist size shows you how many different foods you already ate.
