@@ -27,7 +27,6 @@ Cyclic Scaffolding is great for building. Sneak-clicking places it on the opposi
 The RFTools Storage Scanner can make early game crafting a lot easier.
 You can use IC2 transformers to throttle the EU/t machines receive. This is useful for machines such as the Matter Fabricator which doesn't have an effective limit.
 Mystical Agriculture plants have a 5% chance of dropping 2 seeds when harvested with left click.
-There are many different valid fuels for the Tinkers' Construct smeltery, all with different attributes.
 If you're having issues getting Wither Skeleton Skulls, try using The Ender from Ender IO.
 Cyclic has lots of items that are affordable early game, but stay relevant throughout the game, like the Ender Book.
 You can put the Astral Sorcery Linking Wand in your offhand, and it won't stop linking.
