@@ -1,5 +1,17 @@
 # Enigmatica 2: Expert Skyblock Changelog
 
+## 1.36
+
+*Using Forge-1.12.2-14.23.5.2854*
+
+**Changes/Improvements**
+
+* Updated EnderIO files to be valid (CraftKolyan)
+
+**Bug Fixes**
+
+- 
+
 ## [1.35](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.35) 
 
 *Using Forge-1.12.2-14.23.5.2847*
