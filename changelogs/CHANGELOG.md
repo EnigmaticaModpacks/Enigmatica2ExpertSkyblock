@@ -2,7 +2,7 @@
 
 ## 1.36
 
-*Using Forge-1.12.2-14.23.5.2854*
+*Using Forge-1.12.2-14.23.5.2854* | [Mod Updates](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/blob/master/changelogs/CHANGELOG_MODS_1.36.md)
 
 **Changes/Improvements**
 
@@ -18,6 +18,11 @@
 - Fix typos in quests' descriptions [\#574](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/pull/574) ([CrafterKolyan](https://github.com/CrafterKolyan))
 - Fix fulldrawers4 size [\#573](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/pull/573) ([CrafterKolyan](https://github.com/CrafterKolyan))
 - Fix no resistance effect when your average nutrition is in \[95; 97\) [\#572](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/pull/572) ([CrafterKolyan](https://github.com/CrafterKolyan))
+
+**Removed Mods**
+
+- JEI Block Drops
+- Exchangers
 
 ## [1.35](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.35) 
 
