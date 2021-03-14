@@ -98,3 +98,4 @@ secrets.ps1
 MakeModpackFiles.bat
 config/AppliedEnergistics2/VersionChecker.cfg
 old.json
+new.json
