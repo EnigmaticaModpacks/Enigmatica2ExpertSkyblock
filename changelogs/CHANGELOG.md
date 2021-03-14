@@ -10,7 +10,14 @@
 
 **Bug Fixes**
 
-- 
+- Fatal Crash Client And Serverside - Immersive Engineering Razor Wire [\#577](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/577)
+- Empowered Void Crystals not craftable using quarks basalt [\#563](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/563)
+- Mechanical Squeezer Isn't Craftable [\#555](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/555)
+- Mekanism's Sufuric Acid Bucket not craftable [\#553](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/553)
+- Lapis Duplication with the IC2 Compressor [\#244](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/244)
+- Fix typos in quests' descriptions [\#574](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/pull/574) ([CrafterKolyan](https://github.com/CrafterKolyan))
+- Fix fulldrawers4 size [\#573](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/pull/573) ([CrafterKolyan](https://github.com/CrafterKolyan))
+- Fix no resistance effect when your average nutrition is in \[95; 97\) [\#572](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/pull/572) ([CrafterKolyan](https://github.com/CrafterKolyan))
 
 ## [1.35](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/tree/1.35) 
 
