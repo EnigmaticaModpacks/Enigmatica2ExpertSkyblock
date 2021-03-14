@@ -99,3 +99,4 @@ MakeModpackFiles.bat
 config/AppliedEnergistics2/VersionChecker.cfg
 old.json
 new.json
+changelogs/CHANGELOG-GENERATED.md
