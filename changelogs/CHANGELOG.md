@@ -1,6 +1,6 @@
 # Enigmatica 2: Expert Skyblock Changelog
 
-## 1.36
+## 1.36 (+1.36a)
 
 *Using Forge-1.12.2-14.23.5.2854* | [Mod Updates](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/blob/master/changelogs/CHANGELOG_MODS_1.36.md)
 
@@ -10,6 +10,7 @@
 
 **Bug Fixes**
 
+- (1.36a) Fixed DE Creative Exchanger recipe and error on login
 - Fatal Crash Client And Serverside - Immersive Engineering Razor Wire [\#577](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/577)
 - Empowered Void Crystals not craftable using quarks basalt [\#563](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/563)
 - Mechanical Squeezer Isn't Craftable [\#555](https://github.com/NillerMedDild/Enigmatica2ExpertSkyblock/issues/555)
