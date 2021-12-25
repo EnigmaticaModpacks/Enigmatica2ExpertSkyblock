@@ -495,7 +495,83 @@ for item in thaumcraftHintItems {
 		
 		<skyresources:dirtygem:15>.addTooltip(format.red("Unintended drop - can be washed back into stone"));
 		ad(<skyresources:dirtygem:15>, "Due to it not wanting to stop dropping, it can be washed back into stone to give it some use");
-			
+
+	
+# Tooltips for IC2 matter fabricator
+	var uumatterTooltips = [
+		"actuallyadditions:block_misc",           "9",     "1600",
+		"actuallyadditions:item_misc",            "8",     "600",
+		"computercraft:computer",                 "16384", "600",
+		"draconicevolution:chaos_shard",          "0",     "600000",
+		"draconicevolution:chaos_shard",          "1",     "66667",
+		"draconicevolution:chaos_shard",          "2",     "7407",
+		"draconicevolution:chaos_shard",          "3",     "823",
+		"draconicevolution:dragon_heart",         "0",     "200000",
+		"draconicevolution:fusion_crafting_core", "0",     "100000",
+		"environmentaltech:litherite_crystal",    "0",     "6000",
+		"forestry:hardened_machine",              "0",     "1800",
+		"ic2:crafting",                           "1",     "80",
+		"ic2:crafting",                           "3",     "180",
+		"ic2:nuclear",                            "3",     "21324",
+		"ic2:nuclear",                            "7",     "2369",
+		"ic2:resource",                           "12",    "800",
+		"ic2:resource",                           "13",    "1600",
+		"immersiveengineering:metal_decoration0", "3",     "950",
+		"immersiveengineering:metal_decoration0", "4",     "1600",
+		"immersiveengineering:metal_decoration0", "5",     "2500",
+		"mekanism:basicblock",                    "8",     "1750",
+		"mekanism:controlcircuit",                "3",     "1500",
+		"minecraft:cookie",                       "0",     "10",
+		"minecraft:skull",                        "1",     "5000",
+		"quark:crystal",                          "0",     "25",
+		"quark:crystal",                          "1",     "25",
+		"quark:crystal",                          "2",     "25",
+		"quark:crystal",                          "3",     "25",
+		"quark:crystal",                          "4",     "25",
+		"quark:crystal",                          "5",     "25",
+		"quark:crystal",                          "6",     "25",
+		"quark:crystal",                          "7",     "25",
+		"rftools:machine_frame",                  "0",     "2600",
+		"teslacorelib:machine_case",              "0",     "1900",
+		"thermalexpansion:frame",                 "0",     "4000"
+	] as string[];
+
+	for i in 0 to uumatterTooltips.length {
+		if (i%3==0) {
+			var item = itemUtils.getItem(uumatterTooltips[i], uumatterTooltips[i+1]);
+			if (!isNull(item)) {
+				item.addTooltip(format.darkPurple("Can be replicated with ") ~ 
+					format.lightPurple(((uumatterTooltips[i+2] as float) / 100) as string) ~ format.darkPurple(" mB UU"));
+			}
+		}
+	}
+	
+	<extrautils2:machine>.only(function(item){return !item.hasTag;})
+	.addTooltip(format.darkPurple("Can be replicated with ") ~ 
+					format.lightPurple(((450 as float) / 100) as string) ~ format.darkPurple(" mB UU"));
+
+	<modularmachinery:itemmodularium>.displayName = "Modularium Alloy";
+	
+
+# Turbine Fuel description
+<advgenerators:turbine_controller>.addShiftTooltip(
+	format.darkAqua("Canola Oil")         ~  format.gray(" 10 MJ/mB\n") ~
+	format.darkAqua("Crude Oil")          ~  format.gray(" 25 MJ/mB\n") ~
+	format.darkAqua("Biomass")            ~  format.gray(" 30 MJ/mB\n") ~
+	format.darkAqua("Biodiesel")          ~  format.gray(" 40 MJ/mB\n") ~
+	format.darkAqua("Crystallized Oil")   ~  format.gray(" 40 MJ/mB\n") ~
+	format.darkAqua("Biogas")             ~  format.gray(" 50 MJ/mB\n") ~
+	format.darkAqua("Ethylene")           ~  format.gray(" 80 MJ/mB\n") ~
+	format.darkAqua("Biofuel")            ~  format.gray(" 90 MJ/mB\n") ~
+	format.darkAqua("Rocket Fuel (EiO)")  ~  format.gray(" 95 MJ/mB\n") ~
+	format.darkAqua("Refined Fuel")       ~ format.gray(" 105 MJ/mB\n") ~
+	format.darkAqua("Rocket Fuel (AR)")   ~ format.gray(" 110 MJ/mB\n") ~
+	format.darkAqua("Empowered Oil")      ~ format.gray(" 120 MJ/mB")
+,format.darkAqua("<<Hold shift to see fuel list>>"));
+
+# Antimatter
+<forge:bucketfilled>.withTag({FluidName: "blockfluidantimatter", Amount: 1000}).addTooltip(format.aqua("To obtain strike Life Essense with lightning"));
+
 # *======= Name Changes =======*
 
 	<modularmachinery:itemmodularium>.displayName = "Modularium Alloy";
