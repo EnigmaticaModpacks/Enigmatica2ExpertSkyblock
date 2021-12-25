@@ -12,6 +12,7 @@
 /screenshots/
 /mods/
 /world/
+/**/*.pdf
 
 # Utilities
 .github_changelog_generator
