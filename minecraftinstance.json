@@ -31,6 +31,7 @@
   "javaArgsOverride": null,
   "javaDirOverride": null,
   "lastPlayed": "2021-03-14T22:18:32.2705207Z",
+  "playedCount": 0,
   "manifest": {
     "minecraft": {
       "version": "1.12.2",
@@ -2007,22 +2008,26 @@
   ],
   "isMemoryOverride": false,
   "allocatedMemory": 0,
+  "profileImagePath": null,
   "guid": "c718ffc8-e321-4818-b7a1-006fd7ab4fba",
   "gameTypeID": 432,
-  "installPath": "C:\\Users\\Niels\\Twitch\\Minecraft\\Instances\\Enigmatica 2 Expert Skyblock\\",
+  "installPath": "C:\\Users\\Niels\\Curseforge\\Minecraft\\Instances\\Enigmatica2ExpertSkyblock\\",
   "name": "Enigmatica 2 Expert Skyblock",
   "cachedScans": [],
   "isValid": true,
   "lastPreviousMatchUpdate": "2021-03-14T22:00:13.4810871Z",
+  "lastRefreshAttempt": "2021-12-25T14:54:20.626757+01:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.12.2",
+  "gameVersionFlavor": null,
   "preferenceAlternateFile": false,
   "preferenceAutoInstallUpdates": false,
   "preferenceQuickDeleteLibraries": true,
   "preferenceDeleteSavedVariables": true,
   "preferenceProcessFileCommands": true,
   "preferenceReleaseType": 3,
+  "preferenceModdingFolderPath": null,
   "syncProfile": {
     "PreferenceEnabled": false,
     "PreferenceAutoSync": true,
@@ -2097,11 +2102,11 @@
       "dateInstalled": "2019-06-30T18:28:51.4312806Z",
       "dateUpdated": "2021-03-14T21:10:35.4547269Z",
       "dateLastUpdateAttempted": "2021-03-14T21:10:35.4547269Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -2256,7 +2261,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -2359,13 +2365,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -2461,13 +2469,15 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -2556,7 +2566,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -2652,7 +2663,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -2751,11 +2763,11 @@
       "dateInstalled": "2019-06-30T18:28:51.478156Z",
       "dateUpdated": "2021-03-14T21:10:44.2117272Z",
       "dateLastUpdateAttempted": "2021-03-14T21:10:44.2117272Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -2825,11 +2837,11 @@
       "dateInstalled": "2019-12-28T19:35:56.3681427Z",
       "dateUpdated": "2021-03-14T21:13:01.4404281Z",
       "dateLastUpdateAttempted": "2021-03-14T21:13:01.4404281Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -2909,11 +2921,11 @@
       "dateInstalled": "2019-12-28T19:51:14.535592Z",
       "dateUpdated": "2021-03-14T21:20:18.3278446Z",
       "dateLastUpdateAttempted": "2021-03-14T21:20:18.3278446Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -2988,11 +3000,11 @@
       "dateInstalled": "2019-12-28T19:51:14.5375578Z",
       "dateUpdated": "2021-03-14T21:15:38.3977053Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:38.3977053Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -3056,7 +3068,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -3168,11 +3181,11 @@
       "dateInstalled": "2019-12-28T19:35:56.3381429Z",
       "dateUpdated": "2021-03-14T21:15:07.9340288Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:07.9340288Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -3240,11 +3253,11 @@
       "dateInstalled": "2019-12-28T19:35:56.3891434Z",
       "dateUpdated": "2021-03-14T21:14:43.4346055Z",
       "dateLastUpdateAttempted": "2021-03-14T21:14:43.4346055Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -3318,11 +3331,11 @@
       "dateInstalled": "2019-06-30T18:28:51.478156Z",
       "dateUpdated": "2021-03-14T21:11:47.3980535Z",
       "dateLastUpdateAttempted": "2021-03-14T21:11:47.3980535Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -3399,7 +3412,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -3495,7 +3509,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -3690,37 +3705,43 @@
             "gameVersionPadded": "0000000001.0000000009.0000000004",
             "gameVersion": "1.9.4",
             "gameVersionReleaseDate": "2016-05-10T05:00:00Z",
-            "gameVersionName": "1.9.4"
+            "gameVersionName": "1.9.4",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000010.0000000002",
             "gameVersion": "1.10.2",
             "gameVersionReleaseDate": "2016-06-23T05:00:00Z",
-            "gameVersionName": "1.10.2"
+            "gameVersionName": "1.10.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000011.0000000002",
             "gameVersion": "1.11.2",
             "gameVersionReleaseDate": "2016-12-21T06:00:00Z",
-            "gameVersionName": "1.11.2"
+            "gameVersionName": "1.11.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000013.0000000002",
             "gameVersion": "1.13.2",
             "gameVersionReleaseDate": "2018-10-22T00:00:00Z",
-            "gameVersionName": "1.13.2"
+            "gameVersionName": "1.13.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -3804,7 +3825,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -3903,11 +3925,11 @@
       "dateInstalled": "2019-06-30T18:28:51.4468949Z",
       "dateUpdated": "2021-03-14T21:10:29.0127266Z",
       "dateLastUpdateAttempted": "2021-03-14T21:10:29.0127266Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -4027,13 +4049,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -4116,7 +4140,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -4222,7 +4247,7 @@
       "dateInstalled": "2019-12-28T19:51:14.5435923Z",
       "dateUpdated": "2020-03-02T19:40:19.6495494Z",
       "dateLastUpdateAttempted": "2020-03-02T19:40:19.6495494Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -4296,7 +4321,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -4388,19 +4414,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -4483,7 +4512,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -4504,11 +4534,11 @@
       "dateInstalled": "2021-03-14T20:51:14.9448652Z",
       "dateUpdated": "2021-03-14T20:51:14.9448652Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -4607,11 +4637,11 @@
       "dateInstalled": "2021-03-14T21:51:40.7654925Z",
       "dateUpdated": "2021-03-14T21:51:40.7784899Z",
       "dateLastUpdateAttempted": "2021-03-14T21:51:40.7784899Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -4734,11 +4764,11 @@
       "dateInstalled": "2021-03-14T20:51:14.942861Z",
       "dateUpdated": "2021-03-14T21:15:29.8648839Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:29.8648839Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -4792,19 +4822,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -4825,11 +4858,11 @@
       "dateInstalled": "2021-03-14T20:51:14.9478643Z",
       "dateUpdated": "2021-03-14T20:51:14.9478643Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -4921,11 +4954,11 @@
       "dateInstalled": "2021-03-14T20:51:14.9408626Z",
       "dateUpdated": "2021-03-14T21:14:45.3874211Z",
       "dateLastUpdateAttempted": "2021-03-14T21:14:45.3874211Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -4990,7 +5023,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -5011,11 +5045,11 @@
       "dateInstalled": "2021-03-14T20:51:14.9468647Z",
       "dateUpdated": "2021-03-14T20:51:14.9468647Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -5209,11 +5243,11 @@
       "dateInstalled": "2021-03-14T20:51:14.9448652Z",
       "dateUpdated": "2021-03-14T21:15:49.2369888Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:49.2369888Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -5302,7 +5336,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -5323,11 +5358,11 @@
       "dateInstalled": "2021-03-14T20:51:14.9468647Z",
       "dateUpdated": "2021-03-14T20:51:14.9468647Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -5379,7 +5414,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -5400,11 +5436,11 @@
       "dateInstalled": "2021-03-14T20:51:14.9458647Z",
       "dateUpdated": "2021-03-14T20:51:14.9458647Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -5484,11 +5520,11 @@
       "dateInstalled": "2021-03-14T20:51:21.5308851Z",
       "dateUpdated": "2021-03-14T21:20:19.6804615Z",
       "dateLastUpdateAttempted": "2021-03-14T21:20:19.6804615Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -5631,7 +5667,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -5652,11 +5689,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6768857Z",
       "dateUpdated": "2021-03-14T20:51:21.6768857Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -5723,11 +5760,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6738845Z",
       "dateUpdated": "2021-03-14T21:15:35.1999362Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:35.1999362Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -5786,13 +5823,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -5813,11 +5852,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6718846Z",
       "dateUpdated": "2021-03-14T20:51:21.6718846Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -5882,7 +5921,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -5903,11 +5943,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5475831Z",
       "dateUpdated": "2021-03-14T20:51:25.5475831Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -5981,11 +6021,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6698847Z",
       "dateUpdated": "2021-03-14T21:11:48.3650533Z",
       "dateLastUpdateAttempted": "2021-03-14T21:11:48.3650533Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -6043,7 +6083,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -6064,11 +6105,11 @@
       "dateInstalled": "2021-03-14T20:51:14.9458647Z",
       "dateUpdated": "2021-03-14T20:51:14.9458647Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -6133,7 +6174,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -6154,11 +6196,11 @@
       "dateInstalled": "2021-03-14T20:51:21.5328842Z",
       "dateUpdated": "2021-03-14T20:51:21.5328842Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -6238,11 +6280,11 @@
       "dateInstalled": "2021-03-14T21:52:58.5697672Z",
       "dateUpdated": "2021-03-14T21:52:58.5757704Z",
       "dateLastUpdateAttempted": "2021-03-14T21:52:58.5757704Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -6300,7 +6342,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -6321,11 +6364,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6868855Z",
       "dateUpdated": "2021-03-14T20:51:21.6868855Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -6390,13 +6433,15 @@
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -6417,11 +6462,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6778843Z",
       "dateUpdated": "2021-03-14T20:51:21.6778843Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -6480,7 +6525,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -6501,11 +6547,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6918848Z",
       "dateUpdated": "2021-03-14T20:51:21.6918848Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -6664,11 +6710,11 @@
       "dateInstalled": "2021-03-14T20:51:21.3678881Z",
       "dateUpdated": "2021-03-14T21:15:22.2034012Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:22.2034012Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -6757,7 +6803,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -6778,11 +6825,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6808836Z",
       "dateUpdated": "2021-03-14T20:51:21.6808836Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -6941,11 +6988,11 @@
       "dateInstalled": "2021-03-14T20:51:21.5298848Z",
       "dateUpdated": "2021-03-14T21:15:15.7640629Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:15.7640629Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -7003,7 +7050,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -7024,11 +7072,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6668863Z",
       "dateUpdated": "2021-03-14T20:51:21.6668863Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -7108,11 +7156,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6778843Z",
       "dateUpdated": "2021-03-14T21:10:31.5777291Z",
       "dateLastUpdateAttempted": "2021-03-14T21:10:31.5777291Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -7173,25 +7221,29 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -7212,11 +7264,11 @@
       "dateInstalled": "2021-03-14T20:51:21.5338857Z",
       "dateUpdated": "2021-03-14T20:51:21.5338857Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -7290,11 +7342,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6678862Z",
       "dateUpdated": "2021-03-14T21:14:29.9032205Z",
       "dateLastUpdateAttempted": "2021-03-14T21:14:29.9032205Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -7361,11 +7413,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6718846Z",
       "dateUpdated": "2021-03-14T21:11:06.230773Z",
       "dateLastUpdateAttempted": "2021-03-14T21:11:06.230773Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -7443,13 +7495,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -7470,11 +7524,11 @@
       "dateInstalled": "2021-03-14T20:51:21.5318842Z",
       "dateUpdated": "2021-03-14T20:51:21.5318842Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -7538,7 +7592,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -7559,11 +7614,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6748839Z",
       "dateUpdated": "2021-03-14T20:51:21.6748839Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -7636,19 +7691,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -7669,11 +7727,11 @@
       "dateInstalled": "2021-03-14T20:51:21.5278864Z",
       "dateUpdated": "2021-03-14T20:51:21.5278864Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -7725,7 +7783,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -7746,11 +7805,11 @@
       "dateInstalled": "2021-03-14T20:51:21.3678881Z",
       "dateUpdated": "2021-03-14T20:51:21.3678881Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -7824,11 +7883,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6728851Z",
       "dateUpdated": "2021-03-14T21:15:09.143848Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:09.143848Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -7886,7 +7945,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -7907,11 +7967,11 @@
       "dateInstalled": "2021-03-14T20:51:21.5298848Z",
       "dateUpdated": "2021-03-14T20:51:21.5298848Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -7969,7 +8029,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -7990,11 +8051,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6818843Z",
       "dateUpdated": "2021-03-14T20:51:21.6818843Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -8093,11 +8154,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6708864Z",
       "dateUpdated": "2021-03-14T21:14:43.3472641Z",
       "dateLastUpdateAttempted": "2021-03-14T21:14:43.3472641Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -8242,7 +8303,7 @@
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -8306,7 +8367,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -8327,11 +8389,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6868855Z",
       "dateUpdated": "2021-03-14T20:51:21.6868855Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -8416,11 +8478,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6738845Z",
       "dateUpdated": "2021-03-14T21:14:30.8204139Z",
       "dateLastUpdateAttempted": "2021-03-14T21:14:30.8204139Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -8548,11 +8610,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6878847Z",
       "dateUpdated": "2021-03-14T21:14:32.5946962Z",
       "dateLastUpdateAttempted": "2021-03-14T21:14:32.5946962Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -8617,13 +8679,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -8644,11 +8708,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5485832Z",
       "dateUpdated": "2021-03-14T20:51:25.5485832Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -8721,11 +8785,11 @@
       "dateInstalled": "2021-03-14T21:24:26.1058824Z",
       "dateUpdated": "2021-03-14T21:24:26.1088451Z",
       "dateLastUpdateAttempted": "2021-03-14T21:24:26.1088451Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -8783,7 +8847,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -8804,11 +8869,11 @@
       "dateInstalled": "2021-03-14T20:51:21.3668879Z",
       "dateUpdated": "2021-03-14T20:51:21.3668879Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -8893,11 +8958,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5085872Z",
       "dateUpdated": "2021-03-14T21:10:57.0287719Z",
       "dateLastUpdateAttempted": "2021-03-14T21:10:57.0287719Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -8962,7 +9027,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -8983,11 +9049,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6728851Z",
       "dateUpdated": "2021-03-14T20:51:21.6728851Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -9051,7 +9117,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -9076,7 +9143,7 @@
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -9161,19 +9228,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -9194,11 +9264,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6808836Z",
       "dateUpdated": "2021-03-14T20:51:21.6808836Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -9268,11 +9338,11 @@
       "dateInstalled": "2021-03-14T21:14:42.1072576Z",
       "dateUpdated": "2021-03-14T21:14:42.1957965Z",
       "dateLastUpdateAttempted": "2021-03-14T21:14:42.1957965Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -9361,7 +9431,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -9382,11 +9453,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6838851Z",
       "dateUpdated": "2021-03-14T20:51:21.6838851Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -9466,11 +9537,11 @@
       "dateInstalled": "2021-03-14T21:58:14.7954823Z",
       "dateUpdated": "2021-03-14T21:58:14.8234825Z",
       "dateLastUpdateAttempted": "2021-03-14T21:58:14.8234825Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -9559,7 +9630,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -9580,11 +9652,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6888845Z",
       "dateUpdated": "2021-03-14T20:51:21.6888845Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -9662,13 +9734,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -9689,11 +9763,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6848888Z",
       "dateUpdated": "2021-03-14T20:51:21.6848888Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -9780,11 +9854,11 @@
       "dateInstalled": "2021-03-14T20:51:21.5288856Z",
       "dateUpdated": "2021-03-14T21:14:42.2907987Z",
       "dateLastUpdateAttempted": "2021-03-14T21:14:42.2907987Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -9873,7 +9947,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -9898,7 +9973,7 @@
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -9978,11 +10053,11 @@
       "dateInstalled": "2021-03-14T20:51:21.5308851Z",
       "dateUpdated": "2021-03-14T21:20:14.1983982Z",
       "dateLastUpdateAttempted": "2021-03-14T21:20:14.1983982Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -10123,11 +10198,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6858856Z",
       "dateUpdated": "2021-03-14T21:10:42.4097276Z",
       "dateLastUpdateAttempted": "2021-03-14T21:10:42.4097276Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -10194,19 +10269,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -10227,11 +10305,11 @@
       "dateInstalled": "2021-03-14T20:51:21.678884Z",
       "dateUpdated": "2021-03-14T20:51:21.678884Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -10291,19 +10369,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -10324,11 +10405,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6898847Z",
       "dateUpdated": "2021-03-14T20:51:21.6898847Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -10401,19 +10482,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -10434,11 +10518,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6688857Z",
       "dateUpdated": "2021-03-14T20:51:21.6688857Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -10504,19 +10588,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -10537,11 +10624,11 @@
       "dateInstalled": "2021-03-14T20:51:21.678884Z",
       "dateUpdated": "2021-03-14T20:51:21.678884Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -10605,7 +10692,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -10626,11 +10714,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6898847Z",
       "dateUpdated": "2021-03-14T20:51:21.6898847Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -10695,7 +10783,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -10716,11 +10805,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6748839Z",
       "dateUpdated": "2021-03-14T20:51:21.6748839Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -10806,11 +10895,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6878847Z",
       "dateUpdated": "2021-03-14T21:15:26.0987475Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:26.0987475Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -10914,11 +11003,11 @@
       "dateInstalled": "2021-03-14T20:51:25.496587Z",
       "dateUpdated": "2021-03-14T21:13:01.2775527Z",
       "dateLastUpdateAttempted": "2021-03-14T21:13:01.2775527Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -11018,7 +11107,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -11039,11 +11129,11 @@
       "dateInstalled": "2021-03-14T21:24:29.1809507Z",
       "dateUpdated": "2021-03-14T21:24:29.1809507Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -11125,7 +11215,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -11146,11 +11237,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5135841Z",
       "dateUpdated": "2021-03-14T20:51:25.5135841Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -11225,11 +11316,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5035857Z",
       "dateUpdated": "2021-03-14T21:10:41.4917276Z",
       "dateLastUpdateAttempted": "2021-03-14T21:10:41.4917276Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -11315,11 +11406,11 @@
       "dateInstalled": "2021-03-14T20:51:21.6818843Z",
       "dateUpdated": "2021-03-14T21:15:31.4289834Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:31.4289834Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -11383,7 +11474,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -11404,11 +11496,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5085872Z",
       "dateUpdated": "2021-03-14T20:51:25.5085872Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -11489,11 +11581,11 @@
       "dateInstalled": "2021-03-14T21:52:18.2075746Z",
       "dateUpdated": "2021-03-14T21:52:18.2125936Z",
       "dateLastUpdateAttempted": "2021-03-14T21:52:18.2125936Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -11573,11 +11665,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4785883Z",
       "dateUpdated": "2021-03-14T21:10:42.6267303Z",
       "dateLastUpdateAttempted": "2021-03-14T21:10:42.6267303Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -11641,7 +11733,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -11662,11 +11755,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4855835Z",
       "dateUpdated": "2021-03-14T20:51:25.4855835Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -11752,11 +11845,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5735876Z",
       "dateUpdated": "2021-03-14T21:13:11.6864663Z",
       "dateLastUpdateAttempted": "2021-03-14T21:13:11.6864663Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -11849,11 +11942,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5015848Z",
       "dateUpdated": "2021-03-14T21:15:40.8796064Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:40.8796064Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -11907,19 +12000,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -11940,11 +12036,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4875834Z",
       "dateUpdated": "2021-03-14T20:51:25.4875834Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -12042,11 +12138,11 @@
       "dateInstalled": "2021-03-14T21:52:47.1556951Z",
       "dateUpdated": "2021-03-14T21:52:47.1596827Z",
       "dateLastUpdateAttempted": "2021-03-14T21:52:47.1596827Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -12120,11 +12216,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5145845Z",
       "dateUpdated": "2021-03-14T21:15:22.2386842Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:22.2386842Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -12219,7 +12315,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -12240,11 +12337,11 @@
       "dateInstalled": "2021-03-14T20:51:25.494593Z",
       "dateUpdated": "2021-03-14T20:51:25.494593Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -12324,11 +12421,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5165839Z",
       "dateUpdated": "2021-03-14T21:14:44.8311081Z",
       "dateLastUpdateAttempted": "2021-03-14T21:14:44.8311081Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -12408,11 +12505,11 @@
       "dateInstalled": "2021-03-14T21:20:31.4226706Z",
       "dateUpdated": "2021-03-14T21:20:31.4286355Z",
       "dateLastUpdateAttempted": "2021-03-14T21:20:31.4286355Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -12474,11 +12571,11 @@
       "dateInstalled": "2021-03-14T21:52:17.8225784Z",
       "dateUpdated": "2021-03-14T21:52:17.8255769Z",
       "dateLastUpdateAttempted": "2021-03-14T21:52:17.8255769Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -12548,7 +12645,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -12573,7 +12671,7 @@
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -12637,7 +12735,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -12658,11 +12757,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4815836Z",
       "dateUpdated": "2021-03-14T20:51:25.4815836Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -12722,19 +12821,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -12755,11 +12857,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4795846Z",
       "dateUpdated": "2021-03-14T20:51:25.4795846Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -12832,11 +12934,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5475831Z",
       "dateUpdated": "2021-03-14T21:15:20.897478Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:20.897478Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -12890,19 +12992,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -12923,11 +13028,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4975964Z",
       "dateUpdated": "2021-03-14T20:51:25.4975964Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -13014,11 +13119,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4955869Z",
       "dateUpdated": "2021-03-14T21:11:05.553772Z",
       "dateLastUpdateAttempted": "2021-03-14T21:11:05.553772Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -13082,7 +13187,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13103,11 +13209,11 @@
       "dateInstalled": "2021-03-14T20:51:25.482586Z",
       "dateUpdated": "2021-03-14T20:51:25.482586Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -13192,19 +13298,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13225,11 +13334,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4975964Z",
       "dateUpdated": "2021-03-14T20:51:25.4975964Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -13294,7 +13403,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13315,11 +13425,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5465833Z",
       "dateUpdated": "2021-03-14T20:51:25.5465833Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -13400,11 +13510,11 @@
       "dateInstalled": "2021-03-14T21:52:53.2383295Z",
       "dateUpdated": "2021-03-14T21:52:53.24833Z",
       "dateLastUpdateAttempted": "2021-03-14T21:52:53.24833Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -13462,7 +13572,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13483,11 +13594,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4815836Z",
       "dateUpdated": "2021-03-14T20:51:25.4815836Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -13588,7 +13699,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13609,11 +13721,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5025851Z",
       "dateUpdated": "2021-03-14T20:51:25.5025851Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -13672,13 +13784,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13699,11 +13813,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5485832Z",
       "dateUpdated": "2021-03-14T20:51:25.5485832Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -13769,19 +13883,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13802,11 +13919,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4985869Z",
       "dateUpdated": "2021-03-14T20:51:25.4985869Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -13877,7 +13994,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13898,11 +14016,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4865832Z",
       "dateUpdated": "2021-03-14T20:51:25.4865832Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -13967,13 +14085,15 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -13994,11 +14114,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4935838Z",
       "dateUpdated": "2021-03-14T20:51:25.4935838Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -14078,25 +14198,29 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14117,11 +14241,11 @@
       "dateInstalled": "2021-03-14T20:51:25.517584Z",
       "dateUpdated": "2021-03-14T20:51:25.517584Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -14204,7 +14328,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14229,7 +14354,7 @@
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -14320,11 +14445,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4925846Z",
       "dateUpdated": "2021-03-14T21:15:10.0988961Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:10.0988961Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -14431,7 +14556,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14452,11 +14578,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5065861Z",
       "dateUpdated": "2021-03-14T20:51:25.5065861Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -14522,19 +14648,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14555,11 +14684,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5535855Z",
       "dateUpdated": "2021-03-14T20:51:25.5535855Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -14626,11 +14755,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4915841Z",
       "dateUpdated": "2021-03-14T21:11:04.3127693Z",
       "dateLastUpdateAttempted": "2021-03-14T21:11:04.3127693Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -14684,19 +14813,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14717,11 +14849,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4795846Z",
       "dateUpdated": "2021-03-14T20:51:25.4795846Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -14773,7 +14905,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14794,11 +14927,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5075849Z",
       "dateUpdated": "2021-03-14T20:51:25.5075849Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -14875,7 +15008,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14896,11 +15030,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5005853Z",
       "dateUpdated": "2021-03-14T20:51:25.5005853Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -14971,7 +15105,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -14992,11 +15127,11 @@
       "dateInstalled": "2021-03-14T20:51:25.488583Z",
       "dateUpdated": "2021-03-14T20:51:25.488583Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -15105,19 +15240,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -15138,11 +15276,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4805836Z",
       "dateUpdated": "2021-03-14T20:51:25.4805836Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -15202,19 +15340,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -15235,11 +15376,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5095845Z",
       "dateUpdated": "2021-03-14T20:51:25.5095845Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -15316,7 +15457,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -15337,11 +15479,11 @@
       "dateInstalled": "2021-03-14T20:51:25.482586Z",
       "dateUpdated": "2021-03-14T20:51:25.482586Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -15418,7 +15560,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -15439,11 +15582,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5735876Z",
       "dateUpdated": "2021-03-14T20:51:25.5735876Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -15520,7 +15663,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -15541,11 +15685,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4905843Z",
       "dateUpdated": "2021-03-14T20:51:25.4905843Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -15634,7 +15778,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -15655,11 +15800,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5125857Z",
       "dateUpdated": "2021-03-14T20:51:25.5125857Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -15742,7 +15887,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -15763,11 +15909,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5495826Z",
       "dateUpdated": "2021-03-14T20:51:25.5495826Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -15877,11 +16023,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5705831Z",
       "dateUpdated": "2021-03-14T21:11:46.7400543Z",
       "dateLastUpdateAttempted": "2021-03-14T21:11:46.7400543Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -15940,7 +16086,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -15961,11 +16108,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5055868Z",
       "dateUpdated": "2021-03-14T20:51:25.5055868Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -16036,7 +16183,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -16057,11 +16205,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5055868Z",
       "dateUpdated": "2021-03-14T20:51:25.5055868Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -16121,19 +16269,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -16154,11 +16305,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5005853Z",
       "dateUpdated": "2021-03-14T20:51:25.5005853Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -16229,7 +16380,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -16250,11 +16402,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4805836Z",
       "dateUpdated": "2021-03-14T20:51:25.4805836Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -16324,7 +16476,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -16349,12 +16502,12 @@
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 225928,
@@ -16403,19 +16556,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -16436,11 +16592,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5445851Z",
       "dateUpdated": "2021-03-14T20:51:25.5445851Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -16501,61 +16657,71 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000009.0000000004",
             "gameVersion": "1.9.4",
             "gameVersionReleaseDate": "2016-05-10T05:00:00Z",
-            "gameVersionName": "1.9.4"
+            "gameVersionName": "1.9.4",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000010.0000000002",
             "gameVersion": "1.10.2",
             "gameVersionReleaseDate": "2016-06-23T05:00:00Z",
-            "gameVersionName": "1.10.2"
+            "gameVersionName": "1.10.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000011",
             "gameVersion": "1.11",
             "gameVersionReleaseDate": "2016-11-14T06:00:00Z",
-            "gameVersionName": "1.11"
+            "gameVersionName": "1.11",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000010.0000000001",
             "gameVersion": "1.10.1",
             "gameVersionReleaseDate": "2016-06-22T05:00:00Z",
-            "gameVersionName": "1.10.1"
+            "gameVersionName": "1.10.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000010",
             "gameVersion": "1.10",
             "gameVersionReleaseDate": "2016-06-08T05:00:00Z",
-            "gameVersionName": "1.10"
+            "gameVersionName": "1.10",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000011.0000000001",
             "gameVersion": "1.11.1",
             "gameVersionReleaseDate": "2016-12-20T06:00:00Z",
-            "gameVersionName": "1.11.1"
+            "gameVersionName": "1.11.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000011.0000000002",
             "gameVersion": "1.11.2",
             "gameVersionReleaseDate": "2016-12-21T06:00:00Z",
-            "gameVersionName": "1.11.2"
+            "gameVersionName": "1.11.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -16576,11 +16742,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5045865Z",
       "dateUpdated": "2021-03-14T20:51:25.5045865Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -16651,7 +16817,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -16672,11 +16839,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4835847Z",
       "dateUpdated": "2021-03-14T20:51:25.4835847Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -16735,7 +16902,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -16756,11 +16924,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5135841Z",
       "dateUpdated": "2021-03-14T20:51:25.5135841Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -16828,11 +16996,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4875834Z",
       "dateUpdated": "2021-03-14T21:15:27.0131739Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:27.0131739Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -16914,11 +17082,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5155853Z",
       "dateUpdated": "2021-03-14T21:10:32.0607289Z",
       "dateLastUpdateAttempted": "2021-03-14T21:10:32.0607289Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -16989,7 +17157,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -17010,11 +17179,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4905843Z",
       "dateUpdated": "2021-03-14T20:51:25.4905843Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -17088,11 +17257,11 @@
       "dateInstalled": "2021-03-14T21:52:38.0049551Z",
       "dateUpdated": "2021-03-14T21:52:38.0179573Z",
       "dateLastUpdateAttempted": "2021-03-14T21:52:38.0179573Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -17179,11 +17348,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4845841Z",
       "dateUpdated": "2021-03-14T21:12:59.1554257Z",
       "dateLastUpdateAttempted": "2021-03-14T21:12:59.1554257Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -17272,11 +17441,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4835847Z",
       "dateUpdated": "2021-03-14T21:15:23.730317Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:23.730317Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -17359,7 +17528,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -17380,11 +17550,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5185827Z",
       "dateUpdated": "2021-03-14T20:51:25.5185827Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -17451,11 +17621,11 @@
       "dateInstalled": "2021-03-14T20:51:25.517584Z",
       "dateUpdated": "2021-03-14T21:15:14.6299116Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:14.6299116Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -17529,11 +17699,11 @@
       "dateInstalled": "2021-03-14T21:10:34.622728Z",
       "dateUpdated": "2021-03-14T21:10:51.7907692Z",
       "dateLastUpdateAttempted": "2021-03-14T21:10:51.7907692Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -17625,11 +17795,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4875834Z",
       "dateUpdated": "2021-03-14T21:14:28.726249Z",
       "dateLastUpdateAttempted": "2021-03-14T21:14:28.726249Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -17694,7 +17864,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -17719,7 +17890,7 @@
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -17790,7 +17961,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -17811,11 +17983,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5937277Z",
       "dateUpdated": "2021-03-14T21:10:34.5937277Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -17888,11 +18060,11 @@
       "dateInstalled": "2021-03-14T20:51:25.5455849Z",
       "dateUpdated": "2021-03-14T21:15:18.441535Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:18.441535Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -17968,7 +18140,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -17989,11 +18162,11 @@
       "dateInstalled": "2021-03-14T21:10:34.583835Z",
       "dateUpdated": "2021-03-14T21:10:34.583835Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -18057,7 +18230,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -18078,11 +18252,11 @@
       "dateInstalled": "2021-03-14T20:51:25.4895846Z",
       "dateUpdated": "2021-03-14T20:51:25.4895846Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -18146,7 +18320,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -18167,11 +18342,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5717264Z",
       "dateUpdated": "2021-03-14T21:10:34.5717264Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -18229,7 +18404,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -18250,11 +18426,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5787258Z",
       "dateUpdated": "2021-03-14T21:10:34.5787258Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -18318,7 +18494,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -18339,11 +18516,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5797262Z",
       "dateUpdated": "2021-03-14T21:10:34.5797262Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -18424,11 +18601,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5847261Z",
       "dateUpdated": "2021-03-14T21:15:39.0313423Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:39.0313423Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -18480,7 +18657,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -18501,11 +18679,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5687265Z",
       "dateUpdated": "2021-03-14T21:10:34.5687265Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -18696,7 +18874,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -18717,11 +18896,11 @@
       "dateInstalled": "2021-03-14T21:10:34.6027259Z",
       "dateUpdated": "2021-03-14T21:10:34.6027259Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -18794,19 +18973,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -18827,11 +19009,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5997281Z",
       "dateUpdated": "2021-03-14T21:10:34.5997281Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -18883,7 +19065,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -18904,11 +19087,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5697267Z",
       "dateUpdated": "2021-03-14T21:10:34.5697267Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -18962,19 +19145,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -18995,11 +19181,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5747254Z",
       "dateUpdated": "2021-03-14T21:10:34.5747254Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -19084,11 +19270,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5847261Z",
       "dateUpdated": "2021-03-14T21:15:31.6642059Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:31.6642059Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -19140,7 +19326,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -19161,11 +19348,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5867325Z",
       "dateUpdated": "2021-03-14T21:10:34.5867325Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -19242,7 +19429,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -19263,11 +19451,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5807254Z",
       "dateUpdated": "2021-03-14T21:10:34.5807254Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -19331,7 +19519,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -19352,11 +19541,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5987289Z",
       "dateUpdated": "2021-03-14T21:10:34.5987289Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -19429,11 +19618,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5777262Z",
       "dateUpdated": "2021-03-14T21:14:28.8992476Z",
       "dateLastUpdateAttempted": "2021-03-14T21:14:28.8992476Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -19495,31 +19684,36 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000010.0000000002",
             "gameVersion": "1.10.2",
             "gameVersionReleaseDate": "2016-06-23T05:00:00Z",
-            "gameVersionName": "1.10.2"
+            "gameVersionName": "1.10.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000011.0000000002",
             "gameVersion": "1.11.2",
             "gameVersionReleaseDate": "2016-12-21T06:00:00Z",
-            "gameVersionName": "1.11.2"
+            "gameVersionName": "1.11.2",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -19540,11 +19734,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5957272Z",
       "dateUpdated": "2021-03-14T21:10:34.5957272Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -19604,19 +19798,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -19637,11 +19834,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5817253Z",
       "dateUpdated": "2021-03-14T21:10:34.5817253Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -19711,7 +19908,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -19732,11 +19930,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5887284Z",
       "dateUpdated": "2021-03-14T21:10:34.5887284Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -19807,7 +20005,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -19828,11 +20027,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5687265Z",
       "dateUpdated": "2021-03-14T21:10:34.5687265Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -19905,11 +20104,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5697267Z",
       "dateUpdated": "2021-03-14T21:15:13.9997424Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:13.9997424Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -19974,7 +20173,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -19995,11 +20195,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5857308Z",
       "dateUpdated": "2021-03-14T21:10:34.5857308Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -20073,11 +20273,11 @@
       "dateInstalled": "2021-03-14T21:10:34.6017262Z",
       "dateUpdated": "2021-03-14T21:15:35.590545Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:35.590545Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -20137,19 +20337,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20170,11 +20373,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5877379Z",
       "dateUpdated": "2021-03-14T21:10:34.5877379Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -20246,13 +20449,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20273,11 +20478,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5867325Z",
       "dateUpdated": "2021-03-14T21:10:34.5867325Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -20355,13 +20560,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20382,11 +20589,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5817253Z",
       "dateUpdated": "2021-03-14T21:10:34.5817253Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -20459,11 +20666,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5797262Z",
       "dateUpdated": "2021-03-14T21:10:43.2407295Z",
       "dateLastUpdateAttempted": "2021-03-14T21:10:43.2407295Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -20527,7 +20734,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20548,11 +20756,11 @@
       "dateInstalled": "2021-03-14T21:11:32.4405646Z",
       "dateUpdated": "2021-03-14T21:11:32.4405646Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -20612,19 +20820,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20645,11 +20856,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5957272Z",
       "dateUpdated": "2021-03-14T21:10:34.5957272Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -20726,7 +20937,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20747,11 +20959,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5907273Z",
       "dateUpdated": "2021-03-14T21:10:34.5907273Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -20822,7 +21034,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20847,7 +21060,7 @@
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -20907,19 +21120,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -20940,11 +21156,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5827254Z",
       "dateUpdated": "2021-03-14T21:10:34.5827254Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -20998,19 +21214,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -21031,11 +21250,11 @@
       "dateInstalled": "2021-03-14T21:11:32.4415639Z",
       "dateUpdated": "2021-03-14T21:11:32.4415639Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -21093,7 +21312,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -21114,11 +21334,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5767265Z",
       "dateUpdated": "2021-03-14T21:10:34.5767265Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -21171,13 +21391,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -21198,11 +21420,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5707261Z",
       "dateUpdated": "2021-03-14T21:10:34.5707261Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -21276,11 +21498,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5827254Z",
       "dateUpdated": "2021-03-14T21:15:34.4216986Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:34.4216986Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -21351,7 +21573,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -21372,11 +21595,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5787258Z",
       "dateUpdated": "2021-03-14T21:10:34.5787258Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -21450,11 +21673,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5747254Z",
       "dateUpdated": "2021-03-14T21:15:32.1842045Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:32.1842045Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -21519,7 +21742,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -21540,11 +21764,11 @@
       "dateInstalled": "2021-03-14T21:10:34.6247263Z",
       "dateUpdated": "2021-03-14T21:10:34.6247263Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -21608,7 +21832,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -21629,11 +21854,11 @@
       "dateInstalled": "2021-03-14T21:11:32.4395951Z",
       "dateUpdated": "2021-03-14T21:11:32.4395951Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -21685,7 +21910,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -21706,11 +21932,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5677267Z",
       "dateUpdated": "2021-03-14T21:10:34.5677267Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -21784,11 +22010,11 @@
       "dateInstalled": "2021-03-14T21:10:34.6267258Z",
       "dateUpdated": "2021-03-14T21:11:45.4530702Z",
       "dateLastUpdateAttempted": "2021-03-14T21:11:45.4530702Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -21852,7 +22078,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -21873,11 +22100,11 @@
       "dateInstalled": "2021-03-14T21:10:34.6007259Z",
       "dateUpdated": "2021-03-14T21:10:34.6007259Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -21959,11 +22186,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5757251Z",
       "dateUpdated": "2021-03-14T21:15:40.3176161Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:40.3176161Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -22042,19 +22269,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -22075,11 +22305,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5757251Z",
       "dateUpdated": "2021-03-14T21:10:34.5757251Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -22131,7 +22361,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -22152,11 +22383,11 @@
       "dateInstalled": "2021-03-14T21:10:34.6037284Z",
       "dateUpdated": "2021-03-14T21:10:34.6037284Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -22229,19 +22460,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -22262,11 +22496,11 @@
       "dateInstalled": "2021-03-14T21:10:34.6047287Z",
       "dateUpdated": "2021-03-14T21:10:34.6047287Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -22339,19 +22573,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -22372,11 +22609,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5927265Z",
       "dateUpdated": "2021-03-14T21:10:34.5927265Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -22431,19 +22668,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -22464,11 +22704,11 @@
       "dateInstalled": "2021-03-14T21:11:32.4415639Z",
       "dateUpdated": "2021-03-14T21:11:32.4415639Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -22527,13 +22767,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -22554,11 +22796,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5907273Z",
       "dateUpdated": "2021-03-14T21:10:34.5907273Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -22622,7 +22864,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -22643,11 +22886,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5937277Z",
       "dateUpdated": "2021-03-14T21:10:34.5937277Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -22714,11 +22957,11 @@
       "dateInstalled": "2021-03-14T21:10:31.3397267Z",
       "dateUpdated": "2021-03-14T21:10:31.3507246Z",
       "dateLastUpdateAttempted": "2021-03-14T21:10:31.3507246Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -22924,11 +23167,11 @@
       "dateInstalled": "2021-03-14T21:23:57.7490625Z",
       "dateUpdated": "2021-03-14T21:24:26.8524716Z",
       "dateLastUpdateAttempted": "2021-03-14T21:24:26.8524716Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -23062,11 +23305,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5727256Z",
       "dateUpdated": "2021-03-14T21:15:08.4124421Z",
       "dateLastUpdateAttempted": "2021-03-14T21:15:08.4124421Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -23124,7 +23367,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -23145,11 +23389,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5667253Z",
       "dateUpdated": "2021-03-14T21:10:34.5667253Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -23238,7 +23482,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -23263,7 +23508,7 @@
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -23328,13 +23573,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -23355,11 +23602,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5917269Z",
       "dateUpdated": "2021-03-14T21:10:34.5917269Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -23417,7 +23664,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -23438,11 +23686,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5897263Z",
       "dateUpdated": "2021-03-14T21:10:34.5897263Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -23517,11 +23765,11 @@
       "dateInstalled": "2021-03-14T21:52:30.2907295Z",
       "dateUpdated": "2021-03-14T21:52:30.3007303Z",
       "dateLastUpdateAttempted": "2021-03-14T21:52:30.3007303Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -23580,7 +23828,8 @@
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -23601,11 +23850,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5927265Z",
       "dateUpdated": "2021-03-14T21:10:34.5927265Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -23692,11 +23941,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5947267Z",
       "dateUpdated": "2021-03-14T21:10:46.3197269Z",
       "dateLastUpdateAttempted": "2021-03-14T21:10:46.3197269Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -23782,11 +24031,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5967295Z",
       "dateUpdated": "2021-03-14T21:20:17.6086262Z",
       "dateLastUpdateAttempted": "2021-03-14T21:20:17.6086262Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -23876,13 +24125,15 @@
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
+            "gameVersionName": "Forge",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -23903,11 +24154,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5977291Z",
       "dateUpdated": "2021-03-14T21:10:34.5977291Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -23987,11 +24238,11 @@
       "dateInstalled": "2021-03-14T21:10:34.625726Z",
       "dateUpdated": "2021-03-14T21:14:31.1777378Z",
       "dateLastUpdateAttempted": "2021-03-14T21:14:31.1777378Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -24039,19 +24290,22 @@
             "gameVersionPadded": "0000000001.0000000012",
             "gameVersion": "1.12",
             "gameVersionReleaseDate": "2017-06-07T05:00:00Z",
-            "gameVersionName": "1.12"
+            "gameVersionName": "1.12",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000001",
             "gameVersion": "1.12.1",
             "gameVersionReleaseDate": "2017-08-03T05:00:00Z",
-            "gameVersionName": "1.12.1"
+            "gameVersionName": "1.12.1",
+            "gameVersionTypeId": 0
           },
           {
             "gameVersionPadded": "0000000001.0000000012.0000000002",
             "gameVersion": "1.12.2",
             "gameVersionReleaseDate": "2017-09-18T05:00:00Z",
-            "gameVersionName": "1.12.2"
+            "gameVersionName": "1.12.2",
+            "gameVersionTypeId": 0
           }
         ],
         "hasInstallScript": false,
@@ -24072,11 +24326,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5897263Z",
       "dateUpdated": "2021-03-14T21:10:34.5897263Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -24369,11 +24623,11 @@
       "dateInstalled": "2021-03-14T21:10:34.5887284Z",
       "dateUpdated": "2021-03-14T21:14:42.6407974Z",
       "dateLastUpdateAttempted": "2021-03-14T21:14:42.6407974Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -24382,5 +24636,6 @@
     }
   ],
   "isMigrated": false,
-  "preferenceUploadProfile": false
+  "preferenceUploadProfile": false,
+  "wasNameManuallyChanged": false
 }
