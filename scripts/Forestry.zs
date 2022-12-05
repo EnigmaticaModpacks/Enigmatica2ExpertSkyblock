@@ -1,9 +1,14 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
+import scripts.craft.grid.Grid;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded forestry
-print("--- loading Forestry.zs ---");
-	
-# *======= Recipes =======*
+
+# Fixing fruit juice amount from tomatos
+for tomato in <ore:cropTomato>.items {
+	mods.forestry.Squeezer.removeRecipe(<liquid:juice>, [tomato]);	
+	mods.forestry.Squeezer.addRecipe(<liquid:juice> * 100, [tomato], 100);
+}
 
 # Forester's Manual
 	recipes.remove(<forestry:book_forester>);
@@ -14,10 +19,10 @@ print("--- loading Forestry.zs ---");
 	
 # Refined Circuit Board
 	mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>);
-	mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}),
-	[[<appliedenergistics2:material:17>, <forestry:chipsets>.withTag({}), <appliedenergistics2:material:17>],
-	[<ore:circuitUltimate>, <forestry:chipsets:1>.withTag({}), <ore:circuitUltimate>],
-	[<appliedenergistics2:material:17>, <forestry:chipsets:2>.withTag({}), <appliedenergistics2:material:17>]], 
+	mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), 
+	[[<appliedenergistics2:material:17>, <forestry:chipsets>.withTag({T:0 as short}, false), <appliedenergistics2:material:17>],
+	[<ore:circuitUltimate>, <forestry:chipsets:1>.withTag({T:1 as short}, false), <ore:circuitUltimate>],
+	[<appliedenergistics2:material:17>, <forestry:chipsets:2>.withTag({T:2 as short}, false), <appliedenergistics2:material:17>]], 
 	40, <liquid:water> * 1000);
 
 # Sturdy Casing
@@ -66,74 +71,19 @@ print("--- loading Forestry.zs ---");
 # Removing shapeless bronze crafting recipe
 	recipes.remove(<forestry:ingot_bronze>);
 	
-# Plank recipes, made by TrilexCom
-	recipes.addShapeless(<forestry:planks.0> * 2, [<forestry:logs.0>]); 
-	recipes.addShapeless(<forestry:planks.0:1> * 2, [<forestry:logs.0:1>]);
-	recipes.addShapeless(<forestry:planks.0:2> * 2, [<forestry:logs.0:2>]);
-	recipes.addShapeless(<forestry:planks.0:3> * 2, [<forestry:logs.0:3>]);    
-	recipes.addShapeless(<forestry:planks.0:4> * 2, [<forestry:logs.1>]);    
-	recipes.addShapeless(<forestry:planks.0:5> * 2, [<forestry:logs.1:1>]);    
-	recipes.addShapeless(<forestry:planks.0:6> * 2, [<forestry:logs.1:2>]);    
-	recipes.addShapeless(<forestry:planks.0:7> * 2, [<forestry:logs.1:3>]);
-	recipes.addShapeless(<forestry:planks.0:8> * 2, [<forestry:logs.2>]); 
-	recipes.addShapeless(<forestry:planks.1:2> * 2, [<forestry:logs.4:2>]);
-	recipes.addShapeless(<forestry:planks.1:3> * 2, [<forestry:logs.4:3>]);
-	recipes.addShapeless(<forestry:planks.1:4> * 2, [<forestry:logs.5>]);
-	recipes.addShapeless(<forestry:planks.1:6> * 2, [<forestry:logs.5:2>]);
-	recipes.addShapeless(<forestry:planks.1:5> * 2, [<forestry:logs.5:1>]);
-	recipes.addShapeless(<forestry:planks.0:15> * 2, [<forestry:logs.3:3>]);
-	recipes.addShapeless(<forestry:planks.0:11> * 2, [<forestry:logs.2:3>]);
-	recipes.addShapeless(<forestry:planks.0:12> * 2, [<forestry:logs.3>]);
-	recipes.addShapeless(<forestry:planks.0:13> * 2, [<forestry:logs.3:1>]);
-	recipes.addShapeless(<forestry:planks.0:14> * 2, [<forestry:logs.3:2>]);
-	recipes.addShapeless(<forestry:planks.1:7> * 2, [<forestry:logs.5:3>]);
-	recipes.addShapeless(<forestry:planks.1:10> * 2, [<forestry:logs.6:2>]);
-	recipes.addShapeless(<forestry:planks.1:9> * 2, [<forestry:logs.6:1>]);
-	recipes.addShapeless(<forestry:planks.1:8> * 2, [<forestry:logs.6>]);
-	recipes.addShapeless(<forestry:planks.1> * 2, [<forestry:logs.4>]);
-	recipes.addShapeless(<forestry:planks.1:1> * 2, [<forestry:logs.4:1>]);
-	recipes.addShapeless(<forestry:planks.0:9> * 2, [<forestry:logs.2:1>]);
-	recipes.addShapeless(<forestry:planks.1:12> * 2, [<forestry:logs.7>]);
-	recipes.addShapeless(<forestry:planks.0:10> * 2, [<forestry:logs.2:2>]);
-	recipes.addShapeless(<forestry:planks.1:11> * 2, [<forestry:logs.6:3>]);
-
-# Fireproof Plank recipes
-		recipes.addShapeless(<forestry:planks.fireproof.0> * 2, [<forestry:logs.fireproof.0>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:1> * 2, [<forestry:logs.fireproof.0:1>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:2> * 2, [<forestry:logs.fireproof.0:2>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:3> * 2, [<forestry:logs.fireproof.0:3>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:4> * 2, [<forestry:logs.fireproof.1>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:5> * 2, [<forestry:logs.fireproof.1:1>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:6> * 2, [<forestry:logs.fireproof.1:2>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:7> * 2, [<forestry:logs.fireproof.1:3>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:8> * 2, [<forestry:logs.fireproof.2>]);
-		recipes.addShapeless(<forestry:planks.fireproof.1:2> * 2, [<forestry:logs.fireproof.4:2>]);
-		recipes.addShapeless(<forestry:planks.fireproof.1:3> * 2, [<forestry:logs.fireproof.4:3>]);
-		recipes.addShapeless(<forestry:planks.fireproof.1:4> * 2, [<forestry:logs.fireproof.5>]);
-		recipes.addShapeless(<forestry:planks.fireproof.1:6> * 2, [<forestry:logs.fireproof.5:2>]);
-		recipes.addShapeless(<forestry:planks.fireproof.1:5> * 2, [<forestry:logs.fireproof.5:1>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:15> * 2, [<forestry:logs.fireproof.3:3>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:11> * 2, [<forestry:logs.fireproof.2:3>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:12> * 2, [<forestry:logs.fireproof.3>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:13> * 2, [<forestry:logs.fireproof.3:1>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:14> * 2, [<forestry:logs.fireproof.3:2>]);
-		recipes.addShapeless(<forestry:planks.fireproof.1:7> * 2, [<forestry:logs.fireproof.5:3>]);
-		recipes.addShapeless(<forestry:planks.fireproof.1:10> * 2, [<forestry:logs.fireproof.6:2>]);
-		recipes.addShapeless(<forestry:planks.fireproof.1:9> * 2, [<forestry:logs.fireproof.6:1>]);
-		recipes.addShapeless(<forestry:planks.fireproof.1:8> * 2, [<forestry:logs.fireproof.6>]);
-		recipes.addShapeless(<forestry:planks.fireproof.1> * 2, [<forestry:logs.fireproof.4>]);
-		recipes.addShapeless(<forestry:planks.fireproof.1:1> * 2, [<forestry:logs.fireproof.4:1>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:9> * 2, [<forestry:logs.fireproof.2:1>]);
-		recipes.addShapeless(<forestry:planks.fireproof.1:12> * 2, [<forestry:logs.fireproof.7>]);
-		recipes.addShapeless(<forestry:planks.fireproof.0:10> * 2, [<forestry:logs.fireproof.2:2>]);
-		recipes.addShapeless(<forestry:planks.fireproof.1:11> * 2, [<forestry:logs.fireproof.6:3>]);
-	
 # *======= Carpenter =======*
 
 //mods.forestry.Carpenter.addRecipe(IItemStack output, IIngredient[][] ingredients, int packagingTime, @Optional ILiquidStack fluidInput, @Optional IItemStack box)
 #mods.forestry.Carpenter.addRecipe(<minecraft:redstone> * 9, [[<minecraft:redstone_block>]], 30);
 #mods.forestry.Carpenter.addRecipe(<minecraft:gold_ingot>, [[<minecraft:gold_block>]], 30, <liquid:for.honey> * 100);
 #mods.forestry.Carpenter.addRecipe(<minecraft:redstone_block>, [[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>],[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>],[<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>]], 60, <liquid:water> * 200, <minecraft:stone>);
+
+
+# Use OreDict recipe for Impregnated Casing
+val imprCasingGrid = Grid(["AAA","A A","AAA"], {A:<ore:logWood>}).shaped();
+mods.forestry.Carpenter.removeRecipe(<forestry:impregnated_casing>);
+mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:oliveoil> * 250);
+mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:seed.oil> * 250);
 
 //mods.forestry.Carpenter.removeRecipe(IItemStack output, @Optional ILiquidStack fluidInput);
 #mods.forestry.Carpenter.removeRecipe(<forestry:portable_alyzer>);
@@ -157,13 +107,65 @@ print("--- loading Forestry.zs ---");
 #mods.forestry.Fermenter.removeRecipe(<minecraft:reeds>);
 #mods.forestry.Fermenter.removeRecipe(<liquid:water>);
 
+#More Fermenter compat
+val FermenterFluid = {
+    <liquid:wildberryjuice> : 1.26,
+    <liquid:ironberryjuice> : 1.00,
+    <liquid:grapejuice>     : 1.50,
+    <liquid:applejuice>     : 1.50,
+    <liquid:for.honey>      : 1.50,
+    <liquid:honey>          : 1.50,
+    <liquid:water>          : 1.00
+}   as float[ILiquidStack];
+
+val thingsToferment = [
+    <minecraft:carrot>,
+    <harvestcraft:peanutitem>,
+    <harvestcraft:waterchestnutitem>,
+    <harvestcraft:sesameseedsitem>,
+    <harvestcraft:curryleafitem>,
+    <minecraft:beetroot>,
+    <minecraft:melon>,
+    <harvestcraft:gigapickleitem>,
+    <harvestcraft:kaleitem>,
+    <harvestcraft:agaveitem>,
+    <harvestcraft:amaranthitem>,
+    <harvestcraft:arrowrootitem>,
+    <harvestcraft:quinoaitem>,
+    <harvestcraft:sisalitem>,
+    <harvestcraft:cassavaitem>,
+    <harvestcraft:chickpeaitem>,
+    <harvestcraft:elderberryitem>,
+    <harvestcraft:flaxitem>,
+    <harvestcraft:greengrapeitem>,
+    <harvestcraft:huckleberryitem>,
+    <harvestcraft:jicamaitem>,
+    <harvestcraft:juteitem>,
+    <harvestcraft:kenafitem>,
+    <harvestcraft:kohlrabiitem>,
+    <harvestcraft:lentilitem>,
+    <harvestcraft:milletitem>,
+    <harvestcraft:mulberryitem>,
+    <harvestcraft:taroitem>
+] as IItemStack[];
+
+for thing in thingsToferment {
+    for liquid, ratio in FermenterFluid {
+        mods.forestry.Fermenter.addRecipe(<liquid:biomass>, thing, liquid, 50, ratio);
+    }
+}
+
 # *======= Moisterner =======*
 
 //mods.forestry.Moistener.addRecipe(IItemStack output, IItemStack input, int packagingTime); 
 #mods.forestry.Moistener.addRecipe(<minecraft:mycelium>, <minecraft:grass>, 60); 
 
-//mods.forestry.Moistener.removeRecipe(IIngredient output);
-#mods.forestry.Moistener.removeRecipe(<minecraft:stonebrick:1>);
+# Remove pulp recipe
+mods.forestry.Carpenter.removeRecipe(<forestry:wood_pulp>);
+mods.forestry.Carpenter.addRecipe(<thermalfoundation:material:800>, [[<ore:logWood>]], 40, <liquid:water> * 250);
+
+mods.forestry.Carpenter.removeRecipe(<forestry:letters>);
+mods.forestry.Carpenter.addRecipe(<forestry:letters>, Grid(["AAA","AAA"], {A: <thermalfoundation:material:800>}).shaped(), 40, <liquid:water> * 250);
 
 # *======= Squeezer =======*
 
@@ -171,18 +173,27 @@ print("--- loading Forestry.zs ---");
 //mods.forestry.Squeezer.addRecipe(<liquid:lava>, <minecraft:redstone>, 120);
 #mods.forestry.Squeezer.addRecipe(<liquid:lava>, <minecraft:obsidian>, 120, <minecraft:redstone> % 20);
 
-//mods.forestry.Squeezer.removeRecipe(ILiquidStack liquid, @Optional IIngredient[] ingredients);
-#mods.forestry.Squeezer.removeRecipe(<liquid:juice>);
-#mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]);
+# Simplify andvanced bags
+val bagNames = [
+	"miner",
+	"digger",
+	"forester",
+	"hunter",
+	"adventurer",
+	"builder",
+] as string[];
 
-# *======= Still =======*
+for name in bagNames {
+	val splBag = itemUtils.getItem("forestry:"~name~"_bag");
+	val advBag = itemUtils.getItem("forestry:"~name~"_bag_t2");
+	mods.forestry.Carpenter.removeRecipe(advBag);
 
-//mods.forestry.Still.addRecipe(ILiquidStack fluidOutput, ILiquidStack fluidInput, int timePerUnit);
-#mods.forestry.Still.addRecipe(<liquid:lava>, <liquid:water>, 200);
-
-//mods.forestry.Still.removeRecipe(ILiquidStack output, @Optional ILiquidStack fluidInput);
-#mods.forestry.Still.removeRecipe(<liquid:bio.ethanol>);
-#mods.forestry.Still.removeRecipe(<liquid:refinedcanolaoil>,<liquid:canolaoil>);
+	mods.forestry.Carpenter.addRecipe(advBag, [
+		[<quark:gold_button>], # Gold Button
+		[splBag],
+		[<forestry:crafting_material:2>] # Silk Wisp
+	], 40, <liquid:water> * 250);
+}
 
 # *======= Thermionic Fabricator =======*
 
@@ -199,4 +210,4 @@ print("--- loading Forestry.zs ---");
 //mods.forestry.ThermionicFabricator.removeSmelting(IIngredient itemInput);
 #mods.forestry.ThermionicFabricator.removeSmelting(<minecraft:sand>);
 
-print("--- Forestry.zs initialized ---");
+

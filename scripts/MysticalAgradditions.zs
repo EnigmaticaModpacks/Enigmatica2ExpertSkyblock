@@ -1,6 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded mysticalagradditions
-print("--- loading MysticalAgradditions.zs ---");
+
 
 # *======= Seeds Tier 6 =======*
 
@@ -21,7 +21,7 @@ print("--- loading MysticalAgradditions.zs ---");
 
 # Inferium Seeds
 	recipes.remove(<mysticalagradditions:tier6_inferium_seeds>);
-	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/tier6_inferium_seeds",
+	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expert:shaped/internal/altar/tier6_inferium_seeds",
 		<mysticalagradditions:tier6_inferium_seeds>, 3500, 600, [
             <ore:essenceTier5>, <ore:blockInsaniumEssence>, <ore:essenceTier5>,
             <ore:blockInsaniumEssence>, <mysticalagradditions:insanium:1>, <ore:blockInsaniumEssence>,
@@ -37,7 +37,7 @@ print("--- loading MysticalAgradditions.zs ---");
 			
 # Awakended Draconium Seeds
 	recipes.remove(<mysticalagradditions:awakened_draconium_seeds>);
-		mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/awakended_draconium_seeds",
+		mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expert:shaped/internal/altar/awakended_draconium_seeds",
 		<mysticalagradditions:awakened_draconium_seeds>, 3500, 600, [
             <ore:essenceTier5>, <ore:blockInsaniumEssence>, <ore:essenceTier5>,
             <ore:blockInsaniumEssence>, <mysticalagradditions:insanium:1>, <ore:blockInsaniumEssence>,
@@ -53,7 +53,7 @@ print("--- loading MysticalAgradditions.zs ---");
 			
 # Nether Star Seeds
 	recipes.remove(<mysticalagradditions:nether_star_seeds>);
-	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/nether_star_seeds",
+	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expert:shaped/internal/altar/nether_star_seeds",
 		<mysticalagradditions:nether_star_seeds>, 3500, 600, [
             <ore:essenceTier5>, <ore:blockInsaniumEssence>, <ore:essenceTier5>,
             <ore:blockInsaniumEssence>, <mysticalagradditions:insanium:1>, <ore:blockInsaniumEssence>,
@@ -66,10 +66,26 @@ print("--- loading MysticalAgradditions.zs ---");
 			<ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, 
 			<ore:blockNetherStar>],
 			"astralsorcery.constellation.aevitas");
-				
+			
+# Ender_Amethyst_Seeds
+	recipes.remove(<mysticalagriculture:ender_amethyst_seeds>);
+	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expert:shaped/internal/altar/ender_amethyst_seeds",
+		<mysticalagriculture:ender_amethyst_seeds>, 3500, 600, [
+            <ore:essenceTier5>, <ore:blockInsaniumEssence>, <ore:essenceTier5>,
+            <ore:blockInsaniumEssence>, <mysticalagradditions:insanium:1>, <ore:blockInsaniumEssence>,
+            <ore:essenceTier5>, <ore:blockInsaniumEssence>, <ore:essenceTier5>,
+            <ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>,
+            <biomesoplenty:gem_block>, <biomesoplenty:gem_block>,
+            <astralsorcery:itemcoloredlens:2>, <astralsorcery:itemcoloredlens:2>,
+            <ore:ingotCrystaltine>, <ore:ingotCrystaltine>,
+            <biomesoplenty:gem_block>, <biomesoplenty:gem_block>,
+			<ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, <ore:ingotInsanium>, 
+			<minecraft:nether_star>],
+			"astralsorcery.constellation.aevitas");
+			
 # Iridium Seeds
 	recipes.remove(<mysticalagriculture:iridium_seeds>);
-		mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/iridium_seeds",
+		mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expert:shaped/internal/altar/iridium_seeds",
 		<mysticalagriculture:iridium_seeds>, 3500, 600, [
             <ore:essenceTier5>, <ore:blockInsaniumEssence>, <ore:essenceTier5>,
             <ore:blockInsaniumEssence>, <mysticalagradditions:insanium:1>, <ore:blockInsaniumEssence>,
@@ -85,7 +101,7 @@ print("--- loading MysticalAgradditions.zs ---");
 			
 # Enderium Seeds
 	recipes.remove(<mysticalagriculture:enderium_seeds>);
-	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/enderium_seeds",
+	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expert:shaped/internal/altar/enderium_seeds",
 		<mysticalagriculture:enderium_seeds>, 3500, 600, [
             <ore:essenceTier5>, <ore:blockInsaniumEssence>, <ore:essenceTier5>,
             <ore:blockInsaniumEssence>, <mysticalagradditions:insanium:1>, <ore:blockInsaniumEssence>,
@@ -101,7 +117,7 @@ print("--- loading MysticalAgradditions.zs ---");
 			
 # Terrasteel Seeds
 	recipes.remove(<mysticalagriculture:terrasteel_seeds>);
-	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/terrasteel_seeds",
+	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expert:shaped/internal/altar/terrasteel_seeds",
 		<mysticalagriculture:terrasteel_seeds>, 3500, 600, [
             <ore:essenceTier5>, <ore:blockInsaniumEssence>, <ore:essenceTier5>,
             <ore:blockInsaniumEssence>, <mysticalagradditions:insanium:1>, <ore:blockInsaniumEssence>,
@@ -117,7 +133,7 @@ print("--- loading MysticalAgradditions.zs ---");
 	
 # Dragon Egg Seeds	
 	recipes.remove(<mysticalagradditions:dragon_egg_seeds>);
-	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/dragon_egg_seeds",
+	mods.astralsorcery.Altar.addTraitAltarRecipe("enigmatica2expert:shaped/internal/altar/dragon_egg_seeds",
 		<mysticalagradditions:dragon_egg_seeds>, 3500, 600, [
             <ore:essenceTier5>, <ore:blockInsaniumEssence>, <ore:essenceTier5>,
             <ore:blockInsaniumEssence>, <mysticalagradditions:insanium:1>, <ore:blockInsaniumEssence>,
@@ -131,4 +147,4 @@ print("--- loading MysticalAgradditions.zs ---");
 			<ore:blockNetherStar>],
 			"astralsorcery.constellation.aevitas");
 				
-	print("--- MysticalAgradditions.zs initialized ---");
+	

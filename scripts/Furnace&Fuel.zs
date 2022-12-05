@@ -1,6 +1,9 @@
-print("--- loading Furnace&Fuel.zs ---");
 
-# *======= Adding Smeltables =======*
+
+# Removing duplicate recipes
+	furnace.remove(<appliedenergistics2:material:5>, <enderio:item_material:33>);
+	furnace.remove(<appliedenergistics2:material:5>, <actuallyadditions:item_dust:5>);
+	furnace.remove(<appliedenergistics2:material:5>, <nuclearcraft:gem_dust:2>);
 
 # Lithium Dust -> Ingots
 	furnace.addRecipe(<nuclearcraft:ingot:6>, <ic2:dust:11>);
@@ -8,6 +11,13 @@ print("--- loading Furnace&Fuel.zs ---");
 # Steel Blend
 	furnace.addRecipe(<thermalfoundation:material:160>, <thermalfoundation:material:96>);
 
+# Removing End Ores
+	furnace.remove(<netherendingores:ore_end_vanilla:*>);
+	furnace.remove(<netherendingores:ore_end_modded_1:*>);
+	furnace.remove(<netherendingores:ore_other_1>);
+	furnace.remove(<netherendingores:ore_nether_modded_1:2>);
+	furnace.remove(<netherendingores:ore_nether_modded_1:4>);
+	furnace.remove(<netherendingores:ore_nether_modded_1:13>);
 	
 # *======= Adding Burnables =======*
 
@@ -23,4 +33,3 @@ print("--- loading Furnace&Fuel.zs ---");
 	furnace.setFuel(<forestry:resource_storage>, 1000);
 	furnace.setFuel(<forestry:apatite>, 100);
 	
-print("--- Furnace&Fuel.zs initialized ---");

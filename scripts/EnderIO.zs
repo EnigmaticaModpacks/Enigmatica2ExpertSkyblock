@@ -1,7 +1,18 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded enderio
-print("--- loading EnderIO.zs ---");
+
+
+
+# Cheaper decorations
+var casing = <teslacorelib:machine_case>|<actuallyadditions:block_misc:9>|<mekanism:basicblock:8>|<nuclearcraft:part:10>;
+var constructionAlloyOrIron = <ore:ingotConstructionAlloy> | <ore:ingotIron>;
+recipes.remove(<enderio:item_material:2>);
+recipes.addShaped("Cheaper Chassis Parts", 
+<enderio:item_material:2> * 16, [
+[constructionAlloyOrIron, constructionAlloyOrIron, constructionAlloyOrIron], 
+[constructionAlloyOrIron, casing, constructionAlloyOrIron], 
+[constructionAlloyOrIron, constructionAlloyOrIron, constructionAlloyOrIron]]);
 
 # Electrical Steel
 mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:96>, <nuclearcraft:gem:6>);
@@ -16,13 +27,18 @@ for silicon in <ore:itemSilicon>.items {
 	}
 }
 
-# Impulse Hopper
-	recipes.remove(<enderio:block_impulse_hopper>);
-	recipes.addShaped("enderio_impulse_hopper_custom", 
-	<enderio:block_impulse_hopper>, 
-	[[<ore:ingotElectricalSteel>, <minecraft:hopper>, <ore:ingotElectricalSteel>], 
-	[<ore:gearEnergized>, <ic2:resource:12>, <ore:gearEnergized>], 
-	[<ore:ingotElectricalSteel>, <ore:ingotRedstoneAlloy>, <ore:ingotElectricalSteel>]]);
+# This is basically quantity filter with auto input/output
+# [Impulse Hopper] from [Basic Machine Casing][+4]
+craft.remake(<enderio:block_impulse_hopper>, ["pretty",
+  "▬ ◘ ▬",
+  "I □ I",
+  "▬ ♥ ▬"], {
+  "□": <ic2:resource:12>,      # Basic Machine Casing
+  "♥": <ore:blockRedstone>,    # Block of Redstone
+  "◘": <ore:blockHopper>,      # Hopper
+  "I": <ore:gearIronInfinity>, # Infinity Bimetal Gear
+  "▬": <ore:ingotDarkSteel>    # Dark Steel Ingot
+});
 
 # Advanced Item Filter
 	recipes.remove(<enderio:item_advanced_item_filter>);
@@ -31,7 +47,7 @@ for silicon in <ore:itemSilicon>.items {
 	[[<ore:blockRedstone>, <ore:paper>, <ore:blockRedstone>],
 	[<ore:paper>, <enderio:block_enderman_skull>, <ore:paper>], 
 	[<ore:blockRedstone>, <ore:paper>, <ore:blockRedstone>]]);
-	
+
 # Painting Machine
 	recipes.remove(<enderio:block_painter>);
 	recipes.addShaped("Ender IO Painting Machine", <enderio:block_painter>, 
@@ -179,9 +195,15 @@ for silicon in <ore:itemSilicon>.items {
 	recipes.remove(<enderio:block_farm_station>);
 	recipes.addShapedMirrored("Farming Station1", 
 	<enderio:block_farm_station>, 
-	[[<ore:ingotElectricalSteel>, <minecraft:diamond_hoe>.anyDamage(), <ore:ingotElectricalSteel>],
+	[[<ore:ingotElectricalSteel>, <twilightforest:ironwood_hoe>.anyDamage(), <ore:ingotElectricalSteel>],
 	[<ore:ingotElectricalSteel>, <enderio:item_material:1>, <ore:ingotElectricalSteel>], 
-	[<ore:gearVibrant>, <minecraft:diamond_axe>.anyDamage(), <ore:gearVibrant>]]);
+	[<ore:gearVibrant>, <twilightforest:ironwood_axe>.anyDamage(), <ore:gearVibrant>]]);
+	
+	recipes.addShapedMirrored("Farming Station2", 
+	<enderio:block_farm_station>, 
+	[[<ore:ingotElectricalSteel>, <twilightforest:steeleaf_hoe>.anyDamage(), <ore:ingotElectricalSteel>],
+	[<ore:ingotElectricalSteel>, <enderio:item_material:1>, <ore:ingotElectricalSteel>], 
+	[<ore:gearVibrant>, <twilightforest:steeleaf_axe>.anyDamage(), <ore:gearVibrant>]]);
 
 # The Vat
 	recipes.remove(<enderio:block_vat>);
@@ -191,9 +213,71 @@ for silicon in <ore:itemSilicon>.items {
 	[<enderio:block_tank>, <thermalexpansion:machine:7>, <enderio:block_tank>],
 	 [<ore:ingotElectricalSteel>, <minecraft:cauldron>, <ore:ingotElectricalSteel>]]);
 
+# Crafter simplify
+	recipes.remove(<enderio:block_simple_crafter>);
+	recipes.addShaped(<enderio:block_simple_crafter>, [
+		[<ore:itemSilicon>, <ore:itemSilicon>, <ore:itemSilicon>], 
+		[<ore:ingotConstructionAlloy> | <ore:ingotIron>, <ic2:te:88>, <ore:ingotConstructionAlloy> | <ore:ingotIron>], 
+		[<ore:gearStone>, <ore:workbench>, <ore:gearStone>]]);
+
+	recipes.remove(<enderio:block_crafter>);
+	recipes.addShaped(<enderio:block_crafter>, [
+		[<ore:itemSilicon>, <ore:itemSilicon>, <ore:itemSilicon>],
+		[<ore:ingotConstructionAlloy> | <ore:ingotIron>, <ic2:te:89>, <ore:ingotConstructionAlloy> | <ore:ingotIron>], 
+		[<ore:gearIronInfinity>, <ore:workbench>, <ore:gearIronInfinity>]]);
+
+# Power Monitor simplify
+	recipes.remove(<enderio:block_power_monitor>);
+	recipes.addShaped(<enderio:block_power_monitor>, [
+		[<ore:ingotElectricalSteel>, <enderio:item_conduit_probe>, <ore:ingotElectricalSteel>], 
+		[<ore:ingotElectricalSteel>, <nuclearcraft:part:10> | <teslacorelib:machine_case> | <actuallyadditions:block_misc:9> | <mekanism:basicblock:8>, <ore:ingotElectricalSteel>], 
+		[<ore:ingotElectricalSteel>, <enderio:item_power_conduit>, <ore:ingotElectricalSteel>]]);
+
 # Removals
 	rh(<enderio:block_simple_stirling_generator>);
+	rh(<enderio:block_enhanced_alloy_smelter>);
+	rh(<enderio:block_enhanced_combustion_generator>);
+	rh(<enderio:block_enhanced_sag_mill>);
+	rh(<enderio:block_enhanced_vat>);
+	rh(<enderio:block_enhanced_wired_charger>);
 	rh(<enderio:item_material:30>);
 	rh(<enderio:item_material:31>);
+	rh(<enderio:block_wireless_charger_extension>);
 	
-	print("--- EnderIO.zs initialized ---");
+# Lava Heat Exchanger
+var machineCaseVariant = <nuclearcraft:part:10> | <teslacorelib:machine_case> | <actuallyadditions:block_misc:9> | <mekanism:basicblock:8>;
+recipes.remove(<enderio:block_lava_generator>);
+recipes.addShaped(<enderio:block_lava_generator>, [
+	[<ore:ingotBrickNetherGlazed>, <ore:ingotBrickNetherGlazed>, <ore:ingotBrickNetherGlazed>], 
+	[<ore:ingotBrickNetherGlazed>, machineCaseVariant, <ore:ingotBrickNetherGlazed>], 
+	[<ore:ingotBrickNetherGlazed>, <enderio:block_tank>, <ore:ingotBrickNetherGlazed>]]);
+
+# Nethercotta
+mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:72>, <ore:ingotBrickNether>,
+	<immersiveengineering:material:7>, 20*4, 2560, [<ore:cropNetherWart>*4, <ore:clay>*6], "Alloying");
+
+# Simplifi Niard. Still need capacitor to function
+recipes.remove(<enderio:block_niard>);
+recipes.addShaped(<enderio:block_niard>, [
+	[<immersiveengineering:metal_device1:6>, <enderio:block_tank>, <immersiveengineering:metal_device1:6>],
+	[<ore:craftingPiston>, <ore:chassis>, <ore:craftingPiston>],
+	[<ore:ingotIron>, <ore:barsIron>, <ore:ingotIron>]]);
+
+# Compat of nano glowstone
+scripts.process.crush(<enderio:item_material:76>, <enderio:block_holy_fog>, "except: sagMill", 
+	[<enderio:block_holy_fog>, <minecraft:clay_ball>, <minecraft:glowstone_dust>], [0.6f, 0.1f, 0.1f]);
+
+# Compunent for nano-glowstone compat
+scripts.process.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <enderio:item_material:76> * 2, "except: alloySmelter");
+
+# Dark Steel Upgrade Recycling
+	mods.nuclearcraft.decay_hastener.addRecipe([<enderio:item_dark_steel_upgrade:1>.anyDamage(), <enderio:item_dark_steel_upgrade>, 2.0, 2.0]);
+
+# Dark Steel Upgrade Expensive, Thermal
+	mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_dark_steel_upgrade>, <enderio:block_alloy:6>, <minecraft:clay>, 25000);
+
+# Remove [Ender Pearl Powder] grinding recipes
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:ender_pearl>);
+mods.appliedenergistics2.Grinder.removeRecipe(<thermalfoundation:material:895>);
+scripts.process.crush(<ore:enderpearl>, <appliedenergistics2:material:46>, "Except: Pulverizer PulseCentrifuge", null, null);
+

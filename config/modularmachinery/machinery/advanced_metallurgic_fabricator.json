@@ -191,7 +191,7 @@
             "y": -1,
             "z": 1,
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "twilightforest:block_storage@1"
             ]
         },
         {
@@ -231,7 +231,7 @@
             "y": -1,
             "z": 1,
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "twilightforest:block_storage@1"
             ]
         },
         {
@@ -247,7 +247,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "twilightforest:block_storage@1"
             ]
         },
         {
@@ -271,7 +271,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "twilightforest:block_storage@1"
             ]
         },
         {
@@ -279,7 +279,7 @@
             "y": -1,
             "z": 1,
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "twilightforest:block_storage@1"
             ]
         },
         {
@@ -293,7 +293,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "twilightforest:block_storage@1"
             ]
         },
         {

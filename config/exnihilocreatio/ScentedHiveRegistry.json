@@ -3,8 +3,8 @@
     "hive": "forestry:beehives:0",
     "dim": 0,
     "adjacentBlocks": {
-      "ore:treeLeaves": 1,
-      "ore:logWood": 1
+      "ore:logWood": 1,
+      "ore:treeLeaves": 1
     }
   },
   {

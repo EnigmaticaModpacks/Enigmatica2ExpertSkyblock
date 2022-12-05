@@ -3,20 +3,20 @@ import mods.armoreablemobs.ArmorHandler;
 import mods.armoreablemobs.ArmorEntity;
 import mods.armoreablemobs.ArmorSlot;
 import mods.armoreablemobs.ArmorGroup;
+#modloaded armoreablemobs
 
-# Custom recipes made by NillerMedDild
-	print("--- loading ArmoreableMobs.zs ---");
 
 # *======= Variables =======*
 
-	#var draconicGroup = ArmorHandler.createArmorGroup("draconic", 0.001);
-	#var wyvernGroup = ArmorHandler.createArmorGroup("wyvern", 0.002);
-	var nuclearGroup = ArmorHandler.createArmorGroup("nuclear", 0.01);
-	var mysticalGroup = ArmorHandler.createArmorGroup("mystical", 0.01);
-	var magicalGroup = ArmorHandler.createArmorGroup("magical", 0.015);
-	var vanillaGroup = ArmorHandler.createArmorGroup("vanilla", 0.01);
-	var energyGroup = ArmorHandler.createArmorGroup("energy", 0.01);
-	var skeletonGroup = ArmorHandler.createArmorGroup("skeleton", 0.03);
+	#var draconicGroup = ArmorHandler.createArmorGroup("draconic", 0.01);
+	#var wyvernGroup = ArmorHandler.createArmorGroup("wyvern", 0.02);
+	var nuclearGroup = ArmorHandler.createArmorGroup("nuclear", 0.1);
+	var mysticalGroup = ArmorHandler.createArmorGroup("mystical", 0.1);
+	var twilightGroup = ArmorHandler.createArmorGroup("twilight", 0.15);
+	var magicalGroup = ArmorHandler.createArmorGroup("magical", 0.15);
+	var vanillaGroup = ArmorHandler.createArmorGroup("vanilla", 0.1);
+	var energyGroup = ArmorHandler.createArmorGroup("energy", 0.1);
+	var skeletonGroup = ArmorHandler.createArmorGroup("skeleton", 0.3);
 
 # *======= Entities =======*
 
@@ -31,6 +31,7 @@ import mods.armoreablemobs.ArmorGroup;
 	var strayBoss = ArmorHandler.createArmorEntity("minecraft:stray").withNBTCheck("Health", 200.0, "GREATER");
 	var zombieVillager = ArmorHandler.createArmorEntity("minecraft:zombie_villager");
 	var witherSkeleton = ArmorHandler.createArmorEntity("minecraft:wither_skeleton").withNBTCheck("Health", 35.0, "GREATER");
+	var knight = ArmorHandler.createArmorEntity("emberroot:knight_fallen").withNBTCheck("Health", 50.0, "GREATER");
 	
 # *======= Weaponry =======*
 	
@@ -42,6 +43,7 @@ import mods.armoreablemobs.ArmorGroup;
 	<botania:elementiumsword>,
 	<thermalfoundation:tool.sword_invar>,
 	<thermalfoundation:tool.sword_platinum>,
+	<twilightforest:fiery_sword>.withTag({ench: [{lvl: 2 as short, id: 20 as short}]}),
 	<redstonearsenal:tool.sword_flux>.withTag({Energy: 320000}),
 	<tconstruct:frypan>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 0.51 as float, FreeModifiers: 3, Durability: 6, HarvestLevel: 0, Attack: 0.05 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 1.01 as float, FreeModifiers: 4, Durability: 506, HarvestLevel: 0, Attack: 1.05 as float}, Special: {Categories: ["tool", "weapon"]}, TinkerData: {UsedModifiers: 3, Materials: ["paper", "paper"], Modifiers: ["toolleveling", "knockback", "creative", "diamond"]}, Modifiers: [{identifier: "writable", color: -1, level: 2, writable2: 1 as byte, writable1: 1 as byte}, {identifier: "toolleveling", color: 16777215, level: 1, xp: 5, bonus_modifiers: 0}, {identifier: "knockback", current: 20, color: 10461087, level: 2, max: 20, extraInfo: "19 / 20"}, {identifier: "creative", color: 0, level: 3}, {identifier: "diamond", color: 9237730}], Traits: ["writable1", "writable2", "toolleveling", "knockback"]}),
 	<tconstruct:broadsword>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 2.1 as float, FreeModifiers: 3, Durability: 481, HarvestLevel: 5, Attack: 8.0 as float}, Stats: {AttackSpeedMultiplier: 1.2 as float, MiningSpeed: 2.1 as float, FreeModifiers: 2, Durability: 481, HarvestLevel: 5, Attack: 8.0 as float}, Special: {Categories: ["weapon", "tool"]}, TinkerData: {UsedModifiers: 1, Materials: ["magmaslime", "magmaslime", "magmaslime"], Modifiers: ["toolleveling", "haste", "creative"]}, Modifiers: [{identifier: "flammable", color: -27123, level: 1}, {identifier: "superheat", color: -27123, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "haste", current: 50, color: 9502720, level: 1, max: 50, extraInfo: "49 / 50"}, {identifier: "creative", color: 0, level: 1}], Traits: ["flammable", "superheat", "toolleveling"]}),
@@ -67,6 +69,7 @@ import mods.armoreablemobs.ArmorGroup;
 	] as IItemStack[];
 	
 	for weapon in weapons {
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("mainhand", weapon, 10, 0.02));
 	magicalGroup.addArmor(ArmorHandler.createArmorSlot("mainhand", weapon, 10, 0.02));
 	mysticalGroup.addArmor(ArmorHandler.createArmorSlot("mainhand", weapon, 10, 0.02));
 	nuclearGroup.addArmor(ArmorHandler.createArmorSlot("mainhand", weapon, 10, 0.02));
@@ -87,6 +90,7 @@ import mods.armoreablemobs.ArmorGroup;
 	draconicGroup.addEntity(zombie);
 	draconicGroup.addEntity(zombieStrong);
 	draconicGroup.addEntity(zombieBoss);
+	draconicGroup.addEntity(knight);
 	draconicGroup.addEntity(husk);
 	draconicGroup.addEntity(witherSkeleton);
 	draconicGroup.addEntity(zombiePigman);
@@ -105,11 +109,48 @@ import mods.armoreablemobs.ArmorGroup;
 	wyvernGroup.addEntity(zombie);
 	wyvernGroup.addEntity(zombieStrong);
 	wyvernGroup.addEntity(zombieBoss);
+	wyvernGroup.addEntity(knight);
 	wyvernGroup.addEntity(husk);
 	wyvernGroup.addEntity(witherSkeleton);
 	wyvernGroup.addEntity(zombiePigman);
 	wyvernGroup.addEntity(zombieVillager);
 */
+
+# *======= Twilight Armor =======*
+
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("head", <twilightforest:ironwood_helmet>.withTag({ench: [{lvl: 1 as short, id: 6 as short}]}), 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("chest", <twilightforest:ironwood_chestplate>.withTag({ench: [{lvl: 1 as short, id: 0 as short}]}), 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("legs", <twilightforest:ironwood_leggings>.withTag({ench: [{lvl: 1 as short, id: 0 as short}]}), 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("feet", <twilightforest:ironwood_boots>.withTag({ench: [{lvl: 1 as short, id: 2 as short}]}), 1, 0.25));
+
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("head", <twilightforest:knightmetal_helmet>, 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("chest", <twilightforest:knightmetal_chestplate>, 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("legs", <twilightforest:knightmetal_leggings>, 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("feet", <twilightforest:knightmetal_boots>, 1, 0.25));
+
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("head", <twilightforest:steeleaf_helmet>.withTag({ench: [{lvl: 2 as short, id: 4 as short}]}), 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("chest", <twilightforest:steeleaf_chestplate>.withTag({ench: [{lvl: 2 as short, id: 3 as short}]}), 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("legs", <twilightforest:steeleaf_leggings>.withTag({ench: [{lvl: 2 as short, id: 1 as short}]}), 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("feet", <twilightforest:steeleaf_boots>.withTag({ench: [{lvl: 2 as short, id: 2 as short}]}), 1, 0.25));
+
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("head", <twilightforest:fiery_helmet>, 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("chest", <twilightforest:fiery_chestplate>, 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("legs", <twilightforest:fiery_leggings>, 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("feet", <twilightforest:fiery_boots>, 1, 0.25));
+	
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("head", <twilightforest:ironwood_helmet>.withTag({ench: [{lvl: 1 as short, id: 6 as short}]}), 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("chest", <twilightforest:ironwood_chestplate>.withTag({ench: [{lvl: 1 as short, id: 0 as short}]}), 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("legs", <twilightforest:ironwood_leggings>.withTag({ench: [{lvl: 1 as short, id: 0 as short}]}), 1, 0.25));
+	twilightGroup.addArmor(ArmorHandler.createArmorSlot("feet", <twilightforest:ironwood_boots>.withTag({ench: [{lvl: 1 as short, id: 2 as short}]}), 1, 0.25));
+	
+	twilightGroup.addEntity(zombie);
+	twilightGroup.addEntity(zombieStrong);
+	twilightGroup.addEntity(zombieBoss);
+	twilightGroup.addEntity(knight);
+	twilightGroup.addEntity(husk);
+	twilightGroup.addEntity(witherSkeleton);
+	twilightGroup.addEntity(zombiePigman);
+	twilightGroup.addEntity(zombieVillager);
 
 # *======= Mystical Agriculture Armor =======*
 		
@@ -136,6 +177,7 @@ import mods.armoreablemobs.ArmorGroup;
 	mysticalGroup.addEntity(zombie);
 	mysticalGroup.addEntity(zombieStrong);
 	mysticalGroup.addEntity(zombieBoss);
+	mysticalGroup.addEntity(knight);
 	mysticalGroup.addEntity(husk);
 	mysticalGroup.addEntity(witherSkeleton);
 	mysticalGroup.addEntity(zombiePigman);
@@ -168,18 +210,10 @@ import mods.armoreablemobs.ArmorGroup;
 	magicalGroup.addArmor(ArmorHandler.createArmorSlot("legs", <botania:terrasteellegs>, 1, 0.003));
 	magicalGroup.addArmor(ArmorHandler.createArmorSlot("feet", <botania:terrasteelboots>, 1, 0.003));
 	
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("head", <thaumcraft:crimson_plate_helm>, 8, 0.15));
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("chest", <thaumcraft:crimson_plate_chest>, 8, 0.15));
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("legs", <thaumcraft:crimson_plate_legs>, 8, 0.15));
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("feet", <thaumcraft:crimson_boots>, 8, 0.15));
-
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("head", <thaumcraft:crimson_robe_helm>, 10, 0.15));
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("chest", <thaumcraft:crimson_robe_chest>, 10, 0.15));
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("legs", <thaumcraft:crimson_robe_legs>, 10, 0.15));
-	
 	magicalGroup.addEntity(zombie);
 	magicalGroup.addEntity(zombieStrong);
 	magicalGroup.addEntity(zombieBoss);
+	magicalGroup.addEntity(knight);
 	magicalGroup.addEntity(husk);
 	magicalGroup.addEntity(witherSkeleton);
 	magicalGroup.addEntity(zombiePigman);
@@ -210,6 +244,7 @@ import mods.armoreablemobs.ArmorGroup;
 	nuclearGroup.addEntity(zombie);
 	nuclearGroup.addEntity(zombieStrong);
 	nuclearGroup.addEntity(zombieBoss);
+	nuclearGroup.addEntity(knight);
 	nuclearGroup.addEntity(husk);
 	nuclearGroup.addEntity(witherSkeleton);
 	nuclearGroup.addEntity(zombiePigman);
@@ -240,6 +275,7 @@ import mods.armoreablemobs.ArmorGroup;
 	vanillaGroup.addEntity(zombie);
 	vanillaGroup.addEntity(zombieStrong);
 	vanillaGroup.addEntity(zombieBoss);
+	vanillaGroup.addEntity(knight);
 	vanillaGroup.addEntity(husk);
 	vanillaGroup.addEntity(witherSkeleton);
 	vanillaGroup.addEntity(zombiePigman);
@@ -270,6 +306,7 @@ import mods.armoreablemobs.ArmorGroup;
 	energyGroup.addEntity(zombie);
 	energyGroup.addEntity(zombieStrong);
 	energyGroup.addEntity(zombieBoss);
+	energyGroup.addEntity(knight);
 	energyGroup.addEntity(husk);
 	energyGroup.addEntity(witherSkeleton);
 	energyGroup.addEntity(zombiePigman);
@@ -302,4 +339,4 @@ import mods.armoreablemobs.ArmorGroup;
 	skeletonGroup.addEntity(stray);
 	skeletonGroup.addEntity(strayBoss);
 
-		print("--- ArmoreableMobs.zs initialized ---");
+		

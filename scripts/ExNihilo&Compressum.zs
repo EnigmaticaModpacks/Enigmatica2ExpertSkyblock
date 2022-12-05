@@ -1,20 +1,7 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded exnihilocreatio
-print("--- loading ExNihilo&Compressum.zs ---");
 
-# Baits
-	recipes.addShapeless("Polar Bear Bait", 
-	<excompressum:bait:10>, 
-	[<ore:fish>,<minecraft:snowball>]);
 	
-	recipes.addShapeless("Llama Bait", 
-	<excompressum:bait:11>, 
-	[<ore:listAllgrain>,<ore:listAllsugar>]);
-	
-	recipes.addShapeless("Parrot Bait",
-	<excompressum:bait:12>,
-	[<ore:dyeRed>,<ore:dyeGreen>]);
-
 # End Cake
 	recipes.remove(<exnihilocreatio:block_end_cake>);
 	recipes.addShaped("End Cake", 
@@ -31,6 +18,13 @@ print("--- loading ExNihilo&Compressum.zs ---");
 	[null, <ore:stickWood>, <ore:plankWood>], 
 	[<ore:stickWood>, null, null]]);
 
+# Stone Barrel
+	recipes.remove(<exnihilocreatio:block_barrel1>);
+	recipes.addShaped("Stone Barrel", 
+	<exnihilocreatio:block_barrel1>, 
+	[[<minecraft:stone>, null, <minecraft:stone>],
+	[<minecraft:stone>, null, <minecraft:stone>], 
+	[<minecraft:stone>, <ore:obsidian>, <minecraft:stone>]]);
 
 # Netherrack -> Crushed Netherrack recipe
 	mods.thermalexpansion.Pulverizer.addRecipe(<exnihilocreatio:block_netherrack_crushed>, <minecraft:netherrack>, 2000);
@@ -136,6 +130,22 @@ print("--- loading ExNihilo&Compressum.zs ---");
 	rh(<exnihilocreatio:item_ore_lead:2>);
 	rh(<exnihilocreatio:item_ore_silver:2>);
 	rh(<exnihilocreatio:item_ore_nickel:2>);
-	
 
-	print("--- ExNihilo&Compressum.zs initialized ---");
+# Remove excess mesh
+	rh(<excompressum:iron_mesh>);
+
+
+# [Artificial Hive] from [Hay Bale][+1]
+craft.remake(<exnihilocreatio:hive>, ["pretty",
+  "B B B",
+  "b H b",
+  "B B B"], {
+  B: <ore:itemBeeswax>,    # Beeswax
+  H: <minecraft:hay_block>,# Hay Bale
+	b: <rustic:bee>
+});
+
+# Remove Burn Time to prevent confusing in JEI categories
+furnace.setFuel(<exnihilocreatio:hive:1>, 0);
+
+	

@@ -1,15 +1,16 @@
 import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.jei.JEI.removeAndHide as rh;
 
-# Custom recipes made by NillerMedDild, altered by Discomanco
-	print("--- loading MiscRecipes.zs ---");
+recipes.remove(<extrabitmanipulation:diamond_nugget>);
 
 # Eclipsed Clock
-recipes.addShapedMirrored("Eclipsed Clock", 
-<randomthings:eclipsedclock>, 
-[[<mekanism:otherdust:5>, <minecraft:clock>, <mekanism:otherdust:5>],
-[<minecraft:clock>, <ore:netherStar>, <minecraft:clock>], 
-[<mekanism:otherdust:5>, <minecraft:clock>, <mekanism:otherdust:5>]]);
+	recipes.remove(<randomthings:eclipsedclock>);
+	recipes.addShapedMirrored("Eclipsed Clock", 
+	<randomthings:eclipsedclock>, 
+	[[<mekanism:otherdust:5>, <minecraft:clock>, <mekanism:otherdust:5>],
+	[<minecraft:clock>, <ore:netherStar>, <minecraft:clock>], 
+	[<mekanism:otherdust:5>, <minecraft:clock>, <mekanism:otherdust:5>]]);
 
 # Quark Marble Wall Oredicted version
 	recipes.remove(<quark:marble_wall>);
@@ -17,35 +18,22 @@ recipes.addShapedMirrored("Eclipsed Clock",
 	<quark:marble_wall> * 6, 
 	[[<ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>],
 	[<ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>]]);
+
+# MOAR BAITS
+	recipes.addShapeless("Polar Bear Bait", 
+	<excompressum:bait:10>, 
+	[<ore:fish>,<minecraft:snowball>]);
+	recipes.addShapeless("Llama Bait", 
+	<excompressum:bait:11>, 
+	[<ore:listAllgrain>,<ore:listAllsugar>]);
 	
 # NuclearCraft -> Random Things Glowing Mushroom
 	recipes.removeShapeless(<minecraft:brown_mushroom>, [<nuclearcraft:glowing_mushroom>]);
 	recipes.addShapeless("Random Things Glowing Mushroom", 
 	<randomthings:glowingmushroom>, [<nuclearcraft:glowing_mushroom>]);
 
-# Random Things Block of Sticks
-	rh(<randomthings:blockofsticks>);
-	
 # Bookshelf > Oak Bookshelf
 	recipes.addShapeless("Bookshelf Conversion", <minecraft:bookshelf>, [<ore:bookshelf>]);
-	
-# Wildberry Bush 
-	recipes.addShaped("Wildberry Bush", 
-	<rustic:wildberry_bush>, 
-	[[<ore:treeLeaves>, <ore:treeLeaves>, <ore:treeLeaves>],
-	[<ore:treeLeaves>, <ore:dyeRed>, <ore:treeLeaves>], 
-	[<ore:treeLeaves>, <ore:treeLeaves>, <ore:treeLeaves>]]);
-
-# Ironwood Sapling
-	recipes.addShaped("Ironwood Sapling", 
-	<rustic:sapling:1>, 
-	[[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>],
-	[<ore:nuggetIron>, <ore:treeSapling>, <ore:nuggetIron>], 
-	[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>]]);
-	# Block -> Ingots
-	recipes.addShapeless("UraniumIngots", 
-	<immersiveengineering:metal:5> * 9, 
-	[<ore:blockUranium>]);
 	
 # Uranium Block
 	recipes.addShaped("UraniumBlock", 
@@ -53,12 +41,16 @@ recipes.addShapedMirrored("Eclipsed Clock",
 	[[<ore:ingotUranium>, <ore:ingotUranium>, <ore:ingotUranium>],
 	[<ore:ingotUranium>, <ore:ingotUranium>, <ore:ingotUranium>], 
 	[<ore:ingotUranium>, <ore:ingotUranium>, <ore:ingotUranium>]]);
-
-# Marble
-	recipes.addShapedMirrored("Marble",<astralsorcery:blockmarble:0>*8,[
-	[<ore:stone>,<ore:stone>,<ore:stone>],
-	[<ore:stone>,<ore:dyeWhite>,<ore:stone>],
-	[<ore:stone>,<ore:stone>,<ore:stone>]]);
+	# Block -> Ingots
+	recipes.addShapeless("UraniumIngots", 
+	<immersiveengineering:metal:5> * 9, 
+	[<ore:blockUranium>]);
+	
+# Amber Conversion
+	recipes.addShapeless("BoP Amber", 
+	<biomesoplenty:gem:7>, [<thaumcraft:amber>]);
+	recipes.addShapeless("Thaumcraft Amber", 
+	<thaumcraft:amber>, [<biomesoplenty:gem:7>]);
 
 # End Crystal
 	recipes.remove(<minecraft:end_crystal>);
@@ -68,6 +60,8 @@ recipes.addShapedMirrored("Eclipsed Clock",
 	[<ore:blockGlassHardened>, <ore:netherStar>, <ore:blockGlassHardened>],
 	[<ore:blockGlassHardened>, <ore:itemGhastTear>, <ore:blockGlassHardened>]]);
 
+# Twilight Forest Uncrafting Table
+	rh(<twilightforest:uncrafting_table>);
 	
 # Cyclic Guide
 	recipes.addShapeless("Cyclic Guide", 
@@ -78,6 +72,19 @@ recipes.addShapedMirrored("Eclipsed Clock",
 	recipes.addShapeless("Blood Magic Guide", 
 	<guideapi:bloodmagic-guide>, 
 	[<minecraft:book>,<bloodmagic:soul_snare>]);
+	
+# Animania Random Animal Spawn Egg
+	mods.forestry.Carpenter.addRecipe(<animania:entity_egg_random>, 
+	[[null , <cyclicmagic:sprout_seed>, null],
+	[<ore:egg>,<ore:egg>,<ore:egg>],
+	[null, <cyclicmagic:sprout_seed>, null]], 
+	40, <liquid:meat> * 500);
+	
+	mods.forestry.Carpenter.addRecipe(<animania:entity_egg_random>, 
+	[[null , <cyclicmagic:sprout_seed>, null],
+	[<ore:egg>,<ore:egg>,<ore:egg>],
+	[null, <cyclicmagic:sprout_seed>, null]], 
+	40, <liquid:liquiddna> * 250);
 
 # OpenBlocks Glider
 	recipes.remove(<openblocks:generic>);
@@ -94,6 +101,11 @@ recipes.addShapedMirrored("Eclipsed Clock",
 	[[null, null, null],
 	[<openblocks:generic>, <forestry:oak_stick>, <openblocks:generic>], 
 	[null, null, null]]);
+	
+# Mud conversion
+	recipes.remove(<animania:block_mud>);
+	recipes.addShapeless("BoP Mud", <biomesoplenty:mud>, [<animania:block_mud>]);
+	recipes.addShapeless("Animania Mud", <animania:block_mud>, [<biomesoplenty:mud>]);
 	
 # Silicon conversion
 	recipes.addShapeless(<enderio:item_material:5> * 2, [<libvulpes:productingot:3>, <libvulpes:productingot:3>]);
@@ -162,7 +174,7 @@ recipes.addShapedMirrored("Eclipsed Clock",
 # Remove extraneous (and OP) Paper recipes
   recipes.removeByRecipeName("minecraft:paper"); # Removed because EnderCore adds a shapeless one
   recipes.removeByRecipeName("mekanism:paper"); # Removed because CHEATS
-  
+	
 # Elytra
 	recipes.addShaped("Elytra", 
 	<minecraft:elytra>, 
@@ -204,19 +216,56 @@ recipes.addShapedMirrored("Eclipsed Clock",
 	recipes.addShapeless("Wither Dust2", <darkutils:material> * 9, [<minecraft:skull:1>]);
 	recipes.addShapeless("Wither Dust3", <darkutils:material> * 4, [<ore:blockWither>]);
 
-# Chest
-	recipes.remove(<minecraft:chest>);
-	recipes.addShapedMirrored("Chest",
-	<minecraft:chest> * 2, 
-	[[<ore:logWood>, <ore:plankTreatedWood>, <ore:logWood>],
+# Logs used by Quark
+val excludeLogs as IItemStack[] = [
+	<minecraft:log>,
+	<minecraft:log:1>,
+	<minecraft:log:2>,
+	<minecraft:log:3>,
+	<minecraft:log2>,
+	<minecraft:log2:1>
+];
+
+# Ingredient of all possible logs except listed above
+var logsFiltered as IIngredient = <minecraft:log>;
+for log in <ore:logWood>.items{
+	var isAdd = true;
+	for i in 0 to excludeLogs.length{
+		if((log has excludeLogs[i]) || (excludeLogs[i] has log)){
+			isAdd = false;
+		}
+	}
+	if (isAdd){
+		print("Adding log " ~ log.displayName);
+		logsFiltered = logsFiltered.or(log);
+	}
+}
+
+function remakeChest(name as string, chest as IItemStack, log as IIngredient) {
+
+	recipes.remove(chest);
+
+	recipes.addShapedMirrored(name, chest * 2, 
+	[[log, <ore:plankTreatedWood>, log],
 	[<ore:plankTreatedWood>, <minecraft:stone_button>, <ore:plankTreatedWood>], 
-	[<ore:logWood>, <ore:plankTreatedWood>, <ore:logWood>]]);
+	[log, <ore:plankTreatedWood>, log]]);
 	
-	recipes.addShaped("Cheap Chest",
-	<minecraft:chest>, 
-	[[<ore:logWood>, <tconstruct:tough_tool_rod>.withTag({Material: "wood"}), <ore:logWood>],
-	[<tconstruct:tough_tool_rod>.withTag({Material: "wood"}), <minecraft:stone_button>, <tconstruct:tough_tool_rod>.withTag({Material: "wood"})], 
-	[<ore:logWood>, <tconstruct:tough_tool_rod>.withTag({Material: "wood"}), <ore:logWood>]]);
+	val toolRod = <tconstruct:tough_tool_rod>.withTag({Material: "wood"});
+	recipes.addShaped("Cheap " ~ name, chest,
+	[[log, toolRod, log],
+	[toolRod, <minecraft:stone_button>, toolRod], 
+	[log, toolRod, log]]);
+}
+
+# Quark chests
+remakeChest("Spruce Chest"  , <quark:custom_chest>  , <minecraft:log:1>);
+remakeChest("Birch Chest"   , <quark:custom_chest:1>, <minecraft:log:2>);
+remakeChest("Jungle Chest"  , <quark:custom_chest:2>, <minecraft:log:3>);
+remakeChest("Acacia Chest"  , <quark:custom_chest:3>, <minecraft:log2>);
+remakeChest("Dark Oak Chest", <quark:custom_chest:4>, <minecraft:log2:1>);
+
+# Chest from any other log
+remakeChest("Any Chest", <minecraft:chest>, logsFiltered);
 
 	
 	recipes.addShaped("Mini Chest To Chest",
@@ -270,36 +319,24 @@ recipes.addShapedMirrored("Eclipsed Clock",
 	recipes.remove(<minecraft:furnace>);
 	recipes.addShapedMirrored("Furnace", 
 	<minecraft:furnace>, 
-	[[<ore:cobblestone>, <ore:gearStone>, <ore:cobblestone>],
-	[<ore:gearStone>, <skyresources:dirtfurnace>, <ore:gearStone>], 
-	[<ore:cobblestone>, <ore:gearStone>, <ore:cobblestone>]]);
+	[[<ore:compressed1xCobblestone>, <ore:cobblestone>, <ore:compressed1xCobblestone>],
+	[<ore:gearStone>, <minecraft:coal:*>, <ore:gearStone>], 
+	[<ore:compressed1xCobblestone>, <ore:cobblestone>, <ore:compressed1xCobblestone>]]);
 
 # Hopper
 	recipes.remove(<minecraft:hopper>);
 	recipes.addShaped("Hopper Aluminum",
 	<minecraft:hopper>, 
 	[[<ore:plateAluminum>, null, <ore:plateAluminum>],
-	[<ore:plateAluminum>, <minecraft:chest>, <ore:plateAluminum>], 
+	[<ore:plateAluminum>, <ore:chest>, <ore:plateAluminum>], 
 	[null, <ore:plateAluminum>, null]]);
 	
 	recipes.addShaped("Hopper Iron",
 	<minecraft:hopper>, 
 	[[<ore:plateIron>, null, <ore:plateIron>],
-	[<ore:plateIron>, <minecraft:chest>, <ore:plateIron>], 
+	[<ore:plateIron>, <ore:chest>, <ore:plateIron>], 
 	[null, <ore:plateIron>, null]]);
 	
-# Planks
-	recipes.remove(<ore:plankWood>);
-	recipes.addShapeless("Planks", <minecraft:planks> * 2, [<minecraft:log>]);
-	recipes.addShapeless("Planks1", <minecraft:planks:1> * 2, [<minecraft:log:1>]);
-	recipes.addShapeless("Planks2", <minecraft:planks:2> * 2, [<minecraft:log:2>]);
-	recipes.addShapeless("Planks3", <minecraft:planks:3> * 2, [<minecraft:log:3>]);
-	recipes.addShapeless("Planks4", <minecraft:planks:4> * 2, [<minecraft:log2>]);
-	recipes.addShapeless("Planks5", <minecraft:planks:5> * 2, [<minecraft:log2:1>]);
-	recipes.addShapeless("Planks6", <rustic:planks> * 2,[<rustic:log>]);
-	recipes.addShapeless("Planks7", <rustic:planks:1> * 2,[<rustic:log:1>]);
-	recipes.addShapeless("integrateddynamics_menril_planks", <integrateddynamics:menril_planks> * 2, [<integrateddynamics:menril_log>]);
-
 # Sticks
 	recipes.remove(<minecraft:stick>);
 	recipes.addShapedMirrored("Sticks", 
@@ -318,11 +355,7 @@ recipes.addShapedMirrored("Eclipsed Clock",
 	<minecraft:bucket>, 
 	[[<ore:plateIron>, null, <ore:plateIron>], 
 	[null, <ore:plateIron>, null]]);
-		
-# B.A.S.E Wrench
-	recipes.remove(<base:wrench>);
-	
-			
+					
 # *======= Metal Nuggets =======*
 
 	rh(<immersiveengineering:metal:29>);
@@ -338,4 +371,22 @@ recipes.addShapedMirrored("Eclipsed Clock",
 	rh(<extendedcrafting:material:128>);
 	rh(<extendedcrafting:material:129>);
 	
-		print("--- MiscRecipes.zs initialized ---");
+
+# Arrows recycle
+scripts.process.crush(<minecraft:arrow>, <minecraft:flint>, "no exceptions", [<ore:dustWood>.firstItem], [0.2f]);
+
+# Fix for Quark chiseled brick recipes
+	recipes.remove(<quark:world_stone_carved>);
+	recipes.remove(<quark:world_stone_carved:1>);
+	recipes.remove(<quark:world_stone_carved:2>);
+	recipes.remove(<quark:world_stone_carved:4>);
+	recipes.remove(<quark:world_stone_carved:5>);
+	recipes.remove(<quark:world_stone_carved:6>);
+	recipes.remove(<quark:world_stone_carved:7>);
+	recipes.addShaped("Chiseled Granite Bricks", <quark:world_stone_carved> * 8, [[<quark:world_stone_bricks>, <quark:world_stone_bricks>, <quark:world_stone_bricks>],[<quark:world_stone_bricks>, null, <quark:world_stone_bricks>], [<quark:world_stone_bricks>, <quark:world_stone_bricks>, <quark:world_stone_bricks>]]);
+	recipes.addShaped("Chiseled Diorite Bricks", <quark:world_stone_carved:1> * 8, [[<quark:world_stone_bricks:1>, <quark:world_stone_bricks:1>, <quark:world_stone_bricks:1>],[<quark:world_stone_bricks:1>, null, <quark:world_stone_bricks:1>], [<quark:world_stone_bricks:1>, <quark:world_stone_bricks:1>, <quark:world_stone_bricks:1>]]);
+	recipes.addShaped("Chiseled Andesite Bricks", <quark:world_stone_carved:2> * 8, [[<quark:world_stone_bricks:2>, <quark:world_stone_bricks:2>, <quark:world_stone_bricks:2>],[<quark:world_stone_bricks:2>, null, <quark:world_stone_bricks:2>], [<quark:world_stone_bricks:2>, <quark:world_stone_bricks:2>, <quark:world_stone_bricks:2>]]);	
+	recipes.addShaped("Chiseled Marble Bricks", <quark:world_stone_carved:4> * 8, [[<quark:world_stone_bricks:4>, <quark:world_stone_bricks:4>, <quark:world_stone_bricks:4>],[<quark:world_stone_bricks:4>, null, <quark:world_stone_bricks:4>], [<quark:world_stone_bricks:4>, <quark:world_stone_bricks:4>, <quark:world_stone_bricks:4>]]);
+	recipes.addShaped("Chiseled Limestone Bricks", <quark:world_stone_carved:5> * 8, [[<quark:world_stone_bricks:5>, <quark:world_stone_bricks:5>, <quark:world_stone_bricks:5>],[<quark:world_stone_bricks:5>, null, <quark:world_stone_bricks:5>], [<quark:world_stone_bricks:5>, <quark:world_stone_bricks:5>, <quark:world_stone_bricks:5>]]);
+	recipes.addShaped("Chiseled Jasper Bricks", <quark:world_stone_carved:6> * 8, [[<quark:world_stone_bricks:6>, <quark:world_stone_bricks:6>, <quark:world_stone_bricks:6>],[<quark:world_stone_bricks:6>, null, <quark:world_stone_bricks:6>], [<quark:world_stone_bricks:6>, <quark:world_stone_bricks:6>, <quark:world_stone_bricks:6>]]);
+	recipes.addShaped("Chiseled Slate Bricks", <quark:world_stone_carved:7> * 8, [[<quark:world_stone_bricks:7>, <quark:world_stone_bricks:7>, <quark:world_stone_bricks:7>],[<quark:world_stone_bricks:7>, null, <quark:world_stone_bricks:7>], [<quark:world_stone_bricks:7>, <quark:world_stone_bricks:7>, <quark:world_stone_bricks:7>]]);

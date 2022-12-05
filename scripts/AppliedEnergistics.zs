@@ -1,11 +1,25 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.item.IIngredient as IIngredient;
-import mods.jei.JEI.removeAndHide as rh;
 #modloaded appliedenergistics2
-print("--- loading AppliedEnergistics.zs ---");
 	
+# Removing duplicate inputs in recipes for Charged Certus Ore -> Charged Certus in AA Crusher + IE Crusher
+mods.immersiveengineering.Crusher.removeRecipe(<appliedenergistics2:material>);
+mods.actuallyadditions.Crusher.removeRecipe(<appliedenergistics2:material>);
+
+# Removing non-functional Extra Cells
+	recipes.remove(<extracells:storage.fluid:5>);
+	recipes.remove(<extracells:storage.fluid:6>);
+	recipes.remove(<extracells:storage.component:9>);
+	recipes.remove(<extracells:storage.component:10>);
+
 	var pearlFluix = <ore:pearlFluix>;
 	var crystalCertus = <ore:crystalCertus>;
+
+# Smart Cable -> Dense
+	recipes.addShapeless("4 Smart Cables to Dense", 
+	<appliedenergistics2:part:76>, 
+	[<appliedenergistics2:part:56>,<appliedenergistics2:part:56>,<appliedenergistics2:part:56>,<appliedenergistics2:part:56>,<ore:dustRedstone>,<ore:dustGlowstone>]);
+
 
 # ---=== Storage Cell Helpers ===---
   function newCellRecipe(input as IIngredient, output as IItemStack) {
@@ -50,22 +64,22 @@ print("--- loading AppliedEnergistics.zs ---");
 
 # ---=== Basic Cells ===---
   val cellRecipes = {
-		# Standard Cells
-		<appliedenergistics2:material:35>: <appliedenergistics2:storage_cell_1k>,
-		<appliedenergistics2:material:36>: <appliedenergistics2:storage_cell_4k>,
-		<appliedenergistics2:material:37>: <appliedenergistics2:storage_cell_16k>,
-		<appliedenergistics2:material:38>: <appliedenergistics2:storage_cell_64k>,
-		# Fluid Cells
-		<appliedenergistics2:material:54>: <appliedenergistics2:fluid_storage_cell_1k>,
-		<appliedenergistics2:material:55>: <appliedenergistics2:fluid_storage_cell_4k>,
-		<appliedenergistics2:material:56>: <appliedenergistics2:fluid_storage_cell_16k>,
-		<appliedenergistics2:material:57>: <appliedenergistics2:fluid_storage_cell_64k>,
-		# Spatial Cells
-		<appliedenergistics2:material:32>: <appliedenergistics2:spatial_storage_cell_2_cubed>,
-		<appliedenergistics2:material:33>: <appliedenergistics2:spatial_storage_cell_16_cubed>,
-		<appliedenergistics2:material:34>: <appliedenergistics2:spatial_storage_cell_128_cubed>,
-		# View Cell
-		<ore:crystalCertus>: <appliedenergistics2:view_cell>
+	# Standard Cells
+	<appliedenergistics2:material:35>: <appliedenergistics2:storage_cell_1k>,
+	<appliedenergistics2:material:36>: <appliedenergistics2:storage_cell_4k>,
+	<appliedenergistics2:material:37>: <appliedenergistics2:storage_cell_16k>,
+	<appliedenergistics2:material:38>: <appliedenergistics2:storage_cell_64k>,
+	# Fluid Cells
+	<appliedenergistics2:material:54>: <appliedenergistics2:fluid_storage_cell_1k>,
+	<appliedenergistics2:material:55>: <appliedenergistics2:fluid_storage_cell_4k>,
+	<appliedenergistics2:material:56>: <appliedenergistics2:fluid_storage_cell_16k>,
+	<appliedenergistics2:material:57>: <appliedenergistics2:fluid_storage_cell_64k>,
+	# Spatial Cells
+	<appliedenergistics2:material:32>: <appliedenergistics2:spatial_storage_cell_2_cubed>,
+	<appliedenergistics2:material:33>: <appliedenergistics2:spatial_storage_cell_16_cubed>,
+	<appliedenergistics2:material:34>: <appliedenergistics2:spatial_storage_cell_128_cubed>,
+	# View Cell
+	<ore:crystalCertus>: <appliedenergistics2:view_cell>
 
 	} as IItemStack[IIngredient];
 
@@ -74,16 +88,16 @@ print("--- loading AppliedEnergistics.zs ---");
 	}
 
 # ---=== Advanced Cells ===---
-  for i in 0 .. 3 {
+  for i in 0 .. 4 {
     newAdvCellRecipe(<extracells:storage.component>.definition.makeStack(i), <extracells:storage.physical>.definition.makeStack(i));
   }
 
 # ---=== Gas Cells ===---
-  for i in 0 .. 6 {
+  for i in 0 .. 7 {
     newGasCellRecipe(<extracells:storage.component>.definition.makeStack(i+11), <extracells:storage.gas>.definition.makeStack(i));
   }
-  
-# 256k - 16384k ME Storage Components
+
+# ---=== High Tier Storage Components ===---
 	recipes.remove(<extracells:storage.component>);
 	recipes.addShapedMirrored("AE2 Storage Components 256k", 
 	<extracells:storage.component>, 
@@ -111,15 +125,7 @@ print("--- loading AppliedEnergistics.zs ---");
 	[[<ore:dustEnder>, <appliedenergistics2:material:24>, <ore:dustEnder>],
 	[<extracells:storage.component:2>, <appliedenergistics2:material:22>, <extracells:storage.component:2>], 
 	[<ore:dustEnder>, <extracells:storage.component:2>, <ore:dustEnder>]]);
-
-# Quantum Ring
-	recipes.remove(<appliedenergistics2:quantum_ring>);
-	recipes.addShapedMirrored("Quantum Ring", 
-	<appliedenergistics2:quantum_ring>, 
-	[[<appliedenergistics2:material:9>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:24>],
-	[<appliedenergistics2:energy_cell>, <appliedenergistics2:part:76>, <appliedenergistics2:energy_cell>], 
-	[<appliedenergistics2:material:22>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:23>]]);
-
+	
 # Quantum Link Chamber
 	recipes.remove(<appliedenergistics2:quantum_link>);
 	recipes.addShapedMirrored("Quantum Link Chamber", 
@@ -168,14 +174,6 @@ print("--- loading AppliedEnergistics.zs ---");
 	[<appliedenergistics2:part:16>, <appliedenergistics2:quartz_fixture>, <appliedenergistics2:part:16>], 
 	[<appliedenergistics2:fluix_block>, <appliedenergistics2:material:24>, <appliedenergistics2:fluix_block>]]);
 	
-# ME Controller
-	recipes.remove(<appliedenergistics2:controller>);
-	recipes.addShaped("ME Controller", 
-	<appliedenergistics2:controller>, 
-	[[<appliedenergistics2:smooth_sky_stone_block>, <advancedrocketry:ic:3>, <appliedenergistics2:smooth_sky_stone_block>],
-	[<appliedenergistics2:fluix_block>, <appliedenergistics2:energy_acceptor>, <appliedenergistics2:fluix_block>], 
-	[<teslacorelib:machine_case>, pearlFluix, <teslacorelib:machine_case>]]);
-
 # Inscriber
 	recipes.remove(<appliedenergistics2:inscriber>);
 	recipes.addShapedMirrored("Inscriber", 
@@ -193,4 +191,111 @@ print("--- loading AppliedEnergistics.zs ---");
 # Charged Certus Quartz -> Certus Dust
 	mods.thermalexpansion.Pulverizer.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:1>, 2000, <appliedenergistics2:material:2>, 20);
 		
-	print("--- AppliedEnergistics.zs initialized ---");
+# Lapis Dust
+	mods.appliedenergistics2.Grinder.addRecipe(<ic2:dust:9>, <minecraft:dye:4>, 4);
+
+
+
+# If Channels are turned off in the config, these recipes will be changed
+	recipes.remove(<appliedenergistics2:quantum_ring>);
+
+	var controller = itemUtils.getItem("appliedenergistics2:controller");
+	var meConduit = <enderio:item_me_conduit:1>;
+	var anyFluix = <ore:crystalFluix> | <appliedenergistics2:material:12>;
+	
+	if (isNull(controller)) {
+		recipes.addShapedMirrored("Quantum Ring", 
+		<appliedenergistics2:quantum_ring>, 
+		[[<appliedenergistics2:material:9>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:24>],
+		[<appliedenergistics2:energy_cell>, meConduit, <appliedenergistics2:energy_cell>], 
+		[<appliedenergistics2:material:22>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:23>]]);
+		
+		recipes.remove(<rf-capability-adapter:aecapabilityadapter>);
+		recipes.addShaped("Capability Adapter", 
+		<rf-capability-adapter:aecapabilityadapter>, 
+		[[<minecraft:iron_ingot>, anyFluix, <minecraft:iron_ingot>], 
+		[anyFluix, meConduit, anyFluix],
+		[<minecraft:iron_ingot>, anyFluix, <minecraft:iron_ingot>]]);
+	} else {
+		recipes.addShapedMirrored("Quantum Ring", 
+		<appliedenergistics2:quantum_ring>, 
+		[[<appliedenergistics2:material:9>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:24>],
+		[<appliedenergistics2:energy_cell>, <appliedenergistics2:part:76>, <appliedenergistics2:energy_cell>], 
+		[<appliedenergistics2:material:22>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:23>]]);
+
+		recipes.remove(controller);
+		recipes.addShaped("ME Controller", 
+		controller, 
+		[[<appliedenergistics2:smooth_sky_stone_block>, <advancedrocketry:ic:3>, <appliedenergistics2:smooth_sky_stone_block>],
+		[<appliedenergistics2:fluix_block>, <appliedenergistics2:energy_acceptor>, <appliedenergistics2:fluix_block>], 
+		[<teslacorelib:machine_case>, pearlFluix, <teslacorelib:machine_case>]]);
+	}
+	
+# Sky stone Dust
+scripts.process.crush(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>, "Except: AEGrinder Pulverizer", null, null);
+# Matter cannon more matter
+val itemMass as double[IItemStack] = {
+	<nuclearcraft:thorium:2>      : 230.0d,
+	<nuclearcraft:thorium:3>      : 230.0d,
+	<nuclearcraft:thorium:6>      : 232.0d,
+	<nuclearcraft:thorium:7>      : 232.0d,
+	<nuclearcraft:uranium:2>      : 233.0d,
+	<nuclearcraft:uranium:3>      : 234.0d,
+	<nuclearcraft:uranium:6>      : 235.0d,
+	<nuclearcraft:uranium:7>      : 235.0d,
+	<nuclearcraft:uranium:10>     : 238.0d,
+	<nuclearcraft:uranium:11>     : 238.0d,
+	<nuclearcraft:neptunium:2>    : 236.0d,
+	<nuclearcraft:neptunium:3>    : 236.0d,
+	<nuclearcraft:neptunium:6>    : 237.0d,
+	<nuclearcraft:neptunium:7>    : 237.0d,
+	<nuclearcraft:plutonium:2>    : 238.0d,
+	<nuclearcraft:plutonium:3>    : 238.0d,
+	<nuclearcraft:plutonium:6>    : 239.0d,
+	<nuclearcraft:plutonium:7>    : 239.0d,
+	<nuclearcraft:plutonium:10>   : 241.0d,
+	<nuclearcraft:plutonium:11>   : 241.0d,
+	<nuclearcraft:plutonium:14>   : 242.0d,
+	<nuclearcraft:plutonium:15>   : 242.0d,
+	<nuclearcraft:americium:2>    : 241.0d,
+	<nuclearcraft:americium:3>    : 241.0d,
+	<nuclearcraft:americium:6>    : 242.0d,
+	<nuclearcraft:americium:7>    : 242.0d,
+	<nuclearcraft:americium:10>   : 243.0d,
+	<nuclearcraft:americium:11>   : 244.0d,
+	<nuclearcraft:curium:2>       : 243.0d,
+	<nuclearcraft:curium:3>       : 243.0d,
+	<nuclearcraft:curium:6>       : 245.0d,
+	<nuclearcraft:curium:7>       : 245.0d,
+	<nuclearcraft:curium:10>      : 246.0d,
+	<nuclearcraft:curium:11>      : 246.0d,
+	<nuclearcraft:curium:14>      : 247.0d,
+	<nuclearcraft:curium:15>      : 247.0d,
+	<nuclearcraft:berkelium:2>    : 247.0d,
+	<nuclearcraft:berkelium:3>    : 247.0d,
+	<nuclearcraft:berkelium:6>    : 248.0d,
+	<nuclearcraft:berkelium:7>    : 248.0d,
+	<nuclearcraft:californium:2>  : 249.0d,
+	<nuclearcraft:californium:3>  : 249.0d,
+	<nuclearcraft:californium:6>  : 250.0d,
+	<nuclearcraft:californium:7>  : 250.0d,
+	<nuclearcraft:californium:10> : 251.0d,
+	<nuclearcraft:californium:11> : 251.0d,
+	<nuclearcraft:californium:14> : 252.0d,
+	<nuclearcraft:californium:15> : 252.0d,
+	<nuclearcraft:boron:1>        : 10.0d,
+	<nuclearcraft:boron:3>        : 11.0d,
+	<nuclearcraft:lithium:1>      : 6.0d,
+	<nuclearcraft:lithium:3>      : 7.0d,
+} as double[IItemStack];
+
+for item, mass in itemMass {
+	if (!isNull(item)) {
+		mods.appliedenergistics2.Cannon.registerAmmo(item, mass);
+	}
+}
+
+# [Printed (Every) Circuit] shortcut in [Cutting Machine]
+scripts.process.saw(<ore:blockGold>, <appliedenergistics2:material:18> *  9, "only: AdvRockCutter");
+scripts.process.saw(<ore:blockDiamond>, <appliedenergistics2:material:17> *  9, "only: AdvRockCutter");
+scripts.process.saw(<ore:crystalPureCertusQuartz> * 9, <appliedenergistics2:material:16> *  9, "only: AdvRockCutter");

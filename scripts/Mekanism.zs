@@ -1,12 +1,44 @@
 import mods.jei.JEI.removeAndHide as rh;
+import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IIngredient;
 #modloaded mekanism
-print("--- loading Mekanism.zs ---");
+
+# The Combiner can dupe a bunch of stuff, so we're removing it.
+mods.mekanism.combiner.removeAllRecipes();
+recipes.remove(<mekanism:machineblock:2>);
+
+
+# Unifying Graphite ingots, seems the crusher was overlooked
+mods.mekanism.crusher.removeRecipe(<bigreactors:dustmetals:2>, <bigreactors:ingotmetals:2>);
+
+for ingot in <ore:ingotGraphite>.items {
+	mods.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
+}
+
+
+# Energized Smelter is not entirely unified, this should fix that
+var itemsToUnify as IItemStack[IItemStack] = {
+	<ic2:crushed> : <thermalfoundation:material:128>,
+	<ic2:crushed:3> : <thermalfoundation:material:131>,
+	<ic2:crushed:4> : <thermalfoundation:material:130>,
+	<ic2:crushed:5> : <thermalfoundation:material:129>,
+	<ic2:purified> : <thermalfoundation:material:128>,
+	<ic2:purified:3> : <thermalfoundation:material:131>,
+	<ic2:purified:4> : <thermalfoundation:material:130>,
+	<ic2:purified:5> : <thermalfoundation:material:129>
+};
+
+for input, output in itemsToUnify {
+	mods.mekanism.smelter.removeRecipe(input);
+
+	mods.mekanism.smelter.addRecipe(input, output);
+}
 
 # Starmetal Ingots
 	mods.mekanism.smelter.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemcraftingcomponent:1>);
 	
-	var ultimateGasTank = <mekanism:gastank>.withTag({tier: 3, mekData:{}})|<mekanism:gastank>.withTag({tier: 3, mekData:{security:0}});
-	var ultimateFluidTank = <mekanism:machineblock2:11>.withTag({tier: 3, mekData:{}})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}});
+	var ultimateGasTank = <mekanism:gastank>.withTag({tier: 3})|<mekanism:gastank>.withTag({tier: 3, mekData:{security:0}});
+	var ultimateFluidTank = <mekanism:machineblock2:11>.withTag({tier: 3})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}});
 	
 # Increasing Stacksize
 	<mekanism:tierinstaller>.maxStackSize = 16;
@@ -40,6 +72,7 @@ print("--- loading Mekanism.zs ---");
 	recipes.addShapedMirrored("MekanismCable5", 
 	<mekanism:transmitter:4>.withTag({tier: 0}) * 8, 
 	[[<ore:ingotElectricalSteel>, <enderio:block_dark_iron_bars>, <ore:ingotElectricalSteel>]]);
+
 # Jetpack
 	recipes.remove(<mekanism:jetpack>);
 	recipes.addShaped("Mekanism Jetpack", 
@@ -145,7 +178,7 @@ print("--- loading Mekanism.zs ---");
 	recipes.remove(<mekanism:machineblock3>);
 	recipes.addShaped("Quantum Entangloporter", <mekanism:machineblock3>, 
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
-	[<forestry:chipsets:3>.withTag({}), <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <forestry:chipsets:3>.withTag({})], 
+	[<forestry:chipsets:3>.withTag({T:3 as short}, false), <mekanism:machineblock:11>|<mekanism:machineblock:11>.withTag({}), <forestry:chipsets:3>.withTag({T:3 as short}, false)], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
 
 # Turbine Casing
@@ -209,7 +242,7 @@ print("--- loading Mekanism.zs ---");
 	<mekanism:machineblock:4>, 
 	[[<ore:alloyUltimate>, <ore:circuitUltimate>, <ore:alloyUltimate>],
 	[<thermalexpansion:frame>, <mekanism:robit>.anyDamage(), <thermalexpansion:frame>], 
-	[<mekanism:machineblock:11>, <computercraft:computer:16384>, <mekanism:machineblock:11>]]);
+	[<mekanism:machineblock:11>, <computercraft:computer>.anyDamage(), <mekanism:machineblock:11>]]);
 
 # Advanced Circuit
 	recipes.remove(<mekanism:controlcircuit:1>);
@@ -231,21 +264,60 @@ print("--- loading Mekanism.zs ---");
 	recipes.remove(<mekanism:controlcircuit:3>);
 	mods.actuallyadditions.Empowerer.addRecipe(<mekanism:controlcircuit:3>, <mekanism:controlcircuit:2>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, <mekanism:atomicalloy>, 500000, 100, [0.5, 0.3, 0.2]);
 
-# Nether Quartz Ore
-	//OutputStack, InputStack, @OptionalInputGas
-	mods.mekanism.combiner.removeRecipe(<minecraft:quartz_ore>);
-	//InputStack, InputGas, OutputStack
-	mods.mekanism.combiner.addRecipe(<minecraft:quartz> * 6, <minecraft:quartz_ore>);
-
-# Coal Ore
-	mods.mekanism.combiner.removeRecipe(<minecraft:coal_ore>);
-	mods.mekanism.combiner.addRecipe(<minecraft:coal> * 6, <minecraft:coal_ore>);
-	
-# *======= Removals =======*
-
 # Removing unused ores & Walkietalkie
 	rh(<mekanism:oreblock:1>);
 	rh(<mekanism:oreblock:2>);
 	rh(<mekanism:walkietalkie>);
 
-print("--- Mekanism.zs initialized ---");
+
+
+# Fix cubes uncraftable in AE
+# Just remake original crafts, but without additional security tags
+remake("Mek Cube 1", <mekanism:energycube>.withTag({tier: 1}), [[<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>],[<ore:ingotOsmium>, <mekanism:energycube>.withTag({tier: 0}), <ore:ingotOsmium>], [<ore:alloyAdvanced>, <ore:battery>, <ore:alloyAdvanced>]]);
+remake("Mek Cube 2", <mekanism:energycube>.withTag({tier: 2}), [[<ore:alloyElite>, <ore:battery>, <ore:alloyElite>],[<ore:ingotGold>, <mekanism:energycube>.withTag({tier: 1}), <ore:ingotGold>], [<ore:alloyElite>, <ore:battery>, <ore:alloyElite>]]);
+remake("Mek Cube 3", <mekanism:energycube>.withTag({tier: 3}), [[<ore:alloyUltimate>, <ore:battery>, <ore:alloyUltimate>], [<ore:gemDiamond>, <mekanism:energycube>.withTag({tier: 2}), <ore:gemDiamond>], [<ore:alloyUltimate>, <ore:battery>, <ore:alloyUltimate>]]);
+
+
+# Remake recipes of gas/fluid tanks to remove recipe functions (they caused AE2 autocrafting issues)
+val mekTankIngrs = [
+	<ore:dustRedstone>,
+	<mekanism:enrichedalloy>,
+	<mekanism:reinforcedalloy>,
+	<mekanism:atomicalloy>,
+	<mekanism:controlcircuit:3>,
+] as IIngredient[];
+for i, it in mekTankIngrs {
+	var grid = [
+		"#-#", 
+		"-o-", 
+		"#-#"] as string[];
+	if(i < 4) {
+		craft.remake(<mekanism:gastank>.withTag({tier: i}) , grid, { 
+			"#": it, 
+			"-": <ore:ingotOsmium>, 
+			"o": i==0 ? null : <mekanism:gastank>.withTag({tier: i - 1}, false)
+		});
+	}
+
+	if(i==0) continue;
+	craft.remake(<mekanism:machineblock2:11>.withTag({tier: i - 1}) , grid, { 
+		"#": it, 
+		"-": <ore:ingotIron>, 
+		"o": i==1 ? null : <mekanism:machineblock2:11>.withTag({tier: i - 2}, false)
+	});
+}
+
+# Cardboard Box spawner entity
+<mekanism:cardboardbox:1>.addAdvancedTooltip(function(item) {
+	val tag = item.tag;
+	if(
+		isNull(tag.mekData) ||
+		isNull(tag.mekData.blockData) ||
+		isNull(tag.mekData.blockData.tileTag) ||
+		isNull(tag.mekData.blockData.tileTag.id) ||
+		tag.mekData.blockData.tileTag.id != "minecraft:mob_spawner" ||
+		isNull(tag.mekData.blockData.tileTag.SpawnData) ||
+		isNull(tag.mekData.blockData.tileTag.SpawnData.id)
+	) return '';
+  return "§2Spawner with §a" ~ tag.mekData.blockData.tileTag.SpawnData.id.asString() ~ '§r';
+});

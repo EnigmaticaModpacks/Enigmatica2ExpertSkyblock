@@ -1,15 +1,28 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
+import mods.actuallyadditions.BallOfFur.addReturn as addBallReturn;
+
 #modloaded actuallyadditions
-print("--- loading ActuallyAdditions.zs ---");
 	
+# Black Quartz Block recipe remakes
+	# Black Quartz Pillar
+	recipes.remove(<actuallyadditions:block_misc>);
+	recipes.addShaped("Black Quartz Pillar remake", <actuallyadditions:block_misc> * 2, 
+	[[<ore:blockBlackQuartz>],[<ore:blockBlackQuartz>]]);
+
+	# Chiseled Black Quartz Block
+	recipes.remove(<actuallyadditions:block_misc:1>);
+	recipes.addShaped("Chiseled Black Quartz Block remake", <actuallyadditions:block_misc:1> * 4, 
+	[[<ore:blockBlackQuartz>, <ore:blockBlackQuartz>],
+	[<ore:blockBlackQuartz>, <ore:blockBlackQuartz>]]);
+
 # Oil Generator Removal
 	rh(<actuallyadditions:block_oil_generator>);
 
 #Black Quartz Block to Black Quartz
 	recipes.addShapeless("Black Quartz Block to Black Quartz", 
 	<actuallyadditions:item_misc:5> * 4, [<ore:blockBlackQuartz>]);
-	
+		
 # Drill Speed Augment I oredict compat
 	recipes.remove(<actuallyadditions:item_drill_upgrade_speed>);
 	recipes.addShaped("Drill Speed Augment I", 
@@ -140,25 +153,25 @@ print("--- loading ActuallyAdditions.zs ---");
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:1>);
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:1>);
 
-	mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal:1>, <tconstruct:ingots>, <ic2:plate:13>, <contenttweaker:sapphire>, <tconstruct:slime_congealed:1>, 25000, 100, [0.0, 0.0, 1.0]);
-	mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal:1>, <tconstruct:ingots>, <ic2:plate:13>, <contenttweaker:sapphire>, <tconstruct:slime_congealed:1>, 250000, 200, [0.0, 0.0, 1.0]);
+	mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal:1>, <tconstruct:ingots>, <ic2:plate:13>, <biomesoplenty:gem:6>, <tconstruct:slime_congealed:1>, 25000, 100, [0.0, 0.0, 1.0]);
+	mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal:1>, <tconstruct:ingots>, <ic2:plate:13>, <biomesoplenty:gem:6>, <tconstruct:slime_congealed:1>, 250000, 200, [0.0, 0.0, 1.0]);
 
 # Diamantine
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:2>);
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:2>);
 	
-	mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal:2>, <nuclearcraft:dust:10>, <botania:manaresource:2>, <tconstruct:ingots:2>, <contenttweaker:malachite>, 50000, 200, [0.0, 1.0, 1.0]);
-	mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal:2>, <nuclearcraft:dust:10>, <botania:manaresource:2>, <tconstruct:ingots:2>, <contenttweaker:malachite>, 500000, 400, [0.0, 1.0, 1.0]);
+	mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal:2>, <nuclearcraft:dust:10>, <botania:manaresource:2>, <tconstruct:ingots:2>, <biomesoplenty:gem:5>, 50000, 200, [0.0, 1.0, 1.0]);
+	mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal:2>, <nuclearcraft:dust:10>, <botania:manaresource:2>, <tconstruct:ingots:2>, <biomesoplenty:gem:5>, 500000, 400, [0.0, 1.0, 1.0]);
 
 # Void
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:3>);
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:3>);
 
-	for item in <ore:stoneBasalt>.items {
-		mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:item_crystal:3>, <minecraft:dye>, <extendedcrafting:storage>, item, <actuallyadditions:block_misc:2>, 250000, 100, [0.1, 0.0, 0.0]);
-		mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:3>, <actuallyadditions:block_crystal:3>, <minecraft:dye>, <extendedcrafting:storage>, item, <actuallyadditions:block_misc:2>, 2500000, 200, [0.1, 0.0, 0.0]);
-	}
-	
+for item in <ore:stoneBasalt>.items {
+	mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:item_crystal:3>, <minecraft:dye>, <extendedcrafting:storage>, item, <actuallyadditions:block_misc:2>, 250000, 100, [0.1, 0.0, 0.0]);
+	mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:3>, <actuallyadditions:block_crystal:3>, <minecraft:dye>, <extendedcrafting:storage>, item, <actuallyadditions:block_misc:2>, 2500000, 200, [0.1, 0.0, 0.0]);
+}
+
 # Emeradic
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:4>);
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:4>);
@@ -178,49 +191,136 @@ print("--- loading ActuallyAdditions.zs ---");
 	#OutputStack, InputStack, (Optional)Output2Stack, (Optional)Output2Chance
 	#mods.actuallyadditions.Crusher.addRecipe(<minecraft:iron_ore>, <minecraft:iron_ingot>, <minecraft:stone>, 50);
 	
+	#BoP Gems -> Dyes
+	mods.actuallyadditions.Crusher.addRecipe(<minecraft:dye:9> * 2, <biomesoplenty:gem_block:1>, <minecraft:dye:9> * 2, 50);
+	mods.actuallyadditions.Crusher.addRecipe(<minecraft:dye:2> * 2, <biomesoplenty:gem_block:2>, <minecraft:dye:2> * 2, 50);
+	mods.actuallyadditions.Crusher.addRecipe(<minecraft:dye:14> * 2, <biomesoplenty:gem_block:3>, <minecraft:dye:14> * 2, 50);
+	mods.actuallyadditions.Crusher.addRecipe(<minecraft:dye:10> * 2, <biomesoplenty:gem_block:5>, <minecraft:dye:10> * 2, 50);
+	mods.actuallyadditions.Crusher.addRecipe(<minecraft:dye:12> * 2, <biomesoplenty:gem_block:6>, <minecraft:dye:6> * 2, 50);
+	
 	# Certus Quartz compatibility
 	mods.actuallyadditions.Crusher.addRecipe(<appliedenergistics2:material:1> * 2, <appliedenergistics2:charged_quartz_ore>);
 	mods.actuallyadditions.Crusher.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:1>);
 	mods.actuallyadditions.Crusher.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material>);
 	
-
-# *======= TreasureChest =======*
-	#mods.actuallyadditions.TreasureChest.addLoot(IItemStack returnItem, int chance, int minAmount, int maxAmount);
-	#mods.actuallyadditions.TreasureChest.addLoot(<minecraft:dirt>, 50, 1, 64);
-
-
 # *======= BallOfFur =======*
 
-	mods.actuallyadditions.BallOfFur.addReturn(<thermalfoundation:material:160>, 3);
-	mods.actuallyadditions.BallOfFur.addReturn(<astralsorcery:itemusabledust>, 5);
-	mods.actuallyadditions.BallOfFur.addReturn(<extendedcrafting:material>, 1);
-	mods.actuallyadditions.BallOfFur.addReturn(<appliedenergistics2:material:45>, 8);
-	mods.actuallyadditions.BallOfFur.addReturn(<appliedenergistics2:material:3>, 6);
-	mods.actuallyadditions.BallOfFur.addReturn(<contenttweaker:ruby>, 6);
-	mods.actuallyadditions.BallOfFur.addReturn(<immersiveengineering:material:9>, 1);
-	mods.actuallyadditions.BallOfFur.addReturn(<immersiveengineering:material:8>, 12);
-	mods.actuallyadditions.BallOfFur.addReturn(<plustic:alumiteingot>, 1);
+# Weight of vanilla AA drops used to calculate weight
+# numbers taken from wiki
+var weight = 100+2+1+80+60+10+40+60+30+70+40+40+10+6+30+2+20+10+3+40+50+30+4+20;
+
+# List of items to balls of fur
+# mod:name | meta | weight
+var listCatFur as string[] = [
+"animania:blue_peacock_feather"       ,"0"   , "50" , # Blue Peacock Feather
+"animania:charcoal_peacock_feather"   ,"0"   , "50" , # Charcoal Peacock Feather
+"animania:opal_peacock_feather"       ,"0"   , "50" , # Opal Peacock Feather
+"animania:peach_peacock_feather"      ,"0"   , "50" , # Peach Peacock Feather
+"animania:purple_peacock_feather"     ,"0"   , "50" , # Purple Peacock Feather
+"animania:taupe_peacock_feather"      ,"0"   , "50" , # Taupe Peacock Feather
+"animania:white_peacock_feather"      ,"0"   , "50" , # White Peacock Feather
+"animania:wool"                       ,"3"   , "55" , # Wool (Jacob)
+"appliedenergistics2:material"        ,"3"   , "30" , # Nether Quartz Dust
+"appliedenergistics2:material"        ,"45"  , "40" , # Sky Stone Dust
+"astralsorcery:itemusabledust"        ,"0"   , "25" , # Illumination Powder
+"biomesoplenty:gem"                   ,"1"   , "30" , # Ruby
+"biomesoplenty:plant_0"               ,"1"   , "30" , # Medium Grass
+"botania:manaresource"                ,"12"  , "1"  , # Red String
+"botania:manaresource"                ,"16"  , "5"  , # Mana Infused String
+"enderio:item_power_conduit"          ,"2"   , "40" , # Ender Energy Conduit
+"extendedcrafting:material"           ,"0"   , "5"  , # Black Iron Ingot
+"extrautils2:endershard"              ,"0"   , "35" , # Ender Shard
+"iceandfire:amphithere_feather"       ,"0"   , "40" , # Amphithere Feather
+"iceandfire:dragonbone"               ,"0"   , "8"  , # Dragon Bone
+"iceandfire:myrmex_desert_chitin"     ,"0"   , "8"  , # Desert Myrmex Chitin
+"iceandfire:myrmex_jungle_chitin"     ,"0"   , "8"  , # Jungle Myrmex Chitin
+"iceandfire:deathworm_chitin"         ,"0"   , "5"  , # Tan Death Worm Chitin
+"iceandfire:deathworm_chitin"         ,"1"   , "5"  , # White Death Worm Chitin
+"iceandfire:deathworm_chitin"         ,"2"   , "5"  , # Red Death Worm Chitin
+"iceandfire:stymphalian_bird_feather" ,"0"   , "40" , # Stymphalian Bird Feather
+"iceandfire:witherbone"               ,"0"   , "8"  , # Witherbone
+"immersiveengineering:bullet"         ,"0"   , "15" , # Empty Casing
+"immersiveengineering:material"       ,"8"   , "60" , # Iron Mechanical Component
+"immersiveengineering:material"       ,"9"   , "5"  , # Steel Mechanical Component
+"industrialforegoing:tinydryrubber"   ,"0"   , "10" , # Tiny Dry Rubber
+"minecraft:bone"                      ,"0"   , "30" , # Bone
+"minecraft:feather"                   ,"0"   , "30" , # Feather
+"minecraft:rabbit_foot"               ,"0"   , "30" , # Rabbit's Foot
+"minecraft:rabbit_hide"               ,"0"   , "30" , # Rabbit Hide
+"minecraft:skull"                     ,"0"   , "10" , # Skeleton Skull
+"minecraft:tallgrass"                 ,"1"   , "30" , # Grass
+"mysticalagriculture:crafting"        ,"23"  , "10" , # Mystical String
+"mysticalagriculture:crafting"        ,"24"  , "10" , # Mystical Feather
+"openblocks:sponge"                   ,"0"   , "40" , # Sponge
+"plustic:alumiteingot"                ,"0"   , "5"  , # Alumite Ingot
+"quark:crab_leg"                      ,"0"   , "40" , # Crab Leg
+"quark:frog_leg"                      ,"0"   , "40" , # Frog Leg
+"quark:rope"                          ,"0"   , "40" , # Rope Coil
+"quark:soul_bead"                     ,"0"   , "3"  , # Soul Bead
+"quark:tallow"                        ,"0"   , "40" , # Tallow
+"rustic:bee"                          ,"0"   , "20" , # Bee
+"rustic:wind_thistle"                 ,"0"   , "40" , # Wind Thistle
+"tconstruct:materials"                ,"17"  , "10" , # Necrotic Bone
+"tconstruct:slime_grass_tall"         ,"0"   , "40" , # Tall Slimy Grass
+"tconstruct:slime_grass_tall"         ,"4"   , "40" , # Tall Slimy Grass
+"tconstruct:slime_grass_tall"         ,"8"   , "40" , # Tall Slimy Grass
+"thaumcraft:salis_mundus"             ,"0"   , "5"  , # Salis Mundus
+"thermalfoundation:material"          ,"160" , "15" , # Steel Ingot
+"twilightforest:alpha_fur"            ,"0"   , "3"  , # Alpha Yeti Fur
+"twilightforest:arctic_fur"           ,"0"   , "15" , # Arctic Fur
+"twilightforest:cicada"               ,"0"   , "50" , # Cicada
+"twilightforest:firefly"              ,"0"   , "50" , # Firefly
+"twilightforest:raven_feather"        ,"0"   , "50" , # Raven Feather
+"twilightforest:twilight_plant"       ,"5"   , "50" , # Forest Grass
+] as string[];
+
+# Calculate total weight
+for i in 0 to listCatFur.length {
+	if (i%3==2) {
+		weight += listCatFur[i] as int;
+	}
+}
+
+# Iterate list and add drops
+for i in 0 to listCatFur.length {
+	if (i%3==0) {
+		var item = itemUtils.getItem(listCatFur[i], listCatFur[i+1]);
+		if (!isNull(item)) {
+			addBallReturn(item, listCatFur[i+2]);
+			val chance = ((((listCatFur[i+2] as float) / weight * 10000) as int) as double) / 100.0d;
+			item.addTooltip(format.darkGray("Drops from ") ~ format.bold("Ball Of Fur") ~
+				format.darkGray(" with chance ") ~ format.gray(chance ~ "%"));
+		}
+	}
+}
 
 
-# *======= AtomicReconstructor =======*
+# *======= Ore for Laser =======*
+	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreBoron>, 250);
+	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreLithium>, 250);
+	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreMagnesium>, 250);
+	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreThorium>, 250);
+	mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreCinnabar>, 250);
 
-	#mods.actuallyadditions.AtomicReconstructor.addRecipe(IItemStack output, IItemStack input, int energyUsed);
-	#mods.actuallyadditions.AtomicReconstructor.addRecipe(<minecraft:fire_charge>, <minecraft:coal:1>, 1000);
+# Black quartz
+val crushExceptions = "except: IECrusher SagMill Pulverizer AACrusher MekCrusher";
+scripts.process.crush(<ore:gemQuartzBlack>, <actuallyadditions:item_dust:7>, crushExceptions, null, null);
+scripts.process.crush(<ore:blockBlackQuartz>, <actuallyadditions:item_dust:7> * 4, crushExceptions ~ " Manufactory", null, null);
 
-	#mods.actuallyadditions.AtomicReconstructor.removeRecipe(IItemStack output);
-	#mods.actuallyadditions.AtomicReconstructor.removeRecipe(<minecraft:coal>);
-	
-# *======= Compost =======*
+# Recycle Quark crystals
+var crystalCrushExcept = "Macerator Grindstone AEGrinder ThermalCentrifuge mekCrusher MekEnrichment";
+scripts.process.crush(<quark:crystal:1>, <actuallyadditions:item_crystal_shard>   * 3, crystalCrushExcept, null, null);
+scripts.process.crush(<quark:crystal:6>, <actuallyadditions:item_crystal_shard:1> * 3, crystalCrushExcept, null, null);
+scripts.process.crush(<quark:crystal:5>, <actuallyadditions:item_crystal_shard:2> * 3, crystalCrushExcept, null, null);
+scripts.process.crush(<quark:crystal:8>, <actuallyadditions:item_crystal_shard:3> * 3, crystalCrushExcept, null, null);
+scripts.process.crush(<quark:crystal:4>, <actuallyadditions:item_crystal_shard:4> * 3, crystalCrushExcept, null, null);
+scripts.process.crush(<quark:crystal>  , <actuallyadditions:item_crystal_shard:5> * 3, crystalCrushExcept, null, null);
 
-	#mods.actuallyadditions.Compost.addRecipe(IItemStack output, IItemStack outputDisplay, IItemStack input, IItemStack inputDisplay);
-	#mods.actuallyadditions.Compost.addRecipe(<minecraft:dirt>, <minecraft:dirt>, <minecraft:sugar>, <minecraft:snow>);
-	
-	#mods.actuallyadditions.Compost.removeRecipe(IItemStack output);
-	#mods.actuallyadditions.Compost.removeRecipe(<actuallyadditions:item_canola_seed>);
-	
-# *======= Empowerer =======*
+# Other better ways to make Bio-mash and other food
+scripts.process.mash(<ore:listAllseed>*4,   <actuallyadditions:item_misc:1>*4, "no exceptions");
+scripts.process.mash(<ore:listAllveggie>*4, <actuallyadditions:item_misc:1>*4, "no exceptions");
+scripts.process.mash(<ore:listAllfruit>*4,  <actuallyadditions:item_misc:1>*5, "no exceptions");
+scripts.process.mash(<ore:listAllberry>*4,  <actuallyadditions:item_misc:1>*4, "no exceptions");
+scripts.process.mash(<minecraft:baked_potato>,  <actuallyadditions:item_food:5>*4, "no exceptions");
+scripts.process.mash(<minecraft:cooked_porkchop>,  <actuallyadditions:item_food:20>*5, "no exceptions");
 
-	#mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time, @Optional float[] particleColourArray);
-	#mods.actuallyadditions.Empowerer.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, 500, 100, [0.5, 0.3, 0.2]);
-
-	print("--- ActuallyAdditions.zs initialized ---");

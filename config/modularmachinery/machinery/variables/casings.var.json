@@ -37,6 +37,7 @@
 	
 	"casings": [
 		"modularmachinery:blockcasing@0",
-		"thermalfoundation:glass@6"
+		"thermalfoundation:glass@6",
+		"thermalfoundation:glass@8"
 	]
 }

@@ -1,6 +1,6 @@
 import mods.jei.JEI.removeAndHide as rh;
-# Custom recipes made by NillerMedDild
-	print("--- loading Creative.zs ---");
+import crafttweaker.item.IItemCondition;
+
 
 # *======= Variables =======*
 
@@ -49,7 +49,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	var meChest = <appliedenergistics2:chest>;
 	var creativeTank = <mekanism:machineblock2:11>.withTag({tier: 4});
 	var creativeGasTank = <mekanism:gastank>.withTag({tier: 4});
-	# *======= Recipes =======*
 
 var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 	TrophyItem:{id:"mekanism:gastank",Count:1 as byte, Damage:0 as short},
@@ -57,15 +56,32 @@ var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 	TrophyVariant:"gold"
 });
 
+var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
+  TrophyItem:{id:"twilightforest:trophy",Count:1 as byte, Damage:5 as short},
+  TrophyName:"Twilight Forest Master Trophy",
+  TrophyVariant:"gold"
+});
+
+# *======= Recipes =======*
+
+# Twilight Forest Master Trophy
+	recipes.addShapedMirrored("Twilight Forest Master Trophy", twilightForestMasterTrophy, 
+	[[<twilightforest:trophy>, <twilightforest:trophy:1>, <twilightforest:trophy:2>],
+	[<twilightforest:trophy:5>, <ore:blockCrystalMatrix>, <twilightforest:trophy:3>], 
+	[<twilightforest:trophy:4>, <twilightforest:trophy:8>, <twilightforest:trophy:6>]]);
+
 # Special Gas Tank Item
 	recipes.addShapedMirrored("Creative Gas Tank Frame", creativeGasTankFrame, 
 	[[<mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanTitanium"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanTitanium"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanIridium"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanIridium"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanDraconium"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanDraconium"}}})],
 	[<mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanBoron"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanBoron"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanMithril"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "slurryCleanMithril"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "fusionfuel"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "fusionfuel"}}})], 
 	[<mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "ethene"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "ethene"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "sulfuricacid"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "sulfuricacid"}}}), <mekanism:gastank>.withTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "hydrogenchloride"}}}).onlyWithTag({tier: 3, mekData: { stored: {amount: 512000, gasName: "hydrogenchloride"}}})]]);
+
+# Master Trophy
+	mods.jei.JEI.addItem(twilightForestMasterTrophy);
 	
 # Gas Tank Frame 
 	mods.jei.JEI.addItem(creativeGasTankFrame);
-
+	
 # Mystical Agradditions Creative Essence
 	mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalagradditions:stuff:69>, 
 	[[<ore:blockInsaniumEssence>, <ore:ingotVoid>, <ore:blockInsaniumEssence>, <ore:ingotVoid>, <ore:blockInsaniumEssence>], 
@@ -90,7 +106,8 @@ var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 	<nuclearcraft:ingot:9>,<nuclearcraft:ingot:10>,<nuclearcraft:alloy:1>,<nuclearcraft:alloy:2>,
 	<nuclearcraft:alloy:3>,<nuclearcraft:alloy:4>,<nuclearcraft:alloy:6>,<plustic:alumiteingot>,
 	<plustic:osgloglasingot>,<plustic:osmiridiumingot>,<plustic:mirioningot>,<psi:material:1>,
-	<psi:material:3>,<psi:material:4>,<redstonearsenal:material:32>,<thermalfoundation:material:128>,
+	<psi:material:3>,<psi:material:4>,<redstonearsenal:material:32>,<twilightforest:ironwood_ingot>,
+	<twilightforest:fiery_ingot>,<twilightforest:knightmetal_ingot>,<thermalfoundation:material:128>,
 	<thermalfoundation:material:129>,<thermalfoundation:material:162>,<thermalfoundation:material:163>,
 	<thermalfoundation:material:164>,<thermalfoundation:material:165>,<thermalfoundation:material:166>,
 	<thermalfoundation:material:167>,<tconstruct:ingots>,<tconstruct:ingots:1>,<tconstruct:ingots:2>,
@@ -98,13 +115,13 @@ var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 	<libvulpes:productingot:7>, <extendedcrafting:material:36>, <extendedcrafting:material:48>,
 	<enderio:item_alloy_ingot:8>, <enderio:item_alloy_ingot:7>, <enderio:item_alloy_ingot:2>,
 	<enderio:item_alloy_ingot>, <mysticalagradditions:insanium:2>, <thaumcraft:ingot:2>,
-	<thaumcraft:ingot>, <thaumcraft:ingot:1>, <skyresources:alchemyitemcomponent:7>, <skyresources:alchemyitemcomponent:8>, <skyresources:techitemcomponent:2>]);
+	<thaumcraft:ingot>, <thaumcraft:ingot:1>]);
 	
 # Creative Builder's Wand
 	mods.extendedcrafting.TableCrafting.addShaped(0, <extrautils2:itemcreativebuilderswand>, 
-	[[<extrautils2:itembuilderswand>, <cyclicmagic:cyclic_wand_build>.anyDamage(), <extrautils2:itembuilderswand>], 
-	[<betterbuilderswands:wanddiamond>.anyDamage(), <betterbuilderswands:wandunbreakable:12>.anyDamage(), <betterbuilderswands:wanddiamond>.anyDamage()], 
-	[<extrautils2:itembuilderswand>, <cyclicmagic:cyclic_wand_build>.anyDamage(), <extrautils2:itembuilderswand>]]);  
+	[[<extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>], 
+	[<extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>], 
+	[<extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>, <extrautils2:itembuilderswand>]]);  
 
 # Creative RFTools Screen
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<rftools:creative_screen>, 
@@ -116,8 +133,8 @@ var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 	<extrautils2:screen>, <opencomputers:screen3>, 
 	<opencomputers:screen2>, <opencomputers:screen1>]);
 
-# RFTools Creative Powercell
-	mods.extendedcrafting.TableCrafting.addShaped(4, <rftools:powercell_creative>,	
+# EnderIO Creative Capacitor Bank
+	mods.extendedcrafting.TableCrafting.addShaped(4, <enderio:block_cap_bank>.withTag({"enderio:energy": 1000000000}),
 	[[rtgFuel, resonantFrame, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, resonantFrame, rtgFuel], 
 	[resonantFrame, <nuclearcraft:rtg_californium>, elitePlating, anglesite, dilithium, anglesite, elitePlating, <nuclearcraft:rtg_californium>, resonantFrame], 
 	[ingotUltimate, elitePlating, ultProvider, resonantCube, <environmentaltech:solar_cont_5>, resonantCube, ultProvider, elitePlating, ingotUltimate], 
@@ -151,12 +168,12 @@ var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 	[ingotMirion, benitoite, <ore:gaiaIngot>, <botania:storage:1>, <botania:pylon:2>, <botania:storage:1>, <ore:gaiaIngot>, benitoite, ingotMirion], 
 	[ingotMirion, <botania:laputashard>, benitoite, benitoite, benitoite, benitoite, benitoite, <botania:laputashard>, ingotMirion], 
 	[<botania:pool:3>, ingotMirion, ingotMirion, ingotMirion, <botania:pool:3>, ingotMirion, ingotMirion, ingotMirion, <botania:pool:3>]]);
-	
+
 # Mekanism Creative Tank
 	mods.extendedcrafting.TableCrafting.addShaped(4, <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}}), 
-	[[<industrialforegoing:black_hole_tank>, <minecraft:milk_bucket>, <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "liquiddna", Amount: 1000}), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "bio.ethanol", Amount: 32000}}), <forge:bucketfilled>.withTag({FluidName: "juice", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "mutagen", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "biomass", Amount: 1000}), <industrialforegoing:black_hole_tank>], 
+	[[<industrialforegoing:black_hole_tank>, <forge:bucketfilled>.withTag({FluidName: "milk_goat", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "liquiddna", Amount: 1000}), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "bio.ethanol", Amount: 32000}}), <forge:bucketfilled>.withTag({FluidName: "juice", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "mutagen", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "biomass", Amount: 1000}), <industrialforegoing:black_hole_tank>], 
 	[<forge:bucketfilled>.withTag({FluidName: "empoweredoil", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:minerals>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "witchwater", Amount: 1000})], 
-	[<forge:bucketfilled>.withTag({FluidName: "xu_demonic_metal", Amount: 1000}), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "essence", Amount: 1000})], 
+	[<forge:bucketfilled>.withTag({FluidName: "xu_demonic_metal", Amount: 1000}), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "corium", Amount: 1000})], 
 	[<forge:bucketfilled>.withTag({FluidName: "draconium", Amount: 1000}), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "sewage", Amount: 1000})], 
 	[<thermalexpansion:tank>.withTag({Fluid: {FluidName: "tree_oil", Amount: 32000}}), <bigreactors:minerals>, megaDrum, ultCatalyst, <draconicevolution:chaotic_core>, ultCatalyst, megaDrum, <bigreactors:minerals>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 32000}})], 
 	[<forge:bucketfilled>.withTag({FluidName: "pyrotheum", Amount: 1000}), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "ic2pahoehoe_lava", Amount: 1000})], 
@@ -165,15 +182,15 @@ var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 	[<industrialforegoing:black_hole_tank>, <forge:bucketfilled>.withTag({FluidName: "ender", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "cryotheum", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "petrotheum", Amount: 1000}), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 32000}}), <forge:bucketfilled>.withTag({FluidName: "refined_fuel", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "mirion", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "neutron", Amount: 1000}), <industrialforegoing:black_hole_tank>]]); 
 	recipes.addShapeless("Creative Tank Reset", 
 	<mekanism:machineblock2:11>.withTag({tier: 4, mekData: {}}), 
-	[creativeTank]);
-	
+	[<mekanism:machineblock2:11>.withTag({tier: 4})]);
+
 # Storage Drawers Unlimited Withdrawel Upgrade
 	mods.extendedcrafting.TableCrafting.addShaped(4, <storagedrawers:upgrade_creative:1> * 2, 
 	[[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <bigreactors:minerals>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>], 
 	[blackHoleUnit, resonantFrame, resonantFrame, draconicChest, <extracells:storage.component:3>, draconicChest, resonantFrame, resonantFrame, blackHoleUnit], 
 	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 
-	[ultCatalyst, draconicChest, creativeEssence, <rftools:powercell_creative>, <ore:ingotInfinity>, <ic2:te:86>, creativeEssence, draconicChest, ultCatalyst], 
-	[<bigreactors:minerals>, <extracells:storage.component:3>, benitoite, <environmentaltech:solar_cont_6>, <tconstruct:materials:50>, <environmentaltech:solar_cont_6>, benitoite, <extracells:storage.component:3>, <bigreactors:minerals>], 
+	[ultCatalyst, draconicChest, creativeEssence, <enderio:block_cap_bank>.withTag({"enderio:energy": 1000000000}), <ore:ingotInfinity>, <ic2:te:86>, creativeEssence, draconicChest, ultCatalyst], 
+	[<bigreactors:minerals>, <extracells:storage.component:3>, benitoite, <environmentaltech:solar_cont_6>, twilightForestMasterTrophy, <environmentaltech:solar_cont_6>, benitoite, <extracells:storage.component:3>, <bigreactors:minerals>], 
 	[ultCatalyst, draconicChest, creativeEssence, creativeTank, <ore:ingotInfinity>, creativeGasTank, creativeEssence, draconicChest, ultCatalyst], 
 	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 
 	[blackHoleUnit, resonantFrame, resonantFrame, draconicChest, <extracells:storage.component:3>, draconicChest, resonantFrame, resonantFrame, blackHoleUnit], 
@@ -220,7 +237,7 @@ var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 	[ingotUltimate, ingotUltimate, ingotUltimate, blockLudicrite, rocketFuel, blockLudicrite, ingotUltimate, ingotUltimate, ingotUltimate]]);  
 	recipes.addShapeless("Creative Gas Tank Reset", 
 	<mekanism:gastank>.withTag({tier: 4, mekData: {}}), 
-	[creativeGasTank]);
+	[<mekanism:gastank>.withTag({tier: 4})]);
 	
 # Psi Creative Rod Frame
 	mods.extendedcrafting.TableCrafting.addShaped(4, <psi:cad_assembly:5>, 
@@ -244,12 +261,12 @@ var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 	[null, null, null, null, null, ultCatalyst, ultCatalyst, null, null], 
 	[null, null, null, null, null, ultCatalyst, <buildinggadgets:exchangertool>.withTag({}), ultCatalyst, null], 
 	[null, null, null, null, null, null, ultCatalyst, ultCatalyst, null], 
-	[null, null, null, null, null, null, null, null, anglesite]]); 
+	[null, null, null, null, null, null, null, null, anglesite]]);
 	
 # Creative Wireless Crafting Terminal
 	recipes.addShapeless("Creative Wireless Crafting Terminal", 
 	<wct:wct_creative>, 
-	[<wct:wct>.anyDamage(),<rftools:powercell_creative>.anyDamage()]);
+	[<wct:wct>.withTag({}),<rftools:powercell_creative>.anyDamage()]);
 
 # TIC Creative Modifier
 	mods.extendedcrafting.TableCrafting.addShaped(4, <tconstruct:materials:50>,
@@ -287,4 +304,4 @@ var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
 	[null, null, ingotUltimate, ingotUltimate, blockAwakended, ingotUltimate, ingotUltimate, null, null], 
 	[null, null, null, null, blockAwakended, null, null, null, null]]); 
 	
-		print("--- Creative.zs initialized ---");
+		

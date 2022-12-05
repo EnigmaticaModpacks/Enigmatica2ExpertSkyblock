@@ -1,13 +1,12 @@
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded extendedcrafting
-print("--- loading ExtendedCrafting.zs ---");
 
 	var piston = <minecraft:piston>;
 	var blackIron = <ore:ingotBlackIron>;
 
 # Extended Crafting Table removal
 	rh(<extendedcrafting:crafting_table>);
-	
+
 # Handheld Crafting Table
 	rh(<extendedcrafting:handheld_table>);
 	
@@ -90,8 +89,8 @@ print("--- loading ExtendedCrafting.zs ---");
 	[<advancedrocketry:ic:2>, <draconicevolution:wyvern_core>, <ic2:iridium_reflector>, <avaritia:extreme_crafting_table>, <ic2:iridium_reflector>, <draconicevolution:wyvern_core>, <advancedrocketry:ic:2>], 
 	[<ore:crystalDraconium>, <avaritia:double_compressed_crafting_table>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <avaritia:double_compressed_crafting_table>, <ore:crystalDraconium>], 
 	[<extendedcrafting:trimmed:4>, <ore:blockLudicrite>, <avaritia:double_compressed_crafting_table>, <thermalexpansion:frame:148>, <avaritia:double_compressed_crafting_table>, <ore:blockMirion>, <extendedcrafting:trimmed:4>], 
-	[<thermalexpansion:frame:147>, <extendedcrafting:trimmed:4>, <ore:crystalDraconium>, <advancedrocketry:ic:2>, <ore:crystalDraconium>, <extendedcrafting:trimmed:4>, <thermalexpansion:frame:147>]
-]);
+	[<thermalexpansion:frame:147>, <extendedcrafting:trimmed:4>, <ore:crystalDraconium>, <advancedrocketry:ic:2>, <ore:crystalDraconium>, <extendedcrafting:trimmed:4>, <thermalexpansion:frame:147>]]);
+
 # Pedestal
 	recipes.remove(<extendedcrafting:pedestal>);
 	mods.forestry.Carpenter.addRecipe(<extendedcrafting:pedestal>, 
@@ -152,5 +151,13 @@ print("--- loading ExtendedCrafting.zs ---");
 
 #mods.extendedcrafting.TableCrafting.remove(<output>);
 
-	
-	print("--- ExtendedCrafting.zs initialized ---");	
+# Insanium from inferium in Quantum Compressor
+mods.extendedcrafting.CompressionCrafting.addRecipe(<mysticalagradditions:insanium>, 
+<mysticalagriculture:crafting>, 1024, <mysticalagriculture:master_infusion_crystal>, 2000000, 100000);
+
+# Simplify Automating table
+recipes.remove(<extendedcrafting:interface>);
+recipes.addShaped("ExtendedCrafting Automating table", <extendedcrafting:interface>, [
+	[<ore:ingotBlackIron>, <extendedcrafting:material:10>, <ore:ingotBlackIron>],
+	[<extendedcrafting:material:17>, <extendedcrafting:frame>, <extendedcrafting:material:17>],
+	[<ore:ingotBlackIron>, <extendedcrafting:material:2>, <ore:ingotBlackIron>]]);

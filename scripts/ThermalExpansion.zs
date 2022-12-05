@@ -1,5 +1,15 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 #modloaded thermalexpansion
-print("--- loading ThermalExpansion.zs ---");
+
+# Planks/Slabs -> Sticks
+for plank in <ore:plankWood>.items {
+	mods.thermalexpansion.Sawmill.addRecipe(<minecraft:stick> * 6, plank, 500, <thermalfoundation:material:800>, 30);
+}
+
+for slab in <ore:slabWood>.items {
+	mods.thermalexpansion.Sawmill.addRecipe(<minecraft:stick> * 3, slab, 250, <thermalfoundation:material:800>, 15);
+}
 
 # Canola Oil Changes	
 	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:refinedcanolaoil>);
@@ -15,7 +25,14 @@ print("--- loading ThermalExpansion.zs ---");
 	
 # AA Oil Generator -> Compression Dynamo
 	recipes.addShapeless(<thermalexpansion:dynamo:2>, [<actuallyadditions:block_oil_generator>]);
-	
+
+	mods.thermalexpansion.NumisticDynamo.addGemFuel(<actuallyadditions:item_misc:5>, 40000);
+	mods.thermalexpansion.NumisticDynamo.addGemFuel(<astralsorcery:itemcraftingcomponent:0>, 80000);
+	mods.thermalexpansion.NumisticDynamo.addGemFuel(<appliedenergistics2:material:0>, 60000);
+	mods.thermalexpansion.NumisticDynamo.addGemFuel(<appliedenergistics2:material:1>, 60000);
+	mods.thermalexpansion.NumisticDynamo.addGemFuel(<appliedenergistics2:material:10>, 30000);
+	mods.thermalexpansion.NumisticDynamo.addGemFuel(<darkutils:shulker_pearl>, 5000);
+
 # Essence of Knowledge XP Compatibility (credit RedGoblin88)
 	mods.thermalexpansion.Crucible.addRecipe(<liquid:experience> * 200, <mysticalagriculture:xp_droplet>, 4000);
 	mods.thermalexpansion.Crucible.addRecipe(<liquid:experience> * 200, <mysticalagriculture:experience_essence>, 4000);
@@ -178,101 +195,82 @@ print("--- loading ThermalExpansion.zs ---");
 # Hardened Cell Frame
 	mods.actuallyadditions.Empowerer.addRecipe(<thermalexpansion:frame:129>, <thermalexpansion:frame:128>, <immersiveengineering:material:2>, <thermalfoundation:material:354>, <thermalfoundation:material:290>, <mekanism:basicblock:8>, 2500000, 200, [0.25, 0.25, 0.29]);
 
-# *======= Compactor =======*
+# Remove creative kit crafts (no actual creative conversion kit)
+recipes.removeByRecipeName("thermalexpansion:cell_17");
+recipes.removeByRecipeName("thermalexpansion:cell_16");
+recipes.removeByRecipeName("thermalexpansion:cell_15");
+recipes.removeByRecipeName("thermalexpansion:cell_14");
+recipes.removeByRecipeName("thermalexpansion:cell_18");
+recipes.removeByRecipeName("thermalexpansion:tank_18");
+recipes.removeByRecipeName("thermalexpansion:tank_16");
+recipes.removeByRecipeName("thermalexpansion:tank_17");
+recipes.removeByRecipeName("thermalexpansion:tank_14");
+recipes.removeByRecipeName("thermalexpansion:tank_15");
 
-#Mint
-	#mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack input, int energy);
-	#mods.thermalexpansion.Compactor.addMintRecipe(<minecraft:sand>, <minecraft:stick>, 1500);
+# Remove old non-working reservior clearings
+recipes.removeByRecipeName("thermalexpansion:reservoir_10");
+recipes.removeByRecipeName("thermalexpansion:reservoir_11");
+recipes.removeByRecipeName("thermalexpansion:reservoir_12");
+recipes.removeByRecipeName("thermalexpansion:reservoir_13");
+recipes.removeByRecipeName("thermalexpansion:reservoir_14");
+
+# Clear content of reservior and tank
+for i in 0 to 5 {
+	val reservior as IItemStack = <thermalexpansion:reservoir>.definition.makeStack(i) as IItemStack;
+	clearFluid(reservior);
+	# mods.jei.JEI.addItem(reservior); # Tanks cant be added to JEI
+}
+clearFluid(<thermalexpansion:tank>.withTag({}));
+
+# Add to Jei
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 1 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 2 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 3 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 4 as byte}));
+
+# More TE coolants
+mods.thermalexpansion.Coolant.addCoolant(<liquid:liquidhelium>,         3500000, 65);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:liquid_nitrogen>,      2500000, 55);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:ender_distillation>,   4000000, 70);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:vapor_of_levity>,      4500000, 75);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:blockfluidantimatter>, 5000000, 80);
+
+# Duct filling compat
+scripts.process.fill(<thermaldynamics:duct_0:6>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:2>,  null);
+scripts.process.fill(<thermaldynamics:duct_0:7>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:3>,  null);
+scripts.process.fill(<thermaldynamics:duct_0:8>,  <liquid:redstone>*200,  <thermaldynamics:duct_0:4>,  null);
+scripts.process.fill(<thermaldynamics:duct_0:9>,  <liquid:cryotheum>*500, <thermaldynamics:duct_0:5>,  null);
+scripts.process.fill(<thermaldynamics:duct_32:1>, <liquid:glowstone>*200, <thermaldynamics:duct_32:3>, null);
+scripts.process.fill(<thermaldynamics:duct_32:4>, <liquid:glowstone>*200, <thermaldynamics:duct_32:6>, null);
+scripts.process.fill(<thermaldynamics:duct_32:5>, <liquid:glowstone>*200, <thermaldynamics:duct_32:7>, null);
+scripts.process.fill(<thermaldynamics:duct_32>,   <liquid:glowstone>*200, <thermaldynamics:duct_32:2>, null);
+scripts.process.fill(<thermaldynamics:duct_64:3>, <liquid:aerotheum>*500, <thermaldynamics:duct_64>,   null);
+scripts.process.fill(<thermaldynamics:duct_64>,   <liquid:ender>*1000,    <thermaldynamics:duct_64:2>, null);
 
 
-	#mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
-	#mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:material:167>);
+#####################################
 
-#Press
-	#mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack input, int energy);
-	#mods.thermalexpansion.Compactor.addPressRecipe(<minecraft:sand>, <minecraft:apple>, 1500);
-
-	#mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
-	#mods.thermalexpansion.Compactor.removePressRecipe(<thermalfoundation:material:167>);
-
-#Storage
-	#mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack input, int energy);
-	#mods.thermalexpansion.Compactor.addStorageRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
-
-	#mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
-	#mods.thermalexpansion.Compactor.removeStorageRecipe(<thermalfoundation:material:167>);
+# Clathrates rework. More output
+function reworkClathrate(ore as IItemStack, crystal as IItemStack, dust as IItemStack, liquid as ILiquidStack) {
+	# Remove default outputs
+	mods.thermalexpansion.Crucible.removeRecipe(ore);
+	mods.thermalexpansion.Crucible.removeRecipe(crystal);
+	mods.thermalexpansion.Transposer.removeFillRecipe(crystal, <liquid:cryotheum> * 200);
+	recipes.removeShapeless(<*>, [crystal, <thermalfoundation:material:1025>]);
 	
-#Gear
-	#mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack input, int energy);
-	#mods.thermalexpansion.Compactor.addGearRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
-	
-	#mods.thermalexpansion.Compactor.removeGearRecipe(IItemStack input);
-	#mods.thermalexpansion.Compactor.removeGearRecipe(<thermalfoundation:material:167>);
+	# Buff melting into raw liquids
+	scripts.process.melt(ore, liquid * min(10000, liquid.amount * 4), "no exceptions");
+	scripts.process.melt(crystal, liquid, "no exceptions");
 
-# *======= Fluid Transposer =======*
+	# Filling with cryotheum to make advanced liquids
+	scripts.process.fill(crystal, <liquid:cryotheum> * 250, dust, "only: NCInfuser Transposer");
+}
 
-//mods.thermalexpansion.Transposer.addExtractRecipe(ILiquidStack output, IItemStack input, int energy);
-//mods.thermalexpansion.Transposer.addExtractRecipe(ILiquidStack output, IItemStack input, int energy, WeightedItemStack itemOut);
-#mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:water> * 250, <minecraft:leaves:0>, 360);
-#mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:water> * 250, <minecraft:leaves:1>, 360, <minecraft:leaves:0> % 30);
+reworkClathrate(<thermalfoundation:ore_fluid:2>, <thermalfoundation:material:893>, <thermalfoundation:material:101>, <liquid:redstone> * 1000);
+reworkClathrate(<thermalfoundation:ore_fluid:3>, <thermalfoundation:material:894>, <thermalfoundation:material:102>, <liquid:glowstone> * 2500);
+reworkClathrate(<thermalfoundation:ore_fluid:4>, <thermalfoundation:material:895>, <thermalfoundation:material:103>, <liquid:ender> * 2500);
 
-//mods.thermalexpansion.Transposer.addFillRecipe(IItemStack output, IItemStack input, ILiquidStack fluid, int energy);
-#mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:leaves:1>, <minecraft:leaves:0>, <liquid:water> * 200, 20);
+#####################################
 
-# *======= Magma Crucible =======*
-
-#mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);
-#mods.thermalexpansion.Crucible.addRecipe(<liquid:refined_oil>, <minecraft:diamond>, 50);
-
-#mods.thermalexpansion.Crucible.removeRecipe(IItemStack input);
-#mods.thermalexpansion.Crucible.removeRecipe(<minecraft:glowstone>);
-
-# *======= Energetic Infuser =======*
-
-//mods.thermalexpansion.Infuser.addRecipe(IItemStack output, IItemStack input, int energy);
-#mods.thermalexpansion.Infuser.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 1000);
-
-//mods.thermalexpansion.Infuser.removeRecipe(IItemStack input);
-#mods.thermalexpansion.Infuser.removeRecipe(<minecraft:gold_ore>);
-
-# *======= Induction Smelter =======*
-
-	#mods.thermalexpansion.InductionSmelter.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
-	#mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:iron_ore>, 1500, <minecraft:stone>, 20);
-
-	#mods.thermalexpansion.InductionSmelter.removeRecipe(input);
-	#mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:bucket>, <minecraft:sand>);
-
-# *======= Insolator =======*
-
-	#mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
-	#mods.thermalexpansion.Insolator.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:iron_ore>, 1500, <minecraft:stone>, 20);
-
-	#mods.thermalexpansion.Insolator.removeRecipe(IItemStack primaryInput, IItemStack secondaryInput);
-	#mods.thermalexpansion.Insolator.removeRecipe(<minecraft:melon_seeds>, <thermalfoundation:fertilizer:1>);
-
-# *======= Pulverizer =======*
-
-	#mods.thermalexpansion.Pulverizer.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
-	#mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
-
-	#mods.thermalexpansion.Pulverizer.removeRecipe(IItemStack input);
-	#mods.thermalexpansion.Pulverizer.removeRecipe(<thermalfoundation:material:136>);
-
-# *======= Refinery =======*
-
-	#mods.thermalexpansion.Refinery.addRecipe(ILiquidStack output, IItemStack outputItem, ILiquidStack input, int energy);
-	#mods.thermalexpansion.Refinery.addRecipe(<liquid:lava>, <minecraft:diamond>,<liquid:water>, 50);
-
-	#mods.thermalexpansion.Refinery.removeRecipe(ILiquidStack input);
-	#mods.thermalexpansion.Refinery.removeRecipe(<liquid:resin>);
-
-# *======= Sawmill =======*
-
-	#mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
-	#mods.thermalexpansion.Sawmill.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
-
-	#mods.thermalexpansion.Sawmill.removeRecipe(IItemStack input);
-	#mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:painting>);
-	
-		print("--- ThermalExpansion.zs initialized ---");
+# Stone Gear [Compactor] recipe
+mods.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:23>, <ore:cobblestone>.firstItem * 4, 16000);

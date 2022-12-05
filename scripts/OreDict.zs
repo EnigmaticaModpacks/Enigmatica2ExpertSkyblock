@@ -3,10 +3,34 @@ import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.oredict.IOreDict as IOreDict;
 import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading OreDict.zs ---");
+	
+#priority 1000
 
-# Black Quartz Pillar is cheaper than 1 block, remove from oredict
-	<ore:blockBlackQuartz>.remove(<actuallyadditions:block_misc>);
+<ore:blockYellorium>.add(<immersiveengineering:storage:5>);	
+
+<ore:chipDiamond>.add(<extrabitmanipulation:diamond_nugget>);
+
+# Oredicts for pressure plates
+var pressurePlates as IItemStack[] = [
+	<twilightforest:twilight_oak_plate>,
+	<twilightforest:canopy_plate>,
+	<twilightforest:mangrove_plate>,
+	<twilightforest:dark_plate>,
+	<twilightforest:time_plate>,
+	<twilightforest:trans_plate>,
+	<twilightforest:mine_plate>,
+	<twilightforest:sort_plate>
+];
+
+for item in pressurePlates {
+	<ore:pressurePlateWood>.add(item);
+}
+
+# Fixing Mortar and Pestle oredict from Pam's
+	<ore:pestleAndMortar>.add(<harvestcraft:mortarandpestleitem>);
+	
+# Fixing mushroom-y things
+	<ore:mushroomAny>.add(<harvestcraft:whitemushroomitem>);
 	
 # Removing Pam's in-world Apple from cropApple
 	<ore:cropApple>.remove(<harvestcraft:pamapple>);
@@ -14,9 +38,14 @@ print("--- loading OreDict.zs ---");
 # Cobalt Block issues
 	<ore:oreCobalt>.remove(<tconstruct:metal>);
 	<ore:oreArdite>.remove(<tconstruct:metal>);
+	<ore:oreArdite>.remove(<tconstruct:ore>);
 	
 # Fixing the Mineralis Ritual
 	<ore:oreNickel>.remove(<immersiveengineering:ore:4>);
+	
+	<ore:oreSapphire>.remove(<iceandfire:sapphire_ore>);
+	
+	<ore:oreSilver>.remove(<iceandfire:silver_ore:0>);
 	
 	<ore:oreTin>.remove(<forestry:resources:2>);
 	<ore:oreTin>.remove(<ic2:resource:3>);
@@ -39,16 +68,16 @@ print("--- loading OreDict.zs ---");
 	<ore:oreLead>.remove(<nuclearcraft:ore:2>);
 
 	<ore:oreSilver>.remove(<immersiveengineering:ore:3>);
-
+	
 	<ore:oreUranium>.remove(<ic2:resource:4>);
 	<ore:oreUranium>.remove(<nuclearcraft:ore:4>);
-
+	
 # Slag
 	<ore:crystalSlag>.add(<ic2:misc_resource:5>);
-	
+
 # String isn't flax, wut
 	<ore:cropFlax>.remove(<minecraft:string>);
-	
+
 # Glowing Mushrooms
 	<ore:mushroomAny>.add(<nuclearcraft:glowing_mushroom>);
 	<ore:mushroomAny>.add(<randomthings:glowingmushroom>);
@@ -60,6 +89,8 @@ print("--- loading OreDict.zs ---");
 	for item in <ore:toolHoe>.items {
 		<ore:toolHoe>.remove(item);
 	}
+	
+	<ore:toolHoe>.remove(<mysticalagriculture:superium_hoe>);
 	
 # Pam's Apple
 	<ore:cropApple>.add(<harvestcraft:pamapple>);
@@ -73,6 +104,22 @@ print("--- loading OreDict.zs ---");
 		<minecraft:jungle_boat>,
 		<minecraft:acacia_boat>,
 		<minecraft:dark_oak_boat>,
+		<biomesoplenty:boat_sacred_oak>,
+		<biomesoplenty:boat_cherry>,
+		<biomesoplenty:boat_umbran>,
+		<biomesoplenty:boat_fir>,
+		<biomesoplenty:boat_ethereal>,
+		<biomesoplenty:boat_magic>,
+		<biomesoplenty:boat_mangrove>,
+		<biomesoplenty:boat_palm>,
+		<biomesoplenty:boat_redwood>,
+		<biomesoplenty:boat_willow>,
+		<biomesoplenty:boat_pine>,
+		<biomesoplenty:boat_hellbark>,
+		<biomesoplenty:boat_jacaranda>,
+		<biomesoplenty:boat_mahogany>,
+		<biomesoplenty:boat_ebony>,
+		<biomesoplenty:boat_eucalyptus>,
 		<immersivepetroleum:speedboat>,
 		<immersivepetroleum:upgrades>,
 		<ic2:boat:3>
@@ -82,9 +129,27 @@ print("--- loading OreDict.zs ---");
 		<ore:boat>.add(boat);
 	}
 
+# Mycelium Oredict
+	<ore:mycelium>.add(<biomesoplenty:grass:8>);
+
+# Biomesoplenty Dirt
+	<ore:dirt>.add([
+		<biomesoplenty:dirt:8>,
+		<biomesoplenty:dirt:9>,
+		<biomesoplenty:dirt:1>,
+		<biomesoplenty:dirt:10>,
+		<biomesoplenty:dirt:2>
+	]);
 
 # Enhanced Ender Ingot
 	<ore:ingotEnderEnhanced>.add(<extendedcrafting:material:48>);
+	
+# Venison Oredict
+	<ore:listAllbeefraw>.add(<twilightforest:raw_venison>);
+	<ore:listAllmeatraw>.add(<twilightforest:raw_venison>);
+	
+	<ore:listAllbeefcooked>.add(<twilightforest:cooked_venison>);
+	<ore:listAllmeatcooked>.add(<twilightforest:cooked_venison>);
 	
 # Void Metal Block
 	<ore:blockVoid>.add(<thaumcraft:metal_void>);
@@ -96,6 +161,7 @@ print("--- loading OreDict.zs ---");
 	<ore:ingotModularium>.add(<modularmachinery:itemmodularium>);
 
 # Amber Oredict
+	<ore:blockAmber>.add(<biomesoplenty:gem_block:7>);
 	<ore:blockAmber>.add(<thaumcraft:amber_block>);
 	<ore:blockAmber>.add(<thaumcraft:amber_brick>);
 
@@ -156,11 +222,12 @@ print("--- loading OreDict.zs ---");
 	fertilizer.add(<minecraft:dye:15>);
 	fertilizer.add(<industrialforegoing:fertilizer>);
 	fertilizer.add(<forestry:fertilizer_compound>);
+	fertilizer.add(<mysticalagriculture:fertilized_essence>);
 	
 # Sawdust compat
-	<ore:pulpWood>.add(<excompressum:wood_chippings>);
 	<ore:pulpWood>.add(<thermalfoundation:material:800>);
-	<ore:dustWood>.add(<forestry:wood_pulp>);
+	<ore:pulpWood>.remove([<mekanism:sawdust>, <forestry:wood_pulp>]);
+	<ore:dustWood>.remove([<mekanism:sawdust>, <excompressum:wood_chippings>]);
 	
 # Diamond Chip
 	<ore:nuggetDiamond>.add(<opencomputers:material:29>);
@@ -170,6 +237,8 @@ print("--- loading OreDict.zs ---");
 	
 # Dragon hearts
 	<ore:heartDragon>.add(<draconicevolution:dragon_heart>);
+	<ore:heartDragon>.add(<iceandfire:fire_dragon_heart>);
+	<ore:heartDragon>.add(<iceandfire:ice_dragon_heart>);
 	
 # Crafting hammers
 	<ore:craftingToolForgeHammer>.add(<immersiveengineering:tool>);
@@ -240,6 +309,24 @@ print("--- loading OreDict.zs ---");
 	<ore:itemSalt>.add(<immersivetech:material>);
 	<ore:foodSalt>.add(<immersivetech:material>);
 	<ore:dustSalt>.add(<immersivetech:material>);
+
+# *======= Clearing Unused Blocks =======*
+
+# Steel blocks
+	rh(<ic2:resource:8>);
+
+# Copper blocks
+	rh(<ic2:resource:6>);
+
+# Tin blocks
+	rh(<ic2:resource:9>);
+
+# Silver blocks
+	rh(<ic2:resource:15>);
+	rh(<iceandfire:silver_block>);
+
+# Lead blocks
+	rh(<ic2:resource:7>);
 		
 # *======= Quark Specific Oredict =======*
 
@@ -256,7 +343,6 @@ print("--- loading OreDict.zs ---");
 	granite.add(<quark:world_stone_bricks>);
 	
 	basalt.add(<quark:world_stone_bricks:3>);
-	basalt.add(<quark:basalt:1>);
 	
 	limestone.add(<quark:limestone:1>);
 	limestone.add(<quark:world_stone_bricks:5>);
@@ -305,6 +391,22 @@ print("--- loading OreDict.zs ---");
 		<rustic:painted_wood_cyan:0>, 
 		<rustic:planks>, 
 		<rustic:planks:1>,
+		<biomesoplenty:planks_0>, 
+		<biomesoplenty:planks_0:1>, 
+		<biomesoplenty:planks_0:2>, 
+		<biomesoplenty:planks_0:3>, 
+		<biomesoplenty:planks_0:4>, 
+		<biomesoplenty:planks_0:5>, 
+		<biomesoplenty:planks_0:6>, 
+		<biomesoplenty:planks_0:7>, 
+		<biomesoplenty:planks_0:8>, 
+		<biomesoplenty:planks_0:9>, 
+		<biomesoplenty:planks_0:10>, 
+		<biomesoplenty:planks_0:11>, 
+		<biomesoplenty:planks_0:12>, 
+		<biomesoplenty:planks_0:13>, 
+		<biomesoplenty:planks_0:14>, 
+		<biomesoplenty:planks_0:15>, 
 		<chisel:planks-acacia>, 
 		<chisel:planks-acacia:1>, 
 		<chisel:planks-acacia:2>, 
@@ -488,8 +590,8 @@ print("--- loading OreDict.zs ---");
 		<minecraft:bed:12>, #Brown Bed
 		<minecraft:bed:13>, #Green Bed
 		<minecraft:bed:14>, #Red Bed
-		<minecraft:bed:15>, #Black Bed
-		<cyclicmagic:sleeping_mat>
+		<minecraft:bed:15> #Black Bed
+		#<cyclicmagic:sleeping_mat>
 
 	] as IItemStack[];
 	
@@ -513,6 +615,22 @@ print("--- loading OreDict.zs ---");
 
 	var DoorToAdd = [
 		<minecraft:wooden_door>,
+		<biomesoplenty:fir_door>,
+		<biomesoplenty:cherry_door>,
+		<biomesoplenty:ebony_door>,
+		<biomesoplenty:ethereal_door>,
+		<biomesoplenty:eucalyptus_door>,
+		<biomesoplenty:hellbark_door>,
+		<biomesoplenty:jacaranda_door>,
+		<biomesoplenty:magic_door>,
+		<biomesoplenty:mahogany_door>,
+		<biomesoplenty:mangrove_door>,
+		<biomesoplenty:palm_door>,
+		<biomesoplenty:pine_door>,
+		<biomesoplenty:redwood_door>,
+		<biomesoplenty:sacred_oak_door>,
+		<biomesoplenty:umbran_door>,
+		<biomesoplenty:willow_door>,
 		<forestry:doors.acacia>, #Desert Acacia Door
 		<forestry:doors.balsa>, #Balsa Door
 		<forestry:doors.baobab>, #Baobab Door
@@ -558,6 +676,18 @@ print("--- loading OreDict.zs ---");
 	recipes.addShapeless("wooddoororedict1", <minecraft:wooden_door>, [Door]);
 
 	
-	print("--- OreDict.zs initialized ---");
-	
-	
+# Animania peacock feathers
+<ore:peacockFeathers>.add([
+    <animania:blue_peacock_feather>,
+    <animania:white_peacock_feather>,
+    <animania:charcoal_peacock_feather>,
+    <animania:opal_peacock_feather>,
+    <animania:peach_peacock_feather>,
+    <animania:purple_peacock_feather>,
+    <animania:taupe_peacock_feather>
+]);
+
+# Rearrange items in Dye Oredict to better integration
+# with AA [Lens Of Color]
+<ore:dyeBrown>.remove([<enderio:item_material:49>, <industrialforegoing:fertilizer>]);
+<ore:dyeGreen>.remove(<enderio:item_material:48>);

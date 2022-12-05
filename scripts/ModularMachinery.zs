@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded modularmachinery
-print("--- loading ModularMachinery.zs ---");
+
 
 # Arcane Crafting Engine
     recipes.addShapedMirrored("Arcane Crafting Engine", 
@@ -14,14 +14,14 @@ print("--- loading ModularMachinery.zs ---");
 	recipes.addShapedMirrored("Advanced Thermionic Fabricator", 
 	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:advanced_thermionic_fabricator"}), 
 	[[<modularmachinery:blockcasing>, <extracells:storage.component:8>, <modularmachinery:blockcasing>],
-	[<forestry:fabricator>, <immersiveengineering:blueprint>, <forestry:fabricator>], 
+	[<forestry:fabricator>, <immersiveengineering:blueprint>.anyDamage(), <forestry:fabricator>], 
 	[<modularmachinery:blockcasing>, <extracells:fluidcrafter>, <modularmachinery:blockcasing>]]);
 
 # Starlight Crafting Engine
 	recipes.addShapedMirrored("Starlight Crafting Engine", 
 	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:starlight_crafting_engine"}), 
 	[[<ore:ingotModularium>, <astralsorcery:itemshiftingstar>, <ore:ingotModularium>],
-	[<ore:ingotModularium>, <immersiveengineering:blueprint>, <ore:ingotModularium>], 
+	[<ore:ingotModularium>, <immersiveengineering:blueprint>.anyDamage(), <ore:ingotModularium>], 
 	[<ore:ingotModularium>, <astralsorcery:itemcraftingcomponent:4>, <ore:ingotModularium>]]);
 
 # Advanced Carpenter
@@ -47,12 +47,21 @@ print("--- loading ModularMachinery.zs ---");
     [<ic2:overclocked_heat_vent>, <modularmachinery:blockcasing>, <ic2:overclocked_heat_vent>]]);
 
 # Machine Controller
-    recipes.remove(<modularmachinery:blockcontroller>);
-    recipes.addShaped("Modular Controller", 
-    <modularmachinery:blockcontroller>, 
-    [[<forestry:chipsets:1>.withTag({}), <rftools:screen>, <forestry:chipsets:1>.withTag({})],
-    [<modularmachinery:blockcasing>, <appliedenergistics2:controller>, <modularmachinery:blockcasing>], 
-    [null, <modularmachinery:blockcasing>, null]]);
+    if (!isNull(itemUtils.getItem("appliedenergistics2:controller"))) {
+      recipes.remove(<modularmachinery:blockcontroller>);
+      recipes.addShaped("Modular Controller", 
+      <modularmachinery:blockcontroller>, 
+      [[<forestry:chipsets:1>.withTag({}), <rftools:screen>, <forestry:chipsets:1>.withTag({})],
+      [<modularmachinery:blockcasing>, itemUtils.getItem("appliedenergistics2:controller"), <modularmachinery:blockcasing>], 
+      [null, <modularmachinery:blockcasing>, null]]);
+    } else {
+      recipes.remove(<modularmachinery:blockcontroller>);
+      recipes.addShaped("Modular Controller",
+      <modularmachinery:blockcontroller>,
+      [[<forestry:chipsets:1>.withTag({}), <rftools:screen>, <forestry:chipsets:1>.withTag({})],
+      [<modularmachinery:blockcasing>, <appliedenergistics2:energy_acceptor>, <modularmachinery:blockcasing>],
+      [null, <modularmachinery:blockcasing>, null]]);
+    }
 
 # Machine Casing
     recipes.remove(<modularmachinery:blockcasing>);
@@ -75,7 +84,7 @@ print("--- loading ModularMachinery.zs ---");
     recipes.addShapedMirrored("Machine Circuitry", 
     <modularmachinery:blockcasing:5>, 
     [[null, <immersiveengineering:wirecoil:5>, null],
-    [<modularmachinery:blockcasing>, <forestry:chipsets:3>.withTag({}), <modularmachinery:blockcasing>], 
+    [<modularmachinery:blockcasing>, <forestry:chipsets:3>.withTag({T: 3 as short}, false), <modularmachinery:blockcasing>], 
     [null, <modularmachinery:blockcasing>, null]]);
 
 # Modularium
@@ -85,6 +94,7 @@ print("--- loading ModularMachinery.zs ---");
     [[<ore:ingotElectricalSteel>, <ore:ingotPlatinum>, <ore:ingotElectricalSteel>],
     [<actuallyadditions:item_crystal_empowered:1>, <ore:itemPulsatingCrystal>, <actuallyadditions:item_crystal_empowered:1>], 
     [<ore:ingotElectricalSteel>, <ore:ingotPlatinum>, <ore:ingotElectricalSteel>]]);
+
 
     recipes.addShaped("EnergyOutHatch2", <modularmachinery:blockenergyoutputhatch:2>, [[null, <modularmachinery:blockcasing>, null],[<modularmachinery:blockcasing>, <enderio:block_buffer:1>, <modularmachinery:blockcasing>], [null, <actuallyadditions:block_laser_relay>, null]]);
 
@@ -141,12 +151,10 @@ var itemsToRemove = [
     <modularmachinery:blockenergyoutputhatch:4>,
     <modularmachinery:blockenergyoutputhatch:5>,
     <modularmachinery:blockenergyoutputhatch:6>,
-    <modularmachinery:blockenergyoutputhatch:7>,
+    <modularmachinery:blockenergyoutputhatch:7>
 	
 ] as IItemStack[];
 
 for item in itemsToRemove {
     rh(item);
 }
-	
-print("--- ModularMachinery.zs initialized ---");

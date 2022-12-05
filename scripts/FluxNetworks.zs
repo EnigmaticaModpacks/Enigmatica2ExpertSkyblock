@@ -1,5 +1,6 @@
 #modloaded fluxnetworks
 
+
 # Flux (fire recipe is disabled)
 recipes.addShaped("Flux Networks Flux", 
 <fluxnetworks:flux> * 8, 

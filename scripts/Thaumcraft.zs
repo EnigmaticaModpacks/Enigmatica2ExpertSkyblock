@@ -1,27 +1,16 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
-import mods.thaumcraft.SmeltingBonus.removeSmeltingBonus;
-import mods.thaumcraft.SmeltingBonus.addSmeltingBonus;
 #modloaded thaumcraft
-print("--- loading Thaumcraft.zs ---");
 
-# Removing wrong aspects from stuff
-	<chiselsandbits:chiseled_iron>.setAspects(<aspect:desiderium> * 1);
-	<ic2:dust:21>.setAspects(<aspect:metallum> * 1);
-	
-// Crimson Rites
-//mods.thaumcraft.Infusion.registerRecipe(String name, String research, 
-//IItemStack output, int instability, 
-//CTAspectStack[] aspects, 
-//IIngredient centralItem, 
-//IIngredient[] recipe);
+
+# Crimson Rites
 mods.thaumcraft.Infusion.registerRecipe("crimson_rites", "INFUSION", 
 <thaumcraft:curio:6>, 15, 
 [<aspect:vitium> * 30, <aspect:mortuus> * 15, <aspect:praecantatio> * 30, <aspect:auram> * 10], 
 <thaumcraft:thaumonomicon>, 
 [<thaumcraft:ingot>, <thaumcraft:void_seed>, <thaumcraft:salis_mundus>, <thaumcraft:void_seed>, <thaumcraft:salis_mundus>, <thaumcraft:void_seed>, <thaumcraft:ingot>, <thaumcraft:void_seed>]);
 
-// Cultist Portal?
+# Cultist Portal
 mods.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION", 
 <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:cultistportallesser"}}), 15, 
 [<aspect:vitium> * 90, <aspect:mortuus> * 45, <aspect:praecantatio> * 90, <aspect:auram> * 30], 
@@ -30,25 +19,26 @@ mods.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION
 
 # Unification for the Smelting Bonus
 // IIngredient input, IItemStack stack
-removeSmeltingBonus(<ore:oreCopper>, <thaumcraft:nugget:1>);
-removeSmeltingBonus(<ore:oreTin>, <thaumcraft:nugget:2>);
-removeSmeltingBonus(<ore:oreSilver>, <thaumcraft:nugget:3>);
-removeSmeltingBonus(<ore:oreLead>, <thaumcraft:nugget:4>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreCopper>, <thaumcraft:nugget:1>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreTin>, <thaumcraft:nugget:2>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreSilver>, <thaumcraft:nugget:3>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:oreLead>, <thaumcraft:nugget:4>);
 
-removeSmeltingBonus(<thaumcraft:cluster:2>, <thaumcraft:nugget:1>);
-removeSmeltingBonus(<thaumcraft:cluster:3>, <thaumcraft:nugget:2>);
-removeSmeltingBonus(<thaumcraft:cluster:4>, <thaumcraft:nugget:3>);
-removeSmeltingBonus(<thaumcraft:cluster:5>, <thaumcraft:nugget:4>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterCopper>, <thaumcraft:nugget:1>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterTin>, <thaumcraft:nugget:2>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterSilver>, <thaumcraft:nugget:3>);
+mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(<ore:clusterLead>, <thaumcraft:nugget:4>);
 
 // IIngredient input, WeightedItemStack stack
-addSmeltingBonus(<ore:oreCopper>, <thermalfoundation:material:192> % 33);
-addSmeltingBonus(<ore:oreTin>, <thermalfoundation:material:193> % 33);
-addSmeltingBonus(<ore:oreSilver>, <thermalfoundation:material:194> % 33);
-addSmeltingBonus(<ore:oreLead>, <thermalfoundation:material:195> % 33);
+mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreCopper>, <thermalfoundation:material:192> % 33);
+mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreTin>, <thermalfoundation:material:193> % 33);
+mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreSilver>, <thermalfoundation:material:194> % 33);
+mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation:material:195> % 33);
 
-# Removing aspects from chiseled stuff
+# Removing wrong aspects from stuff
 	<chiselsandbits:chiseled_iron>.setAspects(<aspect:desiderium> * 1);
-
+	<ic2:dust:21>.setAspects(<aspect:metallum> * 1);
+	
 # Temp Recipes
 	recipes.addShapedMirrored("Temporary Void Seed Recipe", <thaumcraft:void_seed> * 4, [[<ore:mycelium>, <ore:crystalLonsdaleite>, <ore:mycelium>],[<ore:crystalLonsdaleite>, <mysticalagriculture:crafting:21>, <ore:crystalLonsdaleite>], [<ore:mycelium>, <ore:crystalLonsdaleite>, <ore:mycelium>]]);
 
@@ -83,8 +73,8 @@ addSmeltingBonus(<ore:oreLead>, <thermalfoundation:material:195> % 33);
 # Fancy Amulet
 	recipes.remove(<thaumcraft:baubles:4>);
 	recipes.addShaped(<thaumcraft:baubles:4>, 
-	[[null, <botania:spellcloth>, null], 
-	[<botania:spellcloth>, <ore:clusterGold>, <botania:spellcloth>], 
+	[[null, <botania:spellcloth>.anyDamage(), null], 
+	[<botania:spellcloth>.anyDamage(), <ore:clusterGold>, <botania:spellcloth>.anyDamage()], 
 	[<ore:gemEmerald>, <thaumcraft:baubles>, <ore:gemEmerald>]]);
 
 # Fancy Ring
@@ -101,10 +91,6 @@ addSmeltingBonus(<ore:oreLead>, <thermalfoundation:material:195> % 33);
 	[<ore:leather>, <ore:clusterCopper>, <ore:leather>], 
 	[<ore:gemEmerald>, <thaumcraft:baubles:2>, <ore:gemEmerald>]]);
 
-# TC Logs -> Planks
-	recipes.addShapeless(<thaumcraft:plank_greatwood> * 2, [<thaumcraft:log_greatwood>]);
-	recipes.addShapeless(<thaumcraft:plank_silverwood> * 2, [<thaumcraft:log_silverwood>]);
-
 # Golemancer's Bell
 	recipes.remove(<thaumcraft:golem_bell>);
 	recipes.addShapedMirrored(<thaumcraft:golem_bell>, 
@@ -112,15 +98,28 @@ addSmeltingBonus(<ore:oreLead>, <thermalfoundation:material:195> % 33);
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:itemrockcrystalsimple>.anyDamage()], 
 	[<ore:stickTreatedWood>, null, null]]);
 
-# Removals
-	rh(<thaumcraft:nugget>);
-	rh(<thaumcraft:nugget:1>);
-	rh(<thaumcraft:nugget:2>);
-	rh(<thaumcraft:nugget:3>);
-	rh(<thaumcraft:nugget:4>);
-	rh(<thaumcraft:creative_flux_sponge>);
+# Salis Mundis visible recipe (original is hidden in JEI)
+craft.make(<thaumcraft:salis_mundus>, ["DEFCAB"], {
+	A: <ore:itemFlint>.reuse(),
+	B: <minecraft:bowl>.reuse(),
+	C: <ore:dustRedstone>,
+	D: <thaumcraft:crystal_essence:*>.marked("g0"),
+	E: <thaumcraft:crystal_essence:*>.marked("g1"),
+	F: <thaumcraft:crystal_essence:*>.marked("g2"),
+	}, function(out, ins, cInfo) {
+    for i in 0 to 2 {
+      for j in (i+1) to 3 {
+        if (ins["g"~i] has ins["g"~j]) {
+          return null; # We found duplicate, return nothing
+        }
+      }
+    }
+    return out;
+  }, true /* True for shapeless */);
 
-//===============================================//
 
-
-	print("--- Thaumcraft.zs initialized ---");
+# Add/Override aspects
+<forestry:candle>.setAspects(<aspect:lux>*20, <aspect:herba>*5, <aspect:aer>*5);
+<forestry:stump>.setAspects(<aspect:lux>*20, <aspect:herba>*5, <aspect:aer>*5);
+<forestry:beeswax>.setAspects(<aspect:lux>*5, <aspect:aer>*2);
+	

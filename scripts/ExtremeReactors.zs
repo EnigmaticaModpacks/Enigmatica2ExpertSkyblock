@@ -1,13 +1,13 @@
 import mods.jei.JEI.removeAndHide as rh;
 import mods.astralsorcery.Utils;
 #modloaded bigreactors
-print("--- loading ExtremeReactors.zs ---");
+
 	
 # *======= Recipes =======*
 
 # Cyanite in NuclearCraft Fission Reactor
 	mods.nuclearcraft.fission.addRecipe([<immersiveengineering:metal:5>, <bigreactors:ingotmetals:1>, 4800.0, 100.0, 40.0, "URANIUM"]);
-	
+
 # Reactor Controller
 	recipes.remove(<bigreactors:reactorcontroller>);
 	mods.extendedcrafting.TableCrafting.addShaped(0, 
@@ -130,4 +130,3 @@ print("--- loading ExtremeReactors.zs ---");
 	#<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vitium"}]}), 
 	<thaumcraft:mechanism_complex>]);
 	
-print("--- ExtremeReactors.zs initialized ---");

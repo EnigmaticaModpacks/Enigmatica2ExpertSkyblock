@@ -1,8 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 
-# Custom recipes made by NillerMedDild
-	print("--- loading Tools.zs ---");
 	
 # *======= Recipes =======*
 	
@@ -30,6 +28,10 @@ import mods.jei.JEI.removeAndHide as rh;
 	<immersiveengineering:shovel_steel>,
 	<immersiveengineering:axe_steel>,
 	<immersiveengineering:sword_steel>,
+	
+	<twilightforest:fiery_pickaxe>,
+	<twilightforest:steeleaf_pickaxe>.withTag({ench: [{lvl: 2 as short, id: 35 as short}]}),
+	<twilightforest:ironwood_pickaxe>.withTag({ench: [{lvl: 1 as short, id: 32 as short}]}),
 	
 	<mysticalagradditions:inferium_paxel>,
 	<mysticalagradditions:prudentium_paxel>,
@@ -123,4 +125,4 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.addShaped(<thermalfoundation:tool.hammer_bronze>, [[<ore:ingotBronze>, <ore:blockBronze>, <ore:ingotBronze>],[<ore:ingotBronze>, <forestry:oak_stick>, <ore:ingotBronze>], [null, <forestry:oak_stick>, null]]);
 	recipes.addShaped(<thermalfoundation:tool.hammer_invar>, [[<ore:ingotInvar>, <ore:blockInvar>, <ore:ingotInvar>],[<ore:ingotInvar>, <forestry:oak_stick>, <ore:ingotInvar>], [null, <forestry:oak_stick>, null]]);
 
-	print("--- Tools.zs initialized ---");
+	
