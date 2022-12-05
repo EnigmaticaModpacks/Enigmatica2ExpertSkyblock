@@ -101,3 +101,658 @@ config/AppliedEnergistics2/VersionChecker.cfg
 old.json
 new.json
 changelogs/CHANGELOG-GENERATED.md
+config_old/acronym/base/General.cfg
+config_old/acronym/contenttweaker/General.cfg
+config_old/acronym/material_system.cfg
+config_old/acronym/saved/material_parts_contenttweaker-original.json
+config_old/acronym/saved/material_parts_contenttweaker.json
+config_old/acronym/saved/saved_sub_blocks_contenttweaker-original.json
+config_old/acronym/saved/saved_sub_blocks_contenttweaker.json
+config_old/actuallyadditions.cfg
+config_old/AdvGenerators/client.config
+config_old/AdvGenerators/recipe-removals.cfg
+config_old/AdvGenerators/turbine-fuel.cfg
+config_old/AdvGenerators/turbine-materials.cfg
+config_old/advRocketry/advancedRocketry.cfg
+config_old/advRocketry/asteroidConfig.xml
+config_old/advRocketry/ChemicalReactor.xml
+config_old/advRocketry/Crystallizer.xml
+config_old/advRocketry/CuttingMachine.xml
+config_old/advRocketry/ElectricArcFurnace.xml
+config_old/advRocketry/Electrolyser.xml
+config_old/advRocketry/Lathe.xml
+config_old/advRocketry/oreConfig.xml
+config_old/advRocketry/planetDefs.xml
+config_old/advRocketry/PrecisionAssembler.xml
+config_old/advRocketry/RollingMachine.xml
+config_old/advRocketry/SmallPlatePress.xml
+config_old/AE2Stuff/readme.txt
+config_old/AE2WirelessTerminals.cfg
+config_old/akashictome.cfg
+config_old/Animus.cfg
+config_old/appleskin.cfg
+config_old/AppliedEnergistics2/AppliedEnergistics2.cfg
+config_old/AppliedEnergistics2/CustomRecipes.cfg
+config_old/AppliedEnergistics2/extracells.cfg
+config_old/AppliedEnergistics2/Facades.cfg
+config_old/AppliedEnergistics2/items.csv
+config_old/AppliedEnergistics2/VersionChecker.cfg
+config_old/astralsorcery.cfg
+config_old/astralsorcery/aevitas_ore_perk.cfg
+config_old/astralsorcery/amulet_enchantments.cfg
+config_old/astralsorcery/fluid_rarities.cfg
+config_old/astralsorcery/herdable_animals_blacklist.cfg
+config_old/astralsorcery/mineralis_ritual.cfg
+config_old/astralsorcery/perk_void_trash_replacement.cfg
+config_old/astralsorcery/treasure_shrine.cfg
+config_old/avaritia.cfg
+config_old/backpack.cfg
+config_old/badwithernocookiereloaded.cfg
+config_old/baubles.cfg
+config_old/bbm/AI_Improvements.cfg
+config_old/betteradvancements/betteradvancements.cfg
+config_old/betterbuilderswands.cfg
+config_old/betterfps.json
+config_old/betterquesting.cfg
+config_old/betterquesting/DefaultLoot.json
+config_old/betterquesting/DefaultQuests.json
+config_old/betterquesting/questbook.cfg
+config_old/bibliocraft.cfg
+config_old/blockcraftery.cfg
+config_old/BlockDrops/blockdrops.txt
+config_old/BlockDrops/config.cfg
+config_old/bloodmagic/bloodmagic.cfg
+config_old/bloodmagic/meteors/diamond.json
+config_old/bloodmagic/meteors/gold.json
+config_old/bloodmagic/meteors/iron.json
+config_old/bloodmagic/rituals.cfg
+config_old/bookshelf.cfg
+config_old/botania.cfg
+config_old/bq_standard.cfg
+config_old/brandon3055/BrandonsCore.cfg
+config_old/brandon3055/Custom Fusion Recipe Info.txt
+config_old/brandon3055/CustomFusionRecipes.json
+config_old/brandon3055/DraconicEvolution.cfg
+config_old/brandon3055/ProjectIntelligence/GuiConfig.json
+config_old/brandon3055/ProjectIntelligence/GuiStyle/ActiveStyle.json
+config_old/brandon3055/ProjectIntelligence/GuiStyle/DefaultPresets/darcula.json
+config_old/brandon3055/ProjectIntelligence/GuiStyle/DefaultPresets/vanilla.json
+config_old/brandon3055/ProjectIntelligence/ModDocs/Draconic Evolution/draconicevolution-en_US.xml
+config_old/brandon3055/ProjectIntelligence/options.json
+config_old/brandon3055/ProjectIntelligence/projectintelligence.xml
+config_old/Building Gadgets.cfg
+config_old/carryon.cfg
+config_old/chisel.cfg
+config_old/chiselsandbits.cfg
+config_old/chiselsandbits_clipboard.cfg
+config_old/codechicken/supporters.json
+config_old/codechicken/supporters.marker
+config_old/codechickenlib.cfg
+config_old/cofh/core/client.cfg
+config_old/cofh/core/common.cfg
+config_old/cofh/core/friends.cfg
+config_old/cofh/nonvflash/client.cfg
+config_old/cofh/redstonearsenal/client.cfg
+config_old/cofh/redstonearsenal/common.cfg
+config_old/cofh/thermalcultivation/client.cfg
+config_old/cofh/thermalcultivation/common.cfg
+config_old/cofh/thermaldynamics/client.cfg
+config_old/cofh/thermaldynamics/common.cfg
+config_old/cofh/thermaldynamics/cover_blacklist.json
+config_old/cofh/thermalexpansion/client.cfg
+config_old/cofh/thermalexpansion/common.cfg
+config_old/cofh/thermalexpansion/florbs.cfg
+config_old/cofh/thermalexpansion/morbs.cfg
+config_old/cofh/thermalfoundation/client.cfg
+config_old/cofh/thermalfoundation/common.cfg
+config_old/cofh/thermalfoundation/lexicon-whitelist.cfg
+config_old/cofh/world/00_minecraft.json
+config_old/cofh/world/01_thermalfoundation_ores.json
+config_old/cofh/world/02_thermalfoundation_oil.json
+config_old/cofh/world/03_large_veins_ore.json
+config_old/cofh/world/03_thermalfoundation_clathrates.json
+config_old/cofh/world/04_actuallyadditions_ore.json
+config_old/cofh/world/05_immersiveengineering_ore.json
+config_old/cofh/world/07_chisel_stone.json
+config_old/cofh/world/08_appliedenergistics_ore.json
+config_old/cofh/world/09_mekanism_ore.json
+config_old/cofh/world/10_forestry_ore.json
+config_old/cofh/world/11_nuclearcraft_large_veins_ore.json
+config_old/cofh/world/14_thermal_expansion_lakes.json
+config_old/cofh/world/15_thaumcraft_ore.json
+config_old/cofh/world/16_advanced_rocketry_planets_ore.json
+config_old/cofh/world/config.cfg
+config_old/colytra.cfg
+config_old/commoncapabilities.cfg
+config_old/compactsolars.cfg
+config_old/computercraft.cfg
+config_old/cookingforblockheads.cfg
+config_old/cosmeticarmorreworked.cfg
+config_old/ctm.cfg
+config_old/custombackgrounds.cfg
+config_old/CustomMainMenu/mainmenu.json
+config_old/cyclic_ores.cfg
+config_old/cyclicmagic.cfg
+config_old/cyclopscore.cfg
+config_old/DankNull.cfg
+config_old/darkutils.cfg
+config_old/defaultoptions.cfg
+config_old/defaultoptions/keybindings.txt
+config_old/demagnetize.cfg
+config_old/ding.cfg
+config_old/DiscordSuite.cfg
+config_old/endercore/cropconfig.json
+config_old/endercore/endercore.cfg
+config_old/enderio/enderio.cfg
+config_old/enderio/enderioconduits.cfg
+config_old/enderio/enderiointegrationforestry.cfg
+config_old/enderio/enderiomachines.cfg
+config_old/enderio/enderiopowertools.cfg
+config_old/enderio/gasconduits.cfg
+config_old/enderio/painter_paint_sources_core.xml
+config_old/enderio/painter_paint_sources_user.xml
+config_old/enderio/recipes/aliases.xml
+config_old/enderio/recipes/balls.xml
+config_old/enderio/recipes/base.xml
+config_old/enderio/recipes/capacitor.xml
+config_old/enderio/recipes/capacitor_machines.xml
+config_old/enderio/recipes/conduits-applied-energistics.xml
+config_old/enderio/recipes/conduits-gas.xml
+config_old/enderio/recipes/conduits-opencomputers.xml
+config_old/enderio/recipes/conduits.xml
+config_old/enderio/recipes/enchanter.xml
+config_old/enderio/recipes/examples/broken_spawner.xml
+config_old/enderio/recipes/examples/cheap_machines.xml
+config_old/enderio/recipes/examples/cheap_materials.xml
+config_old/enderio/recipes/examples/cheaty_spawner.xml
+config_old/enderio/recipes/examples/conduits_easy_recipes.xml
+config_old/enderio/recipes/examples/conduits_hard_recipes.xml
+config_old/enderio/recipes/examples/easy_recipes.xml
+config_old/enderio/recipes/examples/hard_recipes.xml
+config_old/enderio/recipes/examples/infinity.xml
+config_old/enderio/recipes/examples/legacy_recipes.xml
+config_old/enderio/recipes/examples/machines_easy_recipes.xml
+config_old/enderio/recipes/examples/optional_tweaks.xml
+config_old/enderio/recipes/examples/peaceful.xml
+config_old/enderio/recipes/examples/powertools_easy_recipes.xml
+config_old/enderio/recipes/examples/recipes.xsd
+config_old/enderio/recipes/examples/sagmill_dupe_recipe_patches.xml
+config_old/enderio/recipes/examples/strict_iron.xml
+config_old/enderio/recipes/integration-forestry.xml
+config_old/enderio/recipes/integration_railcraft_recipes.xml
+config_old/enderio/recipes/items.xml
+config_old/enderio/recipes/machines.xml
+config_old/enderio/recipes/materials.xml
+config_old/enderio/recipes/misc.xml
+config_old/enderio/recipes/powertools.xml
+config_old/enderio/recipes/recipes.xsd
+config_old/enderio/recipes/sagmill.xml
+config_old/enderio/recipes/sagmill_metals.xml
+config_old/enderio/recipes/sagmill_modded.xml
+config_old/enderio/recipes/sagmill_ores.xml
+config_old/enderio/recipes/sagmill_silentgems.xml
+config_old/enderio/recipes/sagmill_vanilla.xml
+config_old/enderio/recipes/sagmill_vanilla2modded.xml
+config_old/enderio/recipes/soulbinder.xml
+config_old/enderio/recipes/spawner.xml
+config_old/enderio/recipes/tank.xml
+config_old/enderio/recipes/user/capacitor_machines.xml
+config_old/enderio/recipes/user/recipes.xsd
+config_old/enderio/recipes/user/spawner.xml
+config_old/enderio/recipes/user/user_recipes.xml
+config_old/enderio/recipes/vat.xml
+config_old/enderstorage.cfg
+config_old/engineersdoors.cfg
+config_old/environmentalmaterials/main.cfg
+config_old/environmentaltech/main.cfg
+config_old/environmentaltech/multiblocks/void_miner/botanic/tier_1.json
+config_old/environmentaltech/multiblocks/void_miner/botanic/tier_2.json
+config_old/environmentaltech/multiblocks/void_miner/botanic/tier_3.json
+config_old/environmentaltech/multiblocks/void_miner/botanic/tier_4.json
+config_old/environmentaltech/multiblocks/void_miner/botanic/tier_5.json
+config_old/environmentaltech/multiblocks/void_miner/botanic/tier_6.json
+config_old/environmentaltech/multiblocks/void_miner/ore/tier_1.json
+config_old/environmentaltech/multiblocks/void_miner/ore/tier_2.json
+config_old/environmentaltech/multiblocks/void_miner/ore/tier_3.json
+config_old/environmentaltech/multiblocks/void_miner/ore/tier_4.json
+config_old/environmentaltech/multiblocks/void_miner/ore/tier_5.json
+config_old/environmentaltech/multiblocks/void_miner/ore/tier_6.json
+config_old/environmentaltech/multiblocks/void_miner/resource/tier_1.json
+config_old/environmentaltech/multiblocks/void_miner/resource/tier_2.json
+config_old/environmentaltech/multiblocks/void_miner/resource/tier_3.json
+config_old/environmentaltech/multiblocks/void_miner/resource/tier_4.json
+config_old/environmentaltech/multiblocks/void_miner/resource/tier_5.json
+config_old/environmentaltech/multiblocks/void_miner/resource/tier_6.json
+config_old/exchangers.cfg
+config_old/excompressum.cfg
+config_old/ExCompressum/ChickenStickRegistry.json
+config_old/ExCompressum/CompressedHammer.json
+config_old/ExCompressum/HeavySieve.json
+config_old/ExCompressum/WoodenCrucible.json
+config_old/exnihilocreatio/BarrelLiquidBlacklistRegistry.json
+config_old/exnihilocreatio/CompostRegistry.json
+config_old/exnihilocreatio/CrookRegistry.json
+config_old/exnihilocreatio/CrucibleRegistryStone.json
+config_old/exnihilocreatio/CrucibleRegistryWood.json
+config_old/exnihilocreatio/ExNihiloCreatio.cfg
+config_old/exnihilocreatio/FluidBlockTransformerRegistry.json
+config_old/exnihilocreatio/FluidItemFluidRegistry.json
+config_old/exnihilocreatio/FluidOnTopRegistry.json
+config_old/exnihilocreatio/FluidTransformRegistry.json
+config_old/exnihilocreatio/HammerRegistry.json
+config_old/exnihilocreatio/HeatRegistry.json
+config_old/exnihilocreatio/MilkEntityRegistry.json
+config_old/exnihilocreatio/OreRegistry.json
+config_old/exnihilocreatio/ScentedHiveRegistry.json
+config_old/exnihilocreatio/SieveRegistry.json
+config_old/exnihilocreatio/WitchWaterWorldRegistry.json
+config_old/extendedcrafting.cfg
+config_old/extrautils2.cfg
+config_old/Extreme Reactors/Extreme Reactors.cfg
+config_old/farmingforblockheads.cfg
+config_old/FarmingForBlockheads/Market.json
+config_old/fastbench.cfg
+config_old/flatcoloredblocks.cfg
+config_old/flux_networks.cfg
+config_old/foamfix.cfg
+config_old/forestry/apiculture.cfg
+config_old/forestry/arboriculture.cfg
+config_old/forestry/backpacks.cfg
+config_old/forestry/common.cfg
+config_old/forestry/farm.cfg
+config_old/forestry/fluids.cfg
+config_old/forestry/gamemodes/EASY.cfg
+config_old/forestry/gamemodes/HARD.cfg
+config_old/forestry/gamemodes/NORMAL.cfg
+config_old/forestry/gamemodes/OP.cfg
+config_old/forestry/lepidopterology.cfg
+config_old/forestry/modules.cfg
+config_old/forestry/plugins.cfg
+config_old/forge.cfg
+config_old/forgeChunkLoading.cfg
+config_old/forgivingvoid.cfg
+config_old/fpsreducer/fpsreducer.cfg
+config_old/fpsreducer/oldConfig.bak
+config_old/fpsreducer/player-13e15272dbe03aa10bd545a4e7f90251.cfg
+config_old/fpsreducer/player-6c24cd613b81a9dca90246c351252cc4.cfg
+config_old/ftblib.cfg
+config_old/ftbutilities.cfg
+config_old/fw.cfg
+config_old/gendustry/clearrecipes.cfg
+config_old/gendustry/client.config
+config_old/gendustry/readme.txt
+config_old/gendustryjei.cfg
+config_old/Guide-API/Guide-API.cfg
+config_old/harvestcraft.cfg
+config_old/harvestcraft_fruittree.cfg
+config_old/hungerpersistence.cfg
+config_old/IC2.ini
+config_old/ic2/block_cutter.ini
+config_old/ic2/extractor.ini
+config_old/ic2/macerator.ini
+config_old/ic2/metal_former_rolling.ini
+config_old/immersiveengineering.cfg
+config_old/immersivepetroleum.cfg
+config_old/immersivetech.cfg
+config_old/incontrol/experience.json
+config_old/incontrol/loot.json
+config_old/incontrol/main.cfg
+config_old/incontrol/potentialspawn.json
+config_old/incontrol/spawn.json
+config_old/incontrol/summonaid.json
+config_old/industrialforegoing.cfg
+config_old/integrateddynamics.cfg
+config_old/integrateddynamicscompat.cfg
+config_old/integratedtunnels.cfg
+config_old/integratedtunnelscompat.cfg
+config_old/IntegrationForegoing.cfg
+config_old/InvTweaks/InvTweaksRules.txt
+config_old/InvTweaks/InvTweaksTree.txt
+config_old/InvTweaks/trees/readme.txt
+config_old/InvTweaksRules.txt
+config_old/ironbackpacks/blacklist.json
+config_old/ironbackpacks/ironbackpacks.cfg
+config_old/ironchest.cfg
+config_old/JAOPCA.cfg
+config_old/jei/itemBlacklist.cfg
+config_old/jei/jei.cfg
+config_old/jei/searchColors.cfg
+config_old/jeibees.cfg
+config_old/jeivillagers.cfg
+config_old/jepb.cfg
+config_old/jeresources/jeresources.cfg
+config_old/jeresources/world-gen.json
+config_old/journeymap_ModInfo.cfg
+config_old/keywizard.cfg
+config_old/kleeslabs.cfg
+config_old/laser_drill_ores/actuallyadditions_ores.json
+config_old/laser_drill_ores/appliedenergistics2_ores.json
+config_old/laser_drill_ores/astralsorcery_ores.json
+config_old/laser_drill_ores/biomesoplenty_ores.json
+config_old/laser_drill_ores/default_ores.json
+config_old/laser_drill_ores/forestry_ores.json
+config_old/laser_drill_ores/mysticalagriculture_ores.json
+config_old/laser_drill_ores/nuclearcraft_ores.json
+config_old/laser_drill_ores/rftools_ores.json
+config_old/laser_drill_ores/thermalfoundation_ores.json
+config_old/libvulpes.cfg
+config_old/lootcapacitortooltips.cfg
+config_old/lunatriuscore.cfg
+config_old/mcjtylib.cfg
+config_old/mekanism.cfg
+config_old/mekanism/BoxBlacklist.txt
+config_old/MemoryTester/Crash.txt
+config_old/MemoryTester/General.txt
+config_old/MemoryTester/Menu.txt
+config_old/MemoryTester/resources/backgroundImage.png
+config_old/MemoryTester/resources/buttonIcon.png
+config_old/MemoryTester/resources/windowIcon.png
+config_old/modulardiversity.cfg
+config_old/modularmachinery/machinery/advanced_carpenter.json
+config_old/modularmachinery/machinery/advanced_metallurgic_fabricator.json
+config_old/modularmachinery/machinery/advanced_thermionic_fabricator.json
+config_old/modularmachinery/machinery/arcane_crafting_engine.json
+config_old/modularmachinery/machinery/starlight_crafting_engine.json
+config_old/modularmachinery/machinery/variables/casings.var.json
+config_old/modularmachinery/modularmachinery.cfg
+config_old/MoreOverlays.cfg
+config_old/morphtool.cfg
+config_old/mysticalagradditions.cfg
+config_old/mysticalagriculture.cfg
+config_old/mysticalagriculture_recipes.cfg
+config_old/neat.cfg
+config_old/NoMobSpawningOnTrees.cfg
+config_old/nuclearcraft.cfg
+config_old/nutrition/effects/example.json
+config_old/nutrition/effects/harming.json
+config_old/nutrition/effects/mining_fatigue.json
+config_old/nutrition/effects/poison.json
+config_old/nutrition/effects/resistance.json
+config_old/nutrition/effects/resistance2.json
+config_old/nutrition/effects/strength.json
+config_old/nutrition/effects/strength2.json
+config_old/nutrition/effects/toughness.json
+config_old/nutrition/effects/weakness.json
+config_old/nutrition/effects/weakness2.json
+config_old/nutrition/nutrients/dairy.json
+config_old/nutrition/nutrients/example.json
+config_old/nutrition/nutrients/fruit.json
+config_old/nutrition/nutrients/grain.json
+config_old/nutrition/nutrients/protein.json
+config_old/nutrition/nutrients/vegetable.json
+config_old/nutrition/nutrition.cfg
+config_old/oldjavawarning.cfg
+config_old/openblocks.cfg
+config_old/opencomputers/default.recipes
+config_old/opencomputers/gregtech.recipes
+config_old/opencomputers/hardmode.recipes
+config_old/opencomputers/peaceful.recipes
+config_old/opencomputers/settings.conf
+config_old/opencomputers/user.recipes
+config_old/openmods.cfg
+config_old/OpenModsLibCore.json
+config_old/OreDictInit.cfg
+config_old/oreexcavation.cfg
+config_old/oreexcavation_groups.json
+config_old/oreexcavation_overrides.json
+config_old/oreexcavation_shapes.json
+config_old/p455w0rdsLib.cfg
+config_old/packagedauto.cfg
+config_old/phosphor.json
+config_old/placebo.cfg
+config_old/plethora-core.cfg
+config_old/plethora.cfg
+config_old/plustic.cfg
+config_old/psi.cfg
+config_old/quark.cfg
+config_old/quickleafdecay.cfg
+config_old/randompatches.cfg
+config_old/randomthings.cfg
+config_old/rftools/control.cfg
+config_old/rftools/dimensions.cfg
+config_old/rftools/dimlets.json
+config_old/rftools/rftools.cfg
+config_old/rustic.cfg
+config_old/sc.cfg
+config_old/schematica.cfg
+config_old/skyresources.cfg
+config_old/solcarrot.cfg
+config_old/splash.properties
+config_old/stg.cfg
+config_old/storagedrawers.cfg
+config_old/supersoundmuffler.cfg
+config_old/tcomplement.cfg
+config_old/TComplementModules.cfg
+config_old/tconstruct.cfg
+config_old/teamreborn/configData.nbt
+config_old/teamreborn/reborncore/client.cfg
+config_old/teamreborn/reborncore/misc.cfg
+config_old/teamreborn/reborncore/power.cfg
+config_old/teamreborn/reborncore/selected_energy.json
+config_old/teamreborn/reborncore/upgrades.cfg
+config_old/teslacorelib.cfg
+config_old/thaumcomp.cfg
+config_old/thaumcraft_graphics.cfg
+config_old/thaumcraft_misc.cfg
+config_old/thaumcraft_world.cfg
+config_old/thaumicjei.cfg
+config_old/thaumicjei_itemstack_aspects.json
+config_old/thaumictinkerer.cfg
+config_old/TinkerIO.cfg
+config_old/TinkerModules.cfg
+config_old/TinkerToolLeveling.cfg
+config_old/toastcontrol.cfg
+config_old/tombmanygraves.cfg
+config_old/torohealthmod.cfg
+config_old/ts2k16.cfg
+config_old/unidict/IntegrationModule.cfg
+config_old/unidict/UniDict.cfg
+config_old/unlimitedchiselworks.cfg
+config_old/unloader.cfg
+config_old/valkyrielib/main.cfg
+config_old/voidislandcontrol.cfg
+config_old/waila/theme/dark.json
+config_old/waila/theme/vanilla.json
+config_old/waila/waila.cfg
+config_old/wailaharvestability.cfg
+config_old/wawla.cfg
+config_old/xnet/xnet.cfg
+config_old/ynot.cfg
+resources_old/contenttweaker/lang/en_us.lang
+resources_old/contenttweaker/models/item/amethyst.json
+resources_old/contenttweaker/models/item/malachite.json
+resources_old/contenttweaker/models/item/peridot.json
+resources_old/contenttweaker/models/item/ruby.json
+resources_old/contenttweaker/models/item/sapphire.json
+resources_old/contenttweaker/models/item/terrestrial_artifact.json
+resources_old/contenttweaker/textures/items/amethyst.png
+resources_old/contenttweaker/textures/items/malachite.png
+resources_old/contenttweaker/textures/items/peridot.png
+resources_old/contenttweaker/textures/items/ruby.png
+resources_old/contenttweaker/textures/items/sapphire.png
+resources_old/contenttweaker/textures/items/terrestrial_artifact.png
+resources_old/justthetips/texts/tips.txt
+resources_old/modpack/textures/betterquesting/goal.png
+resources_old/modpack/textures/gui/2.png
+resources_old/modpack/textures/gui/button1.png
+resources_old/modpack/textures/gui/button2.png
+resources_old/modpack/textures/gui/enigmatica2.png
+resources_old/modpack/textures/gui/enigmatica2expertskyblock.png
+resources_old/modpack/textures/gui/expert.png
+resources_old/modpack/textures/gui/image1.png
+resources_old/modpack/textures/gui/slideshow1.png
+resources_old/modpack/textures/gui/slideshow10.png
+resources_old/modpack/textures/gui/slideshow11.png
+resources_old/modpack/textures/gui/slideshow12.png
+resources_old/modpack/textures/gui/slideshow13.png
+resources_old/modpack/textures/gui/slideshow14.png
+resources_old/modpack/textures/gui/slideshow15.png
+resources_old/modpack/textures/gui/slideshow16.png
+resources_old/modpack/textures/gui/slideshow17.png
+resources_old/modpack/textures/gui/slideshow18.png
+resources_old/modpack/textures/gui/slideshow19.png
+resources_old/modpack/textures/gui/slideshow2.png
+resources_old/modpack/textures/gui/slideshow20.png
+resources_old/modpack/textures/gui/slideshow21.png
+resources_old/modpack/textures/gui/slideshow3.png
+resources_old/modpack/textures/gui/slideshow4.png
+resources_old/modpack/textures/gui/slideshow5.png
+resources_old/modpack/textures/gui/slideshow6.png
+resources_old/modpack/textures/gui/slideshow7.png
+resources_old/modpack/textures/gui/slideshow8.png
+resources_old/modpack/textures/gui/slideshow9.png
+resources_old/pack.mcmeta
+schematics_old/Actually Additions/\[Actually Additions\] Empowerer.schematic
+schematics_old/Astral Sorcery/\[Astral Sorcery\] Attunement Altar.schematic
+schematics_old/Astral Sorcery/\[Astral Sorcery\] Celestial Altar.schematic
+schematics_old/Astral Sorcery/\[Astral Sorcery\] Celestial Gateway.schematic
+schematics_old/Astral Sorcery/\[Astral Sorcery\] Complete Setup.schematic
+schematics_old/Astral Sorcery/\[Astral Sorcery\] Enhanced Collector Crystal.schematic
+schematics_old/Astral Sorcery/\[Astral Sorcery\] Evershifting Fountain.schematic
+schematics_old/Astral Sorcery/\[Astral Sorcery\] Iridescent Altar.schematic
+schematics_old/Astral Sorcery/\[Astral Sorcery\] Ritual.schematic
+schematics_old/Astral Sorcery/\[Astral Sorcery\] Starlight Crafting Altar.schematic
+schematics_old/Astral Sorcery/\[Astral Sorcery\] Starlight Infuser.schematic
+schematics_old/Better with Addons/\[Better with Addons\] Drying Unit.schematic
+schematics_old/Better with Addons/\[Better with Addons\] Netted Screen - Filter.schematic
+schematics_old/Better with Addons/\[Better with Addons\] Netted Screen - Melter.schematic
+schematics_old/Better with Addons/\[Better with Addons\] Netted Screen - Sand Funnel.schematic
+schematics_old/Better with Addons/\[Better with Addons\] Soaking Unit.schematic
+schematics_old/Better with Addons/\[Better with Addons\] Tatara.schematic
+schematics_old/Blood Magic/\[Blood Magic\] Tier I Altar.schematic
+schematics_old/Blood Magic/\[Blood Magic\] Tier II Altar.schematic
+schematics_old/Blood Magic/\[Blood Magic\] Tier III Altar.schematic
+schematics_old/Blood Magic/\[Blood Magic\] Tier IV Altar.schematic
+schematics_old/Blood Magic/\[Blood Magic\] Tier V Altar.schematic
+schematics_old/Charcoal Pit/\[CharcoalPit\] Coke Oven+Oil Funnel.schematic
+schematics_old/Charcoal Pit/\[CharcoalPit\] Coke Oven.schematic
+schematics_old/Charcoal Pit/\[CharcoalPit\] Dirt Pit.schematic
+schematics_old/Compact Machines/\[Compact Machines\] Field Projector (Giant).schematic
+schematics_old/Compact Machines/\[Compact Machines\] Field Projector (Large).schematic
+schematics_old/Compact Machines/\[Compact Machines\] Field Projector (Maximum).schematic
+schematics_old/Compact Machines/\[Compact Machines\] Field Projector (Normal).schematic
+schematics_old/Compact Machines/\[Compact Machines\] Field Projector (Small).schematic
+schematics_old/Compact Machines/\[Compact Machines\] Field Projector (Tiny).schematic
+schematics_old/Draconic Evolution/\[Draconic Evolution\] Awakened Fusion setup (10).schematic
+schematics_old/Draconic Evolution/\[Draconic Evolution\] Basic Fusion setup (10).schematic
+schematics_old/Draconic Evolution/\[Draconic Evolution\] Chaotic Fusion setup (10).schematic
+schematics_old/Draconic Evolution/\[Draconic Evolution\] Energy Core Tier 1.schematic
+schematics_old/Draconic Evolution/\[Draconic Evolution\] Energy Core Tier 2.schematic
+schematics_old/Draconic Evolution/\[Draconic Evolution\] Energy Core Tier 3.schematic
+schematics_old/Draconic Evolution/\[Draconic Evolution\] Energy Core Tier 4.schematic
+schematics_old/Draconic Evolution/\[Draconic Evolution\] Energy Core Tier 5.schematic
+schematics_old/Draconic Evolution/\[Draconic Evolution\] Energy Core Tier 6.schematic
+schematics_old/Draconic Evolution/\[Draconic Evolution\] Energy Core Tier 7.schematic
+schematics_old/Draconic Evolution/\[Draconic Evolution\] Energy Core Tier 8.schematic
+schematics_old/Draconic Evolution/\[Draconic Evolution\] Reactor.schematic
+schematics_old/Draconic Evolution/\[Draconic Evolution\] Wyvern Fusion setup (10).schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Alloy Kiln.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Arc Furnace.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Assembler.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Automated Workbench.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Bottling Machine.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Coke Oven.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Crude Blastfurnace.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Crusher.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Diesel Generator.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Excavator.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Fermenter.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Improved Blastfurnace.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Industrial Squeezer.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Lightning Rod.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Metal Press.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Mixer.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Refinery.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Silo.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Tank.schematic
+schematics_old/Immersive Engineering/\[Immersive Engineering\] Water Wheel (dirt, 88RF per tick).schematic
+schematics_old/Immersive Petroleum/\[Immersive Petroleum\] Distillation Tower.schematic
+schematics_old/Immersive Petroleum/\[Immersive Petroleum\] Pumpjack.schematic
+schematics_old/Immersive Tech/\[Immersive Tech\] Alternator.schematic
+schematics_old/Immersive Tech/\[Immersive Tech\] Boiler.schematic
+schematics_old/Immersive Tech/\[Immersive Tech\] Coke oven Advanced.schematic
+schematics_old/Immersive Tech/\[Immersive Tech\] Distiller.schematic
+schematics_old/Immersive Tech/\[Immersive Tech\] Solar Reflector.schematic
+schematics_old/Immersive Tech/\[Immersive Tech\] Solar Tower.schematic
+schematics_old/Immersive Tech/\[Immersive Tech\] Steam Turbine.schematic
+schematics_old/Thaumcraft/\[Thaumcraft\] Infernal Furnace.schematic
+schematics_old/Thaumcraft/\[Thaumcraft\] Infusion Altar.schematic
+schematics_old/Wizardry/\[Wizardry\] Crafting Altar.schematic
+schematics_old/Wizardry/\[Wizardry\] Mana Battery.schematic
+scripts_old/ActuallyAdditions.zs
+scripts_old/AdvancedGenerators.zs
+scripts_old/AdvancedRocketry.zs
+scripts_old/AkashicTome.zs
+scripts_old/Animus.zs
+scripts_old/AppliedEnergistics.zs
+scripts_old/Armor.zs
+scripts_old/ArmoreableMobs.zs
+scripts_old/AstralSorcery.zs
+scripts_old/Avaritia.zs
+scripts_old/Backpacks.zs
+scripts_old/Bibliocraft.zs
+scripts_old/BloodMagic.zs
+scripts_old/Botania.zs
+scripts_old/Chisel.zs
+scripts_old/ComputerCraft.zs
+scripts_old/CoTCT.zs
+scripts_old/CoTItems.zs
+scripts_old/Creative.zs
+scripts_old/Cyclic.zs
+scripts_old/DarkUtilities.zs
+scripts_old/DraconicEvolution.zs
+scripts_old/EmpowererCompat.zs
+scripts_old/EnderIO.zs
+scripts_old/EnvironmentalTech.zs
+scripts_old/ExNihilo&Compressum.zs
+scripts_old/ExtendedCrafting.zs
+scripts_old/ExtraUtilities2.zs
+scripts_old/ExtremeReactors.zs
+scripts_old/FluidCompatibility.zs
+scripts_old/FluxNetworks.zs
+scripts_old/Forestry.zs
+scripts_old/Furnace&Fuel.zs
+scripts_old/Gear.zs
+scripts_old/Gendustry.zs
+scripts_old/Harvestcraft.zs
+scripts_old/ImmersiveEngineering.zs
+scripts_old/IndustrialCraft2.zs
+scripts_old/IndustrialForegoing.zs
+scripts_old/IntegratedDynamics.zs
+scripts_old/IronChest.zs
+scripts_old/JAOPCA.zs
+scripts_old/JEICategories.zs
+scripts_old/Mekanism.zs
+scripts_old/MetalSticks.zs
+scripts_old/MiscRecipes.zs
+scripts_old/modular_machinery/advanced_carpenter.zs
+scripts_old/modular_machinery/advanced_metallurgic_fabricator.zs
+scripts_old/modular_machinery/advanced_thermionic_fabricator.zs
+scripts_old/modular_machinery/arcane_crafting_engine.zs
+scripts_old/modular_machinery/starlight_crafting_engine.zs
+scripts_old/ModularMachinery.zs
+scripts_old/MorphOTool.zs
+scripts_old/MysticalAgradditions.zs
+scripts_old/MysticalAgriculture.zs
+scripts_old/NuclearCraft.zs
+scripts_old/OreDict.zs
+scripts_old/Plates.zs
+scripts_old/Psi.zs
+scripts_old/Quark.zs
+scripts_old/RecipeConflicts.zs
+scripts_old/RedstoneArsenal.zs
+scripts_old/RefinedStorage.zs
+scripts_old/RFTools.zs
+scripts_old/RFToolsDimensions.zs
+scripts_old/SkyCompression.zs
+scripts_old/SkyResources.zs
+scripts_old/StorageDrawers.zs
+scripts_old/TempRecipes.zs
+scripts_old/Thaumcraft.zs
+scripts_old/ThermalDynamics.zs
+scripts_old/ThermalExpansion.zs
+scripts_old/TinkersConstruct.zs
+scripts_old/Tools.zs
+scripts_old/Tooltips.zs
+scripts_old/WirelessCraftingTerminal.zs
+scripts_old/XNet.zs
