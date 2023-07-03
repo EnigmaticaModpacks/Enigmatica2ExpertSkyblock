@@ -36,7 +36,6 @@ Mob Spawners can be moved by using a drop of evil on them, or by carrying them. 
 The Impulsion Wand can be used for an interesting and cinematic Wither Battle.
 Starlight Transmutation gives you access to End Stone without ever going to The End.
 If you hear a dragon roar underground, turn on subtitles to better tell the direction it came from.
-Creative-like Flight doesn't work in the Twilight Forest.
 If you're having issues getting Wither Skeleton Skulls, try using The Ender from Ender IO.
 Cyclic has lots of items that are affordable early game, but stay relevant throughout the game, like the Ender Book.
 You can put the Astral Sorcery Linking Wand in your offhand, and it won't stop linking.
