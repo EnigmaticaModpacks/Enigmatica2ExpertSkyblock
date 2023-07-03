@@ -212,14 +212,6 @@ var weight = 100+2+1+80+60+10+40+60+30+70+40+40+10+6+30+2+20+10+3+40+50+30+4+20;
 # List of items to balls of fur
 # mod:name | meta | weight
 var listCatFur as string[] = [
-"animania:blue_peacock_feather"       ,"0"   , "50" , # Blue Peacock Feather
-"animania:charcoal_peacock_feather"   ,"0"   , "50" , # Charcoal Peacock Feather
-"animania:opal_peacock_feather"       ,"0"   , "50" , # Opal Peacock Feather
-"animania:peach_peacock_feather"      ,"0"   , "50" , # Peach Peacock Feather
-"animania:purple_peacock_feather"     ,"0"   , "50" , # Purple Peacock Feather
-"animania:taupe_peacock_feather"      ,"0"   , "50" , # Taupe Peacock Feather
-"animania:white_peacock_feather"      ,"0"   , "50" , # White Peacock Feather
-"animania:wool"                       ,"3"   , "55" , # Wool (Jacob)
 "appliedenergistics2:material"        ,"3"   , "30" , # Nether Quartz Dust
 "appliedenergistics2:material"        ,"45"  , "40" , # Sky Stone Dust
 "astralsorcery:itemusabledust"        ,"0"   , "25" , # Illumination Powder
@@ -230,15 +222,6 @@ var listCatFur as string[] = [
 "enderio:item_power_conduit"          ,"2"   , "40" , # Ender Energy Conduit
 "extendedcrafting:material"           ,"0"   , "5"  , # Black Iron Ingot
 "extrautils2:endershard"              ,"0"   , "35" , # Ender Shard
-"iceandfire:amphithere_feather"       ,"0"   , "40" , # Amphithere Feather
-"iceandfire:dragonbone"               ,"0"   , "8"  , # Dragon Bone
-"iceandfire:myrmex_desert_chitin"     ,"0"   , "8"  , # Desert Myrmex Chitin
-"iceandfire:myrmex_jungle_chitin"     ,"0"   , "8"  , # Jungle Myrmex Chitin
-"iceandfire:deathworm_chitin"         ,"0"   , "5"  , # Tan Death Worm Chitin
-"iceandfire:deathworm_chitin"         ,"1"   , "5"  , # White Death Worm Chitin
-"iceandfire:deathworm_chitin"         ,"2"   , "5"  , # Red Death Worm Chitin
-"iceandfire:stymphalian_bird_feather" ,"0"   , "40" , # Stymphalian Bird Feather
-"iceandfire:witherbone"               ,"0"   , "8"  , # Witherbone
 "immersiveengineering:bullet"         ,"0"   , "15" , # Empty Casing
 "immersiveengineering:material"       ,"8"   , "60" , # Iron Mechanical Component
 "immersiveengineering:material"       ,"9"   , "5"  , # Steel Mechanical Component
@@ -266,12 +249,6 @@ var listCatFur as string[] = [
 "tconstruct:slime_grass_tall"         ,"8"   , "40" , # Tall Slimy Grass
 "thaumcraft:salis_mundus"             ,"0"   , "5"  , # Salis Mundus
 "thermalfoundation:material"          ,"160" , "15" , # Steel Ingot
-"twilightforest:alpha_fur"            ,"0"   , "3"  , # Alpha Yeti Fur
-"twilightforest:arctic_fur"           ,"0"   , "15" , # Arctic Fur
-"twilightforest:cicada"               ,"0"   , "50" , # Cicada
-"twilightforest:firefly"              ,"0"   , "50" , # Firefly
-"twilightforest:raven_feather"        ,"0"   , "50" , # Raven Feather
-"twilightforest:twilight_plant"       ,"5"   , "50" , # Forest Grass
 ] as string[];
 
 # Calculate total weight

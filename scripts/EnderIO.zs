@@ -95,6 +95,27 @@ craft.remake(<enderio:block_impulse_hopper>, ["pretty",
 	[[<ore:ingotVibrantAlloy>, <ore:ingotVibrantAlloy>, <ore:ingotVibrantAlloy>],
 	[<enderio:block_solar_panel:2>, <enderio:block_solar_panel:2>, <enderio:block_solar_panel:2>],
 	[<enderio:item_basic_capacitor:2>, <ore:darkFusedQuartz>, <enderio:item_basic_capacitor:2>]]);
+	# Tier 5
+	recipes.remove(<enderio:block_solar_panel:4>);
+	recipes.addShaped("EnderIO Solar Panel4", 
+	<enderio:block_solar_panel:4>, 
+	[[<ore:ingotVibrantAlloy>, <ore:ingotVibrantAlloy>, <ore:ingotVibrantAlloy>],
+	[<enderio:block_solar_panel:3>, <thermalexpansion:frame:128>, <enderio:block_solar_panel:3>],
+	[<enderio:item_capacitor_crystalline>, <ore:darkFusedQuartz>, <enderio:item_capacitor_crystalline>]]);
+	# Tier 6
+	recipes.remove(<enderio:block_solar_panel:5>);
+	recipes.addShaped("EnderIO Solar Panel5", 
+	<enderio:block_solar_panel:5>, 
+	[[<ore:ingotCrystaltine>, <ore:ingotCrystaltine>, <ore:ingotCrystaltine>],
+	[<enderio:block_solar_panel:4>, <thermalexpansion:frame:129>, <enderio:block_solar_panel:4>],
+	[<enderio:item_capacitor_melodic>, <ore:darkFusedQuartz>, <enderio:item_capacitor_melodic>]]);
+	# Tier 7
+	recipes.remove(<enderio:block_solar_panel:6>);
+	recipes.addShaped("EnderIO Solar Panel6", 
+	<enderio:block_solar_panel:6>, 
+	[[<ore:ingotMelodicAlloy>, <ore:ingotMelodicAlloy>, <ore:ingotMelodicAlloy>],
+	[<enderio:block_solar_panel:5>, <thermalexpansion:frame:130>, <enderio:block_solar_panel:5>],
+	[<ore:ingotStellarAlloy>, <ore:darkFusedQuartz>, <ore:ingotStellarAlloy>]]);
 
 # Dimensional Transceiver
 	recipes.remove(<enderio:block_transceiver>);
@@ -195,15 +216,15 @@ craft.remake(<enderio:block_impulse_hopper>, ["pretty",
 	recipes.remove(<enderio:block_farm_station>);
 	recipes.addShapedMirrored("Farming Station1", 
 	<enderio:block_farm_station>, 
-	[[<ore:ingotElectricalSteel>, <twilightforest:ironwood_hoe>.anyDamage(), <ore:ingotElectricalSteel>],
+	[[<ore:ingotElectricalSteel>, <mysticalagriculture:prudentium_hoe>.anyDamage(), <ore:ingotElectricalSteel>],
 	[<ore:ingotElectricalSteel>, <enderio:item_material:1>, <ore:ingotElectricalSteel>], 
-	[<ore:gearVibrant>, <twilightforest:ironwood_axe>.anyDamage(), <ore:gearVibrant>]]);
+	[<ore:gearVibrant>, <mysticalagriculture:prudentium_axe>.anyDamage(), <ore:gearVibrant>]]);
 	
 	recipes.addShapedMirrored("Farming Station2", 
 	<enderio:block_farm_station>, 
-	[[<ore:ingotElectricalSteel>, <twilightforest:steeleaf_hoe>.anyDamage(), <ore:ingotElectricalSteel>],
+	[[<ore:ingotElectricalSteel>, <immersiveengineering:axe_steel>.anyDamage(), <ore:ingotElectricalSteel>],
 	[<ore:ingotElectricalSteel>, <enderio:item_material:1>, <ore:ingotElectricalSteel>], 
-	[<ore:gearVibrant>, <twilightforest:steeleaf_axe>.anyDamage(), <ore:gearVibrant>]]);
+	[<ore:gearVibrant>, <immersiveengineering:hoe_steel>.anyDamage(), <ore:gearVibrant>]]);
 
 # The Vat
 	recipes.remove(<enderio:block_vat>);
@@ -271,7 +292,51 @@ scripts.process.crush(<enderio:item_material:76>, <enderio:block_holy_fog>, "exc
 scripts.process.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <enderio:item_material:76> * 2, "except: alloySmelter");
 
 # Dark Steel Upgrade Recycling
-	mods.nuclearcraft.decay_hastener.addRecipe([<enderio:item_dark_steel_upgrade:1>.anyDamage(), <enderio:item_dark_steel_upgrade>, 2.0, 2.0]);
+var upgradeArray = [
+	"enderio:anvil",
+	"enderio:anvil1",
+	"enderio:anvil2",
+	"enderio:carpet",
+	"enderio:depth",
+	"enderio:direct",
+	"enderio:elytra",
+	"enderio:energyupgrade",
+	"enderio:energyupgrade1",
+	"enderio:energyupgrade2",
+	"enderio:energyupgrade3",
+	"enderio:energyupgrade4",
+	"enderio:glide",
+	"enderio:hoe",
+	"enderio:inv",
+	"enderio:inv1",
+	"enderio:inv2",
+	"enderio:jumpboost1",
+	"enderio:jumpboost2",
+	"enderio:jumpboost3",
+	"enderio:nightvision",
+	"enderio:padding",
+	"enderiomachines:solar",
+	"enderiomachines:solar1",
+	"enderiomachines:solar2",
+	"enderiomachines:solar3",
+	"enderio:sounddetector",
+	"enderio:speedboost1",
+	"enderio:speedboost2",
+	"enderio:speedboost3",
+	"enderio:spoon",
+	"enderio:step_assist",
+	"enderio:swim",
+	"enderio:tnt",
+	"enderio:tnt1",
+	"enderio:tnt2",
+	"enderio:tnt3",
+	"enderio:tntn4",
+	"enderio:travel"] as string[];
+var allUpgrades = <*>.only(function (item) { return false; }); // An ingredient that never matches, used as default to mean "nothing"
+for upgrade in upgradeArray {
+  allUpgrades = allUpgrades | <enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu" : (upgrade)}) | <enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu" : (upgrade),"enderio:enabled": 1 as byte});
+}
+	mods.nuclearcraft.decay_hastener.addRecipe([allUpgrades, <enderio:item_dark_steel_upgrade>]);
 
 # Dark Steel Upgrade Expensive, Thermal
 	mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_dark_steel_upgrade>, <enderio:block_alloy:6>, <minecraft:clay>, 25000);
@@ -281,3 +346,7 @@ mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:ender_pearl>);
 mods.appliedenergistics2.Grinder.removeRecipe(<thermalfoundation:material:895>);
 scripts.process.crush(<ore:enderpearl>, <appliedenergistics2:material:46>, "Except: Pulverizer PulseCentrifuge", null, null);
 
+recipes.addShapedMirrored("Simple Furnace Upgrade",<enderio:block_alloy_smelter>,[[null,<enderio:block_simple_furnace>,null],[null,<enderio:item_material:1>,null],[null,<enderio:item_material:73>,null]]);
+recipes.addShapedMirrored("Simple SAG Upgrade",<enderio:block_sag_mill>,[[null,<enderio:block_simple_sag_mill>,null],[null,<enderio:item_material:1>,null],[null,<enderio:item_material:73>,null]]);
+recipes.addShapedMirrored("Simple Alloy Upgrade",<enderio:block_alloy_smelter>,[[null,<enderio:block_simple_alloy_smelter>,null],[null,<enderio:item_material:1>,null],[null,<enderio:item_material:73>,null]]);
+recipes.addShapedMirrored("Simple Crafter Upgrade",<enderio:block_crafter>,[[null,null,null],[<enderio:item_material:11>,<enderio:block_simple_crafter>,<enderio:item_material:11>],[null,null,null]]);

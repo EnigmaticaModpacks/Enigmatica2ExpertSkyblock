@@ -66,10 +66,6 @@ mods.nuclearcraft.melter.addRecipe(<ore:obsidian>, <liquid:obsidian> * 144);
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:xu_enchanted_metal>*144, <extrautils2:ingredients:12>, 1.0, 1.0]);
 	//Evil Infused Iron Ingot
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:xu_evil_metal>*144, <extrautils2:ingredients:17>, 1.0, 1.0]);
-	//Fire Dragonsteel Ingot
-	mods.nuclearcraft.ingot_former.addRecipe([<liquid:dragonsteel_fire>*144, <iceandfire:dragonsteel_fire_ingot>, 1.0, 1.0]);
-	//Ice Dragonsteel Ingot
-	mods.nuclearcraft.ingot_former.addRecipe([<liquid:dragonsteel_ice>*144, <iceandfire:dragonsteel_ice_ingot>, 1.0, 1.0]);
 	//Pink Slime Ingot
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:molten_reinforced_pink_slime>*144, <industrialforegoing:pink_slime_ingot>, 1.0, 1.0]);
 	//Refined Obsidian Ingot
@@ -80,8 +76,6 @@ mods.nuclearcraft.melter.addRecipe(<ore:obsidian>, <liquid:obsidian> * 144);
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:base_essence>*144, <mysticalagriculture:crafting:32>, 1.0, 1.0]);
 	//Psimetal Ingot
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:psimetal>*144, <psi:material:1>, 1.0, 1.0]);
-	//Fiery Ingot
-	mods.nuclearcraft.ingot_former.addRecipe([<liquid:fierymetal>*144, <twilightforest:fiery_ingot>, 1.0, 1.0]);
 	//Seared Brick
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:stone>*72, <tconstruct:materials>, 1.0, 1.0]);
 	//Mud Brick
@@ -212,7 +206,7 @@ for fluid in [
 }
 # ----------------------------------
 
-# Add Animania/Immersive Tech Salt to Melter
+# Add Immersive Tech Salt to Melter
 // mods.nuclearcraft.melter.removeRecipeWithInput([itemInput]);
 // mods.nuclearcraft.melter.removeRecipeWithOutput([fluidOutput]);
 // mods.nuclearcraft.melter.removeAllRecipes();
@@ -221,7 +215,7 @@ for fluid in [
 mods.nuclearcraft.melter.removeRecipeWithInput(<mekanism:salt>);
 mods.nuclearcraft.melter.removeRecipeWithInput(<harvestcraft:saltitem>);
 
-var allSalts = <immersivetech:material> | <animania:salt> | <mekanism:salt> | <harvestcraft:saltitem>;
+var allSalts = <immersivetech:material> | <mekanism:salt> | <harvestcraft:saltitem>;
 
 //mods.nuclearcraft.melter.addRecipe([<ore:dustSalt>,<liquid:brine> * 15, 0.25, 0.5]);
 mods.nuclearcraft.melter.addRecipe([allSalts,<liquid:brine> * 15, 0.25, 0.5]);

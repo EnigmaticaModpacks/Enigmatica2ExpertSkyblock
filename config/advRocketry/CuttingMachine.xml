@@ -101,70 +101,7 @@
 			<itemStack>minecraft:planks 10 5</itemStack>
 		</output>
 	</Recipe>
-	<Recipe timeRequired="5" power="40000">
-		<input>
-			<itemStack>twilightforest:magic_log 1 0</itemStack>
-		</input>
-		<output>
-			<itemStack>twilightforest:time_planks 10 0</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="5" power="40000">
-		<input>
-			<itemStack>twilightforest:twilight_log 1 2</itemStack>
-		</input>
-		<output>
-			<itemStack>twilightforest:mangrove_planks 10 0</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="5" power="40000">
-		<input>
-			<itemStack>twilightforest:magic_log 1 2</itemStack>
-		</input>
-		<output>
-			<itemStack>twilightforest:mine_planks 10 0</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="5" power="40000">
-		<input>
-			<itemStack>twilightforest:magic_log 1 1</itemStack>
-		</input>
-		<output>
-			<itemStack>twilightforest:trans_planks 10 0</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="5" power="40000">
-		<input>
-			<itemStack>twilightforest:twilight_log 1 1</itemStack>
-		</input>
-		<output>
-			<itemStack>twilightforest:canopy_planks 10 0</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="5" power="40000">
-		<input>
-			<itemStack>twilightforest:twilight_log 1 0</itemStack>
-		</input>
-		<output>
-			<itemStack>twilightforest:twilight_oak_planks 10 0</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="5" power="40000">
-		<input>
-			<itemStack>twilightforest:magic_log 1 3</itemStack>
-		</input>
-		<output>
-			<itemStack>twilightforest:sort_planks 10 0</itemStack>
-		</output>
-	</Recipe>
-	<Recipe timeRequired="5" power="40000">
-		<input>
-			<itemStack>twilightforest:twilight_log 1 3</itemStack>
-		</input>
-		<output>
-			<itemStack>twilightforest:dark_planks 10 0</itemStack>
-		</output>
-	</Recipe>
+	
 	<Recipe timeRequired="5" power="40000">
 		<input>
 			<itemStack>harvestcraft:pampaperbark 1 0</itemStack>

@@ -29,18 +29,6 @@ val vanilla as IItemStack[IIngredient] = {
   <minecraft:log2:1> : <minecraft:planks:5>,
 };
 
-# Twilight Forest
-val twilight as IItemStack[IIngredient] = {
-  <twilightforest:twilight_log>   : <twilightforest:twilight_oak_planks>,
-  <twilightforest:twilight_log:1> : <twilightforest:canopy_planks>,
-  <twilightforest:twilight_log:2> : <twilightforest:mangrove_planks>,
-  <twilightforest:twilight_log:3> : <twilightforest:dark_planks>,
-  <twilightforest:magic_log>      : <twilightforest:time_planks>,
-  <twilightforest:magic_log:1>    : <twilightforest:trans_planks>,
-  <twilightforest:magic_log:2>    : <twilightforest:mine_planks>,
-  <twilightforest:magic_log:3>    : <twilightforest:sort_planks>,
-};
-
 # Biomes O' plenty, made by Trilexcom
 val bop as IItemStack[IIngredient] = {
   <biomesoplenty:log_0:4> : <biomesoplenty:planks_0>,
@@ -103,7 +91,6 @@ val pam as IItemStack[IIngredient] = {
 
 
 for log, plank in vanilla   { saw(log, plank, "strict: manufactory mekSawmill"); }
-for log, plank in twilight  { saw(log, plank, "strict: manufactory mekSawmill"); }
 for log, plank in pam       { saw(log, plank, "strict: manufactory mekSawmill"); }
 for log, plank in bop       { saw(log, plank, "strict: manufactory mekSawmill"); }
 for log, plank in forestry  { saw(log, plank, "no exceptions"); }
@@ -119,7 +106,6 @@ saw(<advancedrocketry:alienwood>    , <advancedrocketry:planks>          , "stri
 saw(<extrautils2:ironwood_log>      , <extrautils2:ironwood_planks>      , "strict: manufactory mekSawmill");
 saw(<extrautils2:ironwood_log:1>    , <extrautils2:ironwood_planks:1>    , "strict: manufactory mekSawmill");
 saw(<randomthings:spectrelog>       , <randomthings:spectreplank>        , "strict: manufactory mekSawmill");
-saw(itemUtils.getItem("iceandfire:dreadwood_log"), itemUtils.getItem("iceandfire:dreadwood_planks"), "no exceptions");
 
 # Magical wood special
 saw(<extrautils2:decorativesolidwood:1>,<extrautils2:decorativesolidwood>, "no exceptions");

@@ -6,25 +6,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	
 #priority 1000
 
-<ore:blockYellorium>.add(<immersiveengineering:storage:5>);	
-
 <ore:chipDiamond>.add(<extrabitmanipulation:diamond_nugget>);
-
-# Oredicts for pressure plates
-var pressurePlates as IItemStack[] = [
-	<twilightforest:twilight_oak_plate>,
-	<twilightforest:canopy_plate>,
-	<twilightforest:mangrove_plate>,
-	<twilightforest:dark_plate>,
-	<twilightforest:time_plate>,
-	<twilightforest:trans_plate>,
-	<twilightforest:mine_plate>,
-	<twilightforest:sort_plate>
-];
-
-for item in pressurePlates {
-	<ore:pressurePlateWood>.add(item);
-}
 
 # Fixing Mortar and Pestle oredict from Pam's
 	<ore:pestleAndMortar>.add(<harvestcraft:mortarandpestleitem>);
@@ -42,10 +24,6 @@ for item in pressurePlates {
 	
 # Fixing the Mineralis Ritual
 	<ore:oreNickel>.remove(<immersiveengineering:ore:4>);
-	
-	<ore:oreSapphire>.remove(<iceandfire:sapphire_ore>);
-	
-	<ore:oreSilver>.remove(<iceandfire:silver_ore:0>);
 	
 	<ore:oreTin>.remove(<forestry:resources:2>);
 	<ore:oreTin>.remove(<ic2:resource:3>);
@@ -143,14 +121,7 @@ for item in pressurePlates {
 
 # Enhanced Ender Ingot
 	<ore:ingotEnderEnhanced>.add(<extendedcrafting:material:48>);
-	
-# Venison Oredict
-	<ore:listAllbeefraw>.add(<twilightforest:raw_venison>);
-	<ore:listAllmeatraw>.add(<twilightforest:raw_venison>);
-	
-	<ore:listAllbeefcooked>.add(<twilightforest:cooked_venison>);
-	<ore:listAllmeatcooked>.add(<twilightforest:cooked_venison>);
-	
+
 # Void Metal Block
 	<ore:blockVoid>.add(<thaumcraft:metal_void>);
 
@@ -237,8 +208,6 @@ for item in pressurePlates {
 	
 # Dragon hearts
 	<ore:heartDragon>.add(<draconicevolution:dragon_heart>);
-	<ore:heartDragon>.add(<iceandfire:fire_dragon_heart>);
-	<ore:heartDragon>.add(<iceandfire:ice_dragon_heart>);
 	
 # Crafting hammers
 	<ore:craftingToolForgeHammer>.add(<immersiveengineering:tool>);
@@ -266,9 +235,6 @@ for item in pressurePlates {
 	<ore:blockCertusQuartz>.add(<appliedenergistics2:quartz_block>);
 	<ore:blockCertusQuartz>.add(<appliedenergistics2:quartz_pillar>);
 	<ore:blockCertusQuartz>.add(<appliedenergistics2:chiseled_quartz_block>);
-	
-# Plutonium
-	//<ore:ingotPlutonium>.remove(<bigreactors:ingotmetals:3>);
 
 # Iridium
 	<ore:ingotIridium>.add(<ic2:misc_resource:1>);
@@ -323,7 +289,6 @@ for item in pressurePlates {
 
 # Silver blocks
 	rh(<ic2:resource:15>);
-	rh(<iceandfire:silver_block>);
 
 # Lead blocks
 	rh(<ic2:resource:7>);
@@ -675,19 +640,19 @@ for item in pressurePlates {
 	recipes.addShapeless("bedoredict1", <minecraft:bed>, [<ore:bed>]);
 	recipes.addShapeless("wooddoororedict1", <minecraft:wooden_door>, [Door]);
 
-	
-# Animania peacock feathers
-<ore:peacockFeathers>.add([
-    <animania:blue_peacock_feather>,
-    <animania:white_peacock_feather>,
-    <animania:charcoal_peacock_feather>,
-    <animania:opal_peacock_feather>,
-    <animania:peach_peacock_feather>,
-    <animania:purple_peacock_feather>,
-    <animania:taupe_peacock_feather>
-]);
-
 # Rearrange items in Dye Oredict to better integration
 # with AA [Lens Of Color]
-<ore:dyeBrown>.remove([<enderio:item_material:49>, <industrialforegoing:fertilizer>]);
-<ore:dyeGreen>.remove(<enderio:item_material:48>);
+	<ore:dyeBrown>.remove([<enderio:item_material:49>, <industrialforegoing:fertilizer>]);
+	<ore:dyeGreen>.remove(<enderio:item_material:48>);
+
+# Wax unification
+	<ore:itemBeeswax>.add(<harvestcraft:beeswaxitem>);
+	<ore:itemBeeswax>.add(<rustic:beeswax>);
+
+# Remove couple rods
+	<ore:stickIron>.remove(<libvulpes:productrod:1>);
+	<ore:stickSteel>.remove(<libvulpes:productrod:6>);
+
+# Remove EIO Dusts
+	<ore:dustCopper>.remove(<enderio:item_material:26>);
+	<ore:dustTin>.remove(<enderio:item_material:27>);

@@ -128,16 +128,16 @@ for slime, dirts in slimeDirts {
 	for item in <ore:blockRedstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:redstone>, item); }
 	for item in <ore:dustGlowstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:glowstone>, item); }
 	for item in <ore:blockGlowstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:glowstone>, item); }
+	for item in <ore:dustRedstone>.items { mods.tcomplement.Blacklist.addRecipe(<liquid:redstone>, item); }
+	for item in <ore:blockRedstone>.items { mods.tcomplement.Blacklist.addRecipe(<liquid:redstone>, item); }
+	for item in <ore:dustGlowstone>.items { mods.tcomplement.Blacklist.addRecipe(<liquid:glowstone>, item); }
+	for item in <ore:blockGlowstone>.items { mods.tcomplement.Blacklist.addRecipe(<liquid:glowstone>, item); }
 
 # Removing the ability to melt coal
 val coals as IItemStack[] = [
-
-	<bigreactors:ingotmetals:2>,
-	<bigreactors:dustmetals:2>,
 	<minecraft:coal>,
 	<minecraft:coal_block>,
 	<thermalfoundation:material:768>,
-	<bigreactors:blockmetals:2>,
 	<nuclearcraft:ingot_block:8>,
 	<nuclearcraft:ingot:8>,
 	<nuclearcraft:dust:8>

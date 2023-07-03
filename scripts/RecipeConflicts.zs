@@ -4,13 +4,6 @@ import mods.jei.JEI.removeAndHide as rh;
 recipes.addShapeless(<botania:quartztypedark>, [<thaumictinkerer:black_quartz_block>]);
 recipes.addShapeless(<thaumictinkerer:black_quartz_block>, [<botania:quartztypedark>]);
 
-# Disk Platter / Iron Chain Link
-	recipes.remove(<iceandfire:chain_link>);
-	recipes.addShaped(<iceandfire:chain_link> * 2, 
-	[[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>],
-	[<ore:nuggetIron>, null, <ore:nuggetIron>], 
-	[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>]]);
-
 # Polished Marble / Marble Pavement
 	recipes.remove(<quark:marble:1>);
 

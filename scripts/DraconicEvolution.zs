@@ -11,7 +11,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.addShapedMirrored("Mob Grinder", 
 	<draconicevolution:grinder>, 
 	[[<ore:ingotElectricalSteel>, <draconicevolution:draconium_block:1>, <ore:ingotElectricalSteel>],
-	[<astralsorcery:itemcrystalsword>.anyDamage(), <draconicevolution:draconic_core>, <astralsorcery:itemcrystalsword>.anyDamage()], 
+	[<astralsorcery:itemcrystalsword>.onlyDamageAtLeast(0), <draconicevolution:draconic_core>, <astralsorcery:itemcrystalsword>.onlyDamageAtLeast(0)], 
 	[<ore:ingotElectricalSteel>, <industrialforegoing:mob_relocator>, <ore:ingotElectricalSteel>]]);
 
 # Charged Draconium
@@ -42,7 +42,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.remove(<draconicevolution:draconic_core>);
 	recipes.addShapedMirrored("Draconic Core", 
 	<draconicevolution:draconic_core>, 
-	[[<ore:blockDraconium>, <ore:ingotBlutonium>, <ore:blockDraconium>],
+	[[<ore:blockDraconium>, <ore:ingotMelodicAlloy>, <ore:blockDraconium>],
 	[<ore:crystalLitherite>, <gendustry:genetics_processor>, <ore:crystalLitherite>], 
 	[<ore:plateElite>, <draconicevolution:dislocator>, <ore:plateElite>]]);
 
@@ -51,7 +51,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	mods.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_core>, 
 	[[<ore:shulkerShell>, <draconicevolution:draconic_core>, <ore:shulkerShell>],
 	[<draconicevolution:draconic_core>, <minecraft:nether_star>, <draconicevolution:draconic_core>], 
-	[<ore:ingotLudicrite>, <environmentaltech:pladium>, <ore:ingotLudicrite>]], 
+	[<ore:ingotStellarAlloy>, <environmentaltech:pladium>, <ore:ingotStellarAlloy>]], 
 	40, <liquid:mana> * 1000);
 
 # Draconic Energy Core
@@ -85,8 +85,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	<draconicevolution:draconic_core>, 
 	<liquid:redstone> * 10000, 250000);
 
-
-
 # Draconic chest easier
 var dchest = <draconicevolution:draconium_chest>;
 var ingrds as IItemStack[] = [
@@ -97,7 +95,6 @@ var ingrds as IItemStack[] = [
 ] as IItemStack[];
 mods.extendedcrafting.CombinationCrafting.addRecipe(dchest, 20000000, 2000000, <minecraft:chest>, ingrds as IIngredient[]);
 mods.actuallyadditions.Empowerer.addRecipe(dchest, <minecraft:chest>, ingrds[0], ingrds[1], ingrds[2], ingrds[3], 20000000/4, 400, [8.0, 0.1, 0.9]);
-
 
 # Combination Crafting Alternative for Ender Energy Manipulator
 val pearl = <rftools:infused_enderpearl>;
@@ -121,7 +118,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(
 	recipes.remove(<draconicevolution:energy_crystal>);
 	recipes.addShapedMirrored("Basic Energy Relay Crystal", <draconicevolution:energy_crystal>*4,
 	[[<industrialforegoing:laser_lens:11>,<actuallyadditions:block_laser_relay_extreme>,<industrialforegoing:laser_lens:11>],
-	[<enderio:item_alloy_ingot>,<ore:crystalAstralAny>,<enderio:item_alloy_ingot>],
+	[<enderio:item_alloy_ingot>,<astralsorcery:itemrockcrystalsimple>.anyDamage(),<enderio:item_alloy_ingot>],
 	[<industrialforegoing:laser_lens:11>,<actuallyadditions:block_laser_relay_extreme>,<industrialforegoing:laser_lens:11>]]);
 	
 # Basic Wireless Energy Crystal
@@ -130,3 +127,19 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(
 	[[<ore:dustAstralStarmetal>,<extrautils2:powertransmitter>,<ore:dustAstralStarmetal>],
 	[<appliedenergistics2:material:41>,<draconicevolution:energy_crystal:0>,<appliedenergistics2:material:41>],
 	[<ore:dustAstralStarmetal>,<extrautils2:powertransmitter>,<ore:dustAstralStarmetal>]]);
+
+# Flux Gate
+	recipes.remove(<draconicevolution:flow_gate:0>);
+	recipes.addShapedMirrored("Flux Gate", 
+	<draconicevolution:flow_gate:0>,
+	[[<ore:ingotIron>,<draconicevolution:potentiometer>,<ore:ingotIron>],
+	[<ore:blockRedstone>,<nuclearcraft:part:10>,<ore:blockRedstone>],
+	[<ore:ingotIron>,<minecraft:comparator>,<ore:ingotIron>]]);
+
+# Fluid Gate
+	recipes.remove(<draconicevolution:flow_gate:8>);
+	recipes.addShapedMirrored("Fluid Gate", 
+	<draconicevolution:flow_gate:8>,
+	[[<ore:ingotIron>,<draconicevolution:potentiometer>,<ore:ingotIron>],
+	[<minecraft:bucket>,<nuclearcraft:part:10>,<minecraft:bucket>],
+	[<ore:ingotIron>,<minecraft:comparator>,<ore:ingotIron>]]);

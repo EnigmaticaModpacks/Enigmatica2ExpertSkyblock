@@ -26,12 +26,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	
 	<immersiveengineering:pickaxe_steel>,
 	<immersiveengineering:shovel_steel>,
-	<immersiveengineering:axe_steel>,
 	<immersiveengineering:sword_steel>,
-	
-	<twilightforest:fiery_pickaxe>,
-	<twilightforest:steeleaf_pickaxe>.withTag({ench: [{lvl: 2 as short, id: 35 as short}]}),
-	<twilightforest:ironwood_pickaxe>.withTag({ench: [{lvl: 1 as short, id: 32 as short}]}),
 	
 	<mysticalagradditions:inferium_paxel>,
 	<mysticalagradditions:prudentium_paxel>,
@@ -110,7 +105,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	
 # Thermal Foundation Hammers
 	recipes.addShaped(<thermalfoundation:tool.hammer_lead>, [[<ore:ingotLead>, <ore:blockLead>, <ore:ingotLead>],[<ore:ingotLead>, <forestry:oak_stick>, <ore:ingotLead>], [null, <forestry:oak_stick>, null]]);
-	recipes.addShaped(<thermalfoundation:tool.hammer_aluminum>, [[<ore:ingotAluminium>, <ore:blockAluminium>, <ore:ingotAluminium>],[<ore:ingotAluminium>, <forestry:oak_stick>, <ore:ingotAluminium>], [null, <forestry:oak_stick>, null]]);
+	recipes.addShaped(<thermalfoundation:tool.hammer_aluminum>, [[<ore:ingotAluminum>, <ore:blockAluminum>, <ore:ingotAluminum>],[<ore:ingotAluminum>, <forestry:oak_stick>, <ore:ingotAluminum>], [null, <forestry:oak_stick>, null]]);
 	recipes.addShaped(<thermalfoundation:tool.hammer_nickel>, [[<ore:ingotNickel>, <ore:blockNickel>, <ore:ingotNickel>],[<ore:ingotNickel>, <forestry:oak_stick>, <ore:ingotNickel>], [null, <forestry:oak_stick>, null]]);
 	recipes.addShaped(<thermalfoundation:tool.hammer_platinum>, [[<ore:ingotPlatinum>, <ore:blockPlatinum>, <ore:ingotPlatinum>],[<ore:ingotPlatinum>, <forestry:oak_stick>, <ore:ingotPlatinum>], [null, <forestry:oak_stick>, null]]);
 	recipes.addShaped(<thermalfoundation:tool.hammer_steel>, [[<ore:ingotSteel>, <ore:blockSteel>, <ore:ingotSteel>],[<ore:ingotSteel>, <forestry:oak_stick>, <ore:ingotSteel>], [null, <forestry:oak_stick>, null]]);

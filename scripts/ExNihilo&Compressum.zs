@@ -67,7 +67,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.addShapeless("Ex Nihilo Nickel", <thermalfoundation:ore:5>, [<ore:pieceNickel>, <ore:pieceNickel>, <ore:pieceNickel>, <ore:pieceNickel>]);
 	recipes.addShapeless("Ex Nihilo Silver", <thermalfoundation:ore:2>, [<ore:pieceSilver>, <ore:pieceSilver>, <ore:pieceSilver>, <ore:pieceSilver>]);
 	recipes.addShapeless("Ex Nihilo Lead", <thermalfoundation:ore:3>, [<ore:pieceLead>, <ore:pieceLead>, <ore:pieceLead>, <ore:pieceLead>]);
-	recipes.addShapeless("Ex Nihilo Aluminomnomnom", <thermalfoundation:ore:4>, [<ore:pieceAluminium>, <ore:pieceAluminium>, <ore:pieceAluminium>, <ore:pieceAluminium>]);
+	recipes.addShapeless("Ex Nihilo Aluminomnomnom", <thermalfoundation:ore:4>, [<ore:pieceAluminum>, <ore:pieceAluminum>, <ore:pieceAluminum>, <ore:pieceAluminum>]);
 	recipes.addShapeless("Ex Nihilo Tin", <thermalfoundation:ore:1>, [<ore:pieceTin>, <ore:pieceTin>, <ore:pieceTin>, <ore:pieceTin>]);
 	recipes.addShapeless("Ex Nihilo Copper", <thermalfoundation:ore>, [<ore:pieceCopper>, <ore:pieceCopper>, <ore:pieceCopper>, <ore:pieceCopper>]);
 	recipes.addShapeless("Ex Nihilo Iron", <minecraft:iron_ore>, [<ore:pieceIron>, <ore:pieceIron>, <ore:pieceIron>, <ore:pieceIron>]);
@@ -108,7 +108,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	rh(<exnihilocreatio:item_ore_iron:1>);
 	rh(<exnihilocreatio:item_ore_copper:1>);
 	rh(<exnihilocreatio:item_ore_tin:1>);
-	rh(<exnihilocreatio:item_ore_aluminium:1>);
+	rh(<exnihilocreatio:item_ore_aluminum:1>);
 	rh(<exnihilocreatio:item_ore_lead:1>);
 	rh(<exnihilocreatio:item_ore_silver:1>);
 	rh(<exnihilocreatio:item_ore_nickel:1>);
@@ -120,13 +120,12 @@ import mods.jei.JEI.removeAndHide as rh;
 	rh(<jaopca:item_hunkmagnesium>);
 	rh(<jaopca:item_hunkthorium>);
 	rh(<jaopca:item_hunkuranium>);
-	
 # Ex Nihilo Dusts
 	rh(<exnihilocreatio:item_ore_gold:2>);
 	rh(<exnihilocreatio:item_ore_iron:2>);
 	rh(<exnihilocreatio:item_ore_copper:2>);
 	rh(<exnihilocreatio:item_ore_tin:2>);
-	rh(<exnihilocreatio:item_ore_aluminium:2>);
+	rh(<exnihilocreatio:item_ore_aluminum:2>);
 	rh(<exnihilocreatio:item_ore_lead:2>);
 	rh(<exnihilocreatio:item_ore_silver:2>);
 	rh(<exnihilocreatio:item_ore_nickel:2>);
@@ -148,4 +147,6 @@ craft.remake(<exnihilocreatio:hive>, ["pretty",
 # Remove Burn Time to prevent confusing in JEI categories
 furnace.setFuel(<exnihilocreatio:hive:1>, 0);
 
-	
+# Re-add Sawdust to Hammered logs
+//mods.exnihilocreatio.Hammer.addRecipe(IIngredient input, IItemStack output, Int tool level, Float chance, Float fortune chance);
+//mods.exnihilocreatio.Hammer.addRecipe(<ore:logWood>, <thermalfoundation:material:800>, 0, 1, 0.5); Change not going through

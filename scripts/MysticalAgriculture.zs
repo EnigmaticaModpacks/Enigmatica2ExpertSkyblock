@@ -283,26 +283,6 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	
 	<ore:blockKnightslime>, <ore:blockKnightslime>, <ore:blockKnightslime>, <ore:blockKnightslime>]);
 	
-# Steeleaf Seeds
-	recipes.remove(<mysticalagriculture:steeleaf_seeds>);
-	mods.astralsorcery.Altar.addAttunementAltarRecipe("enigmatica2expert:shaped/internal/altar/steeleaf_seeds",
-		<mysticalagriculture:steeleaf_seeds>, 500, 200, 
-	[<ore:essenceTier2>, <ore:blockIntermediumEssence>, <ore:essenceTier2>,
-	<ore:blockIntermediumEssence>, <mysticalagriculture:crafting:19>, <ore:blockIntermediumEssence>, 
-	<ore:essenceTier2>, <ore:blockIntermediumEssence>, <ore:essenceTier2>,
-	
-	<ore:ingotSteeleaf>, <ore:ingotSteeleaf>, <twilightforest:block_storage:2>, <twilightforest:block_storage:2>]);
-	
-# Ironwood Seeds
-	recipes.remove(<mysticalagriculture:ironwood_seeds>);
-	mods.astralsorcery.Altar.addAttunementAltarRecipe("enigmatica2expert:shaped/internal/altar/ironwood_seeds",
-		<mysticalagriculture:ironwood_seeds>, 500, 200, 
-	[<ore:essenceTier2>, <ore:blockIntermediumEssence>, <ore:essenceTier2>,
-	<ore:blockIntermediumEssence>, <mysticalagriculture:crafting:19>, <ore:blockIntermediumEssence>, 
-	<ore:essenceTier2>, <ore:blockIntermediumEssence>, <ore:essenceTier2>,
-	
-	<ore:ingotIronwood>, <ore:ingotIronwood>, <twilightforest:block_storage>, <twilightforest:block_storage>]);
-	
 # Black Quartz Seeds
 	recipes.remove(<mysticalagriculture:black_quartz_seeds>);
 	mods.astralsorcery.Altar.addAttunementAltarRecipe("enigmatica2expert:shaped/internal/altar/black_quartz_seeds",
@@ -354,26 +334,6 @@ recipes.addShapedMirrored("Wither Proof Glass",
 	<ore:essenceTier3>, <ore:blockSuperiumEssence>, <ore:essenceTier3>,
 	
 	<biomesoplenty:gem_block:1>, <biomesoplenty:gem_block:1>, <biomesoplenty:gem_block:1>, <biomesoplenty:gem_block:1>]);
-
-# Fiery_Ingot Seeds
-	recipes.remove(<mysticalagriculture:fiery_ingot_seeds>);
-	mods.astralsorcery.Altar.addAttunementAltarRecipe("enigmatica2expert:shaped/internal/altar/fiery_ingot_seeds",
-	<mysticalagriculture:fiery_ingot_seeds>, 600, 200, 
-	[<ore:essenceTier3>, <ore:blockSuperiumEssence>, <ore:essenceTier3>,
-	<ore:blockSuperiumEssence>, <mysticalagriculture:crafting:20>, <ore:blockSuperiumEssence>, 
-	<ore:essenceTier3>, <ore:blockSuperiumEssence>, <ore:essenceTier3>,
-	
-	<ore:ingotFiery>, <ore:ingotFiery>, <twilightforest:block_storage:1>, <twilightforest:block_storage:1>]);
-
-# Knightmetal Seeds
-	recipes.remove(<mysticalagriculture:knightmetal_seeds>);
-	mods.astralsorcery.Altar.addAttunementAltarRecipe("enigmatica2expert:shaped/internal/altar/knightmetal_seeds",
-	<mysticalagriculture:knightmetal_seeds>, 600, 200, 
-	[<ore:essenceTier3>, <ore:blockSuperiumEssence>, <ore:essenceTier3>,
-	<ore:blockSuperiumEssence>, <mysticalagriculture:crafting:20>, <ore:blockSuperiumEssence>, 
-	<ore:essenceTier3>, <ore:blockSuperiumEssence>, <ore:essenceTier3>,
-	
-	<ore:ingotKnightmetal>, <ore:ingotKnightmetal>, <twilightforest:knightmetal_block>, <twilightforest:knightmetal_block>]);
 
 # Fluix Seeds
 	recipes.remove(<mysticalagriculture:fluix_seeds>);
@@ -750,7 +710,7 @@ function handleSapling(sap as IItemStack) as void {
 		addSaplingsRecipe(sap * 6, groups.tconstruct);
 	} else
 
-	if (!owner.matches("minecraft|harvestcraft|twilightforest|randomthings|forestry|advancedrocketry|integrateddynamics")) {
+	if (!owner.matches("minecraft|harvestcraft|randomthings|forestry|advancedrocketry|integrateddynamics")) {
 		addSaplingsRecipe(sap * 6, groups.other);
 	}
 }

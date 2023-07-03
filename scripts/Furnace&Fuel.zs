@@ -1,4 +1,6 @@
-
+# Re-add Graphite Ingot from Coal & Charcoal
+	furnace.addRecipe(<nuclearcraft:ingot:8>, <minecraft:coal>, 0.1);
+	furnace.addRecipe(<nuclearcraft:ingot:8>, <minecraft:coal:1>, 0.1);
 
 # Removing duplicate recipes
 	furnace.remove(<appliedenergistics2:material:5>, <enderio:item_material:33>);
@@ -11,14 +13,6 @@
 # Steel Blend
 	furnace.addRecipe(<thermalfoundation:material:160>, <thermalfoundation:material:96>);
 
-# Removing End Ores
-	furnace.remove(<netherendingores:ore_end_vanilla:*>);
-	furnace.remove(<netherendingores:ore_end_modded_1:*>);
-	furnace.remove(<netherendingores:ore_other_1>);
-	furnace.remove(<netherendingores:ore_nether_modded_1:2>);
-	furnace.remove(<netherendingores:ore_nether_modded_1:4>);
-	furnace.remove(<netherendingores:ore_nether_modded_1:13>);
-	
 # *======= Adding Burnables =======*
 
 # Fire Charges

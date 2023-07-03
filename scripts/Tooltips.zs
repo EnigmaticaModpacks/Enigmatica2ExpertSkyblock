@@ -106,22 +106,6 @@ for item in thaumcraftHintItems {
 	addDescription(<astralsorcery:blockaltar>,
 	"The Luminous Crafting Table has to be crafted near a Floating Crystal, commonly found in Marble structures throughout the world.", 
 	"See the Astral Tome for the recipe.");
-
-#CheeseArray (yes, hashtag)
-	var cheeses as IItemStack[] = [
-	<animania:friesian_cheese_wheel>,
-	<animania:holstein_cheese_wheel>,
-	<animania:jersey_cheese_wheel>,
-	<animania:goat_cheese_wheel>,
-	<animania:sheep_cheese_wheel>
-	];
-	
-# Animania Cheese
-	var cheeseMold = "Made by right clicking Animania Milk into a placed Cheese Mold.";
-	for cheese in cheeses {
-		addDescription(cheese, cheeseMold);
-	}
-	
 	
 # Bag of Holding
 	addDescription(<extrautils2:bagofholding>, "Removed due to instability.");
@@ -257,16 +241,16 @@ for item in thaumcraftHintItems {
 # Thermal Expansion Resonant Machine Frame (Full)
 	addDescription(<thermalexpansion:frame:148>, mil100);
 	
-# Extreme Reactors Crystals
-	<bigreactors:minerals>.displayName = "Anglesite";
-	<bigreactors:minerals:1>.displayName = "Benitoite";
+# Old Extreme Reactors Crystals
+	<contenttweaker:anglesite>.displayName = "Anglesite";
+	<contenttweaker:benitoite>.displayName = "Benitoite";
 	
-	addDescription(<bigreactors:minerals>, craftable);
-	addDescription(<bigreactors:minerals:1>, craftable);
+	addDescription(<contenttweaker:anglesite>, craftable);
+	addDescription(<contenttweaker:benitoite>, craftable);
 
 # Uncraftable ingots
-	addDescription(<bigreactors:ingotmetals:3>,"Block of Blutonium is craftable.");
-	addDescription(<bigreactors:ingotmetals:4>,"Block of Ludicrite is craftable.");
+	addDescription(<enderio:item_alloy_endergy_ingot:2>,"Melodic Alloy Block is craftable.");
+	addDescription(<enderio:item_alloy_endergy_ingot:3>,"Stellar Alloy Block is craftable.");
 
 # Mana Infused Ingot
 	addDescription(<thermalfoundation:material:136>,"Only obtainable through the Metallurgic Infuser, the Advanced Metallurgic Fabricator, and other planets.");
@@ -610,4 +594,16 @@ for item in thaumcraftHintItems {
 <forge:bucketfilled>.withTag({FluidName: "blockfluidantimatter", Amount: 1000}).addTooltip(format.aqua("To obtain strike Life Essense with lightning"));
 
 # Corium Bucket
-<forge:bucketfilled>.withTag({FluidName: "corium", Amount: 1000}).addTooltip(format.green("Obtainable by melting down a Fission Reactor"));
+<forge:bucketfilled>.withTag({FluidName: "corium", Amount: 1000}).addTooltip(format.red("Obtainable by melting down a Fission Reactor"));
+
+# Unbreakable Graphite Electrode
+	addDescription(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1, display: {Lore: ["Reinforced with Titanium Iridium Alloy"], Name: "Unbreakable Graphite Electrode"}}),"Reinforced Graphite Eletrode. Repaired Graphite Electrodes are insufficient for this process");
+
+# Adv Gen Gas Intake
+	<advgenerators:gas_input>.addTooltip("Disabled");
+	addDescription(<advgenerators:gas_input>,"Disabled due to a bug that was never fixed");
+
+# Marble can be chiseled into..
+	<astralsorcery:blockmarble>.addTooltip(format.aqua("Chisel Variations: Astral Sorcery & Unlimited Chisel Works"));
+	<chisel:marble2:7>.addTooltip(format.aqua("Chisel Variations: Chisel & Quark"));
+	<quark:marble>.addTooltip(format.aqua("Chisel Variations: Chisel & Quark"));

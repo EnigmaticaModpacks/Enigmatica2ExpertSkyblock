@@ -34,5 +34,19 @@
     "mob": "quark:foxhound",
     "mincount":"20",
     "result": "deny"
+	},
+	{
+		"mob": "minecraft:squid",
+		"dimension": 0,
+		"biome": "The Void",
+		"maxcount": 20,
+		"result": "allow"
+	},
+	{
+		"mob": "minecraft:squid",
+		"dimension": 0,
+		"mincount": 20,
+		"biome": "The Void",
+		"result": "deny"
 	}
 ]
