@@ -14,7 +14,7 @@ for i in 5 to 40 {
 	rh(<skyresources:dirtygem>.definition.makeStack(i));
 	}
 for i in 5 to 40 {
-	if (i == 7 || i == 10) {continue;}
+	if (i == 7 || i == 8 || i == 10 || i == 17) {continue;}
 	mods.sc.compressedrockgrinder.removeRecipe(<skyresources:dirtygem>.definition.makeStack(i));
 	}
 	mods.sc.compressedrockgrinder.removeRecipe(<jaopca:item_dirtygemdimensionalshard>);

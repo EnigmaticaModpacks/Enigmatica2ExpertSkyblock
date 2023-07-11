@@ -26,27 +26,45 @@
 		"result": "deny"
 	},
 	{
-    "mob": "quark:frog",
-    "mincount":"20",
-    "result": "deny"
+		"mob": "quark:frog",
+		"mincount":"20",
+		"result": "deny"
 	},
 	{
-    "mob": "quark:foxhound",
-    "mincount":"20",
-    "result": "deny"
+		"mob": "quark:foxhound",
+		"mincount":"20",
+		"result": "deny"
 	},
 	{
 		"mob": "minecraft:squid",
 		"dimension": 0,
-		"biome": "The Void",
+		"biome": "Plains",
 		"maxcount": 20,
+		"maxheight": 40,
 		"result": "allow"
 	},
 	{
 		"mob": "minecraft:squid",
 		"dimension": 0,
+		"biome": "Plains",
 		"mincount": 20,
-		"biome": "The Void",
+		"result": "deny"
+	},
+	{
+		"mob": "minecraft:squid",
+		"dimension": 0,
+		"result":"deny"
+	},
+	{
+		"mob": "minecraft:bat",
+		"dimension": 0,
+		"maxheight": 20,
+		"result": "deny"
+	},
+	{
+		"mob": "minecraft:bat",
+		"dimension": 0,
+		"minheight": 30,
 		"result": "deny"
 	}
 ]

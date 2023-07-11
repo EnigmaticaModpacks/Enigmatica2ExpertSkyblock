@@ -59,13 +59,15 @@ mods.skyresources.fusion.addRecipe(<thaumcraft:quicksilver>, [<minecraft:gunpowd
 # Rock Crystals
 mods.skyresources.combustion.addRecipe(<astralsorcery:blockcustomore:0>,[<astralsorcery:itemcraftingcomponent:2>*10,<minecraft:diamond>*3,<astralsorcery:itemcraftingcomponent:0>*10,<minecraft:stone:0>*5], 1700);
 
-#Grains of Infinity
+# Grains of Infinity
 mods.skyresources.combustion.addRecipe(<enderio:item_material:20>,[<thermalfoundation:material:770>*10,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "tenebrae"}]})*25], 3100);
 
-#Grains of Infinity Dupe
+# Grains of Infinity Dupe
 mods.skyresources.combustion.addRecipe(<enderio:item_material:20>*2,[<enderio:item_material:20>,<thermalfoundation:material:770>*5,<thaumcraft:salis_mundus>], 1000);
 
-
+# Light Matter
+mods.skyresources.combustion.removeRecipe(<skyresources:baseitemcomponent:7>);
+mods.skyresources.combustion.addRecipe(<skyresources:baseitemcomponent:7>,[<skyresources:heavysnow>*5,<skyresources:techitemcomponent:2>*4,<skyresources:alchemyitemcomponent:7>*4,<minecraft:end_stone>*3,<mekanism:ingot:3>], 3400);
 
 # *==== Rock Grinder ====*
 #mods.skyresources.rockgrinder.removeRecipe(ItemStack output);

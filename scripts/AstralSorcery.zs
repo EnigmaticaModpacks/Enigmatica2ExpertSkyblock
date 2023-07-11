@@ -44,9 +44,15 @@ import mods.jei.JEI.removeAndHide as rh;
 	[null, <ore:stoneMarble>, <ore:gemAquamarine>], 
 	[<ore:stoneMarble>, null, null]]);
 
+# Luminous Crafting Table
+	recipes.addShapedMirrored(<astralsorcery:blockaltar>, 
+	[[<ore:stoneMarble>, <astralsorcery:blockblackmarble>, <ore:stoneMarble>],
+	[<ore:stoneMarble>, <avaritia:compressed_crafting_table>, <ore:stoneMarble>], 
+	[<ore:stoneMarble>, <ore:gemAmber>, <ore:stoneMarble>]]);
+
 # Starlight Crafting Altar
 	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier2");
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/upgrade_tier2",
+	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/upgrade_tier2",
 		<astralsorcery:blockaltar:1>, 350, 100, [
             <astralsorcery:blockmarble:2>, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:blockmarble:2>,
 			<astralsorcery:blockmarble:4>, <liquid:astralsorcery.liquidstarlight>, <astralsorcery:blockmarble:4>, 
@@ -54,7 +60,7 @@ import mods.jei.JEI.removeAndHide as rh;
 
 # Celestial Altar
 	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier3");
-	mods.astralsorcery.Altar.addAttunementAltarRecipe("enigmatica2expert:shaped/internal/altar/upgrade_tier3",
+	mods.astralsorcery.Altar.addAttunementAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/upgrade_tier3",
 		<astralsorcery:blockaltar:2>, 600, 300, [
             <ore:gemAquamarine>, <ore:blockThaumium>, <ore:gemAquamarine>,
             <bloodmagic:slate:1>, <astralsorcery:itemrockcrystalsimple>.anyDamage(), <bloodmagic:slate:1>,
@@ -63,7 +69,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	
 # Iridescent Altar
 	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier4");
-	mods.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/upgrade_tier4",
+	mods.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/upgrade_tier4",
 		<astralsorcery:blockaltar:3>, 3250, 200, [
             <ore:blockMarble>, <bloodmagic:component:6>, <ore:blockMarble>,
             <astralsorcery:itemcoloredlens:4>, <astralsorcery:itemcelestialcrystal>, <astralsorcery:itemcoloredlens:6>,
@@ -101,3 +107,9 @@ craft.make(<astralsorcery:itemknowledgeshare>.withTag({astralsorcery: {creativeK
   "T": <thermalfoundation:tome_experience>,     # Tome of Knowledge
   "♦": <astralsorcery:itemperkgem:*>,           # Ilium Gem
 });
+
+# Marble
+	recipes.addShapedMirrored("Marble",<astralsorcery:blockmarble:0>*8,[
+	[<ore:stone>,<ore:stone>,<ore:stone>],
+	[<ore:stone>,<ore:dyeWhite>,<ore:stone>],
+	[<ore:stone>,<ore:stone>,<ore:stone>]]);

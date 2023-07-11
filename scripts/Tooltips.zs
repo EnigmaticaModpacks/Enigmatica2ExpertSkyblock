@@ -607,3 +607,7 @@ for item in thaumcraftHintItems {
 	<astralsorcery:blockmarble>.addTooltip(format.aqua("Chisel Variations: Astral Sorcery & Unlimited Chisel Works"));
 	<chisel:marble2:7>.addTooltip(format.aqua("Chisel Variations: Chisel & Quark"));
 	<quark:marble>.addTooltip(format.aqua("Chisel Variations: Chisel & Quark"));
+
+# Bat and Squid spawn conditions
+	<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:bat"}}).addTooltip(format.aqua("Only spawns between y20 and y30."));
+	<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:squid"}}).addTooltip(format.aqua("Only spawns in water below y40."));
