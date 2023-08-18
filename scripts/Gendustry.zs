@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded gendustry
-print("--- loading Gendustry.zs ---");
+
 	
 # *======= Recipes =======*
 
@@ -45,4 +45,9 @@ print("--- loading Gendustry.zs ---");
 	[<ore:alloyBasic>, <mekanism:energycube>, <ore:alloyBasic>], 
 	[<ore:gearBronze>, <ore:alloyBasic>, <ore:gearBronze>]]);
 
-	print("--- Gendustry.zs initialized ---");
+# Remove invalid honey combs from TE Centrifugal Separator. Who knows why they even exist in the first place
+# This affects combs with metadata 17-25
+for i in 17 to 26 {
+	val comb as IItemStack = <gendustry:honey_comb>.definition.makeStack(i) as IItemStack;
+	mods.thermalexpansion.Centrifuge.removeRecipe(comb);
+}

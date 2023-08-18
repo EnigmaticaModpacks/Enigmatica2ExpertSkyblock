@@ -396,7 +396,7 @@
     },
     {
       "drop": {
-        "name": "exnihilocreatio:item_ore_aluminium",
+        "name": "exnihilocreatio:item_ore_aluminum",
         "meta": 0
       },
       "chance": 0.2,
@@ -404,7 +404,7 @@
     },
     {
       "drop": {
-        "name": "exnihilocreatio:item_ore_aluminium",
+        "name": "exnihilocreatio:item_ore_aluminum",
         "meta": 0
       },
       "chance": 0.2,
@@ -412,7 +412,7 @@
     },
     {
       "drop": {
-        "name": "exnihilocreatio:item_ore_aluminium",
+        "name": "exnihilocreatio:item_ore_aluminum",
         "meta": 0
       },
       "chance": 0.1,
@@ -930,7 +930,7 @@
     },
     {
       "drop": {
-        "name": "exnihilocreatio:item_ore_aluminium",
+        "name": "exnihilocreatio:item_ore_aluminum",
         "meta": 0
       },
       "chance": 0.2,
@@ -938,7 +938,7 @@
     },
     {
       "drop": {
-        "name": "exnihilocreatio:item_ore_aluminium",
+        "name": "exnihilocreatio:item_ore_aluminum",
         "meta": 0
       },
       "chance": 0.2,
@@ -946,7 +946,7 @@
     },
     {
       "drop": {
-        "name": "exnihilocreatio:item_ore_aluminium",
+        "name": "exnihilocreatio:item_ore_aluminum",
         "meta": 0
       },
       "chance": 0.1,
@@ -1148,7 +1148,7 @@
     },
     {
       "drop": {
-        "name": "exnihilocreatio:item_ore_aluminium",
+        "name": "exnihilocreatio:item_ore_aluminum",
         "meta": 0
       },
       "chance": 0.2,
@@ -1156,7 +1156,7 @@
     },
     {
       "drop": {
-        "name": "exnihilocreatio:item_ore_aluminium",
+        "name": "exnihilocreatio:item_ore_aluminum",
         "meta": 0
       },
       "chance": 0.2,
@@ -1164,7 +1164,7 @@
     },
     {
       "drop": {
-        "name": "exnihilocreatio:item_ore_aluminium",
+        "name": "exnihilocreatio:item_ore_aluminum",
         "meta": 0
       },
       "chance": 0.1,
@@ -1238,40 +1238,56 @@
     },
 	{
       "drop": {
-        "name": "contenttweaker:ruby",
-        "meta": 0
+        "name": "biomesoplenty:gem",
+        "meta": 1
       },
       "chance": 0.05,
       "meshLevel": 4
     },
 	{
       "drop": {
-        "name": "contenttweaker:peridot",
-        "meta": 0
+        "name": "biomesoplenty:gem",
+        "meta": 2
       },
       "chance": 0.05,
       "meshLevel": 4
     },
 	{
       "drop": {
-        "name": "thaumcraft:amber",
-        "meta": 0
+        "name": "biomesoplenty:gem",
+        "meta": 3
       },
       "chance": 0.05,
       "meshLevel": 4
     },
 	{
       "drop": {
-        "name": "contenttweaker:malachite",
-        "meta": 0
+        "name": "biomesoplenty:gem",
+        "meta": 4
       },
       "chance": 0.05,
       "meshLevel": 4
     },
 	{
       "drop": {
-        "name": "contenttweaker:sapphire",
-        "meta": 0
+        "name": "biomesoplenty:gem",
+        "meta": 5
+      },
+      "chance": 0.05,
+      "meshLevel": 4
+    },
+	{
+      "drop": {
+        "name": "biomesoplenty:gem",
+        "meta": 6
+      },
+      "chance": 0.05,
+      "meshLevel": 4
+    },
+	{
+      "drop": {
+        "name": "biomesoplenty:gem",
+        "meta": 7
       },
       "chance": 0.05,
       "meshLevel": 4

@@ -2,7 +2,7 @@
 	"name": "resistance2",
 	"potion": "minecraft:resistance",
 	"amplifier": 1,
-	"minimum": 95,
+	"minimum": 97,
 	"maximum": 100,
 	"detect": "average",
 	"enabled": true

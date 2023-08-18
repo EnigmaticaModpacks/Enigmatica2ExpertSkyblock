@@ -2,8 +2,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IIngredient as IIngredient;
 #modloaded botania
-print("--- loading Botania.zs ---");
-
+	
 # Mana Pool
 	recipes.remove(<botania:pool>);
 	recipes.addShapedMirrored("Mana Pool", 
@@ -94,7 +93,7 @@ print("--- loading Botania.zs ---");
 
 # Elven Gateway Core
 	recipes.remove(<botania:alfheimportal>);
-	mods.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/elven_gateway_core",
+	mods.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/elven_gateway_core",
 		<botania:alfheimportal>, 2800, 300, [
             <ore:livingwood>, <botania:livingwood:5>, <ore:livingwood>,
             <botania:livingwood:5>, <botania:petalblock:5>, <botania:livingwood:5>,
@@ -107,7 +106,7 @@ print("--- loading Botania.zs ---");
 
 # Petal Apothecary
 	recipes.remove(<botania:altar>);
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/petal_apothecary",
+	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/petal_apothecary",
 	<botania:altar>, 200, 450, 
 	[<minecraft:stone_slab:3>, <botania:petal>, <minecraft:stone_slab:3>,
     null, <ore:cobblestone>, null,
@@ -115,21 +114,22 @@ print("--- loading Botania.zs ---");
 	
 # Runic Altar
 	recipes.remove(<botania:runealtar>);
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/runic_altar1",
+	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar1",
 	<botania:runealtar>, 200, 800, 
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), null,
     <botania:livingrock>, <botania:manaresource:1>, <botania:livingrock>,
     <botania:livingrock>, <botania:livingrock>, <botania:livingrock>]);
 	
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expertskyblock:shaped/internal/altar/runic_altar2",
+	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/runic_altar2",
 	<botania:runealtar>, 200, 800, 
 	[null, <astralsorcery:itemrockcrystalsimple>.anyDamage(), null,
     <botania:livingrock>, <botania:manaresource:2>, <botania:livingrock>,
     <botania:livingrock>, <botania:livingrock>, <botania:livingrock>]);
 
 # Removing double flower recipes
-	recipes.remove(<botania:petal:*> * 4, <botania:doubleflower1:*>);
-	recipes.remove(<botania:petal:*> * 4, <botania:doubleflower2:*>);
+#	recipes.remove(<botania:petal:*> * 4, <botania:doubleflower1:*>);
+#	recipes.remove(<botania:petal:*> * 4, <botania:doubleflower2:*>);
+# Disabled, as those were removing even normal petal recipe for some reason ^-^"
 	
 # Super travel belt
 	recipes.remove(<botania:supertravelbelt>);
@@ -193,10 +193,12 @@ print("--- loading Botania.zs ---");
 	recipes.addShapeless("Petal Duplication14", <botania:petal:14> * 4, [<botania:petal:14>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>]);
 	recipes.addShapeless("Petal Duplication15", <botania:petal:15> * 4, [<botania:petal:15>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>]);
 
-	
-## *======= Mana Infusion =======*
-//mods.botania.ManaInfusion.addInfusion(IItemStack output, IIngredient input, int mana);
-#mods.botania.ManaInfusion.addInfusion(<minecraft:grass>, <ore:stone>, 1000);
+# Add missed ORE
+mods.botania.Orechid.addOre("oreThorium", 1285);
+mods.botania.Orechid.addOre("oreMagnesium", 1285);
+mods.botania.Orechid.addOre("oreLithium", 1285);
+mods.botania.Orechid.addOre("oreBoron", 1285);
+mods.botania.Orechid.addOre("oreProsperity", 900);
 
 //mods.botania.ManaInfusion.addAlchemy(IItemStack output, IIngredient input, int mana);
 #mods.botania.ManaInfusion.addAlchemy(<minecraft:gold_ore>, <ore:stone>, 5000);
@@ -204,23 +206,43 @@ print("--- loading Botania.zs ---");
 //mods.botania.ManaInfusion.addConjuration(IItemStack output, IIngredient input, int mana);
 #mods.botania.ManaInfusion.addConjuration(<minecraft:stone>, <minecraft:stone>, 1000);
 
-## *======= Botanical Brewing =======*
-	//InputArray, BrewString
-	//mods.botania.Brew.addRecipe([<minecraft:nether_wart>, <minecraft:reeds>, <minecraft:redstone>], "speed");
-	//BrewString
-	//mods.botania.Brew.removeRecipe("absorption"); 
 
-## *======= Elven Trade =======*
-	//OutputArray, InputArray
-	//mods.botania.ElvenTrade.addRecipe([<botania:flower:4>], [<minecraft:yellow_flower>]);
-	//OutputArray
-	//mods.botania.ElvenTrade.removeRecipe([<botania:dreamwood>]);
+#----- Sapling Cycling -----#
 
-## *======= Orechid =======*
-	//InputOredict, Weight
-	//mods.botania.Orechid.addOre(<ore:logWood>, 5000);
-	//InputOredict
-	//mods.botania.Orechid.removeOre(<ore:oreIron>);
+# Remove vanilla loop
+mods.botania.ManaInfusion.removeRecipe(<minecraft:sapling>);
+
+# Add modded in loop
+var saplings = [
+	<minecraft:sapling:5>,
+	<ic2:sapling>,
+	<integrateddynamics:menril_sapling>,
+	<quark:variant_sapling>,
+	<quark:variant_sapling:1>,
+	<rustic:sapling>,
+	<rustic:sapling:1>,
+	<rustic:sapling_apple>,
+	<thaumcraft:sapling_greatwood>,
+	<thaumcraft:sapling_silverwood>,
+	<minecraft:sapling>,
+] as IItemStack[];
+for i, sapling in saplings {
+	if (i != 0) {
+		mods.botania.ManaInfusion.addAlchemy(saplings[i], saplings[i - 1], 120);
+	}
+}
+
+
+# Colored Glass -> Quark Cave Crystals
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassWhite>,  <quark:crystal>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassRed>,    <quark:crystal:1>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassOrange>, <quark:crystal:2>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassYellow>, <quark:crystal:3>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassLime>,   <quark:crystal:4>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassCyan>,   <quark:crystal:5>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlue>,   <quark:crystal:6>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassPurple>, <quark:crystal:7>);
+mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlack>,  <quark:crystal:8>);
 
 ## *======= Petal Apothecary =======*
 	//OutputStack, InputArray
@@ -241,5 +263,9 @@ print("--- loading Botania.zs ---");
 	//OutputStack
 	//mods.botania.RuneAltar.removeRecipe(<botania:rune>);
 
-	
-	print("--- Botania.zs initialized ---");
+# Add missed ORE
+	mods.botania.Orechid.addOre("oreThorium", 1285);
+	mods.botania.Orechid.addOre("oreMagnesium", 1285);
+	mods.botania.Orechid.addOre("oreLithium", 1285);
+	mods.botania.Orechid.addOre("oreBoron", 1285);
+	mods.botania.Orechid.addOre("oreProsperity", 900);

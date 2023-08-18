@@ -1,6 +1,11 @@
-print("--- loading Furnace&Fuel.zs ---");
+# Re-add Graphite Ingot from Coal & Charcoal
+	furnace.addRecipe(<nuclearcraft:ingot:8>, <minecraft:coal>, 0.1);
+	furnace.addRecipe(<nuclearcraft:ingot:8>, <minecraft:coal:1>, 0.1);
 
-# *======= Adding Smeltables =======*
+# Removing duplicate recipes
+	furnace.remove(<appliedenergistics2:material:5>, <enderio:item_material:33>);
+	furnace.remove(<appliedenergistics2:material:5>, <actuallyadditions:item_dust:5>);
+	furnace.remove(<appliedenergistics2:material:5>, <nuclearcraft:gem_dust:2>);
 
 # Lithium Dust -> Ingots
 	furnace.addRecipe(<nuclearcraft:ingot:6>, <ic2:dust:11>);
@@ -8,7 +13,6 @@ print("--- loading Furnace&Fuel.zs ---");
 # Steel Blend
 	furnace.addRecipe(<thermalfoundation:material:160>, <thermalfoundation:material:96>);
 
-	
 # *======= Adding Burnables =======*
 
 # Fire Charges
@@ -23,4 +27,3 @@ print("--- loading Furnace&Fuel.zs ---");
 	furnace.setFuel(<forestry:resource_storage>, 1000);
 	furnace.setFuel(<forestry:apatite>, 100);
 	
-print("--- Furnace&Fuel.zs initialized ---");

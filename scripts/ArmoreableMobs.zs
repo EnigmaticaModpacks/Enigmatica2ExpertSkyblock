@@ -3,20 +3,19 @@ import mods.armoreablemobs.ArmorHandler;
 import mods.armoreablemobs.ArmorEntity;
 import mods.armoreablemobs.ArmorSlot;
 import mods.armoreablemobs.ArmorGroup;
+#modloaded armoreablemobs
 
-# Custom recipes made by NillerMedDild
-	print("--- loading ArmoreableMobs.zs ---");
 
 # *======= Variables =======*
 
-	#var draconicGroup = ArmorHandler.createArmorGroup("draconic", 0.001);
-	#var wyvernGroup = ArmorHandler.createArmorGroup("wyvern", 0.002);
-	var nuclearGroup = ArmorHandler.createArmorGroup("nuclear", 0.01);
-	var mysticalGroup = ArmorHandler.createArmorGroup("mystical", 0.01);
-	var magicalGroup = ArmorHandler.createArmorGroup("magical", 0.015);
-	var vanillaGroup = ArmorHandler.createArmorGroup("vanilla", 0.01);
-	var energyGroup = ArmorHandler.createArmorGroup("energy", 0.01);
-	var skeletonGroup = ArmorHandler.createArmorGroup("skeleton", 0.03);
+	#var draconicGroup = ArmorHandler.createArmorGroup("draconic", 0.01);
+	#var wyvernGroup = ArmorHandler.createArmorGroup("wyvern", 0.02);
+	var nuclearGroup = ArmorHandler.createArmorGroup("nuclear", 0.1);
+	var mysticalGroup = ArmorHandler.createArmorGroup("mystical", 0.1);
+	var magicalGroup = ArmorHandler.createArmorGroup("magical", 0.15);
+	var vanillaGroup = ArmorHandler.createArmorGroup("vanilla", 0.1);
+	var energyGroup = ArmorHandler.createArmorGroup("energy", 0.1);
+	var skeletonGroup = ArmorHandler.createArmorGroup("skeleton", 0.3);
 
 # *======= Entities =======*
 
@@ -31,6 +30,7 @@ import mods.armoreablemobs.ArmorGroup;
 	var strayBoss = ArmorHandler.createArmorEntity("minecraft:stray").withNBTCheck("Health", 200.0, "GREATER");
 	var zombieVillager = ArmorHandler.createArmorEntity("minecraft:zombie_villager");
 	var witherSkeleton = ArmorHandler.createArmorEntity("minecraft:wither_skeleton").withNBTCheck("Health", 35.0, "GREATER");
+	var knight = ArmorHandler.createArmorEntity("emberroot:knight_fallen").withNBTCheck("Health", 50.0, "GREATER");
 	
 # *======= Weaponry =======*
 	
@@ -87,6 +87,7 @@ import mods.armoreablemobs.ArmorGroup;
 	draconicGroup.addEntity(zombie);
 	draconicGroup.addEntity(zombieStrong);
 	draconicGroup.addEntity(zombieBoss);
+	draconicGroup.addEntity(knight);
 	draconicGroup.addEntity(husk);
 	draconicGroup.addEntity(witherSkeleton);
 	draconicGroup.addEntity(zombiePigman);
@@ -105,6 +106,7 @@ import mods.armoreablemobs.ArmorGroup;
 	wyvernGroup.addEntity(zombie);
 	wyvernGroup.addEntity(zombieStrong);
 	wyvernGroup.addEntity(zombieBoss);
+	wyvernGroup.addEntity(knight);
 	wyvernGroup.addEntity(husk);
 	wyvernGroup.addEntity(witherSkeleton);
 	wyvernGroup.addEntity(zombiePigman);
@@ -136,6 +138,7 @@ import mods.armoreablemobs.ArmorGroup;
 	mysticalGroup.addEntity(zombie);
 	mysticalGroup.addEntity(zombieStrong);
 	mysticalGroup.addEntity(zombieBoss);
+	mysticalGroup.addEntity(knight);
 	mysticalGroup.addEntity(husk);
 	mysticalGroup.addEntity(witherSkeleton);
 	mysticalGroup.addEntity(zombiePigman);
@@ -168,18 +171,10 @@ import mods.armoreablemobs.ArmorGroup;
 	magicalGroup.addArmor(ArmorHandler.createArmorSlot("legs", <botania:terrasteellegs>, 1, 0.003));
 	magicalGroup.addArmor(ArmorHandler.createArmorSlot("feet", <botania:terrasteelboots>, 1, 0.003));
 	
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("head", <thaumcraft:crimson_plate_helm>, 8, 0.15));
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("chest", <thaumcraft:crimson_plate_chest>, 8, 0.15));
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("legs", <thaumcraft:crimson_plate_legs>, 8, 0.15));
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("feet", <thaumcraft:crimson_boots>, 8, 0.15));
-
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("head", <thaumcraft:crimson_robe_helm>, 10, 0.15));
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("chest", <thaumcraft:crimson_robe_chest>, 10, 0.15));
-	magicalGroup.addArmor(ArmorHandler.createArmorSlot("legs", <thaumcraft:crimson_robe_legs>, 10, 0.15));
-	
 	magicalGroup.addEntity(zombie);
 	magicalGroup.addEntity(zombieStrong);
 	magicalGroup.addEntity(zombieBoss);
+	magicalGroup.addEntity(knight);
 	magicalGroup.addEntity(husk);
 	magicalGroup.addEntity(witherSkeleton);
 	magicalGroup.addEntity(zombiePigman);
@@ -210,6 +205,7 @@ import mods.armoreablemobs.ArmorGroup;
 	nuclearGroup.addEntity(zombie);
 	nuclearGroup.addEntity(zombieStrong);
 	nuclearGroup.addEntity(zombieBoss);
+	nuclearGroup.addEntity(knight);
 	nuclearGroup.addEntity(husk);
 	nuclearGroup.addEntity(witherSkeleton);
 	nuclearGroup.addEntity(zombiePigman);
@@ -240,6 +236,7 @@ import mods.armoreablemobs.ArmorGroup;
 	vanillaGroup.addEntity(zombie);
 	vanillaGroup.addEntity(zombieStrong);
 	vanillaGroup.addEntity(zombieBoss);
+	vanillaGroup.addEntity(knight);
 	vanillaGroup.addEntity(husk);
 	vanillaGroup.addEntity(witherSkeleton);
 	vanillaGroup.addEntity(zombiePigman);
@@ -270,6 +267,7 @@ import mods.armoreablemobs.ArmorGroup;
 	energyGroup.addEntity(zombie);
 	energyGroup.addEntity(zombieStrong);
 	energyGroup.addEntity(zombieBoss);
+	energyGroup.addEntity(knight);
 	energyGroup.addEntity(husk);
 	energyGroup.addEntity(witherSkeleton);
 	energyGroup.addEntity(zombiePigman);
@@ -302,4 +300,4 @@ import mods.armoreablemobs.ArmorGroup;
 	skeletonGroup.addEntity(stray);
 	skeletonGroup.addEntity(strayBoss);
 
-		print("--- ArmoreableMobs.zs initialized ---");
+		

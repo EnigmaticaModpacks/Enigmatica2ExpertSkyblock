@@ -20,7 +20,7 @@ mods.skyresources.cauldronclean.removeRecipe(<thermalfoundation:material:72>);
 mods.skyresources.cauldronclean.removeRecipe(<draconicevolution:draconium_dust:0>);
 mods.skyresources.cauldronclean.removeRecipe(<bigreactors:dustmetals:0>);
 mods.skyresources.cauldronclean.removeRecipe(<rftools:dimensional_shard:0>);
-mods.skyresources.cauldronclean.removeRecipe(<contenttweaker:amethyst>);
+mods.skyresources.cauldronclean.removeRecipe(<biomesoplenty:gem>);
 
 # Use for Dirty Amethyst THAT WONT STOP DROPPING!!
 mods.skyresources.cauldronclean.addRecipe(<minecraft:stone:0>,<skyresources:dirtygem:15>);
@@ -31,16 +31,9 @@ mods.skyresources.cauldronclean.addRecipe(<minecraft:stone:0>,<skyresources:dirt
 # Removed
 mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust:5>);
 mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust:7>);
-mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust:13>);
-mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust:14>);
-mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust:15>);
-mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust:16>);
-mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust:17>);
-mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust:18>);
-mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust:19>);
-mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust:20>);
-mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust:21>);
-mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust:22>);
+for i in 13 to 22 {
+	mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust>.definition.makeStack(i));
+}
 mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust:24>);
 
 # Aquamarine
@@ -66,13 +59,15 @@ mods.skyresources.fusion.addRecipe(<thaumcraft:quicksilver>, [<minecraft:gunpowd
 # Rock Crystals
 mods.skyresources.combustion.addRecipe(<astralsorcery:blockcustomore:0>,[<astralsorcery:itemcraftingcomponent:2>*10,<minecraft:diamond>*3,<astralsorcery:itemcraftingcomponent:0>*10,<minecraft:stone:0>*5], 1700);
 
-#Grains of Infinity
+# Grains of Infinity
 mods.skyresources.combustion.addRecipe(<enderio:item_material:20>,[<thermalfoundation:material:770>*10,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "tenebrae"}]})*25], 3100);
 
-#Grains of Infinity Dupe
+# Grains of Infinity Dupe
 mods.skyresources.combustion.addRecipe(<enderio:item_material:20>*2,[<enderio:item_material:20>,<thermalfoundation:material:770>*5,<thaumcraft:salis_mundus>], 1000);
 
-
+# Light Matter
+mods.skyresources.combustion.removeRecipe(<skyresources:baseitemcomponent:7>);
+mods.skyresources.combustion.addRecipe(<skyresources:baseitemcomponent:7>,[<skyresources:heavysnow>*5,<skyresources:techitemcomponent:2>*4,<skyresources:alchemyitemcomponent:7>*4,<minecraft:end_stone>*3,<mekanism:ingot:3>], 3400);
 
 # *==== Rock Grinder ====*
 #mods.skyresources.rockgrinder.removeRecipe(ItemStack output);
@@ -132,16 +127,9 @@ mods.skyresources.condenser.removeRecipe(<bigreactors:brore:0>);
 # *== JEI Remove and Hide ==*
 rh( <skyresources:orealchdust:5>);
 rh( <skyresources:orealchdust:7>);
-rh( <skyresources:orealchdust:13>);
-rh( <skyresources:orealchdust:14>);
-rh( <skyresources:orealchdust:15>);
-rh( <skyresources:orealchdust:16>);
-rh( <skyresources:orealchdust:17>);
-rh( <skyresources:orealchdust:18>);
-rh( <skyresources:orealchdust:19>);
-rh( <skyresources:orealchdust:20>);
-rh( <skyresources:orealchdust:21>);
-rh( <skyresources:orealchdust:22>);
+for i in 13 to 22 {
+	mods.skyresources.fusion.removeRecipe(<skyresources:orealchdust>.definition.makeStack(i));
+}
 rh( <skyresources:orealchdust:24>);
 rh( <jaopca:item_dirtygemdimensionalshard>);
 rh( <skyresources:dirtygem:15>);

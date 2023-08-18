@@ -1,15 +1,17 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded advancedrocketry
-print("--- loading AdvancedRocketry.zs ---");
 
+# Vulpes Library Silicon dust Manufactory* Recipe Removal (Credit TheShadoWZYE2)
+	mods.nuclearcraft.manufactory.removeRecipeWithOutput(<libvulpes:productdust:3>);
+	
 # Airtight Seal Enchant
 	recipes.addShapedMirrored("Airtight Seal Enchant", 
-	<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 28 as short}]}), 
+	<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: (<enchantment:advancedrocketry:spacebreathing>.id) as short}]}), 
 	[[<ore:plateTitaniumAluminide>, <advancedrocketry:liquidtank>, <ore:plateTitaniumAluminide>],
 	[<ore:ingotCarbon>, <advancedrocketry:blocklens>, <ore:ingotCarbon>], 
 	[<ore:plateTitaniumAluminide>, <advancedrocketry:liquidtank>, <ore:plateTitaniumAluminide>]]);
-	
+
 # Rocket Fuel
 	mods.immersiveengineering.Mixer.addRecipe(<liquid:rocketfuel> * 250, <liquid:oxygen> * 500, [<thermalfoundation:material:833>, <immersivepetroleum:material>], 25000);
 
@@ -41,17 +43,17 @@ print("--- loading AdvancedRocketry.zs ---");
 	recipes.remove(<advancedrocketry:ic:5>);
 	recipes.addShapedMirrored("Liquid IO Circuit Board", 
 	<advancedrocketry:ic:5>, 
-	[[<appliedenergistics2:material:54>, <forestry:chipsets:2>.withTag({}), <appliedenergistics2:material:54>],
+	[[<appliedenergistics2:material:54>, <forestry:chipsets:2>.withTag({T:2 as short},false), <appliedenergistics2:material:54>],
 	[<appliedenergistics2:material:54>, <immersiveengineering:material:27>, <appliedenergistics2:material:54>], 
-	[<appliedenergistics2:material:54>, <forestry:chipsets:2>.withTag({}), <appliedenergistics2:material:54>]]);
+	[<appliedenergistics2:material:54>, <forestry:chipsets:2>.withTag({T:2 as short},false), <appliedenergistics2:material:54>]]);
 
 # Item IO Circuit Board
 	recipes.remove(<advancedrocketry:ic:4>);
 	recipes.addShapedMirrored("Item IO Circuit Board", 
 	<advancedrocketry:ic:4>, 
-	[[<appliedenergistics2:material:18>, <forestry:chipsets:1>.withTag({}), <appliedenergistics2:material:18>],
+	[[<appliedenergistics2:material:18>, <forestry:chipsets:1>.withTag({T:1 as short},false), <appliedenergistics2:material:18>],
 	[<appliedenergistics2:material:18>, <immersiveengineering:material:27>, <appliedenergistics2:material:18>], 
-	[<appliedenergistics2:material:18>, <forestry:chipsets:1>.withTag({}), <appliedenergistics2:material:18>]]);
+	[<appliedenergistics2:material:18>, <forestry:chipsets:1>.withTag({T:1 as short},false), <appliedenergistics2:material:18>]]);
 
 # Control Circuit Board
 	recipes.remove(<advancedrocketry:ic:3>);
@@ -67,6 +69,7 @@ print("--- loading AdvancedRocketry.zs ---");
 	val removals = [
 	<libvulpes:productdust:1>,
 	<libvulpes:productdust:2>,
+	<libvulpes:productdust:3>,
 	<libvulpes:productdust:4>,
 	<libvulpes:productdust:5>,
 	<libvulpes:productdust:6>,
@@ -105,10 +108,21 @@ print("--- loading AdvancedRocketry.zs ---");
 	<advancedrocketry:productgear:*>,
 	<libvulpes:productgear:*>
 	
-		] as IItemStack[];
+	] as IItemStack[];
 
 	for item in recipesToRemove {
 		recipes.remove(item);
-	}	
+	}
 
-		print("--- AdvancedRocketry.zs initialized ---");
+	<ore:stickIron>.remove(<advancedrocketry:productrod:1>);
+
+# Simplify tank
+recipes.remove(<advancedrocketry:liquidtank>);
+recipes.addShaped(<advancedrocketry:liquidtank>, [
+	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>],
+	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>],
+	[<ore:plateTitanium>, <ore:paneGlass>, <ore:plateTitanium>]]);
+recipes.addShapeless("Clearing AdvRock Tank", <advancedrocketry:liquidtank>, [<advancedrocketry:liquidtank>]);
+
+# Mushrooms as energy providers
+mods.thermalexpansion.EnervationDynamo.addFuel(<advancedrocketry:electricmushroom>, 90000000);

@@ -1,8 +1,6 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 
-# Custom recipes made by NillerMedDild
-	print("--- loading Tools.zs ---");
 	
 # *======= Recipes =======*
 	
@@ -28,7 +26,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	
 	<immersiveengineering:pickaxe_steel>,
 	<immersiveengineering:shovel_steel>,
-	<immersiveengineering:axe_steel>,
 	<immersiveengineering:sword_steel>,
 	
 	<mysticalagradditions:inferium_paxel>,
@@ -108,7 +105,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	
 # Thermal Foundation Hammers
 	recipes.addShaped(<thermalfoundation:tool.hammer_lead>, [[<ore:ingotLead>, <ore:blockLead>, <ore:ingotLead>],[<ore:ingotLead>, <forestry:oak_stick>, <ore:ingotLead>], [null, <forestry:oak_stick>, null]]);
-	recipes.addShaped(<thermalfoundation:tool.hammer_aluminum>, [[<ore:ingotAluminium>, <ore:blockAluminium>, <ore:ingotAluminium>],[<ore:ingotAluminium>, <forestry:oak_stick>, <ore:ingotAluminium>], [null, <forestry:oak_stick>, null]]);
+	recipes.addShaped(<thermalfoundation:tool.hammer_aluminum>, [[<ore:ingotAluminum>, <ore:blockAluminum>, <ore:ingotAluminum>],[<ore:ingotAluminum>, <forestry:oak_stick>, <ore:ingotAluminum>], [null, <forestry:oak_stick>, null]]);
 	recipes.addShaped(<thermalfoundation:tool.hammer_nickel>, [[<ore:ingotNickel>, <ore:blockNickel>, <ore:ingotNickel>],[<ore:ingotNickel>, <forestry:oak_stick>, <ore:ingotNickel>], [null, <forestry:oak_stick>, null]]);
 	recipes.addShaped(<thermalfoundation:tool.hammer_platinum>, [[<ore:ingotPlatinum>, <ore:blockPlatinum>, <ore:ingotPlatinum>],[<ore:ingotPlatinum>, <forestry:oak_stick>, <ore:ingotPlatinum>], [null, <forestry:oak_stick>, null]]);
 	recipes.addShaped(<thermalfoundation:tool.hammer_steel>, [[<ore:ingotSteel>, <ore:blockSteel>, <ore:ingotSteel>],[<ore:ingotSteel>, <forestry:oak_stick>, <ore:ingotSteel>], [null, <forestry:oak_stick>, null]]);
@@ -123,4 +120,4 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.addShaped(<thermalfoundation:tool.hammer_bronze>, [[<ore:ingotBronze>, <ore:blockBronze>, <ore:ingotBronze>],[<ore:ingotBronze>, <forestry:oak_stick>, <ore:ingotBronze>], [null, <forestry:oak_stick>, null]]);
 	recipes.addShaped(<thermalfoundation:tool.hammer_invar>, [[<ore:ingotInvar>, <ore:blockInvar>, <ore:ingotInvar>],[<ore:ingotInvar>, <forestry:oak_stick>, <ore:ingotInvar>], [null, <forestry:oak_stick>, null]]);
 
-	print("--- Tools.zs initialized ---");
+	

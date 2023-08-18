@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading Armor.zs ---");
 
 # *======= Energy Armor =======*
 
@@ -9,18 +8,18 @@ print("--- loading Armor.zs ---");
 	<immersiveengineering:faraday_suit_chest>,
 	<immersiveengineering:faraday_suit_legs>,
 	<immersiveengineering:faraday_suit_feet>,
-	<ic2:nano_helmet:26>,
-	<ic2:nano_chestplate:26>,
-	<ic2:nano_leggings:26>,
-	<ic2:nano_boots:26>,
+	<ic2:nano_helmet>,
+	<ic2:nano_chestplate>,
+	<ic2:nano_leggings>,
+	<ic2:nano_boots>,
 	<redstonearsenal:armor.helmet_flux>,
 	<redstonearsenal:armor.plate_flux>,
 	<redstonearsenal:armor.legs_flux>,
 	<redstonearsenal:armor.boots_flux>,
-	<ic2:quantum_helmet:26>,
-	<ic2:quantum_chestplate:26>,
-	<ic2:quantum_leggings:26>,
-	<ic2:quantum_boots:26>
+	<ic2:quantum_helmet>,
+	<ic2:quantum_chestplate>,
+	<ic2:quantum_leggings>,
+	<ic2:quantum_boots>
 	] as IItemStack[];
 	
 		for item in energyArmor {
@@ -32,20 +31,20 @@ print("--- loading Armor.zs ---");
 	recipes.addShaped(<immersiveengineering:faraday_suit_feet>, [[<ore:plateAluminum>, null, <ore:plateAluminum>],[<ore:plateAluminum>, <minecraft:iron_boots>.anyDamage(), <ore:plateAluminum>], [null, null, null]]);
 	recipes.addShaped(<immersiveengineering:faraday_suit_legs>, [[<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateAluminum>],[<ore:plateAluminum>, <minecraft:iron_leggings>.anyDamage(), <ore:plateAluminum>], [<ore:plateAluminum>, null, <ore:plateAluminum>]]);
 	
-	recipes.addShaped(<ic2:nano_boots>, [[<ic2:crafting:15>, <ic2:energy_crystal>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <immersiveengineering:faraday_suit_feet>.anyDamage(), <ic2:crafting:15>], [null, null, null]]);
-	recipes.addShaped(<ic2:nano_leggings>, [[<ic2:crafting:15>, <ic2:energy_crystal>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <immersiveengineering:faraday_suit_legs>.anyDamage(), <ic2:crafting:15>], [<ic2:crafting:15>, null, <ic2:crafting:15>]]);
-	recipes.addShaped(<ic2:nano_chestplate>, [[<ic2:crafting:15>, <immersiveengineering:faraday_suit_chest>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:energy_crystal>.anyDamage(), <ic2:crafting:15>], [<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>]]);
-	recipes.addShaped(<ic2:nano_helmet>, [[<ic2:crafting:15>, <ic2:energy_crystal>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:nightvision_goggles:26>.anyDamage(), <ic2:crafting:15>], [null, <immersiveengineering:faraday_suit_head>.anyDamage(), null]]);
+	recipes.addShaped(<ic2:nano_boots>, [[<ic2:crafting:15>, <ic2:energy_crystal>|<ic2:energy_crystal:*>, <ic2:crafting:15>],[<ic2:crafting:15>, <immersiveengineering:faraday_suit_feet>.anyDamage(), <ic2:crafting:15>], [null, null, null]]);
+	recipes.addShaped(<ic2:nano_leggings>, [[<ic2:crafting:15>, <ic2:energy_crystal>|<ic2:energy_crystal:*>, <ic2:crafting:15>],[<ic2:crafting:15>, <immersiveengineering:faraday_suit_legs>.anyDamage(), <ic2:crafting:15>], [<ic2:crafting:15>, null, <ic2:crafting:15>]]);
+	recipes.addShaped(<ic2:nano_chestplate>, [[<ic2:crafting:15>, <immersiveengineering:faraday_suit_chest>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:energy_crystal>|<ic2:energy_crystal:*>, <ic2:crafting:15>], [<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>]]);
+	recipes.addShaped(<ic2:nano_helmet>, [[<ic2:crafting:15>, <ic2:energy_crystal>|<ic2:energy_crystal:*>, <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:nightvision_goggles>.anyDamage(), <ic2:crafting:15>], [null, <immersiveengineering:faraday_suit_head>.anyDamage(), null]]);
 	
-	recipes.addShaped(<redstonearsenal:armor.boots_flux>, [[<redstonearsenal:material:224>, null, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_boots:26>.anyDamage(), <redstonearsenal:material:224>], [null, null, null]]);
-	recipes.addShaped(<redstonearsenal:armor.legs_flux>, [[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_leggings:26>.anyDamage(), <redstonearsenal:material:224>], [<redstonearsenal:material:224>, null, <redstonearsenal:material:224>]]);
-	recipes.addShaped(<redstonearsenal:armor.plate_flux>, [[<redstonearsenal:material:224>, <ic2:nano_chestplate:26>.anyDamage(), <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>], [<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>]]);
-	recipes.addShaped(<redstonearsenal:armor.helmet_flux>, [[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_helmet:26>.anyDamage(), <redstonearsenal:material:224>], [null, null, null]]);
+	recipes.addShaped(<redstonearsenal:armor.boots_flux>, [[<redstonearsenal:material:224>, null, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_boots>|<ic2:nano_boots:*>, <redstonearsenal:material:224>], [null, null, null]]);
+	recipes.addShaped(<redstonearsenal:armor.legs_flux>, [[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_leggings>|<ic2:nano_leggings:*>, <redstonearsenal:material:224>], [<redstonearsenal:material:224>, null, <redstonearsenal:material:224>]]);
+	recipes.addShaped(<redstonearsenal:armor.plate_flux>, [[<redstonearsenal:material:224>, <ic2:nano_chestplate>|<ic2:nano_chestplate:*>, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>], [<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>]]);
+	recipes.addShaped(<redstonearsenal:armor.helmet_flux>, [[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_helmet>|<ic2:nano_helmet:*>, <redstonearsenal:material:224>], [null, null, null]]);
 	
-	recipes.addShaped(<ic2:quantum_boots>, [[null, null, null],[<ic2:crafting:4>, <redstonearsenal:armor.boots_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:rubber_boots>, <ic2:lapotron_crystal>.anyDamage(), <ic2:rubber_boots>]]);
-	recipes.addShaped(<ic2:quantum_leggings>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>.anyDamage(), <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.legs_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>.anyDamage(), null]]);
-	recipes.addShaped(<ic2:quantum_chestplate>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>.anyDamage(), <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.plate_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:crafting:3>, <ic2:jetpack_electric>.anyDamage(), <ic2:crafting:3>]]);
-	recipes.addShaped(<ic2:quantum_helmet>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.helmet_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>.anyDamage(), null]]);
+	recipes.addShaped(<ic2:quantum_boots>, [[null, null, null],[<ic2:crafting:4>, <redstonearsenal:armor.boots_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:rubber_boots>, <ic2:lapotron_crystal>|<ic2:lapotron_crystal:*>, <ic2:rubber_boots>]]);
+	recipes.addShaped(<ic2:quantum_leggings>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>|<ic2:lapotron_crystal:*>, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.legs_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>|<ic2:lapotron_crystal:*>, null]]);
+	recipes.addShaped(<ic2:quantum_chestplate>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>|<ic2:lapotron_crystal:*>, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.plate_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:crafting:3>, <ic2:jetpack_electric>.anyDamage(), <ic2:crafting:3>]]);
+	recipes.addShaped(<ic2:quantum_helmet>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.helmet_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>|<ic2:lapotron_crystal:*>, null]]);
 			
 # *======= Mystical Agriculture Armor =======*
 
@@ -187,7 +186,7 @@ print("--- loading Armor.zs ---");
 	
 # *======= Vanilla Armor =======*
 
-	var vanillaArmor = [
+	var vanillaStyleArmor = [
 	<minecraft:iron_boots>,
 	<minecraft:iron_leggings>,
 	<minecraft:iron_chestplate>,
@@ -203,11 +202,15 @@ print("--- loading Armor.zs ---");
 	<tcomplement:manyullyn_helmet>,
 	<tcomplement:manyullyn_chestplate>,
 	<tcomplement:manyullyn_leggings>,
-	<tcomplement:manyullyn_boots>
+	<tcomplement:manyullyn_boots>,
+	<tcomplement:knightslime_helmet>,
+	<tcomplement:knightslime_chestplate>,
+	<tcomplement:knightslime_leggings>,
+	<tcomplement:knightslime_boots>
 	
 	] as IItemStack[];
 	
-		for item in vanillaArmor {
+		for item in vanillaStyleArmor {
 		recipes.remove(item);
 	}
 
@@ -240,16 +243,16 @@ print("--- loading Armor.zs ---");
 	recipes.remove(<draconicevolution:wyvern_chest>);
 
 # Wyvern
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_helm>, 1000000000, 1000000, <draconicevolution:wyvern_energy_core>,[<minecraft:chainmail_helmet>.anyDamage(),<nuclearcraft:helm_boron_nitride>.anyDamage(),<botania:terrasteelhelm>.anyDamage(),<mysticalagriculture:supremium_helmet>.anyDamage(),<tcomplement:manyullyn_helmet>.anyDamage(),<draconicevolution:wyvern_core>,<ic2:quantum_helmet>.anyDamage(),<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_chest>, 1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [<minecraft:chainmail_chestplate>.anyDamage(),<nuclearcraft:chest_boron_nitride>.anyDamage(),<botania:terrasteelchest>.anyDamage(),<mysticalagriculture:supremium_chestplate>.anyDamage(),<tcomplement:manyullyn_chestplate>.anyDamage(),<draconicevolution:wyvern_core>,<ic2:quantum_chestplate>.anyDamage(),<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_legs>, 1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [<minecraft:chainmail_leggings>.anyDamage(),<nuclearcraft:legs_boron_nitride>.anyDamage(),<botania:terrasteellegs>.anyDamage(),<mysticalagriculture:supremium_leggings>.anyDamage(),<tcomplement:manyullyn_leggings>.anyDamage(),<draconicevolution:wyvern_core>,<ic2:quantum_leggings>.anyDamage(),<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_boots>, 1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [<minecraft:chainmail_boots>.anyDamage(),<nuclearcraft:boots_boron_nitride>.anyDamage(),<botania:terrasteelboots>.anyDamage(),<mysticalagriculture:supremium_boots>.anyDamage(),<tcomplement:manyullyn_boots>.anyDamage(),<draconicevolution:wyvern_core>,<ic2:quantum_boots>.anyDamage(),<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_helm>, 1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [<minecraft:chainmail_helmet>.anyDamage(),<nuclearcraft:helm_boron_nitride>.anyDamage(),<botania:terrasteelhelm>.anyDamage(),<mysticalagriculture:supremium_helmet>.anyDamage(),<tcomplement:manyullyn_helmet>.anyDamage(),<draconicevolution:wyvern_core>,<ic2:quantum_helmet:*>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_chest>, 1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [<minecraft:chainmail_chestplate>.anyDamage(),<nuclearcraft:chest_boron_nitride>.anyDamage(),<botania:terrasteelchest>.anyDamage(),<mysticalagriculture:supremium_chestplate>.anyDamage(),<tcomplement:manyullyn_chestplate>.anyDamage(),<draconicevolution:wyvern_core>,<ic2:quantum_chestplate:*>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_legs>, 1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [<minecraft:chainmail_leggings>.anyDamage(),<nuclearcraft:legs_boron_nitride>.anyDamage(),<botania:terrasteellegs>.anyDamage(),<mysticalagriculture:supremium_leggings>.anyDamage(),<tcomplement:manyullyn_leggings>.anyDamage(),<draconicevolution:wyvern_core>,<ic2:quantum_leggings:*>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:wyvern_boots>, 1000000000, 1000000, <draconicevolution:wyvern_energy_core>, [<minecraft:chainmail_boots>.anyDamage(),<nuclearcraft:boots_boron_nitride>.anyDamage(),<botania:terrasteelboots>.anyDamage(),<mysticalagriculture:supremium_boots>.anyDamage(),<tcomplement:manyullyn_boots>.anyDamage(),<draconicevolution:wyvern_core>,<ic2:quantum_boots:*>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>,<draconicevolution:draconium_block:1>]);
 
 # Draconic
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_helm>, 10000000000, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_helm>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_chest>, 10000000000, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_chest>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_legs>, 10000000000, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_legs>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
-	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_boots>, 10000000000, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_boots>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_helm>, 2147483647, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_helm>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_chest>, 2147483647, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_chest>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_legs>, 2147483647, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_legs>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
+	mods.extendedcrafting.CombinationCrafting.addRecipe(<draconicevolution:draconic_boots>, 2147483647, 1000000, <avaritia:block_resource:2>, [<draconicevolution:wyvern_boots>.anyDamage(), <extrautils2:angelring>.anyDamage(), <draconicevolution:awakened_core>, <draconicevolution:awakened_core>, <draconicevolution:draconic_block>, <draconicevolution:draconic_block>, <draconicevolution:draconic_energy_core>, <draconicevolution:draconic_energy_core>, <thermalexpansion:frame:148>, <extendedcrafting:material:32>, <astralsorcery:itemcape>.anyDamage()]);
 
 # *======= Slime Boots =======*
 
@@ -287,5 +290,3 @@ print("--- loading Armor.zs ---");
 	[[null, null, null],
 	[<ore:slimeballMagma>, <minecraft:wool:*>, <ore:slimeballMagma>], 
 	[<tconstruct:slime_congealed:4>, <minecraft:leather_boots>.anyDamage(), <tconstruct:slime_congealed:4>]]);
-	
-		print("--- Armor.zs initialized ---");

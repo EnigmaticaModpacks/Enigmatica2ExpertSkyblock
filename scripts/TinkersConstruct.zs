@@ -1,9 +1,48 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import crafttweaker.liquid.ILiquidDefinition;
+import crafttweaker.data.IData;
 import mods.jei.JEI.removeAndHide as rh;
 #modloaded tconstruct
-print("--- loading TinkersConstruct.zs ---");
-	
+
+# Slime Dirt -> Slime
+var slimeDirts as IItemStack[][IItemStack] = {
+	<minecraft:slime_ball> : [
+		<tconstruct:slime_dirt>,
+		<tconstruct:slime_grass:1>,
+		<tconstruct:slime_grass:6>,
+		<tconstruct:slime_grass:11>
+	],
+	<tconstruct:edible:1> : [
+		<tconstruct:slime_dirt:1>,
+		<tconstruct:slime_grass:2>,
+		<tconstruct:slime_grass:7>,
+		<tconstruct:slime_grass:12>
+	],
+	<tconstruct:edible:2> : [
+		<tconstruct:slime_dirt:2>,
+		<tconstruct:slime_grass:3>,
+		<tconstruct:slime_grass:8>,
+		<tconstruct:slime_grass:13>
+	],
+	<tconstruct:edible:4> : [
+		<tconstruct:slime_dirt:3>,
+		<tconstruct:slime_grass:4>,
+		<tconstruct:slime_grass:9>,
+		<tconstruct:slime_grass:14>
+	]
+};
+
+for slime, dirts in slimeDirts {
+	for dirt in dirts {
+		mods.thermalexpansion.Centrifuge.addRecipe([slime % 50, <minecraft:dirt>], dirt, null, 4000);
+		mods.forestry.Centrifuge.addRecipe([slime % 25, <minecraft:dirt>], dirt, 100);
+	}
+}
+
+# Removing Bronze / Steel dupes
+	mods.tconstruct.Melting.removeRecipe(<liquid:bronze>, <ic2:pipe>);
+	mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <ic2:pipe:1>);
+
 # Prevent Smart Output from instantly breaking (setting it to same hardness as Smeltery Controllers)
 	<tinker_io:smart_output>.hardness = <tconstruct:smeltery_controller>.hardness;
 
@@ -14,9 +53,6 @@ print("--- loading TinkersConstruct.zs ---");
 # Item Rack
 	rh(<tconstruct:rack>);
 	
-# Iridium Alloying
-	mods.tconstruct.Alloy.addRecipe(<liquid:iridium>*48,[<liquid:platinum>*32,<liquid:silver>*32,<liquid:manasteel>*32]);
-
 # Blank Cast Resmelting
 	mods.tconstruct.Melting.addRecipe(<liquid:alubrass> * 144, <tconstruct:cast>);
 
@@ -88,20 +124,20 @@ print("--- loading TinkersConstruct.zs ---");
 	mods.tconstruct.Melting.removeRecipe(<liquid:enderium>, <thermalfoundation:material:103>);
 	mods.tconstruct.Melting.removeRecipe(<liquid:refinedobsidian>, <mekanism:otherdust:5>);
 # Removing the ability to smelt redstone/glowstone to make EnderIO alloys
-	for item in <ore:dustRedstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:glowstone>, item); }
-	for item in <ore:blockRedstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:glowstone>, item); }
+	for item in <ore:dustRedstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:redstone>, item); }
+	for item in <ore:blockRedstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:redstone>, item); }
 	for item in <ore:dustGlowstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:glowstone>, item); }
 	for item in <ore:blockGlowstone>.items { mods.tconstruct.Melting.removeRecipe(<liquid:glowstone>, item); }
+	for item in <ore:dustRedstone>.items { mods.tcomplement.Blacklist.addRecipe(<liquid:redstone>, item); }
+	for item in <ore:blockRedstone>.items { mods.tcomplement.Blacklist.addRecipe(<liquid:redstone>, item); }
+	for item in <ore:dustGlowstone>.items { mods.tcomplement.Blacklist.addRecipe(<liquid:glowstone>, item); }
+	for item in <ore:blockGlowstone>.items { mods.tcomplement.Blacklist.addRecipe(<liquid:glowstone>, item); }
 
 # Removing the ability to melt coal
 val coals as IItemStack[] = [
-
-	<bigreactors:ingotmetals:2>,
-	<bigreactors:dustmetals:2>,
 	<minecraft:coal>,
 	<minecraft:coal_block>,
 	<thermalfoundation:material:768>,
-	<bigreactors:blockmetals:2>,
 	<nuclearcraft:ingot_block:8>,
 	<nuclearcraft:ingot:8>,
 	<nuclearcraft:dust:8>
@@ -111,8 +147,12 @@ val coals as IItemStack[] = [
 for item in coals {
 	mods.tconstruct.Melting.removeRecipe(<liquid:coal>, item);
 }
+
 # Remove Ender Pearl Melting (to remove the ability to alloy Enderium)
 	mods.tconstruct.Melting.removeRecipe(<liquid:ender>);
+
+# Missed melt recipe for Block Of Ender Pearls
+	scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "Except: Smeltery");
 	
 # Gear Cast
 	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <exnihilocreatio:item_material:7>, <liquid:gold>, 288, true);
@@ -127,12 +167,6 @@ for item in coals {
 
 # Slime Slings
 	recipes.remove(<tconstruct:slimesling:*>);
-	recipes.addShaped("Slime Sling Oredict", 
-	<tconstruct:slimesling>, 
-	[[<minecraft:lead>, <ore:blockSlimeCongealed>, <minecraft:lead>],
-	[<ore:slimeball>, <minecraft:bow>.anyDamage(), <ore:slimeball>], 
-	[null, <ore:slimeball>, null]]);
-	
 	recipes.addShaped("Slime Sling Green", 
 	<tconstruct:slimesling>, 
 	[[<minecraft:lead>, <tconstruct:slime_congealed>, <minecraft:lead>],
@@ -151,13 +185,19 @@ for item in coals {
 	[<ore:slimeballPurple>, <minecraft:bow>.anyDamage(), <ore:slimeballPurple>], 
 	[null, <ore:slimeballPurple>, null]]);
 	
+	recipes.addShaped("Slime Sling blood", 
+	<tconstruct:slimesling:3>, 
+	[[<minecraft:lead>, <tconstruct:slime_congealed:3>, <minecraft:lead>],
+	[<ore:slimeballBlood>, <minecraft:bow>.anyDamage(), <ore:slimeballBlood>], 
+	[null, <ore:slimeballBlood>, null]]);
+	
 	recipes.addShaped("Slime Sling Magma", 
 	<tconstruct:slimesling:4>, 
 	[[<minecraft:lead>, <tconstruct:slime_congealed:4>, <minecraft:lead>],
 	[<ore:slimeballMagma>, <minecraft:bow>.anyDamage(), <ore:slimeballMagma>], 
 	[null, <ore:slimeballMagma>, null]]);
 
-# Recipes to remove (Tinker I/O aswell)
+# Recipes to remove 
 	var recipesToRemove = [
 	<tinker_io:fuel_input_machine>,
 	<tinker_io:what_a_beautiful_block>,
@@ -206,45 +246,86 @@ for item in coals {
 	mods.tconstruct.Fuel.registerFuel(<liquid:boric_acid> * 25, 400);
 	mods.tconstruct.Fuel.registerFuel(<liquid:hydrofluoric_acid> * 25, 400);
 	
-# *======= Alloying =======*
+# Liquid blue slimy items
+scripts.process.squeeze([<tconstruct:slime_dirt:1>],        <liquid:blueslime>*2000, null,  <biomesoplenty:mudball>);
+scripts.process.squeeze([<tconstruct:slime_leaves>],        <liquid:blueslime>*500,  null, null);
+scripts.process.squeeze([<tconstruct:slime_grass_tall>],    <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze([<tconstruct:slime_grass_tall:1>],  <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze([<tconstruct:slime_sapling>],       <liquid:blueslime>*1000, null, null);
+scripts.process.squeeze([<tconstruct:slime_vine_blue_end>], <liquid:blueslime>*200,  null, null);
+scripts.process.squeeze([<tconstruct:slime_vine_blue_mid>], <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_end>);
+scripts.process.squeeze([<tconstruct:slime_vine_blue>],     <liquid:blueslime>*200,  null, <tconstruct:slime_vine_blue_mid>);
 
-//mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
-#mods.tconstruct.Alloy.addRecipe(<liquid:water> * 10, [<liquid:lava> * 10, <liquid:molten_iron> * 5]);
+# Liquid purple slimy items
+scripts.process.squeeze([<tconstruct:slime_dirt:2>],          <liquid:purpleslime>*2000, null,  <biomesoplenty:mudball>);
+scripts.process.squeeze([<tconstruct:slime_leaves:1>],        <liquid:purpleslime>*500,  null,  null);
+scripts.process.squeeze([<tconstruct:slime_grass_tall:4>],    <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze([<tconstruct:slime_grass_tall:5>],    <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze([<tconstruct:slime_sapling:1>],       <liquid:purpleslime>*1000, null,  null);
+scripts.process.squeeze([<tconstruct:slime_vine_purple_end>], <liquid:purpleslime>*200,  null,  null);
+scripts.process.squeeze([<tconstruct:slime_vine_purple_mid>], <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_end>);
+scripts.process.squeeze([<tconstruct:slime_vine_purple>],     <liquid:purpleslime>*200,  null,  <tconstruct:slime_vine_purple_mid>);
 
-//mods.tconstruct.Alloy.removeRecipe(ILiquidStack output);
-#mods.tconstruct.Alloy.removeRecipe(<liquid:water>);
+# Clay bucket use for casts
+val bkt = <claybucket:unfiredclaybucket:*>;
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast_clay>, bkt, <liquid:clay>, 288, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:gold>, 288, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:alubrass>, 144, true);
+mods.tconstruct.Casting.addTableRecipe(<tcomplement:cast>, bkt, <liquid:brass>, 144, true);
 
-# *======= Casting =======* Wrong Info on docs
+# Cast slimes from liquids (only blood have recipe now)
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:2>, null, <liquid:purpleslime>, 250);
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:1>, null, <liquid:blueslime>  , 250);
 
-//mods.tconstruct.Casting.addTableRecipe(IItemStack output, IItemStack cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast);
-#mods.tconstruct.Casting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true);
-#mods.tconstruct.Casting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:gold_ingot>, <liquid:molten_gold>, 140);
+# Slime blocks
+mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:2>, null, <liquid:purpleslime>, 1000);
+mods.tconstruct.Casting.addBasinRecipe(<tconstruct:slime_congealed:1>, null, <liquid:blueslime>  , 1000);
 
-//mods.tconstruct.Casting.addBasinRecipe(IItemStack output, IItemStack cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast);
-#mods.tconstruct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true);
-#mods.tconstruct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:gold_ingot>, <liquid:molten_gold>, 140);
+# Molten Quartz and Lapis to blocks
+mods.tconstruct.Casting.addBasinRecipe(<minecraft:quartz_block>, null, <liquid:quartz>, 2664);
+mods.tconstruct.Casting.addBasinRecipe(<minecraft:lapis_block> , null, <liquid:lapis> , 5994);
 
-//mods.tconstruct.Casting.removeTableRecipe(IItemStack output);
-#mods.tconstruct.Casting.removeTableRecipe(<minecraft:iron_ingot>);
 
-//mods.tconstruct.Casting.removeBasinRecipe(IItemStack output);
-#mods.tconstruct.Casting.removeBasinRecipe(<minecraft:gold_block>);
+# Clearing
+utils.clearFluid(<tconstruct:seared_tank:0>);
+utils.clearFluid(<tconstruct:seared_tank:1>);
 
-# *======= Drying =======*
+########################################################################################
+# Chest with all avaliable patterns
 
-//mods.tconstruct.Drying.addRecipe(IItemStack output, IItemStack input, int time);
-#mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<minecraft:rotten_flesh>, 100);
+# generate all possible patterns
+var dataList_allPatterns = [] as IData;
+var k = 0 as byte;
+for item in loadedMods["tconstruct"].items {
+	if (!item.definition.id.startsWith("tconstruct:pattern")) continue;
+	if(isNull(item.tag) || isNull(item.tag.PartType)) continue;
 
-//mods.tconstruct.Drying.removeRecipe(IItemStack output);
-#mods.tconstruct.Drying.removeRecipe(<minecraft:leather>);
+	dataList_allPatterns += [{
+		Slot: k,
+		id: "tconstruct:pattern",
+		Count: 1 as byte,
+		Damage: 0 as short,
+		tag: item.tag
+	}] as IData; 
+	k += 1;
+}
 
-# *======= Melting =======*
+# [Pattern_Chest] from [Oak_Chest][+4]
+recipes.removeByRecipeName("tconstruct:tools/table/chest/pattern");
+craft.make(<tconstruct:tooltables:4>.withTag({
+		inventory: {Items: dataList_allPatterns},
+		enchantmentColor:10057489,CustomPotionColor:10057489 // Colored shimmer
+	} + <enchantment:enderio:shimmer>.makeEnchantment(1).makeTag()), ["pretty",
+  "# a #",
+  "p c p",
+  "# a #"], {
+  "p": <ore:pattern>,        # Blank Pattern
+  "a": <tconstruct:book>,    # Materials and You
+  "#": <forestry:wood_pile>, # Wood Pile
+  "c": <ore:chest>,          # Oak Chest
+});
+########################################################################################
 
-//mods.tconstruct.Melting.addRecipe(ILiquidStack output, IItemStack input, @Optional int temp);
-#mods.tconstruct.Melting.addRecipe(<liquid:molten_gold> * 144,<minecraft:gold_ingot>);
-#mods.tconstruct.Melting.addRecipe(<liquid:molten_iron> * 144,<minecraft:iron_ingot>, 500);
-
-//mods.tconstruct.Melting.removeRecipe(ILiquidStack output);
-#mods.tconstruct.Melting.removeRecipe(<liquid:molten_iron>);
-
-	print("--- TinkersConstruct.zs initialized ---");
+# Add meltables
+//mods.tconstruct.Melting.addRecipe(ILiquidStack output, IIngredient input, @Optional int temp);
+	mods.tconstruct.Melting.addRecipe(<liquid:blueslime> * 250,<tconstruct:edible:1>);

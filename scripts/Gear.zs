@@ -1,12 +1,13 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading Gear.zs ---");
+
 
 	rh(<forestry:gear_tin>);
 	rh(<forestry:gear_bronze>);
 	rh(<forestry:gear_copper>);
 	rh(<libvulpes:productgear:6>);
-
+	rh(<appliedenergistics2:material:40>);
+	
 	val gearsToRemove = [
 	<appliedenergistics2:material:40>,
 	<thermalfoundation:material:22>,
@@ -34,11 +35,11 @@ print("--- loading Gear.zs ---");
 	<thermalfoundation:material:295>,
 	<redstonearsenal:material:96>,
 	
-] as IItemStack[];
+	] as IItemStack[];
 	
-for items in gearsToRemove {
-	recipes.remove(items);
-}
+	for items in gearsToRemove {
+		recipes.remove(items);
+	}
 	
 	recipes.addShaped("TE Wooden Gear", 
 	<thermalfoundation:material:22>, 
@@ -58,4 +59,4 @@ for items in gearsToRemove {
 	[<ore:cobblestone>, <ore:gearWood>, <ore:cobblestone>], 
 	[null, <ore:cobblestone>, null]]);
 
-print("--- Gear.zs initialized ---");
+

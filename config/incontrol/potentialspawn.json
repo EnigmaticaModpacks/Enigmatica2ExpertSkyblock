@@ -1,1 +1,15 @@
-[]
+[
+    {
+        "dimension": 0,
+        "mobs": [{
+            "mob": "minecraft:squid",
+            "weight": 5,
+            "groupcountmin": 1,
+            "groupcountmax": 4
+        }],
+        "block": "minecraft:water",
+        "maxheight": 40,
+        "minheight": 1,
+        "random": 0.8
+    }
+]

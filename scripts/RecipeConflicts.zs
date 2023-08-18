@@ -1,14 +1,8 @@
 import mods.jei.JEI.removeAndHide as rh;
-print("--- loading RecipeConflicts.zs ---");
 
-# *======= Variables =======*
-
-	val marble = <ore:stoneMarble>;
-	
-# *======= Recipe Conflicts =======*
-
-# Mushroom Conflicts!
-	recipes.removeShapeless(<minecraft:brown_mushroom>, [<nuclearcraft:glowing_mushroom>]);
+# Conversion recipe between Thaumic Tinkerer Black Quartz Block & Botania Block of Smokey Quartz
+recipes.addShapeless(<botania:quartztypedark>, [<thaumictinkerer:black_quartz_block>]);
+recipes.addShapeless(<thaumictinkerer:black_quartz_block>, [<botania:quartztypedark>]);
 
 # Polished Marble / Marble Pavement
 	recipes.remove(<quark:marble:1>);
@@ -20,9 +14,14 @@ print("--- loading RecipeConflicts.zs ---");
 	[[<ore:stone>, <ore:stone>, <ore:stone>],
 	[<minecraft:lava_bucket>, <ore:stone>, <minecraft:lava_bucket>], 
 	[<ore:stone>, <ore:stone>, <ore:stone>]]);
-	
-# OpenBlocks Scaffolding / Random Things Block of Sticks / Compressed Sticks
+
+# OpenBlocks Scaffolding / Random Things Block of Sticks
 	recipes.remove(<randomthings:blockofsticks>);
+	recipes.addShaped("Random Things Block of Sticks", 
+	<randomthings:blockofsticks> * 8, 
+	[[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
+	[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>], 
+	[<ore:stickWood>, <ore:stickWood>, <ore:stickWood>]]);
 	
 # Pam's Lemonade
 	recipes.remove(<harvestcraft:lemonaideitem>);
@@ -42,8 +41,9 @@ print("--- loading RecipeConflicts.zs ---");
 	<harvestcraft:softpretzelitem>, 
 	[<ore:toolBakeware>, <ore:foodDough>, <ore:foodButter>, 
 	<ore:itemSalt>, <ore:itemSalt>]);
-	
+
 # Quark Polished Marble
+val marble = <ore:stoneMarble>;
 	recipes.removeShaped(<quark:marble:1>);
 	recipes.addShaped("Polished Marble", <quark:marble:1> * 9, 
 	[[marble, marble, marble],
@@ -93,4 +93,4 @@ print("--- loading RecipeConflicts.zs ---");
 	recipes.remove(<ic2:ingot:6>);
 	recipes.remove(<ic2:resource:5>);
 
-	print("--- RecipeConflicts.zs initialized ---");	
+		
