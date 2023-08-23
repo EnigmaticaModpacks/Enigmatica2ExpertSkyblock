@@ -134,7 +134,7 @@
           "viaPlayer:1": 0,
           "index:3": 0,
           "title:8": "bq_standard.reward.command",
-          "command:8": "/say VAR_NAME has completed Enigmatica 2: Expert, congratulations!"
+          "command:8": "/say VAR_NAME has completed Enigmatica 2: Expert Skyblock, congratulations!"
         }
       }
     },
@@ -57975,7 +57975,7 @@
   },
   "questSettings:10": {
     "betterquesting:10": {
-      "pack_name:8": "Enigmatica 2: Expert",
+      "pack_name:8": "Enigmatica 2: Expert Skyblock",
       "hardcore:1": 0,
       "editmode:1": 0,
       "livesMax:4": 10,
