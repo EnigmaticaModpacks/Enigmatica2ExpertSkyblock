@@ -52,6 +52,9 @@ for slime, dirts in slimeDirts {
 	
 # Item Rack
 	rh(<tconstruct:rack>);
+
+# Iridium Alloying
+	mods.tconstruct.Alloy.addRecipe(<liquid:iridium>*48,[<liquid:platinum>*32,<liquid:silver>*32,<liquid:manasteel>*32]);
 	
 # Blank Cast Resmelting
 	mods.tconstruct.Melting.addRecipe(<liquid:alubrass> * 144, <tconstruct:cast>);
